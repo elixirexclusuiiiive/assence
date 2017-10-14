@@ -25,7 +25,32 @@
             android:defaultValue="false"/>
 
     <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
+        android:key="incall_vib_options"
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/incall_vibration_category" >
+
+         <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_connect"
+            settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="false" />
+
+         <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="false" />
+
+         <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_disconnect"
+            settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
 	    android:title="Essence Customisations" >
     
         <SwitchPreference

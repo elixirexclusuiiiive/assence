@@ -20,7 +20,7 @@ import android.content.ContentResolver;
 import android.os.Bundle;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-
+import com.android.internal.util.custom.customUtils;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -50,6 +50,7 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
 
     private static final String TAG = "Misc";
     private static final String KEY_HIDE_ICONS = "hide_essence_icons";
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private SwitchPreference mHideIcons;
     private boolean enabled;
 
@@ -69,6 +70,12 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
             mHideIcons.setChecked(true);
         }
         mHideIcons.setOnPreferenceChangeListener(this);
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!customUtils.isVoiceCapable(getActivity())) {
+                prefSet.removePreference(incallVibCategory);
+        }
+        
     }
 
     @Override
