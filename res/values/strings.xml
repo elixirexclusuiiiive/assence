@@ -147,5 +147,17 @@
     <string name="color_down_arrow" translatable="false">"↓"</string>
     <string name="longpress_info">Longpress box to save color</string>
 
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Lockscreen Music</string>
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
+    <string name="lockscreen_albumart_filter_none">None</string>
+    <string name="lockscreen_albumart_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_albumart_filter_tint">Accent tinted</string>
+    <string name="lockscreen_albumart_filter_blur">Blur</string>
+    <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
 
 </resources>
