@@ -26,5 +26,16 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/traffic_title">
+    
+        <Preference
+            android:key="traffic"
+            android:fragment="org.elixir.essence.fragments.Traffic"
+            android:title="@string/traffic_title"
+            android:summary="@string/traffic_summary" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
