@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/status_bar_clock_title">
+
+<PreferenceCategory
+        android:title="@string/clock_category" 
+        android:layout="@layout/custom_preference_category2">
+
+        <SwitchPreference
+            android:key="statusbar_clock"
+		settings:layout="@layout/xd_pref_card_top"
+		android:title="@string/status_bar_show_clock_title"
+            android:defaultValue="true" />
+
+        <ListPreference
+		android:key="statusbar_clock_style"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/statusbar_clock_style_title"
+            android:dialogTitle="@string/statusbar_clock_style_title"
+            android:entries="@array/statusbar_clock_style_entries"
+            android:entryValues="@array/statusbar_clock_style_values"
+            android:dependency="statusbar_clock" />
+
+         <ListPreference
+            android:key="statusbar_clock_am_pm_style"
+            android:dialogTitle="@string/status_bar_am_pm_title"
+		 android:title="@string/status_bar_am_pm_title"
+		 settings:layout="@layout/xd_pref_card_mid"
+            android:entries="@array/entries_status_bar_am_pm"
+            android:entryValues="@array/values_status_bar_am_pm"
+            android:dependency="statusbar_clock" />
+
+        <SwitchPreference
+            android:key="statusbar_clock_seconds"
+		android:title="@string/clock_seconds_display"
+		settings:layout="@layout/xd_pref_card_bot"
+            android:dependency="statusbar_clock"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/date_category" 
+        android:layout="@layout/custom_preference_category2">		
+
+         <ListPreference
+            android:key="statusbar_clock_date_display"
+            android:title="@string/clock_date_display"
+		 android:summary="@string/clock_date_display_summary"
+		 settings:layout="@layout/xd_pref_card_top"
+            android:entries="@array/clock_date_display_entries"
+            android:entryValues="@array/clock_date_display_values"
+            android:dependency="statusbar_clock" />
+
+         <ListPreference
+            android:key="statusbar_clock_date_style"
+		 android:title="@string/clock_date_style"
+		 settings:layout="@layout/xd_pref_card_mid"
+            android:entries="@array/clock_date_style_entries"
+            android:entryValues="@array/clock_date_style_values"
+            android:dependency="statusbar_clock" />
+
+         <ListPreference
+            android:key="statusbar_clock_date_format"
+		 android:title="@string/clock_date_format"
+		 settings:layout="@layout/xd_pref_card_mid"
+            android:entries="@array/clock_date_format_entries_values"
+            android:entryValues="@array/clock_date_format_entries_values"
+            android:dependency="statusbar_clock" />
+
+        <ListPreference
+            android:key="statusbar_clock_date_position"
+		android:title="@string/clock_date_position"
+		settings:layout="@layout/xd_pref_card_bot"
+            android:entries="@array/clock_date_position_entries"
+            android:entryValues="@array/clock_date_position_values"
+            android:dependency="statusbar_clock" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

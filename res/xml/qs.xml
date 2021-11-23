@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+     <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="qs_layout_toggle"
+            android:title="@string/qs_switch_title"
+            settings:layout="@layout/xd_pref_card_top"
+            android:summary="@string/qs_switch_title_summary"
+            android:defaultValue="false"/>
+
+     <Preference
+            android:key="qstiles"
+            android:summary="@string/qs_style_summary"      
+            settings:layout="@layout/xd_pref_card_mid"
+            android:fragment="org.elixir.essence.fragments.QSTiles"
+            android:title="@string/qstiles_cust" />
+
+     <!-- QS Transparency -->
+     <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+        android:key="qs_transparency"
+        android:title="@string/qs_transparency_title"
+        android:summary="@string/qs_transparency_summary"
+	android:defaultValue="100"
+	settings:layout="@layout/xd_pref_card_bot"
+        settings:interval="1"
+        settings:units="%"
+        android:max="100"
+        settings:min="1" />
+
+    <PreferenceCategory
+        android:title="@string/media_category" 
+        android:layout="@layout/custom_preference_category2">
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="artwork_media_background"
+            android:title="@string/artwork_media_background_title"
+            settings:layout="@layout/xd_pref_card_mid2"	
+	    android:summary="@string/artwork_media_background_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="artwork_media_background_alpha"
+            android:title="@string/artwork_media_background_alpha_title"
+            android:dependency="artwork_media_background"
+            android:defaultValue="255"
+            android:max="255"
+            android:min="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="artwork_media_fade_level"
+            android:title="@string/artwork_media_fade_level_title"
+            android:dependency="artwork_media_background"
+            android:max="100"
+            android:min="0"
+            android:defaultValue="30" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+	    android:key="quick_settings_brighness_category"
+	    android:layout="@layout/custom_preference_category2"
+        android:title="@string/qs_brightness_slider_category">
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/qs_brightness_slider_title"
+		settings:layout="@layout/xd_pref_card_top"
+		android:summary="@string/qs_brightness_slider_summary"
+            android:defaultValue="true"/>
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="sysui_qqs_brightness_slider"
+            android:title="@string/quick_qs_brightness_slider_title"
+            android:summary="@string/quick_qs_brightness_slider_summary"
+		android:dependency="qs_show_brightness"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:defaultValue="false"/>
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="qs_show_auto_brightness_button"
+            android:title="@string/brightness_icon_title"
+            android:summary="@string/brightness_icon_summary"
+		android:defaultValue="true"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:dependency="qs_show_brightness"/>
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+		android:key="qs_brightness_position_bottom"
+		settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/qs_brightness_position_bottom_title"
+            android:summary="@string/qs_brightness_position_bottom_summary"
+            android:defaultValue="false"
+            android:dependency="qs_show_brightness" />
+
+    </PreferenceCategory>
+
+
+   <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
+            android:title="@string/notification_material_dismiss_cat">
+
+       <com.android.settings.custom.preference.SystemSettingSwitchPreference
+	       android:key="notification_material_dismiss"
+	       settings:layout="@layout/xd_pref_card_mid2"
+            android:title="@string/notification_material_dismiss_title"
+            android:summary="@string/notification_material_dismiss_summary"
+            android:defaultValue="false" />
+
+	<com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_style"
+            android:title="@string/notification_material_dismiss_style_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="9"
+            android:min="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_bgstyle"
+            android:title="@string/notification_material_dismiss_bgstyle_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="4"
+            android:min="0" />
+
+   </PreferenceCategory>
+
+   <PreferenceCategory
+           android:key="qs_category"
+           android:layout="@layout/custom_preference_category2"
+       android:title="@string/qs_tile_cat">
+
+	<com.android.settings.custom.preference.SystemSettingSwitchPreference   
+		android:key="qs_footer_data_usage"
+		settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/qs_footer_datausage_title"
+            android:summary="@string/qs_footer_datausage_summary"
+            android:defaultValue="false" />
+
+         <com.android.settings.custom.preference.SecureSettingSwitchPreference
+		 android:key="hide_qs_call_strength"
+		 settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/show_qs_call_strength_icon_title"
+            android:summary="@string/show_qs_call_strength_icon_summary"
+            android:defaultValue="true" />
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+		android:key="quick_settings_vibrate"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="enable_location_privacy_indicator"
+		android:title="@string/location_privacy_title"
+		settings:layout="@layout/xd_pref_card_bot"
+            android:summary="@string/location_privacy_summary"
+            android:defaultValue="true" />
+
+   </PreferenceCategory>
+
+</PreferenceScreen>

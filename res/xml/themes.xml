@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+   <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/customisation_title">
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:key="monet_engine_custom_color"
+	settings:layout="@layout/xd_pref_card_top"    
+	android:title="@string/monet_engine_custom_color_title"
+        android:summary="@string/monet_engine_custom_color_summary"
+        android:defaultValue="false" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+	    android:key="monet_engine_color_override"
+	    settings:layout="@layout/xd_pref_card_bot"
+        android:title="@string/monet_engine_color_override_title"
+        android:dependency="monet_engine_custom_color"
+        android:defaultValue="0xffffff" />
+
+    <com.android.settings.custom.preference.SecureSettingSeekBarPreference
+        android:key="monet_engine_white_luminance_user"
+        android:title="@string/monet_engine_white_luminance_user_title"
+        android:defaultValue="400"
+        android:max="1000"
+        settings:min="200"
+        settings:interval="100"/>
+
+    <com.android.settings.custom.preference.SecureSettingSeekBarPreference
+        android:key="monet_engine_chroma_factor"
+        android:title="@string/monet_engine_chroma_factor_title"
+        android:defaultValue="100"
+        android:max="400"
+        settings:min="50"
+        settings:interval="50"/>
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="monet_engine_accurate_shades"
+            settings:layout="@layout/xd_pref_card_top"
+        android:title="@string/monet_engine_accurate_shades_title"
+        android:defaultValue="true" />
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+	    android:key="monet_engine_linear_lightness"
+	    settings:layout="@layout/xd_pref_card_bot"
+        android:title="@string/monet_engine_linear_lightness_title"
+        android:defaultValue="false" />
+
+   </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="theme_customization_category"
+	android:layout="@layout/custom_preference_category2"    
+	android:title="@string/theme_customization_category">
+
+        <Preference
+	    android:key="android.theme.customization.fonts"
+	    settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/theme_customization_font_title"
+            android:summary="@string/theme_customization_font_summary"
+            android:fragment="org.elixir.essence.fragments.FontsPicker"/>
+
+        <Preference
+		android:key="android.theme.customization.icon_pack"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/theme_customization_icon_pack_title"
+            android:summary="@string/theme_customization_icon_pack_summary"
+            android:fragment="org.elixir.essence.fragments.StatusbarIcons"/>
+
+        <Preference
+		android:key="android.theme.customization.adaptive_icon_shape"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/theme_customization_icon_shape_title"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="org.elixir.essence.fragments.IconShapes"/>
+
+        <Preference
+		android:key="android.theme.customization.signal_icon"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/theme_customization_signal_icon_title"
+            android:summary="@string/theme_customization_signal_icon_summary"
+            android:fragment="org.elixir.essence.fragments.SignalIcons"/>
+
+        <Preference
+		android:key="android.theme.customization.wifi_icon"
+		settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/theme_customization_wifi_icon_title"
+            android:summary="@string/theme_customization_wifi_icon_summary"
+            android:fragment="org.elixir.essence.fragments.WifiIcons"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/lock_screen_custom_clock_face_category">
+
+         <ListPreference
+            android:key="lock_screen_custom_clock_face"
+		 android:summary="%s"
+		 settings:layout="@layout/xd_pref_card_mid2"
+            android:title="@string/lock_screen_custom_clock_face_title"
+            android:entries="@array/lock_screen_custom_clock_face_entries"
+            android:entryValues="@array/lock_screen_custom_clock_face_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

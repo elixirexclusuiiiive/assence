@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+  <PreferenceCategory
+        android:title="@string/rom_name"
+        android:layout="@layout/custom_preference_category">
+  </PreferenceCategory>
+
+    <Preference
+        android:title=""
+	settings:layout="@layout/xd_pref_card_mid2"    
+	android:summary="@string/rom_summ">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.paypal.me/uglykid24" />
+    </Preference>
+
+  <PreferenceCategory
+         android:layout="@layout/custom_preference_category2"
+	 android:title="@string/dev_support">
+
+     <Preference
+        settings:layout="@layout/xd_pref_card_top" 
+        android:title="@string/dev1"
+	android:summary="@string/dev1_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://github.com/ugly-kid-af" />
+     </Preference>
+
+     <Preference
+        android:title="@string/dev2"
+        settings:layout="@layout/xd_pref_card_mid"
+	android:summary="@string/dev2_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+	android:data="https://github.com/nishant6342" />
+     </Preference>
+
+     <Preference
+        android:title="@string/dev3"
+        settings:layout="@layout/xd_pref_card_mid"
+        android:summary="@string/dev3_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://github.com/improbir" />
+     </Preference>
+
+     <Preference
+        android:title="@string/dev4"
+        settings:layout="@layout/xd_pref_card_bot"
+        android:summary="@string/dev4_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://github.com/marshmello61" />
+     </Preference>
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+	android:layout="@layout/custom_preference_category2"
+	android:title="@string/download_donate">
+    <Preference
+        android:title="@string/download"
+        settings:layout="@layout/xd_pref_card_top"
+	android:summary="@string/download_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com/download" />
+    </Preference>
+
+    <Preference
+        android:title="@string/website"
+        settings:layout="@layout/xd_pref_card_bot"
+        android:summary="@string/website_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+    </Preference>
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+	android:title="@string/donateus">
+
+    <Preference
+	android:title="@string/paypal"
+	settings:layout="@layout/xd_pref_card_top"
+	android:summary="@string/donate_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.paypal.me/uglykid24" />
+    </Preference>
+
+    <Preference
+        android:title="@string/patreon"
+        settings:layout="@layout/xd_pref_card_bot"
+        android:summary="@string/patreon_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.patreon.com/join/uglykid24" />
+    </Preference>
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+	android:layout="@layout/custom_preference_category2"
+	android:title="@string/telegram">
+
+    <Preference
+        android:title="@string/tele_group"
+        settings:layout="@layout/xd_pref_card_top"
+	android:summary="@string/grp_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/Elixir_Discussion" />
+    </Preference>
+
+    <Preference
+	android:title="@string/tele_channel"
+	settings:layout="@layout/xd_pref_card_bot"
+	android:summary="@string/update_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/Elixir_Updates" />
+    </Preference>
+  </PreferenceCategory>
+
+  <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/note">
+
+  <Preference
+        settings:layout="@layout/xd_pref_card_mid2"
+        android:summary="@string/note_summary">
+    </Preference>
+
+  </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
+	    android:title="@string/lockscreen_gestures_category">
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+		android:key="double_tap_sleep_lockscreen"
+		settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/double_tap_sleep_lockscreen_title"
+            android:defaultValue="false" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+		android:key="torch_long_press_power_gesture"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/torch_long_press_power_gesture_title"
+            android:summary="@string/torch_long_press_power_gesture_desc"
+            android:defaultValue="false" />
+
+        <com.android.settings.custom.preference.SystemSettingListPreference
+		android:key="torch_long_press_power_timeout"
+		settings:layout="@layout/xd_pref_card_bot"
+            android:dialogTitle="@string/torch_long_press_power_timeout_title"
+            android:title="@string/torch_long_press_power_timeout_title"
+            android:summary="%s"
+            android:entries="@array/torch_long_press_power_timeout_entries"
+            android:entryValues="@array/torch_long_press_power_timeout_values"
+            android:defaultValue="0"
+            android:dependency="torch_long_press_power_gesture" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+	    android:key="lockscreen_media_art_options"
+	    android:layout="@layout/custom_preference_category2"
+	    android:title="@string/lockscreen_media_art_category_title">
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+	    android:key="keygaurd_media_art"
+	    settings:layout="@layout/xd_pref_card_mid2"
+            android:title="@string/keygaurd_media_art_title"
+            android:summary="@string/keygaurd_media_art_summary"
+            android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.CustomSystemSeekBarPreference
+            android:key="lockscreen_media_blur"
+            android:title="@string/lockscreen_media_blur_title"
+            android:dependency="keygaurd_media_art"
+            settings:allowEditText="true"
+            android:max="25"
+            android:min="1"
+            android:defaultValue="25"
+            settings:units="dp"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+	    android:layout="@layout/custom_preference_category2"
+        android:title="@string/lockscreen_customization_category">
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+	    android:key="lockscreen_battery_info"
+	    settings:layout="@layout/xd_pref_card_top"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference    
+	    android:key="lockscreen_small_clock"
+	    settings:layout="@layout/xd_pref_card_mid"
+        android:title="@string/lockscreen_small_clock_title"
+        android:summary="@string/lockscreen_small_clock_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.SystemSettingListPreference
+	    android:key="screen_off_animation"
+	    settings:layout="@layout/xd_pref_card_mid"
+        android:title="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:summary="%s"
+        android:defaultValue="0" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+	    android:key="enable_ripple_effect"
+	    settings:layout="@layout/xd_pref_card_mid"
+        android:title="@string/enable_fingerprint_ripple_effect_title"
+        android:summary="@string/enable_fingerprint_ripple_effect_summary"
+        android:defaultValue="true" />
+
+    <!-- Horizon Light Settings -->
+    <Preference
+        android:key="pulse_ambient_light_settings"
+	    android:title="@string/pulse_ambient_light_title"
+	    settings:layout="@layout/xd_pref_card_bot"
+        android:summary="@string/pulse_ambient_light_summary"
+        android:fragment="org.elixir.essence.fragments.PulseAmbientLightSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+	android:key="udfps_category"
+	android:title="@string/udfps_category">
+
+        <Preference
+		android:key="udfps_settings"
+		settings:layout="@layout/xd_pref_card_mid2"
+            android:title="@string/udfps_settings_title"
+            android:summary="@string/udfps_settings_summary"
+            android:fragment="org.elixir.essence.fragments.UdfpsSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/ls_cat_secure">
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+	    android:key="qstile_requires_unlocking"
+	    settings:layout="@layout/xd_pref_card_top"
+        android:title="@string/qstile_requires_unlocking_title"
+        android:summary="@string/qstile_requires_unlocking_summary"
+        android:defaultValue="true"/>
+
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference	     
+        android:key="secure_lockscreen_qs_disabled"
+        android:title="@string/disable_qs_title"
+	    settings:layout="@layout/xd_pref_card_bot"
+	    android:summary="@string/disable_qs_summary"
+	android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
