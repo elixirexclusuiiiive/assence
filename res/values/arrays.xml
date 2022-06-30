@@ -125,4 +125,15 @@
         <item>5</item>
     </string-array>
 
+    <!-- QSTiles Styles -->
+    <string-array name="qstiles_styles_entries" translatable="false">
+        <item>@string/qstiles_default</item>
+        <item>@string/qstiles_custom1</item>
+    </string-array>
+
+    <string-array name="qstiles_styles_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
 </resources>
