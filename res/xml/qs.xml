@@ -26,4 +26,10 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="use_tiles_on_secure_keyguard"
+            android:title="@string/use_tiles_on_secure_keyguard_title"
+            android:summary="@string/use_tiles_on_secure_keyguard_summary"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
