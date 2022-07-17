@@ -21,5 +21,5 @@
     android:paddingBottom="16dp"
     android:textAppearance="?android:attr/textAppearanceListItem"
     android:textColor="?android:attr/colorAccent"
-    android:textSize="18sp"
+    android:textSize="24sp"
     android:textStyle="bold" />

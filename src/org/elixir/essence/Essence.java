@@ -20,6 +20,8 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -34,6 +36,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.Surface;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -41,6 +44,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.viewpager.widget.ViewPager;
 
@@ -55,114 +59,16 @@ import org.elixir.essence.categories.Qs;
 import org.elixir.essence.categories.System;
 import org.elixir.essence.categories.Hardware;
 
-import org.elixir.essence.navigation.BubbleNavigationConstraintView;
-import org.elixir.essence.navigation.BubbleNavigationChangeListener;
-
 public class Essence extends SettingsPreferenceFragment implements   
        Preference.OnPreferenceChangeListener {
 
     private static final int MENU_HELP  = 0;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        Resources res = getResources();
-
-        View view = inflater.inflate(R.layout.layout_extensions, container, false);
-
-        BubbleNavigationConstraintView bubbleNavigationConstraintView =  (BubbleNavigationConstraintView) view.findViewById(R.id.floating_top_bar_navigation);
-        ViewPager viewPager = view.findViewById(R.id.viewpager);
-        PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
-        viewPager.setAdapter(mPagerAdapter);
-
-        bubbleNavigationConstraintView.setNavigationChangeListener(new BubbleNavigationChangeListener() {
-            @Override
-            public void onNavigationChanged(View view, int position) {
-                if (view.getId() == R.id.system_category) {
-                    viewPager.setCurrentItem(position, true);
-		} else if (view.getId() == R.id.themes_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.status_bar_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.qs_category) {
-                    viewPager.setCurrentItem(position, true);
-		} else if (view.getId() == R.id.lockscreen_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.hardware_category) {
-                    viewPager.setCurrentItem(position, true);
-                }
-            }
-        });
-
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int i, float v, int i1) {
-            }
-
-            @Override
-            public void onPageSelected(int i) {
-                bubbleNavigationConstraintView.setCurrentActiveItem(i);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int i) {
-            }
-        });
-
-        setHasOptionsMenu(true);
-
-        return view;
-    }
-
-    class PagerAdapter extends FragmentPagerAdapter {
-
-        String titles[] = getTitles();
-        private Fragment frags[] = new Fragment[titles.length];
-
-        PagerAdapter(FragmentManager fm) {
-            super(fm);
-            frags[0] = new System();
-	    frags[1] = new Themes();
-            frags[2] = new StatusBar();
-	    frags[3] = new Qs();
-            frags[4] = new Lockscreen();
-            frags[5] = new Hardware();
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return frags[position];
-        }
-
-        @Override
-        public int getCount() {
-            return frags.length;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles[position];
-        }
-    }
-
-    private String[] getTitles() {
-        String titleString[];
-        titleString = new String[]{
-            getString(R.string.system_category),
-	    getString(R.string.themes_category),
-            getString(R.string.status_bar_category),
-            getString(R.string.qs_category),
-	    getString(R.string.lockscreen_category),
-            getString(R.string.hardware_category)};
-		
-        return titleString;
-    }
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(R.string.extensions_title);
         ContentResolver resolver = getActivity().getContentResolver();
+        addPreferencesFromResource(R.xml.essence_settings);
     }
 
     @Override
@@ -188,67 +94,6 @@ public class Essence extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
         return true;
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_HELP, 0, R.string.extensions_dialog_title)
-                .setIcon(R.drawable.ic_extensions_info)
-                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case MENU_HELP:
-                showDialogInner(MENU_HELP);
-                Toast.makeText(getActivity(),
-                (R.string.extensions_dialog_toast),
-                Toast.LENGTH_LONG).show();
-                return true;
-            default:
-                return false;
-        }
-    }
-
-    private void showDialogInner(int id) {
-        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
-        newFragment.setTargetFragment(this, 0);
-        newFragment.show(getFragmentManager(), "dialog " + id);
-    }
-
-    public static class MyAlertDialogFragment extends DialogFragment {
-
-        public static MyAlertDialogFragment newInstance(int id) {
-            MyAlertDialogFragment frag = new MyAlertDialogFragment();
-            Bundle args = new Bundle();
-            args.putInt("id", id);
-            frag.setArguments(args);
-            return frag;
-        }
-
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            int id = getArguments().getInt("id");
-            switch (id) {
-                case MENU_HELP:
-                    return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.extensions_dialog_title)
-                    .setMessage(R.string.extensions_dialog_message)
-                    .setCancelable(false)
-                    .setNegativeButton(R.string.dlg_ok,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    })
-                    .create();
-            }
-            throw new IllegalArgumentException("unknown id " + id);
-        }
-
-        @Override
-        public void onCancel(DialogInterface dialog) {
-
-        }
     }
 }
 

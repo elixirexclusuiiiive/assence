@@ -15,11 +15,8 @@
     android:id="@android:id/title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingStart="32dp"
-    android:paddingTop="16dp"
-    android:paddingEnd="32dp"
-    android:paddingBottom="16dp"
-    android:textAppearance="?android:attr/textAppearanceListItem"
-    android:textColor="?android:attr/colorAccent"
-    android:textSize="18sp"
-    android:textStyle="bold" />
+    android:gravity="center_horizontal"
+    android:paddingBottom="32dp"
+    android:textColor="?android:attr/textColorPrimary"
+	android:textSize="36dp"
+	android:fontFamily="evolvesans-bold" />

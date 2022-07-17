@@ -17,7 +17,14 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="Lock Screen"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
 
     <PreferenceCategory
             android:layout="@layout/custom_preference_category2"
