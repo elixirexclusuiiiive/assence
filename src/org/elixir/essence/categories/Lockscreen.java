@@ -27,9 +27,6 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.internal.util.custom.fod.FodUtils;
-import com.android.internal.util.custom.CustomUtils;
-
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     
@@ -46,10 +43,6 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         Resources resources = getResources();
 
-        PreferenceCategory udfps = (PreferenceCategory) prefScreen.findPreference("udfps_category");
-        if (!FodUtils.hasFodSupport(getActivity())) {
-            prefScreen.removePreference(udfps);
-        }
     }
 
     @Override
