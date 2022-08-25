@@ -106,30 +106,6 @@
   </PreferenceCategory>
 
   <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
-	android:title="@string/donateus">
-
-    <Preference
-	android:title="@string/paypal"
-	settings:layout="@layout/xd_pref_card_top"
-	android:summary="@string/donate_summary">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://www.paypal.me/uglykid24" />
-    </Preference>
-
-    <Preference
-        android:title="@string/patreon"
-        settings:layout="@layout/xd_pref_card_bot"
-        android:summary="@string/patreon_summary">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://www.patreon.com/join/uglykid24" />
-    </Preference>
-
-  </PreferenceCategory>
-
-  <PreferenceCategory
 	android:layout="@layout/custom_preference_category2"
 	android:title="@string/telegram">
 

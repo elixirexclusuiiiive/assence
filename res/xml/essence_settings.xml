@@ -29,6 +29,7 @@
         android:layout="@layout/custom_preference_category_essence">
   </PreferenceCategory>
 
+    <!-- Teams  -->
     <Preference
         settings:layout="@layout/essence_pref_card_top"
         android:fragment="org.elixir.essence.categories.System"
@@ -36,20 +37,17 @@
         android:icon="@drawable/ic_system_category"
         android:textStyle="bold"
         android:summary="@string/summ_about"
-	    android:title="Know more about us" />
-
+	android:title="Know more about us" />
+   
+    <!-- Donate  -->
     <Preference
-	    android:title="@string/donate"
-		android:key="donate_essence"
-	    android:textStyle="bold"
-	    settings:layout="@layout/essence_pref_card_bot"
-	    android:icon="@drawable/ic_donate_icon"
-	    android:summary="@string/donate_summary">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://www.paypal.me/uglykid24" />
-    </Preference>
-
+        settings:layout="@layout/essence_pref_card_bot"
+        android:fragment="org.elixir.essence.categories.Donate"
+        android:key="donate_category"
+        android:textStyle="bold"
+        android:summary="@string/donate_summary"
+        android:title="@string/donate" />
+	    
     <!-- Monet  -->
     <Preference
         settings:layout="@layout/essence_pref_card_top"
