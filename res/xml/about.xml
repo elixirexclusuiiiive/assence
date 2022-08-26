@@ -21,17 +21,25 @@
     android:title=" ">
 
     <!-- Header -->
-  <PreferenceCategory
+    <PreferenceCategory
         android:title="Project Elixir"
         android:layout="@layout/about_team_head">
-  </PreferenceCategory>
+    </PreferenceCategory>
 
     <Preference
         android:title=""
 	android:summary="@string/rom_summ">
     </Preference>
 
-  <PreferenceCategory
+    <Preference
+        android:key="xd_build_status"
+        android:title="@string/xd_build_status"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/xd_build"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
+        settings:layout="@layout/xd_pref_card_sin-accent"/>
+
+    <PreferenceCategory
          android:layout="@layout/custom_preference_category2"
 	 android:title="@string/dev_support">
 

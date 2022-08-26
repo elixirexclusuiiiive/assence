@@ -59,9 +59,18 @@
         android:summary="@string/summ_monet"
         android:title="@string/customisation_title" />
 
-    <!-- Status Bar -->
+    <!-- Lock Screen  -->
     <Preference
-        settings:layout="@layout/essence_pref_card_mid"
+        settings:layout="@layout/essence_pref_card_bot"
+        android:fragment="org.elixir.essence.categories.Lockscreen"
+        android:key="lockscreen_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_lock"
+        android:title="@string/lockscreen_title" />
+
+    <!-- Status Bar  -->
+    <Preference
+        settings:layout="@layout/essence_pref_card_top"
         android:fragment="org.elixir.essence.categories.StatusBar"
         android:key="statusbar_category"
         android:icon="@drawable/ic_status_bar_category"
@@ -71,7 +80,7 @@
 
     <!-- Quick Settings -->
     <Preference
-        settings:layout="@layout/essence_pref_card_mid"
+        settings:layout="@layout/essence_pref_card_bot"
         android:fragment="org.elixir.essence.categories.Qs"
         android:key="quicksettings_category"
         android:icon="@drawable/ic_qs_category"
@@ -79,19 +88,9 @@
         android:summary="@string/summ_quick"
         android:title="@string/quicksettings_title" />
 
-    <!-- Lock Screen -->
-    <Preference
-        settings:layout="@layout/essence_pref_card_mid"
-        android:fragment="org.elixir.essence.categories.Lockscreen"
-        android:key="lockscreen_category"
-        android:icon="@drawable/ic_lockscreen_category"
-        android:textStyle="bold"
-        android:summary="@string/summ_lock"
-        android:title="@string/lockscreen_title" />
-
     <!-- Gestures -->
     <Preference
-        settings:layout="@layout/essence_pref_card_mid"
+        settings:layout="@layout/essence_pref_card_top"
         android:fragment="com.android.settings.gestures.GestureSettings"
         android:key="gestures_category"
         android:icon="@drawable/ic_settings_pdgestures"
@@ -100,8 +99,7 @@
         android:summary="@string/summ_gesture"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
 
-
-    <!-- Misc -->
+    <!-- Misc   -->
     <Preference
         settings:layout="@layout/essence_pref_card_bot"
         android:fragment="org.elixir.essence.categories.Misc"
