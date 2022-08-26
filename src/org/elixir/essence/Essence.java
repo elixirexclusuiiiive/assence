@@ -30,6 +30,7 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -49,6 +50,8 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.viewpager.widget.ViewPager;
 
 import com.android.internal.logging.nano.MetricsProto;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -59,16 +62,76 @@ import org.elixir.essence.categories.Qs;
 import org.elixir.essence.categories.System;
 import org.elixir.essence.categories.Hardware;
 
+import static android.provider.Settings.Secure.HIDE_ESSENCE_ICONS;
+
+
 public class Essence extends SettingsPreferenceFragment implements   
        Preference.OnPreferenceChangeListener {
 
     private static final int MENU_HELP  = 0;
+	public static final String TAG = "Essence";
+    private boolean enabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ContentResolver resolver = getActivity().getContentResolver();
         addPreferencesFromResource(R.xml.essence_settings);
+        enabled = Settings.Secure.getInt(resolver, HIDE_ESSENCE_ICONS, 0) == 1;
+        if (enabled) {
+            removeIconTop(2);
+            removeIconBot(3);
+            removeIconTop(4);
+            removeIconMid(5);
+            removeIconMid(6);
+            removeIconMid(7);
+            removeIconMid(8);
+            removeIconBot(9);
+        }
+    }
+
+    public void removeIconTop(int prefNum) {
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        Preference pref = prefScreen.getPreference(prefNum);
+        if (prefScreen == null) {
+            return;
+        }
+        else if (pref != null) {
+            pref.setLayoutResource(R.layout.essence_pref_card_top_no_icn);
+        }
+    }
+
+    public void removeIconMid(int prefNum) {
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        Preference pref = prefScreen.getPreference(prefNum);
+        if (prefScreen == null) {
+            return;
+        }
+        else if (pref != null) {
+            pref.setLayoutResource(R.layout.essence_pref_card_mid_no_icn);
+        }
+    }
+
+    public void removeIconBot(int prefNum) {
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        Preference pref = prefScreen.getPreference(prefNum);
+        if (prefScreen == null) {
+            return;
+        }
+        else if (pref != null) {
+            pref.setLayoutResource(R.layout.essence_pref_card_bot_no_icn);
+        }
+    }
+
+    public void removeIconMid2(int prefNum) {
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        Preference pref = prefScreen.getPreference(prefNum);
+        if (prefScreen == null) {
+            return;
+        }
+        else if (pref != null) {
+            pref.setLayoutResource(R.layout.essence_pref_card_mid2_no_icn);
+        }
     }
 
     @Override

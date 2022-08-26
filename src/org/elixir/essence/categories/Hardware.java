@@ -42,10 +42,16 @@ import com.android.settings.Utils;
 import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
 
-public class Hardware extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+import androidx.preference.SwitchPreference;
+import org.elixir.essence.Essence;
+import static android.provider.Settings.Secure.HIDE_ESSENCE_ICONS;
+
+public class Hardware extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "Hardware";
+    private static final String KEY_HIDE_ICONS = "hide_essence_icons";
+    private SwitchPreference mHideIcons;
+    private boolean enabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,12 @@ public class Hardware extends SettingsPreferenceFragment implements
         final PreferenceScreen prefSet = getPreferenceScreen();
         final PackageManager mPm = getActivity().getPackageManager();
 
+        mHideIcons = (SwitchPreference) findPreference(KEY_HIDE_ICONS);
+        enabled = Settings.Secure.getInt(resolver, HIDE_ESSENCE_ICONS, 0) == 1;
+        if (enabled) {
+            mHideIcons.setChecked(true);
+        }
+        mHideIcons.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -74,8 +86,15 @@ public class Hardware extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
+    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
+        if (preference == mHideIcons) {
+            boolean state = Boolean.valueOf(objValue.toString());
+            int put = (state) ? 1 : 0;
+            Settings.Secure.putInt(getActivity().getContentResolver(), HIDE_ESSENCE_ICONS, put);
+            mHideIcons.setChecked(state);
+        }
         return false;
     }
 }

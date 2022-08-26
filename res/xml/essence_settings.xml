@@ -29,12 +29,6 @@
         android:layout="@layout/custom_preference_category_essence">
   </PreferenceCategory>
 
-    <!-- About -->
-  <PreferenceCategory
-        android:title="About ROM"
-        android:layout="@layout/custom_preference_category">
-  </PreferenceCategory>
-
     <Preference
         settings:layout="@layout/essence_pref_card_top"
         android:fragment="org.elixir.essence.categories.System"
@@ -46,6 +40,7 @@
 
     <Preference
 	    android:title="@string/donate"
+		android:key="donate_essence"
 	    android:textStyle="bold"
 	    settings:layout="@layout/essence_pref_card_bot"
 	    android:icon="@drawable/ic_donate_icon"
@@ -55,12 +50,7 @@
             android:data="https://www.paypal.me/uglykid24" />
     </Preference>
 
-  <PreferenceCategory
-        android:title="Customisations"
-        android:layout="@layout/custom_preference_category">
-  </PreferenceCategory>
-
-    <!-- Monet -->
+    <!-- Monet  -->
     <Preference
         settings:layout="@layout/essence_pref_card_top"
         android:fragment="org.elixir.essence.categories.Themes"
