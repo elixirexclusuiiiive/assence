@@ -19,15 +19,16 @@
     android:title=" ">
 
     <!-- Lottie Animation-->
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="lottie_essence"
-        app:lottie_rawRes="@raw/lottie_essence" />
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="essence_animation"
+        android:layout="@layout/essence_lottie"
+        android:selectable="false" />
 
     <!-- Essence Header -->
-  <PreferenceCategory
+    <PreferenceCategory
         android:title="@string/essence_settings_title"
         android:layout="@layout/custom_preference_category_essence">
-  </PreferenceCategory>
+    </PreferenceCategory>
 
     <!-- Teams  -->
     <Preference
