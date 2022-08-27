@@ -27,8 +27,12 @@
     </PreferenceCategory>
 
     <Preference
-        android:title=""
+	android:textStyle="bold"
+	android:textSize="24dp"
 	android:summary="@string/rom_summ">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
     </Preference>
 
     <Preference

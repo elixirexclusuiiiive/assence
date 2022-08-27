@@ -76,7 +76,10 @@
     <string name="download_summary">Tap here to download builds for your respective devices</string>
 
     <string name="paypal">Paypal</string>
-    <string name="donate_summary">Donate us to appreciate our work and seamless updates.</string>
+    <string name="donate_summary">Donate us to appreciate our work</string>
+    <string name="don_summ1">• As a matter of fact that in order to build a Custom ROM there are certain pre-requisite such as a High-End Building Server (Jenkins) or PC having very High-End technical specification combined with a very High-Speed internet connection.</string>	    
+    <string name="don_summ2">• We developers need to allot our time and hard work from our Academics hefty schedule in the proper maintenance of the custom ROM so that we can provide users with timely and stable updates</string>
+    <string name="don_summ3">• Do consider donating or buying me a coffee on Paypal or join us on Patreon for sustainable support and rewards if you want to appreciate our work</string>
 
     <string name="tele_group">Telegram Discussion Group</string>
     <string name="grp_summary">If you have any issues, do share in our telegram discussion group</string>

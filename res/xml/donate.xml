@@ -24,6 +24,27 @@
     </PreferenceCategory>
 
     <Preference
+	android:title=""
+	android:textStyle="bold"
+        android:textSize="20dp"
+	android:summary="@string/don_summ1">
+    </Preference>
+
+    <Preference
+        android:title=""
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:summary="@string/don_summ2">
+    </Preference>
+
+    <Preference
+        android:title=""
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:summary="@string/don_summ3">
+    </Preference>
+
+    <Preference
 	android:title="@string/paypal"
 	settings:layout="@layout/xd_pref_card_top"
 	android:summary="@string/donate_summary">
