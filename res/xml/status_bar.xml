@@ -84,4 +84,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/general_category">
+    
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference	    
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_sleep_gesture_title"
+            android:summary="@string/double_tap_sleep_gesture_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
