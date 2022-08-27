@@ -30,16 +30,16 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class System extends SettingsPreferenceFragment implements
+public class About extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "System";
+    private static final String TAG = "About";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.system);
+        addPreferencesFromResource(R.xml.about);
 
         ContentResolver resolver = getActivity().getContentResolver();
 

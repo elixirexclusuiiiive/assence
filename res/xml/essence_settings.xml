@@ -32,8 +32,8 @@
     <!-- Teams  -->
     <Preference
         settings:layout="@layout/essence_pref_card_top"
-        android:fragment="org.elixir.essence.categories.System"
-        android:key="system_category"
+        android:fragment="org.elixir.essence.categories.About"
+        android:key="about_category"
         android:icon="@drawable/ic_system_category"
         android:textStyle="bold"
         android:summary="@string/summ_about"
@@ -103,7 +103,7 @@
     <!-- Misc -->
     <Preference
         settings:layout="@layout/essence_pref_card_bot"
-        android:fragment="org.elixir.essence.categories.Hardware"
+        android:fragment="org.elixir.essence.categories.Misc"
         android:key="misc_category"
         android:icon="@drawable/ic_hardware_category"
         android:textStyle="bold"

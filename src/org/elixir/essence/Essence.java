@@ -59,8 +59,8 @@ import org.elixir.essence.categories.Lockscreen;
 import org.elixir.essence.categories.StatusBar;
 import org.elixir.essence.categories.Themes;
 import org.elixir.essence.categories.Qs;
-import org.elixir.essence.categories.System;
-import org.elixir.essence.categories.Hardware;
+import org.elixir.essence.categories.About;
+import org.elixir.essence.categories.Misc;
 import org.elixir.essence.categories.Donate;
 
 import static android.provider.Settings.Secure.HIDE_ESSENCE_ICONS;

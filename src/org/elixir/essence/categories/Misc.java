@@ -46,9 +46,9 @@ import androidx.preference.SwitchPreference;
 import org.elixir.essence.Essence;
 import static android.provider.Settings.Secure.HIDE_ESSENCE_ICONS;
 
-public class Hardware extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class Misc extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    private static final String TAG = "Hardware";
+    private static final String TAG = "Misc";
     private static final String KEY_HIDE_ICONS = "hide_essence_icons";
     private SwitchPreference mHideIcons;
     private boolean enabled;
@@ -57,7 +57,7 @@ public class Hardware extends SettingsPreferenceFragment implements OnPreference
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.hardware);
+        addPreferencesFromResource(R.xml.misc);
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
