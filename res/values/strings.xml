@@ -100,7 +100,7 @@
     <!-- Summery -->
     <string name="summ_gesture">Playback Control • System Navigation</string>
     <string name="summ_lock">DT2S • Media Art • Edge Lighting</string>
-    <string name="summ_misc">Game Space • Power Menu • HwKey Options</string>
+    <string name="summ_misc">Game Space • Power Menu • HwKey </string>
     <string name="summ_monet">Monet • Theming • Lockscreen Clock</string>
     <string name="summ_quick">QS Styles • Media Artwork • Data Usage</string>
     <string name="summ_sbar">Network Traffic • VoLTE/VoWifi </string>

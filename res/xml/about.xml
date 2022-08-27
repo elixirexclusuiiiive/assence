@@ -44,7 +44,7 @@
         settings:layout="@layout/xd_pref_card_sin-accent"/>
 
     <PreferenceCategory
-         android:layout="@layout/custom_preference_category2"
+         android:layout="@layout/custom_preference_category"
 	 android:title="@string/dev_support">
 
      <Preference
@@ -86,7 +86,7 @@
   </PreferenceCategory>
 
   <PreferenceCategory
-	android:layout="@layout/custom_preference_category2"
+	android:layout="@layout/custom_preference_category"
 	android:title="@string/download_donate">
     <Preference
         android:title="@string/download"
@@ -109,7 +109,7 @@
   </PreferenceCategory>
 
   <PreferenceCategory
-	android:layout="@layout/custom_preference_category2"
+	android:layout="@layout/custom_preference_category"
 	android:title="@string/telegram">
 
     <Preference
@@ -132,7 +132,7 @@
   </PreferenceCategory>
 
   <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category"
         android:title="@string/note">
 
   <Preference
