@@ -22,22 +22,13 @@
 
     <!-- Header -->
   <PreferenceCategory
-        android:title="Essence"
-        android:layout="@layout/custom_preference_category_essence">
-  </PreferenceCategory>
-
-  <PreferenceCategory
-        android:title="@string/rom_name"
-        android:layout="@layout/custom_preference_category">
+        android:title="Project Elixir"
+        android:layout="@layout/about_team_head">
   </PreferenceCategory>
 
     <Preference
         android:title=""
-	settings:layout="@layout/xd_pref_card_mid2"    
 	android:summary="@string/rom_summ">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://www.paypal.me/uglykid24" />
     </Preference>
 
   <PreferenceCategory
