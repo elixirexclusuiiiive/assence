@@ -279,5 +279,9 @@
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Show data disabled icon</string>
     <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+	    
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">Double tap to sleep</string>
+    <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreeen to sleep</string>
 
 </resources>

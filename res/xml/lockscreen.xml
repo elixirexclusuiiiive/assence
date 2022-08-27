@@ -26,6 +26,11 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_sleep_lockscreen_title"
+            android:defaultValue="false" />
+
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
         android:title="@string/lockscreen_media_category">
