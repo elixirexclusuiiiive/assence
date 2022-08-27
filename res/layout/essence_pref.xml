@@ -32,8 +32,8 @@
         <com.android.internal.widget.PreferenceImageView
             android:id="@android:id/icon"
             android:tint="?android:attr/colorAccent"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
             android:adjustViewBounds="true"
             android:padding="3dp"
             android:scaleType="fitCenter" />
