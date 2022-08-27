@@ -38,13 +38,14 @@
         android:icon="@drawable/ic_system_category"
         android:textStyle="bold"
         android:summary="@string/summ_about"
-	android:title="Know more about us" />
+	    android:title="Know more about us" />
    
     <!-- Donate  -->
     <Preference
         settings:layout="@layout/essence_pref_card_bot"
         android:fragment="org.elixir.essence.categories.Donate"
         android:key="donate_category"
+        android:icon="@drawable/ic_donate_icon"
         android:textStyle="bold"
         android:summary="@string/donate_summary"
         android:title="@string/donate" />
@@ -64,6 +65,7 @@
         settings:layout="@layout/essence_pref_card_bot"
         android:fragment="org.elixir.essence.categories.Lockscreen"
         android:key="lockscreen_category"
+        android:icon="@drawable/ic_lockscreen_category"
         android:textStyle="bold"
         android:summary="@string/summ_lock"
         android:title="@string/lockscreen_title" />
