@@ -142,6 +142,13 @@
     <string name="color_down_arrow" translatable="false">"↓"</string>
     <string name="longpress_info">Longpress box to save color</string>
 
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">QS Customisations</string>
+    <string name="qstiles_title">QSTiles Style</string>
+    <string name="qstiles_default">Default Style</string>
+    <string name="qstiles_custom1">Classic Style</string>
+    <string name="qstiles_custom2">Outline Style</string>
+
     <!-- Media art -->
     <string name="lockscreen_media_category">Lockscreen Music</string>
     <string name="media_art_title">Media cover art</string>
@@ -251,12 +258,6 @@
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">Double tap statusbar to sleep</string>
     <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
-    
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">QS Customisations</string>
-    <string name="qstiles_title">QSTiles Style</string>
-    <string name="qstiles_default">Default Style</string>
-    <string name="qstiles_custom1">Classic Style</string>
 
     <!-- Fingerprint authentication vibration -->
     <string name="fingerprint_category">Fingerprint</string>

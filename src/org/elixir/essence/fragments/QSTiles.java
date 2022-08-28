@@ -52,8 +52,10 @@ import static android.provider.Settings.Secure.QS_TILE_STYLE;
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String TAG = "QSTiles";
     private static final String KEY_QSTILES_STYLES = "qstiles_styles";
     private static final String CLASSIC_OVERLAY = "com.android.systemui.qstiles.classic";
+    private static final String OUTLINE_OVERLAY = "com.android.theme.icon.outlineshapes";
 
     private ListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
@@ -92,14 +94,29 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             mQSTilesStyles.setValue((String) newValue);
             mQSTilesStyles.setSummary(mQSTilesStyles.getEntry());
             Settings.Secure.putInt(getActivity().getContentResolver(), QS_TILE_STYLE, Integer.parseInt((String) newValue));
-            boolean enable = ((String) newValue).equals("1");
-            try {
-                mOverlayService.setEnabled(CLASSIC_OVERLAY, enable, UserHandle.USER_CURRENT);
-            } catch (RemoteException re) {
-                throw re.rethrowFromSystemServer();
+            int current = Settings.Secure.getInt(getActivity().getContentResolver(), QS_TILE_STYLE, 0);
+            if (current == 0) {
+                RROManager(CLASSIC_OVERLAY, false);
+                RROManager(OUTLINE_OVERLAY, false);
+            } else if (current == 1) {
+                RROManager(OUTLINE_OVERLAY, false);
+                RROManager(CLASSIC_OVERLAY, true);
+            } else if (current == 2) {
+                RROManager(CLASSIC_OVERLAY, false);
+                RROManager(OUTLINE_OVERLAY, true);
             }
         }
         return true;
+    }
+
+    public void RROManager(String name, boolean  status) {
+        Log.w(TAG, name);
+        Log.w(TAG, String.valueOf(status));
+        try {
+            mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
+          } catch (RemoteException re) {
+                Log.e(TAG, String.valueOf(re));
+        }
     }
 
     /**
