@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 
@@ -34,15 +35,26 @@ public class About extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "About";
+    private static final String KEY_OFFICIAL_CARD = "essence_build_status";
+    private Preference mOfficialCard;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.about);
-
         ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+        mContext = getActivity();
 
+        mOfficialCard = (Preference) findPreference(KEY_OFFICIAL_CARD);
+        String elixirMaintainer = SystemProperties.get("ro.elixir.maintainer", "Unmaintained");
+
+        if(elixirMaintainer.equalsIgnoreCase("Unmaintained") || elixirMaintainer.equalsIgnoreCase(null)){
+            mOfficialCard.setSummary(mContext.getString(R.string.xd_build_unmaintained_summary));
+        } else {
+            mOfficialCard.setSummary(mContext.getString(R.string.xd_build_maintained_summary, elixirMaintainer));
+        }
     }
 
 
