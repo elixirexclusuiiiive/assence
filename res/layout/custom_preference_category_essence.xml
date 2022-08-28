@@ -18,5 +18,5 @@
     android:gravity="center_horizontal"
     android:paddingBottom="32dp"
     android:textColor="?android:attr/textColorPrimary"
-    android:textSize="38dp"
+    android:textSize="30dp"
     android:fontFamily="evolvesans-bold" />
