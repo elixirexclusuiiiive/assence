@@ -47,10 +47,19 @@
     <Preference
 	android:title="@string/paypal"
 	settings:layout="@layout/xd_pref_card_top"
-	android:summary="@string/donate_summary">
+	android:summary="Do consider donating or buying me a coffee on Paypal if you want to appreciate our work">
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://www.paypal.me/uglykid24" />
+    </Preference>
+
+    <Preference
+        android:title="UPI"
+        settings:layout="@layout/xd_pref_card_mid"
+        android:summary="Unified Payments Interface is for the Indian users who wants to support devs">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com/donate" />
     </Preference>
 
     <Preference
