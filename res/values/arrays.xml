@@ -19,12 +19,14 @@
         <item>@string/qstiles_default</item>
         <item>@string/qstiles_custom1</item>
         <item>@string/qstiles_custom2</item>
+        <item>@string/qstiles_custom3</item>
     </string-array>
 
     <string-array name="qstiles_styles_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
 
     <!-- Lockscreen album art filter -->

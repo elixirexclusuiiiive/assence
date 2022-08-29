@@ -56,6 +56,7 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String KEY_QSTILES_STYLES = "qstiles_styles";
     private static final String CLASSIC_OVERLAY = "com.android.systemui.qstiles.classic";
     private static final String OUTLINE_OVERLAY = "com.android.theme.icon.outlineshapes";
+    private static final String MAYBEREC_OVERLAY = "com.android.elixir.maybe.rectangle";
 
     private ListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
@@ -98,20 +99,27 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             if (current == 0) {
                 RROManager(CLASSIC_OVERLAY, false);
                 RROManager(OUTLINE_OVERLAY, false);
+                RROManager(MAYBEREC_OVERLAY, false);
             } else if (current == 1) {
                 RROManager(OUTLINE_OVERLAY, false);
                 RROManager(CLASSIC_OVERLAY, true);
+                RROManager(MAYBEREC_OVERLAY, false);
             } else if (current == 2) {
                 RROManager(CLASSIC_OVERLAY, false);
                 RROManager(OUTLINE_OVERLAY, true);
+                RROManager(MAYBEREC_OVERLAY, false);
+            } else if (current == 3) {
+                RROManager(CLASSIC_OVERLAY, false);
+                RROManager(OUTLINE_OVERLAY, false);
+                RROManager(MAYBEREC_OVERLAY, true);
             }
         }
         return true;
     }
 
     public void RROManager(String name, boolean  status) {
-        Log.w(TAG, name);
-        Log.w(TAG, String.valueOf(status));
+        Log.d(TAG, name);
+        Log.d(TAG, String.valueOf(status));
         try {
             mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
           } catch (RemoteException re) {

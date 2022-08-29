@@ -148,6 +148,7 @@
     <string name="qstiles_default">Default Style</string>
     <string name="qstiles_custom1">Classic Style</string>
     <string name="qstiles_custom2">Outline Style</string>
+    <string name="qstiles_custom3">MaybeRectangle Style</string>
 
     <!-- Media art -->
     <string name="lockscreen_media_category">Lockscreen Music</string>
