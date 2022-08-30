@@ -127,6 +127,7 @@
     <string name="buttons_category">Power Menu</string>
     <string name="lockscreen_gestures_category">LockScreen Gesture</string>
     <string name="signal_category">Network Icon</string>
+    <string name="lockscreen_customization_category">Lockscreen Customizations</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -186,5 +187,9 @@
     <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Device default</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
 
 </resources>
