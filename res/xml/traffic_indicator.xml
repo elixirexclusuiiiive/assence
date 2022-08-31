@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2019-2022 The Evolution X Project
      Copyright (C) 2022 Project Elixir
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -20,10 +16,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/traffic_title">
 
-    <org.elixir.essence.preferences.SystemSettingSwitchPreference
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_state_title"
-        android:defaultValue="false" />
+    <ListPreference
+        android:key="network_traffic_location"
+        android:title="@string/network_traffic_location_title"
+        android:summary="%s"
+        android:entries="@array/network_traffic_location_entries"
+        android:entryValues="@array/network_traffic_location_values"
+        android:defaultValue="0"
+        android:persistent="false" />
 
     <org.elixir.essence.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
@@ -32,5 +32,20 @@
         settings:min="0"
         settings:units="KB/s"
         android:defaultValue="0" />
+
+    <org.elixir.essence.preferences.SystemSettingListPreference
+        android:key="network_traffic_mode"
+        android:title="@string/network_traffic_mode_title"
+        android:entries="@array/network_traffic_mode_entries"
+        android:entryValues="@array/network_traffic_mode_values"
+        android:defaultValue="0" />
+
+    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+        android:key="network_traffic_refresh_interval"
+        android:title="@string/network_traffic_refresh_interval_title"
+        android:max="10"
+        settings:min="1"
+        settings:units="sec"
+        android:defaultValue="1" />
 
 </PreferenceScreen>
