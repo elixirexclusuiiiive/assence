@@ -14,7 +14,13 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/traffic_title">
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="Traffic Indicators"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
 
     <ListPreference
         android:key="network_traffic_location"
