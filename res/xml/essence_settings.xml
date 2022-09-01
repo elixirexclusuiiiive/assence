@@ -98,13 +98,12 @@
     <!-- Gestures -->
     <Preference
         settings:layout="@layout/essence_pref_card_top"
-        android:fragment="com.android.settings.gestures.GestureSettings"
+        android:fragment="org.elixir.essence.fragments.EssenceGestures"
         android:key="gestures_category"
         android:icon="@drawable/ic_settings_pdgestures"
         android:textStyle="bold"
         android:title="@string/gestures_title"
-        android:summary="@string/summ_gesture"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
+        android:summary="@string/summ_gesture" />
 
     <!-- Misc   -->
     <Preference

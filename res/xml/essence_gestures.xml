@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="Gestures"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+
+    <Preference
+        android:key="swipe_to_screenshot"
+        android:title="@string/swipe_to_screenshot_title"
+        settings:layout="@layout/xd_pref_card_top"
+        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings" />
+
+  <Preference
+        android:key="doze_double_tap_summary"
+            android:title="@string/double_tap_title"
+            settings:layout="@layout/xd_pref_card_bot"
+        settings:userRestriction="no_ambient_display"
+        android:fragment="com.android.settings.gestures.DoubleTapAmbientSettings"/>
+
+    <Preference
+        android:key="gesture_system_navigation_input"
+        android:title="@string/system_navigation_title"
+        settings:layout="@layout/xd_pref_card_top"
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings" />
+
+    <Preference
+        android:key="gesture_one_hand"
+        android:title="@string/one_handed_title"
+        settings:layout="@layout/xd_pref_card_bot"
+        android:fragment="com.android.settings.gestures.OneHandedSettings" />
+
+    <Preference
+            android:key="volume_button_music_control_sumary"
+            settings:layout="@layout/xd_pref_card_top"
+        android:title="@string/volume_button_music_control_title"
+        android:fragment="com.android.settings.gestures.VolumeButtonMusicControlGestureSettings" />
+
+    <Preference
+            android:key="gesture_adaptive_playback_summary"
+            settings:layout="@layout/xd_pref_card_bot"
+        android:title="@string/adaptive_playback_screen_title"
+        android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings" />
+
+    <Preference
+        android:key="gesture_double_tap_power_input"
+        android:title="@string/double_tap_power_for_camera_title"
+        settings:layout="@layout/xd_pref_card_top"
+        android:fragment="com.android.settings.gestures.DoubleTapPowerSettings" />
+
+    <Preference
+        android:key="gesture_power_menu"
+        android:title="@string/power_menu_setting_name"
+        settings:layout="@layout/xd_pref_card_bot"
+        android:fragment="com.android.settings.gestures.PowerMenuSettings" />
+
+    <Preference
+        android:key="gesture_pick_up_input"
+        android:title="@string/ambient_display_pickup_title"
+        settings:layout="@layout/xd_pref_card_mid2"
+        android:fragment="com.android.settings.gestures.PickupGestureSettings" />
+
+    <Preference
+        android:key="touchscreen_gesture"
+        android:persistent="false"
+        android:title="@string/touchscreen_gesture_settings_title"
+        settings:layout="@layout/xd_pref_card_mid2"
+        android:summary="@string/touchscreen_gesture_settings_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.touch.gestures"
+            android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
+    </Preference>
+
+</PreferenceScreen>
