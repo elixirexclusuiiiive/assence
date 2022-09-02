@@ -308,4 +308,8 @@
     <string name="custom_theme_espresso">Espresso</string>
     <string name="custom_theme_snowpaintdrop">Paint in the Snow</string>
 
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Brightness Slider Style</string>
+    <string name="brightness_custom1">Outline Style</string>
+
 </resources>

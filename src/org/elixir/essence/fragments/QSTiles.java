@@ -49,6 +49,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import static android.provider.Settings.Secure.QS_TILE_STYLE;
+import static android.provider.Settings.Secure.BRIGHTNESS_SLIDER_STYLE;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
@@ -58,9 +59,12 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String CLASSIC_OVERLAY = "com.android.systemui.qstiles.classic";
     private static final String OUTLINE_OVERLAY = "com.android.theme.icon.outlineshapes";
     private static final String MAYBEREC_OVERLAY = "com.android.elixir.maybe.rectangle";
+    private static final String KEY_BRIGHTNESS_STYLE = "brightness_styles";
+    private static final String KEY_BRIGHTNESS_OUTLINE = "com.android.systemui.brightness.outline";
 
     private ListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
+    private ListPreference mBrightnessStyles;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,9 +79,18 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         final PreferenceScreen prefSet = getPreferenceScreen();
 
         mQSTilesStyles = (ListPreference) findPreference(KEY_QSTILES_STYLES);
-        mQSTilesStyles.setValue(String.valueOf(Settings.Secure.getInt(resolver, QS_TILE_STYLE, 0)));
-        mQSTilesStyles.setSummary(mQSTilesStyles.getEntry());
-        mQSTilesStyles.setOnPreferenceChangeListener(this);
+        if (mQSTilesStyles != null) {
+            mQSTilesStyles.setValue(String.valueOf(Settings.Secure.getInt(resolver, QS_TILE_STYLE, 0)));
+            mQSTilesStyles.setSummary(mQSTilesStyles.getEntry());
+            mQSTilesStyles.setOnPreferenceChangeListener(this);
+        }
+
+        mBrightnessStyles = (ListPreference) findPreference(KEY_BRIGHTNESS_STYLE);
+        if (mBrightnessStyles != null) {
+            mBrightnessStyles.setValue(String.valueOf(Settings.Secure.getInt(resolver, BRIGHTNESS_SLIDER_STYLE, 0)));
+            mBrightnessStyles.setSummary(mBrightnessStyles.getEntry());
+            mBrightnessStyles.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -147,6 +160,18 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
                     RROManager(MAYBEREC_OVERLAY, true);
                 }
             }
+            return true;
+        } else if (preference == mBrightnessStyles) {
+            mBrightnessStyles.setValue((String) newValue);
+            mBrightnessStyles.setSummary(mBrightnessStyles.getEntry());
+            Settings.Secure.putInt(getActivity().getContentResolver(), BRIGHTNESS_SLIDER_STYLE, Integer.parseInt((String) newValue));
+            int current = Settings.Secure.getInt(getActivity().getContentResolver(), BRIGHTNESS_SLIDER_STYLE, 0);
+            if (current == 0) {
+                RROManager(KEY_BRIGHTNESS_OUTLINE, false);
+            } else if (current == 1) {
+                RROManager(KEY_BRIGHTNESS_OUTLINE, true);
+            }
+            return true;
         }
         return true;
     }
