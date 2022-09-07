@@ -147,6 +147,21 @@
 	    settings:layout="@layout/xd_pref_card_bot"
             android:defaultValue="0" />
 
+    <org.elixir.essence.preferences.SystemSettingListPreference
+        android:key="status_bar_clock"
+        android:title="@string/status_bar_clock_position_title"
+        android:summary="%s"
+        android:dialogTitle="@string/status_bar_clock_position_title"
+        android:entries="@array/status_bar_clock_position_entries"
+        android:entryValues="@array/status_bar_clock_position_values"
+        android:defaultValue="2" />
+
+    <Preference
+        android:key="clock"
+        android:title="@string/status_bar_clock_title"
+        android:summary="@string/status_bar_clock_summary"
+        android:fragment="org.elixir.essence.fragments.Clock" />
+
     </PreferenceCategory>
 
    <PreferenceCategory
