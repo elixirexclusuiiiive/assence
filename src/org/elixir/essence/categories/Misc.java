@@ -18,6 +18,7 @@ package org.elixir.essence.categories;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import com.android.internal.util.custom.customUtils;
@@ -51,6 +52,9 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
     private static final String TAG = "Misc";
     private static final String KEY_HIDE_ICONS = "hide_essence_icons";
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+
+    private ListPreference mTorchPowerButton;
     private SwitchPreference mHideIcons;
     private boolean enabled;
 
@@ -76,6 +80,14 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
                 prefSet.removePreference(incallVibCategory);
         }
         
+        // screen off torch
+        mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
+        int mTorchPowerButtonValue = Settings.System.getInt(resolver, Settings.System.TORCH_POWER_BUTTON_GESTURE, 0);
+        if (mTorchPowerButton != null) {
+            mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
+            mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
+            mTorchPowerButton.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -96,11 +108,21 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mHideIcons) {
             boolean state = Boolean.valueOf(objValue.toString());
             int put = (state) ? 1 : 0;
             Settings.Secure.putInt(getActivity().getContentResolver(), HIDE_ESSENCE_ICONS, put);
             mHideIcons.setChecked(state);
+            return true;
+        } else if (preference == mTorchPowerButton) {
+            int mTorchPowerButtonValue = Integer.valueOf((String) objValue);
+            int index = mTorchPowerButton.findIndexOfValue((String) objValue);
+            mTorchPowerButton.setSummary(
+                    mTorchPowerButton.getEntries()[index]);
+            Settings.System.putInt(resolver, Settings.System.TORCH_POWER_BUTTON_GESTURE,
+                    mTorchPowerButtonValue);
+            return true;
         }
         return false;
     }
