@@ -355,4 +355,26 @@
     <string name="games_device_spoof_title">Unlock higher FPS in games</string>
     <string name="games_device_spoof_summary">Spoof device as a high-end model in certain games, to unlock higher FPS</string>
 
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Battery Settings</string>   
+    <string name="battery_style_category_title">Battery styles</string>
+    <string name="battery_percent_title">Battery percent</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string> 
+
 </resources>

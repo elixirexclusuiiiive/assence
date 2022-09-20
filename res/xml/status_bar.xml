@@ -95,4 +95,29 @@
 
     </PreferenceCategory>
 
+   <PreferenceCategory
+        android:key="battery_style_category"
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/battery_style_category_title" >
+
+    <org.elixir.essence.preferences.SystemSettingListPreference
+	    android:key="status_bar_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:summary="%s"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:dialogTitle="@string/status_bar_battery_style_title"
+            android:entries="@array/status_bar_battery_style_entries"
+            android:entryValues="@array/status_bar_battery_style_values"
+            android:defaultValue="0" />
+
+    <org.elixir.essence.preferences.SystemSettingListPreference
+	    android:key="status_bar_show_battery_percent"
+            android:title="@string/battery_percent_title"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:dialogTitle="@string/battery_percent_title"
+            android:entries="@array/battery_percent_entries"
+            android:entryValues="@array/battery_percent_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
