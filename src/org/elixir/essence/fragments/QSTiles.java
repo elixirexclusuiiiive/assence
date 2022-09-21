@@ -20,6 +20,7 @@ import android.app.ActivityManagerNative;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -97,34 +98,81 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             Settings.Secure.putInt(getActivity().getContentResolver(), QS_TILE_STYLE, Integer.parseInt((String) newValue));
             int current = Settings.Secure.getInt(getActivity().getContentResolver(), QS_TILE_STYLE, 0);
             if (current == 0) {
-                RROManager(CLASSIC_OVERLAY, false);
-                RROManager(OUTLINE_OVERLAY, false);
-                RROManager(MAYBEREC_OVERLAY, false);
+                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
+                    RROManager(CLASSIC_OVERLAY, false);
+                }
+                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
+                    RROManager(OUTLINE_OVERLAY, false);
+                }
+                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
+                    RROManager(MAYBEREC_OVERLAY, false);
+                }
             } else if (current == 1) {
-                RROManager(OUTLINE_OVERLAY, false);
-                RROManager(CLASSIC_OVERLAY, true);
-                RROManager(MAYBEREC_OVERLAY, false);
+                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
+                    RROManager(OUTLINE_OVERLAY, false);
+                }
+                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
+                    RROManager(MAYBEREC_OVERLAY, false);
+                }
+                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
+                    Log.e(TAG, "Classic QSTiles is already enabled ?");
+                }
+                else {
+                    RROManager(CLASSIC_OVERLAY, true);
+                }
             } else if (current == 2) {
-                RROManager(CLASSIC_OVERLAY, false);
-                RROManager(OUTLINE_OVERLAY, true);
-                RROManager(MAYBEREC_OVERLAY, false);
+                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
+                    RROManager(CLASSIC_OVERLAY, false);
+                }
+                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
+                    RROManager(MAYBEREC_OVERLAY, false);
+                }
+                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
+                    Log.e(TAG, "Outline QSTiles is already enabled ?");
+                }
+                else {
+                    RROManager(OUTLINE_OVERLAY, true);
+                }
             } else if (current == 3) {
-                RROManager(CLASSIC_OVERLAY, false);
-                RROManager(OUTLINE_OVERLAY, false);
-                RROManager(MAYBEREC_OVERLAY, true);
+                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
+                    RROManager(CLASSIC_OVERLAY, false);
+                }
+                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
+                    RROManager(OUTLINE_OVERLAY, false);
+                }
+                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
+                    Log.e(TAG, "MaybeRectangle QSTiles is already enabled ?");
+                }
+                else {
+                    RROManager(MAYBEREC_OVERLAY, true);
+                }
             }
         }
         return true;
     }
 
-    public void RROManager(String name, boolean  status) {
-        Log.d(TAG, name);
-        Log.d(TAG, String.valueOf(status));
+    public void RROManager(String name, boolean status) {
+        if (status) {
+            Log.d(TAG, "Enabling Overlay Package :- " + name);
+        }
+        else {
+            Log.d(TAG, "Disabling Overlay Package :- " + name);
+        }
         try {
             mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
           } catch (RemoteException re) {
                 Log.e(TAG, String.valueOf(re));
         }
+    }
+
+    public boolean isOverlayEnabled(String name) {
+        OverlayInfo info = null;
+        try {
+            info = mOverlayService.getOverlayInfo(name, UserHandle.USER_CURRENT);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return info != null && info.isEnabled();
     }
 
     /**
