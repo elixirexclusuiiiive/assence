@@ -54,6 +54,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="ripple_effect_category"
+        android:title="@string/enable_fingerprint_ripple_effect_title">.
+
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="enable_ripple_effect"
+            android:icon="@drawable/ic_unlock_outline"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/lockscreen_customization_category">
 
     <org.elixir.essence.preferences.SystemSettingSwitchPreference

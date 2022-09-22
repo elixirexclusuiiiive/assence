@@ -18,6 +18,7 @@ package org.elixir.essence.categories;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -31,6 +32,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     
     private static final String TAG = "Lockscreen";
+    private FingerprintManager mFingerprintManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,8 +43,16 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        
+	    final PreferenceCategory perfCatRipple = (PreferenceCategory) prefScreen
+                .findPreference("ripple_effect_category");
+        
+        mFingerprintManager = (FingerprintManager)
+                getActivity().getSystemService(getActivity().FINGERPRINT_SERVICE);
         Resources resources = getResources();
-
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
+            prefScreen.removePreference(perfCatRipple);
+        }
     }
 
     @Override
