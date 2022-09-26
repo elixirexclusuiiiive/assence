@@ -26,6 +26,16 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+        <Preference
+            android:key="icon_manager"
+            android:title="@string/icon_manager_title"
+            settings:layout="@layout/essence_pref_card_bot"
+            android:summary="@string/icon_manager_summary">
+            <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="com.android.systemui"
+                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
+        </Preference>
+
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
         android:title="@string/traffic_title">
