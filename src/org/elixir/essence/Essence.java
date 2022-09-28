@@ -46,12 +46,11 @@ import android.widget.Toast;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.viewpager.widget.ViewPager;
 
 import com.android.internal.logging.nano.MetricsProto;
-import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -62,6 +61,7 @@ import org.elixir.essence.categories.Qs;
 import org.elixir.essence.categories.About;
 import org.elixir.essence.categories.Misc;
 import org.elixir.essence.categories.Donate;
+import java.util.Random;
 
 import static android.provider.Settings.Secure.HIDE_ESSENCE_ICONS;
 
@@ -72,6 +72,7 @@ public class Essence extends SettingsPreferenceFragment implements
     private static final int MENU_HELP  = 0;
 	public static final String TAG = "Essence";
     private boolean enabled;
+    private PreferenceCategory prefCat;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,6 +89,24 @@ public class Essence extends SettingsPreferenceFragment implements
             removeIconMid(7);
             removeIconMid(8);
             removeIconBot(9);
+        }
+        updateGreetings();
+    }
+
+    public void updateGreetings() {
+        prefCat=(PreferenceCategory)findPreference("essenceSubtitle");
+        final String[] greetings = 
+        {
+            "Need some help? Join our TG group.", 
+            "Isn't it a great day?",
+            "Welcome to my heart! Let me open the door.",
+            "It always seems impossible until it's done.",
+            "If there is no struggle, there is no progress."
+        };
+        if (prefCat != null) {
+            Random random = new Random();
+            int index = random.nextInt(greetings.length);
+            prefCat.setTitle(greetings[index]);
         }
     }
 
@@ -148,6 +167,7 @@ public class Essence extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
+        updateGreetings();
     }
 
     @Override

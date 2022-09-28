@@ -21,6 +21,7 @@
     
     <!-- App Title-->
     <string name="essence_settings_title">Welcome to Essence</string>
+    <string name="essence_settings_subtitle">How are you today?</string>
     
     <!-- General app strings -->
     <string name="extensions_title">Essence</string>

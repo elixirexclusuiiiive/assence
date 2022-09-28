@@ -27,7 +27,12 @@
     <!-- Essence Header -->
     <PreferenceCategory
         android:title="@string/essence_settings_title"
-        android:layout="@layout/custom_preference_category_essence">
+        android:layout="@layout/custom_preference_category_home_title">
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="essenceSubtitle" 
+        android:title="@string/essence_settings_subtitle"
+        android:layout="@layout/custom_preference_category_subtitle">
     </PreferenceCategory>
 
     <!-- Teams  -->
