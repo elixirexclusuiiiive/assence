@@ -101,7 +101,13 @@ public class Essence extends SettingsPreferenceFragment implements
             "Isn't it a great day?",
             "Welcome to my heart! Let me open the door.",
             "It always seems impossible until it's done.",
-            "If there is no struggle, there is no progress."
+            "If there is no struggle, there is no progress.",
+            "More is lost by indecision than wrong decision.",
+            "Somewhere, something incredible is waiting to be known.",
+            "If you do not risk anything, you risk even more.",
+            "Keep your eyes on the stars, and your feet on the ground.",
+            "Live out of your imagination, not your history.",
+            "Welcome comrade how you doing ?"
         };
         if (prefCat != null) {
             Random random = new Random();
