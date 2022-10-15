@@ -32,6 +32,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.internal.util.custom.customUtils;
+
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     
@@ -64,6 +66,13 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Resources resources = getResources();
         if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
             prefScreen.removePreference(perfCatRipple);
+        }
+
+        boolean udfpsResPkgInstalled = customUtils.isPackageInstalled(getContext(),
+                "com.custom.udfps.resources");
+        PreferenceCategory udfps = (PreferenceCategory) prefScreen.findPreference("udfps_category");
+        if (!udfpsResPkgInstalled) {
+            prefScreen.removePreference(udfps);
         }
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
