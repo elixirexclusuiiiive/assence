@@ -17,12 +17,16 @@
 package org.elixir.essence.categories;
 
 import android.content.ContentResolver;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.PreferenceCategory;
+import androidx.preference.SwitchPreference;
+import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -34,6 +38,12 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     private static final String TAG = "Lockscreen";
     private FingerprintManager mFingerprintManager;
 
+    private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
+    private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
+
+    private SwitchPreference mFingerprintSuccessVib;
+    private SwitchPreference mFingerprintErrorVib;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +53,8 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final PreferenceScreen prefSet = getPreferenceScreen();
+        final PackageManager mPm = getActivity().getPackageManager();
         
 	    final PreferenceCategory perfCatRipple = (PreferenceCategory) prefScreen
                 .findPreference("ripple_effect_category");
@@ -52,6 +64,27 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Resources resources = getResources();
         if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
             prefScreen.removePreference(perfCatRipple);
+        }
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintSuccessVib = (SwitchPreference) findPreference(FINGERPRINT_SUCCESS_VIB);
+        mFingerprintErrorVib = (SwitchPreference) findPreference(FINGERPRINT_ERROR_VIB);
+        if (mPm.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT) &&
+                 mFingerprintManager != null) {
+            if (!mFingerprintManager.isHardwareDetected()){
+                prefSet.removePreference(mFingerprintSuccessVib);
+                prefSet.removePreference(mFingerprintErrorVib);
+            } else {
+                mFingerprintSuccessVib.setChecked((Settings.System.getInt(getContentResolver(),
+                        Settings.System.FP_SUCCESS_VIBRATE, 1) == 1));
+                mFingerprintSuccessVib.setOnPreferenceChangeListener(this);
+                mFingerprintErrorVib.setChecked((Settings.System.getInt(getContentResolver(),
+                        Settings.System.FP_ERROR_VIBRATE, 1) == 1));
+                mFingerprintErrorVib.setOnPreferenceChangeListener(this);
+            }
+        } else {
+            prefSet.removePreference(mFingerprintSuccessVib);
+            prefSet.removePreference(mFingerprintErrorVib);
         }
     }
 
@@ -70,8 +103,19 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         final String key = preference.getKey();
+        if (preference == mFingerprintSuccessVib) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FP_SUCCESS_VIBRATE, value ? 1 : 0);
+            return true;
+        } else if (preference == mFingerprintErrorVib) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FP_ERROR_VIBRATE, value ? 1 : 0);
+            return true;
+        }
         return true;
     }
 

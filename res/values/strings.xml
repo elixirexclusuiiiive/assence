@@ -288,4 +288,11 @@
     <string name="double_tap_sleep_gesture_title">Double tap statusbar to sleep</string>
     <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Fingerprint</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+
 </resources>
