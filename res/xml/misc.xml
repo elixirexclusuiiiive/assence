@@ -68,11 +68,18 @@
         android:layout="@layout/custom_preference_category"
         android:title="@string/game_custs" >
 
+        <org.elixir.essence.preferences.SecureSettingSwitchPreference
+            android:key="games_device_spoof"
+            settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/games_device_spoof_title"
+            android:summary="@string/games_device_spoof_summary"
+            android:defaultValue="false"/>
+
         <!-- Gaming mode -->
         <Preference
             android:key="gaming_mode"
-		android:title="@string/gaming_mode_title"
-		settings:layout="@layout/xd_pref_card_mid2"
+		    android:title="@string/gaming_mode_title"
+		    settings:layout="@layout/xd_pref_card_bot"
             android:summary="@string/gaming_mode_summary">
             <intent
                 android:action="android.intent.action.MAIN"
