@@ -32,4 +32,18 @@
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
+    <PreferenceCategory
+            android:key="datausage_category"
+            android:layout="@layout/custom_preference_category"
+            android:title="Data Usage">
+
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+	    android:defaultValue="false"
+            android:key="qs_footer_data_usage"
+	    settings:layout="@layout/xd_pref_card_mid2"
+            android:summary="@string/qs_footer_datausage_summary"
+            android:title="@string/qs_footer_datausage_title" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
