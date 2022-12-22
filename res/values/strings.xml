@@ -127,7 +127,6 @@
     <string name="buttons_category">Power Menu</string>
     <string name="lockscreen_gestures_category">LockScreen Gesture</string>
     <string name="signal_category">Network Icon</string>
-    <string name="lockscreen_customization_category">Lockscreen Customizations</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -223,5 +222,13 @@
     <string name="qs_footer_category">QS Footer</string>
     <string name="qs_footer_datausage_title">Data usage</string>
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+
+    <!-- Screen off animation -->
+    <string name="default_string">Default</string>
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+
+    <string name="lockscreen_effects_cat">Lockscreen Animations</string>
 
 </resources>
