@@ -33,6 +33,34 @@
             android:entryValues="@array/quick_pulldown_values"
             android:defaultValue="0" />
 
+ 	<org.elixir.essence.preferences.SystemSettingSwitchPreference
+		android:key="show_fourg_icon"
+		settings:layout="@layout/xd_pref_card_mid"
+             android:title="@string/show_fourg_icon_title"
+             android:summary="@string/show_fourg_icon_summary"
+	     android:defaultValue="false"/>
+
+	<org.elixir.essence.preferences.SystemSettingSwitchPreference
+		android:key="use_old_mobiletype"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/use_old_mobiletype_title"
+            android:summary="@string/use_old_mobiletype_summary"
+	    android:defaultValue="false" />  
+
+	<org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="roaming_indicator_icon"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/roaming_indicator_icon_title"
+            android:summary="@string/roaming_indicator_icon_summary"
+		android:defaultValue="true"/>
+
+	<org.elixir.essence.preferences.SystemSettingSwitchPreference
+		android:key="data_disabled_icon"
+		settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/data_disabled_icon_title"
+            android:summary="@string/data_disabled_icon_summary"
+            android:defaultValue="true"/>
+
         <Preference
             android:key="icon_manager"
             android:title="@string/icon_manager_title"
