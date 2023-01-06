@@ -23,6 +23,33 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="exclusive_clock"
+        android:layout="@layout/custom_preference_category"
+        android:title="Exclusive Users">
+
+        <SwitchPreference
+		    android:key="lock_screen_custom_clock"
+		    settings:layout="@layout/xd_pref_card_top"
+            android:title="Custom Clocks"
+            android:summary="Enable custom clocks on lockscreen"
+            android:defaultValue="false" />
+        
+        <ListPreference
+            android:key="ls_clock_styles"
+            android:dependency="lock_screen_custom_clock"
+	        android:title="Custom clock style"
+	        settings:layout="@layout/essence_pref_card_bot"
+            android:entries="@array/lsclock_styles_entries"
+            android:entryValues="@array/lsclock_styles_values"
+            android:defaultValue="0"
+            android:persistent="false" />
+
+    </PreferenceCategory>
+
+   <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/customisation_title">
 
          <!-- Add a list preference for screen resolution -->
          <org.elixir.essence.preferences.SecureSettingListPreference
@@ -33,5 +60,7 @@
             android:defaultValue="0"
             android:entries="@array/custom_theme_entries"
             android:entryValues="@array/custom_theme_values" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

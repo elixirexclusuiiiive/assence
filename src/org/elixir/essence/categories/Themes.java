@@ -18,8 +18,13 @@ package org.elixir.essence.categories;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.provider.Settings;
 import static android.os.UserHandle.USER_SYSTEM;
 import static android.os.UserHandle.USER_CURRENT;
 
@@ -27,6 +32,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
@@ -36,6 +42,8 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 
+import com.android.internal.util.custom.customUtils;
+
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -43,11 +51,24 @@ import com.android.settings.SettingsPreferenceFragment;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK;
+import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_STYLES;
+import static android.provider.Settings.Secure.ELIXIR_EXCLUSIVE_BUILD;
+
 public class Themes extends SettingsPreferenceFragment 
 	implements Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "Themes";
+    private static final String KEY_CUSTOM_CLOCK = "lock_screen_custom_clock";
+    private static final String KEY_CUSTOM_CLOCK_STYLE = "ls_clock_styles";
+    private static final String KEY_EXCLUSIVE_CAT = "exclusive_clock";
+    private static final String HUD_CLOCK = "com.android.systemui.lsclock.hud";
     private Context mContext;
+    private SwitchPreference mCustomClock;
+    private ListPreference mClockStyle;
+    private ContentResolver resolver;
+    private IOverlayManager mOverlayService;
+    private PreferenceCategory mExclusiveBuild;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,9 +78,31 @@ public class Themes extends SettingsPreferenceFragment
 
         mContext = getActivity();
 
-        final ContentResolver resolver = getActivity().getContentResolver();
+        mOverlayService = IOverlayManager.Stub
+                .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+
+        resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
 
+        final Boolean isExclusive = Settings.Secure.getInt(resolver, ELIXIR_EXCLUSIVE_BUILD, 0) != 0;
+        Log.w("Essence", "Status of exclusive :- " + isExclusive.toString());
+        if (isExclusive) {
+            mCustomClock = (SwitchPreference) findPreference(KEY_CUSTOM_CLOCK);
+            if (mCustomClock != null) {
+                mCustomClock.setChecked(Settings.Secure.getIntForUser(resolver, LOCK_SCREEN_CUSTOM_CLOCK, 0, UserHandle.USER_CURRENT) != 0);
+                mCustomClock.setOnPreferenceChangeListener(this);
+            }
+    
+            mClockStyle = (ListPreference) findPreference(KEY_CUSTOM_CLOCK_STYLE);
+            if (mClockStyle != null) {
+                mClockStyle.setValue(String.valueOf(Settings.Secure.getInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, 0)));
+                mClockStyle.setSummary(mClockStyle.getEntry());
+                mClockStyle.setOnPreferenceChangeListener(this);
+            }
+        } else {
+            mExclusiveBuild = (PreferenceCategory) findPreference(KEY_EXCLUSIVE_CAT);
+            screen.removePreference(mExclusiveBuild);
+        }
     }
 
     @Override
@@ -79,7 +122,54 @@ public class Themes extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mCustomClock) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK, value ? 1 : 0);
+            customUtils.showSystemUiRestartDialog(getActivity());
+            return true;
+        } else if (preference == mClockStyle) {
+            mClockStyle.setValue((String) newValue);
+            mClockStyle.setSummary(mClockStyle.getEntry());
+            Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, Integer.parseInt((String) newValue));
+            int current = Settings.Secure.getInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, 0);
+            if (current == 0) {
+                if (isOverlayEnabled(HUD_CLOCK)) {
+                    RROManager(HUD_CLOCK, false);
+                }
+            } else if (current == 1) {
+                if (isOverlayEnabled(HUD_CLOCK)) {
+                    // Already enabled ???
+                }
+                else {
+                    RROManager(HUD_CLOCK, true);
+                }
+            }
+            return true;
+        }
         return false;
+    }
+
+    public void RROManager(String name, boolean status) {
+        if (status) {
+            Log.d(TAG, "Enabling Overlay Package :- " + name);
+        }
+        else {
+            Log.d(TAG, "Disabling Overlay Package :- " + name);
+        }
+        try {
+            mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
+          } catch (RemoteException re) {
+                Log.e(TAG, String.valueOf(re));
+        }
+    }
+
+    public boolean isOverlayEnabled(String name) {
+        OverlayInfo info = null;
+        try {
+            info = mOverlayService.getOverlayInfo(name, UserHandle.USER_CURRENT);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return info != null && info.isEnabled();
     }
 }
