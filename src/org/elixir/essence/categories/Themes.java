@@ -50,10 +50,12 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import java.util.Arrays;
 
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK;
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_STYLES;
 import static android.provider.Settings.Secure.ELIXIR_EXCLUSIVE_BUILD;
+import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE;
 
 public class Themes extends SettingsPreferenceFragment 
 	implements Preference.OnPreferenceChangeListener {
@@ -62,7 +64,7 @@ public class Themes extends SettingsPreferenceFragment
     private static final String KEY_CUSTOM_CLOCK = "lock_screen_custom_clock";
     private static final String KEY_CUSTOM_CLOCK_STYLE = "ls_clock_styles";
     private static final String KEY_EXCLUSIVE_CAT = "exclusive_clock";
-    private static final String HUD_CLOCK = "com.android.systemui.lsclock.hud";
+    private String OLD_CLOCK = "DEFAULT";
     private Context mContext;
     private SwitchPreference mCustomClock;
     private ListPreference mClockStyle;
@@ -95,7 +97,8 @@ public class Themes extends SettingsPreferenceFragment
     
             mClockStyle = (ListPreference) findPreference(KEY_CUSTOM_CLOCK_STYLE);
             if (mClockStyle != null) {
-                mClockStyle.setValue(String.valueOf(Settings.Secure.getInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, 0)));
+                mClockStyle.setValue(Settings.Secure.getString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES));
+                OLD_CLOCK = Settings.Secure.getString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES);
                 mClockStyle.setSummary(mClockStyle.getEntry());
                 mClockStyle.setOnPreferenceChangeListener(this);
             }
@@ -130,26 +133,33 @@ public class Themes extends SettingsPreferenceFragment
         } else if (preference == mClockStyle) {
             mClockStyle.setValue((String) newValue);
             mClockStyle.setSummary(mClockStyle.getEntry());
-            Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, Integer.parseInt((String) newValue));
-            int current = Settings.Secure.getInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, 0);
-            if (current == 0) {
-                if (isOverlayEnabled(HUD_CLOCK)) {
-                    RROManager(HUD_CLOCK, false);
-                }
-            } else if (current == 1) {
-                if (isOverlayEnabled(HUD_CLOCK)) {
-                    // Already enabled ???
-                }
-                else {
-                    RROManager(HUD_CLOCK, true);
-                }
+            Settings.Secure.putString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, (String) newValue);
+            String current = Settings.Secure.getString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES);
+            if ((Arrays.asList(mDateViewShowClocks).contains(current))) {
+                Log.i(TAG, "This clock doent have a date view, enabling smartspace date view");
+                hideDateView(true);
+            } else {
+                hideDateView(false);
+            }
+            if (isOverlayEnabled(OLD_CLOCK)) {
+                RROManager(OLD_CLOCK, false);
+            }
+            OLD_CLOCK = Settings.Secure.getString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES);
+            if (isOverlayEnabled(current)) {
+                // Already enabled ??
+            } else {
+                RROManager(current, true);
             }
             return true;
         }
         return false;
     }
 
-    public void RROManager(String name, boolean status) {
+    private void hideDateView(Boolean hide) {
+        Settings.Secure.putIntForUser(resolver, LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE, hide ? 0 : 1, UserHandle.USER_CURRENT);
+    }
+
+    private void RROManager(String name, boolean status) {
         if (status) {
             Log.d(TAG, "Enabling Overlay Package :- " + name);
         }
@@ -158,15 +168,27 @@ public class Themes extends SettingsPreferenceFragment
         }
         try {
             mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
-          } catch (RemoteException re) {
-                Log.e(TAG, String.valueOf(re));
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Overlay " + name + " doesn't exists");
+        } catch (Exception re) {
+            Log.e(TAG, String.valueOf(re));
         }
     }
 
-    public boolean isOverlayEnabled(String name) {
+    // Clocks that doesnt have a built in date view
+    private static final String[] mDateViewShowClocks = {
+        "com.android.systemui.lsclock.nothing",
+        "com.android.systemui.lsclock.hyperbox",
+        "com.android.systemui.lsclock.oosalike"
+    };
+
+    private boolean isOverlayEnabled(String name) {
         OverlayInfo info = null;
+        Log.i(TAG, "Getting information of overlay :- " + name);
         try {
             info = mOverlayService.getOverlayInfo(name, UserHandle.USER_CURRENT);
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Overlay " + name + " doesn't exists");
         } catch (Exception e) {
             e.printStackTrace();
         }

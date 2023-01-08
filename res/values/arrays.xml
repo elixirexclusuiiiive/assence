@@ -166,12 +166,30 @@
     <!-- LSClock Styles -->
     <string-array name="lsclock_styles_entries" translatable="false">
         <item>DEFAULT</item>
-        <item>HUD</item>
+        <item>Nothing</item>
+        <item>Buttercup Syra</item>
+        <item>Monet</item>
+        <item>HyperBox</item>
+        <item>HyperBox2</item>
+        <item>HyperCode</item>
+        <item>OOS Alike</item>
+        <item>Analog</item>
+        <item>Minimal1</item>
+        <item>OOSAlike Nothing</item>
     </string-array>
 
     <string-array name="lsclock_styles_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
+        <item>DEFAULT</item>
+        <item>com.android.systemui.lsclock.nothing</item>
+        <item>com.android.systemui.lsclock.bsyra</item>
+        <item>com.android.systemui.lsclock.monet</item>
+        <item>com.android.systemui.lsclock.hyperbox</item>
+        <item>com.android.systemui.lsclock.hyperbox2</item>
+        <item>com.android.systemui.lsclock.hypercode</item>
+        <item>com.android.systemui.lsclock.oosalike</item>
+        <item>com.android.systemui.lsclock.analog</item>
+        <item>com.android.systemui.lsclock.minimal1</item>
+        <item>com.android.systemui.lsclock.oosnothing</item>
     </string-array>
 
 </resources>
