@@ -36,12 +36,20 @@
         android:title="@string/misc_gnrl_category" >
 
         <!-- Launch music player when headset is connected -->
-	<org.elixir.essence.preferences.SystemSettingSwitchPreference	
-           android:key="headset_connect_player"
-       	   settings:layout="@layout/xd_pref_card_top"	
-	   android:title="@string/headset_connect_player_title"
-           android:summary="@string/headset_connect_player_summary"
-           android:defaultValue="false" />
+	    <org.elixir.essence.preferences.SystemSettingSwitchPreference	
+            android:key="headset_connect_player"
+       	    settings:layout="@layout/xd_pref_card_top"	
+	        android:title="@string/headset_connect_player_title"
+            android:summary="@string/headset_connect_player_summary"
+            android:defaultValue="false" />
+
+    	<!-- Google services -->
+    	<Preference
+            android:key="gms_enabled_settings"
+            settings:layout="@layout/essence_pref_card_mid"	
+            android:title="@string/gms_enabled_title"
+            android:summary="@string/gms_enabled_summary"
+            android:fragment="org.elixir.essence.fragments.GmsSwitch"/>
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
@@ -52,8 +60,8 @@
 
     	 <org.elixir.essence.preferences.SystemSettingSwitchPreference   
             android:key="less_boring_heads_up"
-	    settings:layout="@layout/xd_pref_card_bot"
-	    android:title="@string/less_boring_heads_up_title"
+	        settings:layout="@layout/xd_pref_card_bot"
+	        android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
 
