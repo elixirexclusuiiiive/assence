@@ -32,6 +32,12 @@
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
+    <org.elixir.essence.preferences.SecureSettingSwitchPreference
+        android:key="quick_settings_vibrate"
+        android:title="@string/quick_settings_vibrate_title"
+        android:summary="@string/quick_settings_vibrate_summary"
+        android:defaultValue="false"/>
+
     <PreferenceCategory
 	    android:key="quick_settings_brighness_category"
 	    android:layout="@layout/custom_preference_category"
