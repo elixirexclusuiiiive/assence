@@ -26,10 +26,4 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:title="QS Customisations"
-        android:layout="@layout/custom_preference_category">
-    
-    </PreferenceCategory>
-
 </PreferenceScreen>

@@ -23,10 +23,5 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
-   <PreferenceCategory
-        android:layout="@layout/custom_preference_category"
-        android:title="@string/customisation_title">
 
-
-    </PreferenceCategory>
 </PreferenceScreen>

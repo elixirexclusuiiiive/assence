@@ -13,14 +13,7 @@
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
-	    android:title="@string/buttons_category" >
-   
-   
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:layout="@layout/custom_preference_category"
-	    android:title="Essence Customisations" >
+        android:title="Essence Customisations" >
     
         <SwitchPreference
             android:key="hide_essence_icons"
@@ -29,4 +22,5 @@
             android:defaultValue="false" />
 
     </PreferenceCategory>
+
 </PreferenceScreen>
