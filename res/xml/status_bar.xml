@@ -83,7 +83,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category"
         android:title="@string/general_category">
     
         <org.elixir.essence.preferences.SystemSettingSwitchPreference	    

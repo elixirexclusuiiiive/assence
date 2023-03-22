@@ -65,7 +65,7 @@
             android:defaultValue="false" />
 
     <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category"
         android:title="@string/game_custs" >
 
         <!-- Gaming mode -->
@@ -83,7 +83,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category"
         android:key="misc4"
 	    android:title="Essence Customisations" >
     
