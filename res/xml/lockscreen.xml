@@ -31,6 +31,12 @@
             android:title="@string/double_tap_sleep_lockscreen_title"
             android:defaultValue="false" />
 
+        <Preference
+            android:key="edge_light_settings"
+            android:title="@string/edge_light_title"
+            android:summary="@string/edge_light_summary"
+            android:fragment="org.elixir.essence.fragments.EdgeLightSettings" />
+
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
         android:title="@string/lockscreen_media_category">

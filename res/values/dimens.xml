@@ -17,6 +17,10 @@
 -->
 
 <resources>
+
+    <!-- Oval preview size -->
+    <dimen name="oval_notification_size">26dp</dimen>
+
     <!-- ColorPicker -->
     <dimen name="colorpicker_alpha_height">20dip</dimen>
     <dimen name="colorpicker_tracker_radius">5dip</dimen>
@@ -27,4 +31,5 @@
 
 	<dimen name="default_margin">16dp</dimen>
     <dimen name="default_padding">16dp</dimen>
+
 </resources>
