@@ -64,24 +64,6 @@
 	android:data="https://github.com/nishant6342" />
      </Preference>
 
-     <Preference
-        android:title="@string/dev3"
-        settings:layout="@layout/xd_pref_card_mid"
-        android:summary="@string/dev3_summary">
-     <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://github.com/improbir" />
-     </Preference>
-
-     <Preference
-        android:title="@string/dev4"
-        settings:layout="@layout/xd_pref_card_bot"
-        android:summary="@string/dev4_summary">
-     <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://github.com/marshmello61" />
-     </Preference>
-
   </PreferenceCategory>
 
   <PreferenceCategory
