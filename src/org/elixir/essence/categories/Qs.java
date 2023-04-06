@@ -45,7 +45,6 @@ public class Qs extends SettingsPreferenceFragment implements
 
     }
 
-
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
