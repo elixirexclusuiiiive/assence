@@ -40,6 +40,12 @@
              android:summary="@string/show_fourg_icon_summary"
 	     android:defaultValue="false"/>
 
+	<org.elixir.essence.preferences.SecureSettingSwitchPreference
+            android:key="show_wifi_standard_icon"
+            android:title="@string/show_wifi_standard_icon_title"
+            android:summary="@string/show_wifi_standard_icon_summary"
+            android:defaultValue="false" />
+
 	<org.elixir.essence.preferences.SystemSettingSwitchPreference
 		android:key="use_old_mobiletype"
 		settings:layout="@layout/xd_pref_card_mid"
