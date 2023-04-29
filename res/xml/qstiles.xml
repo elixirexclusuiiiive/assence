@@ -16,13 +16,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/qstiles_cust">
 
-    <ListPreference
-        android:key="qstiles_styles"
+    <org.elixir.essence.preferences.SystemSettingListPreference
+        android:key="qs_panel_style"
         android:title="@string/qstiles_title"
         android:entries="@array/qstiles_styles_entries"
         android:entryValues="@array/qstiles_styles_values"
         android:defaultValue="0"
-        android:persistent="false" />
+        android:summary="%s" />
 	
     <ListPreference
         android:key="brightness_styles"

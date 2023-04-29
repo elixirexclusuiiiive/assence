@@ -18,12 +18,16 @@ package org.elixir.essence.fragments;
 
 import android.app.ActivityManagerNative;
 import android.content.ContentResolver;
+
 import android.content.Context;
 import android.content.om.IOverlayManager;
 import android.content.om.OverlayInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.database.ContentObserver;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
@@ -47,22 +51,30 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+import org.elixir.essence.preferences.SystemSettingListPreference;
 
-import static android.provider.Settings.Secure.QS_TILE_STYLE;
 import static android.provider.Settings.Secure.BRIGHTNESS_SLIDER_STYLE;
+import static android.os.UserHandle.USER_SYSTEM;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "QSTiles";
-    private static final String KEY_QSTILES_STYLES = "qstiles_styles";
-    private static final String CLASSIC_OVERLAY = "com.android.systemui.qstiles.classic";
-    private static final String OUTLINE_OVERLAY = "com.android.theme.icon.outlineshapes";
-    private static final String MAYBEREC_OVERLAY = "com.android.elixir.maybe.rectangle";
+    private static final String KEY_QSTILES_STYLES = "qs_panel_style";
     private static final String KEY_BRIGHTNESS_STYLE = "brightness_styles";
     private static final String KEY_BRIGHTNESS_OUTLINE = "com.android.systemui.brightness.outline";
 
-    private ListPreference mQSTilesStyles;
+    public static final String[] QS_STYLES = {
+        "com.android.system.qs.outline",
+        "com.android.system.qs.twotoneaccent",
+        "com.android.system.qs.shaded",
+        "com.android.system.qs.cyberpunk",
+        "com.android.systemui.qstiles.classic",
+        "com.android.elixir.maybe.rectangle"
+    };
+
+    private Handler mHandler;
+    private SystemSettingListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
     private ListPreference mBrightnessStyles;
 
@@ -78,10 +90,9 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
-        mQSTilesStyles = (ListPreference) findPreference(KEY_QSTILES_STYLES);
+        mQSTilesStyles = (SystemSettingListPreference) findPreference(KEY_QSTILES_STYLES);
+        mCustomSettingsObserver.observe();
         if (mQSTilesStyles != null) {
-            mQSTilesStyles.setValue(String.valueOf(Settings.Secure.getInt(resolver, QS_TILE_STYLE, 0)));
-            mQSTilesStyles.setSummary(mQSTilesStyles.getEntry());
             mQSTilesStyles.setOnPreferenceChangeListener(this);
         }
 
@@ -90,6 +101,29 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             mBrightnessStyles.setValue(String.valueOf(Settings.Secure.getInt(resolver, BRIGHTNESS_SLIDER_STYLE, 0)));
             mBrightnessStyles.setSummary(mBrightnessStyles.getEntry());
             mBrightnessStyles.setOnPreferenceChangeListener(this);
+        }
+    }
+
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_PANEL_STYLE),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
+                updateQsStyle();
+            }
         }
     }
 
@@ -106,60 +140,7 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mQSTilesStyles) {
-            mQSTilesStyles.setValue((String) newValue);
-            mQSTilesStyles.setSummary(mQSTilesStyles.getEntry());
-            Settings.Secure.putInt(getActivity().getContentResolver(), QS_TILE_STYLE, Integer.parseInt((String) newValue));
-            int current = Settings.Secure.getInt(getActivity().getContentResolver(), QS_TILE_STYLE, 0);
-            if (current == 0) {
-                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
-                    RROManager(CLASSIC_OVERLAY, false);
-                }
-                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
-                    RROManager(OUTLINE_OVERLAY, false);
-                }
-                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
-                    RROManager(MAYBEREC_OVERLAY, false);
-                }
-            } else if (current == 1) {
-                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
-                    RROManager(OUTLINE_OVERLAY, false);
-                }
-                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
-                    RROManager(MAYBEREC_OVERLAY, false);
-                }
-                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
-                    Log.e(TAG, "Classic QSTiles is already enabled ?");
-                }
-                else {
-                    RROManager(CLASSIC_OVERLAY, true);
-                }
-            } else if (current == 2) {
-                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
-                    RROManager(CLASSIC_OVERLAY, false);
-                }
-                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
-                    RROManager(MAYBEREC_OVERLAY, false);
-                }
-                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
-                    Log.e(TAG, "Outline QSTiles is already enabled ?");
-                }
-                else {
-                    RROManager(OUTLINE_OVERLAY, true);
-                }
-            } else if (current == 3) {
-                if (isOverlayEnabled(CLASSIC_OVERLAY)) {
-                    RROManager(CLASSIC_OVERLAY, false);
-                }
-                if (isOverlayEnabled(OUTLINE_OVERLAY)) {
-                    RROManager(OUTLINE_OVERLAY, false);
-                }
-                if (isOverlayEnabled(MAYBEREC_OVERLAY)) {
-                    Log.e(TAG, "MaybeRectangle QSTiles is already enabled ?");
-                }
-                else {
-                    RROManager(MAYBEREC_OVERLAY, true);
-                }
-            }
+            mCustomSettingsObserver.observe();
             return true;
         } else if (preference == mBrightnessStyles) {
             mBrightnessStyles.setValue((String) newValue);
@@ -176,6 +157,56 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         return true;
     }
 
+    private void updateQsStyle() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_PANEL_STYLE , 0, USER_SYSTEM);
+
+        if (qsPanelStyle == 0) {
+            setDefaultStyle(mOverlayService);
+        } else if (qsPanelStyle == 1) {
+            setQsStyle(mOverlayService, "com.android.system.qs.outline");
+        } else if (qsPanelStyle == 2 || qsPanelStyle == 3) {
+            setQsStyle(mOverlayService, "com.android.system.qs.twotoneaccent");
+        } else if (qsPanelStyle == 4) {
+            setQsStyle(mOverlayService, "com.android.system.qs.shaded");
+        } else if (qsPanelStyle == 5) {
+            setQsStyle(mOverlayService, "com.android.system.qs.cyberpunk");
+        } else if (qsPanelStyle == 6) {
+            setQsStyle(mOverlayService, "com.android.systemui.qstiles.classic");
+        } else if (qsPanelStyle == 7) {
+            setQsStyle(mOverlayService, "com.android.elixir.maybe.rectangle");
+        }
+    }
+
+    public static void setDefaultStyle(IOverlayManager overlayManager) {
+        for (int i = 0; i < QS_STYLES.length; i++) {
+            String qsStyles = QS_STYLES[i];
+            try {
+                overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void setQsStyle(IOverlayManager overlayManager, String overlayName) {
+        try {
+            for (int i = 0; i < QS_STYLES.length; i++) {
+                String qsStyles = QS_STYLES[i];
+                try {
+                    overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+            overlayManager.setEnabled(overlayName, true, USER_SYSTEM);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void RROManager(String name, boolean status) {
         if (status) {
             Log.d(TAG, "Enabling Overlay Package :- " + name);
@@ -184,20 +215,10 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             Log.d(TAG, "Disabling Overlay Package :- " + name);
         }
         try {
-            mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
+            mOverlayService.setEnabled(name, status, USER_SYSTEM);
           } catch (RemoteException re) {
                 Log.e(TAG, String.valueOf(re));
         }
-    }
-
-    public boolean isOverlayEnabled(String name) {
-        OverlayInfo info = null;
-        try {
-            info = mOverlayService.getOverlayInfo(name, UserHandle.USER_CURRENT);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return info != null && info.isEnabled();
     }
 
     /**

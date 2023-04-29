@@ -147,8 +147,7 @@
     <string name="qstiles_title">QSTiles Style</string>
     <string name="qstiles_default">Default Style</string>
     <string name="qstiles_custom1">Classic Style</string>
-    <string name="qstiles_custom2">Outline Style</string>
-    <string name="qstiles_custom3">MaybeRectangle Style</string>
+    <string name="qstiles_custom2">MaybeRectangle Style</string>
 
     <!-- Media art -->
     <string name="lockscreen_media_category">Lockscreen Music</string>
@@ -311,5 +310,13 @@
     <!-- Brightness Slider Customisations -->
     <string name="brightness_title">Brightness Slider Style</string>
     <string name="brightness_custom1">Outline Style</string>
+
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Combined QS element styles</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Two-tone accent</string>
+    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_shaded">Shaded</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
 
 </resources>
