@@ -48,10 +48,15 @@ public class About extends SettingsPreferenceFragment implements
         mContext = getActivity();
 
         mOfficialCard = (Preference) findPreference(KEY_OFFICIAL_CARD);
-        String elixirMaintainer = SystemProperties.get("ro.elixir.maintainer", "Unmaintained");
+        String elixirMaintainer = mContext.getString(R.string.elixir_maintainer);
+        String elixirMaintainer2 = SystemProperties.get("ro.elixir.maintainer", "Unmaintained");
 
-        if(elixirMaintainer.equalsIgnoreCase("Unmaintained") || elixirMaintainer.equalsIgnoreCase(null)){
-            mOfficialCard.setSummary(mContext.getString(R.string.xd_build_unmaintained_summary));
+        if(elixirMaintainer.equalsIgnoreCase("Elixir-Devs") || elixirMaintainer.equalsIgnoreCase(null)){
+            if(elixirMaintainer2.equalsIgnoreCase("Unmaintained") || elixirMaintainer2.equalsIgnoreCase(null)){ 
+                mOfficialCard.setSummary(mContext.getString(R.string.xd_build_unmaintained_summary));
+            } else {
+                mOfficialCard.setSummary(mContext.getString(R.string.xd_build_maintained_summary, elixirMaintainer2));
+            }
         } else {
             mOfficialCard.setSummary(mContext.getString(R.string.xd_build_maintained_summary, elixirMaintainer));
         }
