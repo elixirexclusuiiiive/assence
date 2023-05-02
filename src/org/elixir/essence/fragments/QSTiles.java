@@ -62,7 +62,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String TAG = "QSTiles";
     private static final String KEY_QSTILES_STYLES = "qs_panel_style";
     private static final String KEY_BRIGHTNESS_STYLE = "brightness_styles";
-    private static final String KEY_BRIGHTNESS_OUTLINE = "com.android.systemui.brightness.outline";
 
     public static final String[] QS_STYLES = {
         "com.android.system.qs.outline",
@@ -77,6 +76,8 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
     private SystemSettingListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
     private ListPreference mBrightnessStyles;
+    private String OLD_SLIDER = "DEFAULT";
+    private ContentResolver resolver;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,7 +88,7 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
 
-        final ContentResolver resolver = getActivity().getContentResolver();
+        resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
         mQSTilesStyles = (SystemSettingListPreference) findPreference(KEY_QSTILES_STYLES);
@@ -98,7 +99,8 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
 
         mBrightnessStyles = (ListPreference) findPreference(KEY_BRIGHTNESS_STYLE);
         if (mBrightnessStyles != null) {
-            mBrightnessStyles.setValue(String.valueOf(Settings.Secure.getInt(resolver, BRIGHTNESS_SLIDER_STYLE, 0)));
+            mBrightnessStyles.setValue(Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE));
+            OLD_SLIDER = Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE);
             mBrightnessStyles.setSummary(mBrightnessStyles.getEntry());
             mBrightnessStyles.setOnPreferenceChangeListener(this);
         }
@@ -145,20 +147,32 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         } else if (preference == mBrightnessStyles) {
             mBrightnessStyles.setValue((String) newValue);
             mBrightnessStyles.setSummary(mBrightnessStyles.getEntry());
-            Settings.Secure.putInt(getActivity().getContentResolver(), BRIGHTNESS_SLIDER_STYLE, Integer.parseInt((String) newValue));
-            int current = Settings.Secure.getInt(getActivity().getContentResolver(), BRIGHTNESS_SLIDER_STYLE, 0);
-            if (current == 0) {
-                RROManager(KEY_BRIGHTNESS_OUTLINE, false);
-            } else if (current == 1) {
-                RROManager(KEY_BRIGHTNESS_OUTLINE, true);
+            Settings.Secure.putString(resolver, BRIGHTNESS_SLIDER_STYLE, (String) newValue);
+            String current = Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE);
+            if (isOverlayEnabled(OLD_SLIDER)) {
+                RROManager(OLD_SLIDER, false);
             }
+            OLD_SLIDER = Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE);
+            RROManager(current, true);
             return true;
         }
         return true;
     }
 
+    private boolean isOverlayEnabled(String name) {
+        OverlayInfo info = null;
+        Log.i(TAG, "Getting information of overlay :- " + name);
+        try {
+            info = mOverlayService.getOverlayInfo(name, UserHandle.USER_CURRENT);
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Overlay " + name + " doesn't exists");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return info != null && info.isEnabled();
+    }
+
     private void updateQsStyle() {
-        ContentResolver resolver = getActivity().getContentResolver();
 
         int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.QS_PANEL_STYLE , 0, USER_SYSTEM);
@@ -207,7 +221,7 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         }
     }
 
-    public void RROManager(String name, boolean status) {
+    private void RROManager(String name, boolean status) {
         if (status) {
             Log.d(TAG, "Enabling Overlay Package :- " + name);
         }
@@ -215,9 +229,11 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             Log.d(TAG, "Disabling Overlay Package :- " + name);
         }
         try {
-            mOverlayService.setEnabled(name, status, USER_SYSTEM);
-          } catch (RemoteException re) {
-                Log.e(TAG, String.valueOf(re));
+            mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Overlay " + name + " doesn't exists");
+        } catch (Exception re) {
+            Log.e(TAG, String.valueOf(re));
         }
     }
 

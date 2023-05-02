@@ -165,11 +165,15 @@
     <string-array name="brightness_styles_entries" translatable="false">
         <item>@string/qstiles_default</item>
         <item>@string/brightness_custom1</item>
+        <item>@string/brightness_custom2</item>
+        <item>@string/brightness_custom3</item>
     </string-array>
 
     <string-array name="brightness_styles_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
+        <item>Default</item>
+        <item>com.android.systemui.brightness.outline</item>
+        <item>com.android.systemui.brightness_slider.filled</item>
+        <item>com.android.systemui.brightness_slider.thin</item>
     </string-array>
 
 </resources>

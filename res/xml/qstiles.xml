@@ -30,7 +30,7 @@
 	    settings:layout="@layout/essence_pref_card_bot"
         android:entries="@array/brightness_styles_entries"
         android:entryValues="@array/brightness_styles_values"
-        android:defaultValue="0"
+        android:defaultValue="Default"
         android:persistent="false" />
 
 </PreferenceScreen>

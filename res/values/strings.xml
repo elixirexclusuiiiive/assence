@@ -310,6 +310,8 @@
     <!-- Brightness Slider Customisations -->
     <string name="brightness_title">Brightness Slider Style</string>
     <string name="brightness_custom1">Outline Style</string>
+    <string name="brightness_custom2">Filled Style</string>
+    <string name="brightness_custom3">Thin Style</string>
 
     <!-- Quick settings styles -->
     <string name="qs_styles_title">Combined QS element styles</string>
