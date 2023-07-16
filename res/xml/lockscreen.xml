@@ -98,7 +98,6 @@
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="enable_ripple_effect"
-            android:icon="@drawable/ic_unlock_outline"
             android:title="@string/enable_fingerprint_ripple_effect_title"
             android:summary="@string/enable_fingerprint_ripple_effect_summary"
             android:defaultValue="true" />
