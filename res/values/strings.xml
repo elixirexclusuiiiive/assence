@@ -131,7 +131,8 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Save</string>
-
+    <string name="general_category">General Customisations</string>
+	
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
