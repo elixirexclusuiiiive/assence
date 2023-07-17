@@ -64,18 +64,6 @@
             android:defaultValue="false" />
 
     <PreferenceCategory
-        android:layout="@layout/custom_preference_category"
-	    android:title="Essence Customisations" >
-    
-        <SwitchPreference
-            android:key="hide_essence_icons"
-            android:title="Hide icons of essence"
-            android:summary="Requires restart essence for changes to take effect."
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
         android:title="@string/game_custs" >
 
