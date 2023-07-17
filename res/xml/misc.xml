@@ -57,6 +57,12 @@
 
     </PreferenceCategory>
 
+    	 <org.elixir.essence.preferences.SystemSettingSwitchPreference   
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false" />
+
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
 	    android:title="Essence Customisations" >
