@@ -73,7 +73,6 @@
     
         <Preference
             android:key="traffic"
-            settings:layout="@layout/xd_pref_card_mid2"
             android:fragment="org.elixir.essence.fragments.Traffic"
             android:title="@string/traffic_title"
             android:summary="@string/traffic_summary" />
