@@ -59,7 +59,8 @@
 
     	 <org.elixir.essence.preferences.SystemSettingSwitchPreference   
             android:key="less_boring_heads_up"
-            android:title="@string/less_boring_heads_up_title"
+		 settings:layout="@layout/xd_pref_card_mid2"
+		 android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
 
@@ -70,7 +71,8 @@
         <!-- Gaming mode -->
         <Preference
             android:key="gaming_mode"
-            android:title="@string/gaming_mode_title"
+		android:title="@string/gaming_mode_title"
+		settings:layout="@layout/xd_pref_card_mid2"
             android:summary="@string/gaming_mode_summary">
             <intent
                 android:action="android.intent.action.MAIN"

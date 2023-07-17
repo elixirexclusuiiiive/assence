@@ -20,18 +20,21 @@
 
     <org.elixir.essence.preferences.SystemSettingSwitchPreference
         android:key="edge_light_enabled"
-        android:title="@string/enable"
+	    settings:layout="@layout/xd_pref_card_top"
+	    android:title="@string/enable"
         android:defaultValue="false" />
 
     <org.elixir.essence.preferences.SystemSettingSwitchPreference
-        android:key="edge_light_always_trigger_on_pulse"
+	    android:key="edge_light_always_trigger_on_pulse"
+	    settings:layout="@layout/xd_pref_card_mid"
         android:title="@string/edge_light_always_trigger_on_pulse_title"
         android:summary="@string/edge_light_always_trigger_on_pulse_summary"
         android:defaultValue="false"
         android:dependency="edge_light_enabled" />
 
     <org.elixir.essence.preferences.SystemSettingSwitchPreference
-        android:key="edge_light_repeat_animation"
+	    android:key="edge_light_repeat_animation"
+	    settings:layout="@layout/xd_pref_card_mid"
         android:title="@string/edge_light_repeat_animation_title"
         android:summaryOn="@string/edge_light_repeat_animation_summary_on"
         android:summaryOff="@string/edge_light_repeat_animation_summary_off"
@@ -39,7 +42,8 @@
         android:dependency="edge_light_enabled" />
 
     <org.elixir.essence.preferences.SystemSettingListPreference
-        android:key="edge_light_color_mode"
+	    android:key="edge_light_color_mode"
+	    settings:layout="@layout/xd_pref_card_mid"
         android:title="@string/edge_light_color_mode_title"
         android:entries="@array/edge_light_color_mode_entries"
         android:entryValues="@array/edge_light_color_mode_values"
@@ -49,7 +53,8 @@
 
     <org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
         android:key="edge_light_custom_color"
-        android:title="@string/custom_color"
+	    android:title="@string/custom_color"
+	    settings:layout="@layout/xd_pref_card_bot"
         android:defaultValue="#FFFFFF"
         android:dependency="edge_light_enabled" />
 

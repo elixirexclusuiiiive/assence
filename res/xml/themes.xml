@@ -28,7 +28,7 @@
          <org.elixir.essence.preferences.SecureSettingListPreference
             android:key="system_custom_theme"
             android:title="@string/custom_theme_title"
-            settings:layout="@layout/essence_pref_card_top"
+            settings:layout="@layout/essence_pref_card_mid2"
             android:summary="@string/custom_theme_summary"
             android:defaultValue="0"
             android:entries="@array/custom_theme_entries"

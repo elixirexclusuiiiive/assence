@@ -28,12 +28,14 @@
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="use_tiles_on_secure_keyguard"
-            android:title="@string/use_tiles_on_secure_keyguard_title"
+		settings:layout="@layout/xd_pref_card_top"
+		android:title="@string/use_tiles_on_secure_keyguard_title"
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
     <org.elixir.essence.preferences.SecureSettingSwitchPreference
-        android:key="quick_settings_vibrate"
+	    android:key="quick_settings_vibrate"
+	    settings:layout="@layout/xd_pref_card_bot"
         android:title="@string/quick_settings_vibrate_title"
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>

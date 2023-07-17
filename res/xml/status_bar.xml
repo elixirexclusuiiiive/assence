@@ -28,7 +28,8 @@
 
         <ListPreference
             android:key="qs_quick_pulldown"
-            android:title="@string/qs_quick_pulldown"
+		android:title="@string/qs_quick_pulldown"
+		settings:layout="@layout/xd_pref_card_top"
             android:entries="@array/quick_pulldown_entries"
             android:entryValues="@array/quick_pulldown_values"
             android:defaultValue="0" />
@@ -41,7 +42,8 @@
 	     android:defaultValue="false"/>
 
 	<org.elixir.essence.preferences.SecureSettingSwitchPreference
-            android:key="show_wifi_standard_icon"
+		android:key="show_wifi_standard_icon"
+		settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/show_wifi_standard_icon_title"
             android:summary="@string/show_wifi_standard_icon_summary"
             android:defaultValue="false" />
@@ -62,7 +64,7 @@
 
 	<org.elixir.essence.preferences.SystemSettingSwitchPreference
 		android:key="data_disabled_icon"
-		settings:layout="@layout/xd_pref_card_mid"
+		settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/data_disabled_icon_title"
             android:summary="@string/data_disabled_icon_summary"
             android:defaultValue="true"/>
@@ -74,7 +76,8 @@
         <Preference
             android:key="traffic"
             android:fragment="org.elixir.essence.fragments.Traffic"
-            android:title="@string/traffic_title"
+		android:title="@string/traffic_title"
+		settings:layout="@layout/xd_pref_card_mid2"
             android:summary="@string/traffic_summary" />
 
     </PreferenceCategory>
@@ -84,7 +87,8 @@
         android:title="@string/general_category">
     
         <org.elixir.essence.preferences.SystemSettingSwitchPreference	    
-            android:key="double_tap_sleep_gesture"
+		android:key="double_tap_sleep_gesture"
+		settings:layout="@layout/xd_pref_card_mid2"
             android:title="@string/double_tap_sleep_gesture_title"
             android:summary="@string/double_tap_sleep_gesture_summary"
             android:defaultValue="false" />

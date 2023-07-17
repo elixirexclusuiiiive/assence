@@ -27,13 +27,15 @@
     </PreferenceCategory>
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_lockscreen"
+		android:key="double_tap_sleep_lockscreen"
+		settings:layout="@layout/xd_pref_card_top"
             android:title="@string/double_tap_sleep_lockscreen_title"
             android:defaultValue="false" />
 
         <Preference
             android:key="edge_light_settings"
-            android:title="@string/edge_light_title"
+		android:title="@string/edge_light_title"
+		settings:layout="@layout/xd_pref_card_bot"
             android:summary="@string/edge_light_summary"
             android:fragment="org.elixir.essence.fragments.EdgeLightSettings" />
 
@@ -43,12 +45,14 @@
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="lockscreen_media_metadata"
-            android:title="@string/media_art_title"
+		android:title="@string/media_art_title"
+		settings:layout="@layout/xd_pref_card_top"
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
 
         <org.elixir.essence.preferences.SystemSettingListPreference
-            android:key="lockscreen_albumart_filter"
+		android:key="lockscreen_albumart_filter"
+		settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/lockscreen_albumart_filter_title"
             android:entries="@array/lockscreen_albumart_filter_entries"
             android:entryValues="@array/lockscreen_albumart_filter_values"
@@ -56,7 +60,8 @@
             android:defaultValue="0" />
 
         <org.elixir.essence.preferences.SystemSettingSeekBarPreference
-            android:key="ls_media_filter_blur_radius"
+		android:key="ls_media_filter_blur_radius"
+		settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/lockscreen_albumart_filter_blur_radius_title"
             android:defaultValue="10"
             android:max="25"
@@ -70,7 +75,7 @@
 
     <org.elixir.essence.preferences.SystemSettingListPreference
             android:key="screen_off_animation"
-            settings:layout="@layout/xd_pref_card_top"
+            settings:layout="@layout/xd_pref_card_mid2"
         android:title="@string/screen_off_animation_title"
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values"
@@ -82,16 +87,19 @@
 
     <PreferenceCategory
         android:key="lockscreen_ui_finterprint_category"
-        android:title="@string/fingerprint_category">
+	    android:layout="@layout/custom_preference_category"
+	    android:title="@string/fingerprint_category">
 
         <SwitchPreference
-            android:key="fingerprint_success_vib"
+		android:key="fingerprint_success_vib"
+		settings:layout="@layout/xd_pref_card_top"
             android:title="@string/fprint_success_vib_title"
             android:summary="@string/fprint_success_vib_summary"
             android:persistent="true" />
 
         <SwitchPreference
-            android:key="fingerprint_error_vib"
+		android:key="fingerprint_error_vib"
+		settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/fprint_error_vib_title"
             android:summary="@string/fprint_error_vib_summary"
             android:persistent="true" />
@@ -99,22 +107,24 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="ripple_effect_category"
-        android:title="@string/enable_fingerprint_ripple_effect_title">.
+	    android:layout="@layout/custom_preference_category"
+        android:title="General Options">
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
-            android:key="enable_ripple_effect"
+		android:key="enable_ripple_effect"
+		settings:layout="@layout/xd_pref_card_top"
             android:title="@string/enable_fingerprint_ripple_effect_title"
             android:summary="@string/enable_fingerprint_ripple_effect_summary"
             android:defaultValue="true" />
 
-    </PreferenceCategory>
-
     <org.elixir.essence.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_battery_info"
+	    android:key="lockscreen_battery_info"
+	    settings:layout="@layout/xd_pref_card_bot"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
 
