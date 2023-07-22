@@ -70,10 +70,12 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
 
         mHideIcons = (SwitchPreference) findPreference(KEY_HIDE_ICONS);
         enabled = Settings.Secure.getInt(resolver, HIDE_ESSENCE_ICONS, 0) == 1;
-        if (enabled) {
-            mHideIcons.setChecked(true);
+        if (mHideIcons != null ) {
+            if (enabled) {
+                mHideIcons.setChecked(true);
+            }
+            mHideIcons.setOnPreferenceChangeListener(this);
         }
-        mHideIcons.setOnPreferenceChangeListener(this);
 
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
         if (!customUtils.isVoiceCapable(getActivity())) {
