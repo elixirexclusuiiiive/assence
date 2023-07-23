@@ -19,6 +19,7 @@
     <org.elixir.essence.preferences.SystemSettingListPreference
         android:key="qs_panel_style"
         android:title="@string/qstiles_title"
+        settings:layout="@layout/essence_pref_card_top"
         android:entries="@array/qstiles_styles_entries"
         android:entryValues="@array/qstiles_styles_values"
         android:defaultValue="0"
