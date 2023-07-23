@@ -148,19 +148,6 @@
         <item>5</item>
     </string-array>
 
-    <!-- QSTiles Styles -->
-    <string-array name="qstiles_styles_entries" translatable="false">
-        <item>@string/qstiles_default</item>
-        <item>@string/qstiles_custom1</item>
-        <item>@string/qstiles_custom2</item>
-    </string-array>
-
-    <string-array name="qstiles_styles_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- brightness slider styles -->
     <string-array name="brightness_styles_entries" translatable="false">
         <item>@string/qstiles_default</item>
