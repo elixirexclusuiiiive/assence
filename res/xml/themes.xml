@@ -55,36 +55,40 @@
          <org.elixir.essence.preferences.SecureSettingListPreference
             android:key="system_custom_theme"
             android:title="@string/custom_theme_title"
-            settings:layout="@layout/essence_pref_card_mid2"
+            settings:layout="@layout/essence_pref_card_top"
             android:summary="@string/custom_theme_summary"
             android:defaultValue="0"
             android:entries="@array/custom_theme_entries"
             android:entryValues="@array/custom_theme_values" />
 
-    </PreferenceCategory>
-
         <Preference
             android:key="android.theme.customization.fonts"
+            settings:layout="@layout/essence_pref_card_mid"
             android:title="@string/theme_customization_font_title"
             android:summary="@string/theme_customization_font_summary"
             android:fragment="org.elixir.essence.fragments.FontsPicker"/>
 
         <Preference
             android:key="android.theme.customization.icon_pack"
+            settings:layout="@layout/essence_pref_card_mid"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="org.elixir.essence.fragments.StatusbarIcons"/>
 
         <Preference
             android:key="android.theme.customization.signal_icon"
+            settings:layout="@layout/essence_pref_card_mid"
             android:title="@string/theme_customization_signal_icon_title"
             android:summary="@string/theme_customization_signal_icon_summary"
             android:fragment="org.elixir.essence.fragments.SignalIcons"/>
 
         <Preference
             android:key="android.theme.customization.wifi_icon"
+            settings:layout="@layout/essence_pref_card_bot"
             android:title="@string/theme_customization_wifi_icon_title"
             android:summary="@string/theme_customization_wifi_icon_summary"
             android:fragment="org.elixir.essence.fragments.WifiIcons"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
