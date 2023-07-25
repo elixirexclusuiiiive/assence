@@ -59,12 +59,14 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
     protected boolean mTrackingTouch = false;
     protected int mTrackingValue;
+    private int layoutPos = 0;
 
     public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomSeekBarPreference);
         try {
+            layoutPos = a.getInt(R.styleable.CustomSeekBarPreference_layout_pos, 0);
             mShowSign = a.getBoolean(R.styleable.CustomSeekBarPreference_showSign, mShowSign);
             String units = a.getString(R.styleable.CustomSeekBarPreference_units);
             if (units != null)
@@ -95,7 +97,24 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         }
 
         mSeekBar = new SeekBar(context, attrs);
-        setLayoutResource(R.layout.preference_custom_seekbar);
+        Log.i(TAG, "Layout position :- " + Integer.toString(layoutPos));
+        switch (layoutPos) {
+            case 0: 
+                setLayoutResource(R.layout.preference_custom_seekbar_mid2);
+                break;
+            case 1:
+                setLayoutResource(R.layout.preference_custom_seekbar_top);
+                break;
+            case 2:
+                setLayoutResource(R.layout.preference_custom_seekbar_mid);
+                break;
+            case 3:
+                setLayoutResource(R.layout.preference_custom_seekbar_bot);
+                break;
+            default:
+                setLayoutResource(R.layout.preference_custom_seekbar);
+                break;
+        }
     }
 
     public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {

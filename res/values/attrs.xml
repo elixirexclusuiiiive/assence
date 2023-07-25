@@ -44,6 +44,7 @@
         <attr name="showSign" format="boolean" />
         <attr name="units" format="string|reference" />
         <attr name="continuousUpdates" format="boolean" />
+        <attr name="layout_pos" format="integer" />
     </declare-styleable>
 
 </resources>
