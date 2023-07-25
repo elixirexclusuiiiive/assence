@@ -45,14 +45,14 @@
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="lockscreen_media_metadata"
-		android:title="@string/media_art_title"
-		settings:layout="@layout/xd_pref_card_top"
+		    android:title="@string/media_art_title"
+		    settings:layout="@layout/xd_pref_card_top"
             android:summary="@string/media_art_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
         <org.elixir.essence.preferences.SystemSettingListPreference
-		android:key="lockscreen_albumart_filter"
-		settings:layout="@layout/xd_pref_card_mid"
+		    android:key="lockscreen_albumart_filter"
+		    settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/lockscreen_albumart_filter_title"
             android:entries="@array/lockscreen_albumart_filter_entries"
             android:entryValues="@array/lockscreen_albumart_filter_values"
@@ -60,8 +60,8 @@
             android:defaultValue="0" />
 
         <org.elixir.essence.preferences.SystemSettingSeekBarPreference
-		android:key="ls_media_filter_blur_radius"
-		settings:layout="@layout/xd_pref_card_bot"
+		    android:key="ls_media_filter_blur_radius"
+		    settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/lockscreen_albumart_filter_blur_radius_title"
             android:defaultValue="10"
             android:max="25"
