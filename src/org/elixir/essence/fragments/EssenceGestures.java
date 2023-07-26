@@ -49,16 +49,14 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import androidx.preference.SwitchPreference;
 
-import static android.provider.Settings.System.SWIPE_TO_SCREENSHOT;
+import static android.provider.Settings.System.THREE_FINGER_GESTURE;
 import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED;
 import static android.provider.Settings.Secure.ONE_HANDED_MODE_ENABLED;
 import static android.provider.Settings.Secure.DOZE_PICK_UP_GESTURE;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL;
 import static android.provider.Settings.System.DOZE_TRIGGER_DOUBLETAP;
-import static android.provider.Settings.System.VOLBTN_MUSIC_CONTROLS;
 import static android.provider.Settings.System.ADAPTIVE_PLAYBACK_ENABLED;
-
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class EssenceGestures extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
@@ -71,7 +69,6 @@ public class EssenceGestures extends SettingsPreferenceFragment implements OnPre
     private static final String KEY_GESTURE_PICKUP = "gesture_pick_up_input";
     private static final String KEY_GESTURE_POWER_MENU = "gesture_power_menu";
     private static final String KEY_GESTURE_DOUBLE_TAP = "doze_double_tap_summary";
-    private static final String KEY_GESTURE_MUSIC_CONTROL = "volume_button_music_control_sumary";
     private static final String KEY_GESTURE_ADAPTIVE_PLAYBACK = "gesture_adaptive_playback_summary";
 
     private AmbientDisplayConfiguration mAmbientConfig;
@@ -82,7 +79,6 @@ public class EssenceGestures extends SettingsPreferenceFragment implements OnPre
     private Preference mGesturePickup;
     private Preference mGesturePowerMenu;
     private Preference mGestureDoubleTap;
-    private Preference mGestureMusicControl;
     private Preference mGestureAdaptiveMusic;
 
     @Override
@@ -117,11 +113,10 @@ public class EssenceGestures extends SettingsPreferenceFragment implements OnPre
         mGesturePickup = findPreference(KEY_GESTURE_PICKUP);
         mGesturePowerMenu = findPreference(KEY_GESTURE_POWER_MENU);
         mGestureDoubleTap = findPreference(KEY_GESTURE_DOUBLE_TAP);
-        mGestureMusicControl = findPreference(KEY_GESTURE_MUSIC_CONTROL);
         mGestureAdaptiveMusic = findPreference(KEY_GESTURE_ADAPTIVE_PLAYBACK);
 
         if (mSwipeSS != null) {
-            Boolean SwipeSS = Settings.System.getInt(resolver, SWIPE_TO_SCREENSHOT, 0) != 0;
+            Boolean SwipeSS = Settings.System.getInt(resolver, THREE_FINGER_GESTURE, 0) != 0;
             if (SwipeSS) {
                 mSwipeSS.setSummary("ON");
             } else {
@@ -176,14 +171,6 @@ public class EssenceGestures extends SettingsPreferenceFragment implements OnPre
                 mGestureDoubleTap.setSummary("ON");
             } else {
                 mGestureDoubleTap.setSummary("OFF");
-            }
-        }
-        if (mGestureMusicControl != null) {
-            final Boolean enabled = Settings.System.getInt(resolver, VOLBTN_MUSIC_CONTROLS, 0) != 0;
-            if (enabled) {
-                mGestureMusicControl.setSummary("ON");
-            } else {
-                mGestureMusicControl.setSummary("OFF");
             }
         }
         if (mGestureAdaptiveMusic != null) {
