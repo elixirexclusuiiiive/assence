@@ -128,6 +128,9 @@ public class Themes extends SettingsPreferenceFragment
         if (preference == mCustomClock) {
             boolean value = (Boolean) newValue;
             Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK, value ? 1 : 0);
+            if (!value) {
+                hideDateView(true);
+            }
             customUtils.showSystemUiRestartDialog(getActivity());
             return true;
         } else if (preference == mClockStyle) {
@@ -155,8 +158,8 @@ public class Themes extends SettingsPreferenceFragment
         return false;
     }
 
-    private void hideDateView(Boolean hide) {
-        Settings.Secure.putIntForUser(resolver, LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE, hide ? 0 : 1, UserHandle.USER_CURRENT);
+    private void hideDateView(Boolean show) {
+        Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE, show ? 0 : 1);
     }
 
     private void RROManager(String name, boolean status) {
