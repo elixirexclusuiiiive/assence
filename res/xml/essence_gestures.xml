@@ -52,8 +52,14 @@
         android:fragment="com.android.settings.gestures.OneHandedSettings" />
 
     <Preference
-            android:key="gesture_adaptive_playback_summary"
-            settings:layout="@layout/xd_pref_card_bot"
+        android:key="volume_button_music_control_sumary"
+        settings:layout="@layout/xd_pref_card_top"
+        android:title="@string/volume_button_music_control_title"
+        android:fragment="com.android.settings.gestures.VolumeButtonMusicControlGestureSettings" />
+  
+    <Preference
+        android:key="gesture_adaptive_playback_summary"
+        settings:layout="@layout/xd_pref_card_bot"
         android:title="@string/adaptive_playback_screen_title"
         android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings" />
 
