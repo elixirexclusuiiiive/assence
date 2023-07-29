@@ -14,7 +14,13 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/qstiles_cust">
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="@string/qstiles_cust"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
 
     <org.elixir.essence.preferences.SystemSettingListPreference
         android:key="qs_panel_style"

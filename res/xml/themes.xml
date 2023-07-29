@@ -77,6 +77,7 @@
 
         <Preference
             android:key="android.theme.customization.adaptive_icon_shape"
+            settings:layout="@layout/essence_pref_card_mid"
             android:title="@string/theme_customization_icon_shape_title"
             android:summary="@string/theme_customization_icon_shape_summary"
             android:fragment="org.elixir.essence.fragments.IconShapes"/>

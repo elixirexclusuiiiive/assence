@@ -87,20 +87,22 @@
         android:title="@string/general_category">
     
         <org.elixir.essence.preferences.SystemSettingSwitchPreference	    
-		android:key="double_tap_sleep_gesture"
-		settings:layout="@layout/xd_pref_card_mid2"
+		    android:key="double_tap_sleep_gesture"
+		    settings:layout="@layout/xd_pref_card_top"
             android:title="@string/double_tap_sleep_gesture_title"
             android:summary="@string/double_tap_sleep_gesture_summary"
             android:defaultValue="false" />
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="reticker_status"
+            settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/reticker_title"
             android:summary="@string/reticker_summary"
             android:defaultValue="false" />
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:dependency="reticker_status"
+            settings:layout="@layout/xd_pref_card_bot"
             android:key="reticker_colored"
             android:title="@string/reticker_colored_title"
             android:summary="@string/reticker_colored_summary"
@@ -117,7 +119,7 @@
 	    android:key="status_bar_battery_style"
             android:title="@string/status_bar_battery_style_title"
             android:summary="%s"
-            settings:layout="@layout/xd_pref_card_mid"
+            settings:layout="@layout/xd_pref_card_top"
             android:dialogTitle="@string/status_bar_battery_style_title"
             android:entries="@array/status_bar_battery_style_entries"
             android:entryValues="@array/status_bar_battery_style_values"
@@ -126,7 +128,7 @@
     <org.elixir.essence.preferences.SystemSettingListPreference
 	    android:key="status_bar_show_battery_percent"
             android:title="@string/battery_percent_title"
-            settings:layout="@layout/xd_pref_card_mid"
+            settings:layout="@layout/xd_pref_card_bot"
             android:dialogTitle="@string/battery_percent_title"
             android:entries="@array/battery_percent_entries"
             android:entryValues="@array/battery_percent_values"

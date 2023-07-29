@@ -27,10 +27,17 @@
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
-            settings:layout="@layout/xd_pref_card_bot"
+            settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/ignore_window_secure_title"
             android:summary="@string/ignore_window_secure_summary"
             android:defaultValue="false"/>
+
+    	 <org.elixir.essence.preferences.SystemSettingSwitchPreference   
+            android:key="less_boring_heads_up"
+		    settings:layout="@layout/xd_pref_card_bot"
+		    android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false" />
 
     <PreferenceCategory
         android:key="incall_vib_options"
@@ -56,13 +63,6 @@
             android:defaultValue="false" />
 
     </PreferenceCategory>
-
-    	 <org.elixir.essence.preferences.SystemSettingSwitchPreference   
-            android:key="less_boring_heads_up"
-		 settings:layout="@layout/xd_pref_card_mid2"
-		 android:title="@string/less_boring_heads_up_title"
-            android:summary="@string/less_boring_heads_up_summary"
-            android:defaultValue="false" />
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
