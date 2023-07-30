@@ -42,19 +42,13 @@
             android:max="64"
             android:min="0" />
 	
-	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
-            android:key="qs_header_image_blur_level"
-            android:icon="@drawable/ic_color_bucket"
-            android:title="@string/qs_header_image_blur_level_title"
-            android:summary="@string/qs_header_image_blur_level_summary"
-            android:defaultValue="0"
-            settings:interval="1"
-            android:max="125"
-            android:min="1"/>
+	<org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
+	    android:key="qs_header_image_filter_color"
+            android:title="@string/qs_header_image_filter_color_title"
+            android:defaultValue="0xFFFFFFFF"/>
 
 	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_fade_level"
-            android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_header_image_fade_level_level_title"
             android:summary="@string/qs_header_image_fade_level_level_summary"
             android:defaultValue="40"
@@ -63,13 +57,20 @@
             android:min="1"/>
 
 	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image_height"
+            android:title="@string/qs_header_image_height_title"
+            android:defaultValue="80"
+            settings:interval="1"
+            android:max="255"
+	    android:min="1"/>
+
+	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_opacity_level"
-            android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_header_image_opacity_level_title"
             android:summary="@string/qs_header_image_opacity_level_summary"
             android:defaultValue="30"
             settings:interval="1"
-            android:max="255"
+            android:max="100"
             android:min="1"/>
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
