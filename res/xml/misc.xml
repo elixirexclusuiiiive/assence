@@ -51,6 +51,17 @@
             android:summary="@string/gms_enabled_summary"
             android:fragment="org.elixir.essence.fragments.GmsSwitch"/>
 
+        <!-- Parallel Space -->
+    	<Preference
+            android:key="parallel_space"
+            settings:layout="@layout/essence_pref_card_mid"	
+            android:title="@string/laboratory_parallel_space_title"
+            android:summary="@string/laboratory_parallel_space_summary">
+        <intent
+            android:targetPackage="ink.kscope.parallelspace"
+            android:targetClass="ink.kscope.parallelspace.MainActivity" />
+        </Preference>
+
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
             settings:layout="@layout/xd_pref_card_mid"
