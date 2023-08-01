@@ -121,6 +121,17 @@
 
     </PreferenceCategory>
 
+ 	<org.elixir.essence.preferences.SystemSettingSeekBarPreference	    
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+	    android:defaultValue="95"
+  	    app:layout_pos="0"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
+
     <PreferenceCategory
             android:key="datausage_category"
             android:layout="@layout/custom_preference_category"
