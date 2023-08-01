@@ -69,6 +69,11 @@
             settings:min="1" />
 
     </PreferenceCategory>
+    
+    <org.elixir.essence.preferences.CardviewPreference
+         android:key="lockscreen_shortcuts"
+         android:fragment="org.elixir.essence.fragments.LockscreenShortcuts"
+	 android:title="@string/lockscreen_shortcuts" />
 
     <PreferenceCategory
             android:layout="@layout/custom_preference_category"
