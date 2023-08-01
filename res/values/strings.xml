@@ -412,4 +412,8 @@
     <string name="qs_header_image_filter_color_title">QS header image filter color</string>
     <string name="qs_header_image_height_title">QS header image height</string>
 
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
 </resources>
