@@ -102,7 +102,7 @@
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:dependency="reticker_status"
-            settings:layout="@layout/xd_pref_card_bot"
+            settings:layout="@layout/xd_pref_card_mid"
             android:key="reticker_colored"
             android:title="@string/reticker_colored_title"
             android:summary="@string/reticker_colored_summary"
@@ -110,6 +110,7 @@
 
 	<org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:dependency="reticker_status"
+            settings:layout="@layout/xd_pref_card_bot"
             android:key="reticker_landscape_only"
             android:title="@string/reticker_landscape_only_title"
             android:summary="@string/reticker_landscape_only_summary"
