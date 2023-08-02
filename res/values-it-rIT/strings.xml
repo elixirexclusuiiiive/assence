@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">Come stai oggi?</string>
+    <!-- General app strings -->
+    <string name="add">Aggiungi</string>
+    <string name="advanced">Avanzato</string>
+    <string name="cancel">Annulla</string>
+    <string name="default_text">Predefinito</string>
+    <string name="dlg_ok">OK</string>
+    <string name="attention">Attenzione</string>
+    <string name="loading">Caricamento\u2026</string>
+    <string name="reset">Reimposta</string>
+    <string name="reset_colors">Ripristina i colori</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Testo</string>
+    <string name="icon_title">Icona</string>
+    <string name="color_title">Colore</string>
+    <string name="colors_title">Colori</string>
+    <string name="enable">Abilita</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">Barra di stato</string>
+    <string name="system_category">Team</string>
+    <string name="themes_category">Temi</string>
+    <string name="qs_category">QS</string>
+    <string name="lockscreen_category">Blocco schermo</string>
+    <string name="hardware_category">Extra</string>
+    <string name="build_tweaks_summary_title">Strive for Amelioration</string>
+    <string name="listview">Visualizzazione elenco</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">Sviluppatori e Team</string>
+    <string name="aboutus_tab">Riguardo noi</string>
+    <!-- Developers -->
+    <string name="note">Nota importante</string>
+    <string name="note_summary">Non inviare messaggi diretti a nessun sviluppatore, i gruppi sono lì per qualche motivo e usano un po \'di cervello. Se vediamo un messaggio diretto lo banneremo da ogni parte. Non siamo qui per servirti 24 ore su 24, 7 giorni su 7, quindi mantieni la pazienza. Lasciaci solo vivere la nostra vita in pace</string>
+    <!-- Contact and Download -->
+    <string name="download">Scarica le tue Builds</string>
+    <string name="download_summary">Tocca qui per scaricare le build per i tuoi dispositivi</string>
+    <string name="paypal">Paypal</string>
+    <string name="donate_summary">Donaci per apprezzare il nostro lavoro</string>
+    <string name="don_summ1">• Di fatto che per costruire una ROM personalizzata ci sono alcuni prerequisiti, come un Server High-End Building (Jenkins) o un PC con specifiche tecniche molto elevate combinato con una connessione internet ad alta velocità.</string>
+    <string name="don_summ2">• Noi sviluppatori abbiamo bisogno di assegnare il nostro tempo e duro lavoro dal nostro programma accademico hefty nella corretta manutenzione della ROM personalizzata in modo da poter fornire agli utenti aggiornamenti tempestivi e stabili</string>
+    <string name="don_summ3">• Prendi in considerazione la possibilità di donare o comprarmi un caffè su Paypal o unisciti a noi su Patreon per un supporto sostenibile e ricompense se vuoi apprezzare il nostro lavoro</string>
+    <string name="tele_group">Gruppo Di Discussione Telegram</string>
+    <string name="grp_summary">Se hai problemi, condividilo nel nostro gruppo di discussione su Telegram</string>
+    <string name="tele_channel">Canale Di Aggiornamenti Telegram</string>
+    <string name="update_summary">Iscriviti al canale Telegram per aggiornamenti più veloci</string>
+    <string name="website">Il nostro sito ufficiale</string>
+    <string name="website_summary">Visita il nostro sito web, Otterrai tutte le informazioni necessarie qui</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">Download e Sito Web</string>
+    <string name="telegram">Supporto Telegram</string>
+    <string name="donateus">Supportaci donando</string>
+    <string name="patreon">Vuoi accesso alle Early Build ?</string>
+    <string name="patreon_summary">Patreon è per coloro che vogliono supportare gli sviluppatori, ottenere accesso anticipato ad alcune caratteristiche esclusive e benefici.</string>
+    <!-- Summery -->
+    <string name="summ_gesture">Controllo Riproduzione • Navigazione di Sistema</string>
+    <string name="summ_lock">DT2S • Media Art • Edge Lighting</string>
+    <string name="summ_misc">Spazio Di Gioco • Power Menu • HwKey </string>
+    <string name="summ_monet">Monet • Temi • Blocco Schermo</string>
+    <string name="summ_quick">QS Styles • Media Artwork • Utilizzo Dati</string>
+    <string name="summ_sbar">Traffico Rete • VoLTE/VoWifi </string>
+    <string name="summ_about">Informazioni sul progetto Elixir ROM e sui suoi sviluppatori</string>
+    <string name="donate">Dona qui</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gesti</string>
+    <string name="lockscreen_title">Schermata di blocco</string>
+    <string name="misc_title">Varie</string>
+    <string name="navbar_title">Barra di Navigazione</string>
+    <string name="notifications_title">Notifiche</string>
+    <string name="powermenu_title">Menu di accensione</string>
+    <string name="quicksettings_title">Impostazioni Rapide</string>
+    <string name="recents_title">App Recenti</string>
+    <string name="statusbar_title">Barra di Stato</string>
+    <string name="volume_title">Impostazioni Volume</string>
+    <string name="network_traffic_catagories">Traffico di rete</string>
+    <string name="clock_date">Impostazioni data e ora</string>
+    <string name="status_bar_actions">Azioni Barra Di Stato</string>
+    <string name="lockscreen_settings">Impostazioni Blocco Schermo</string>
+    <string name="customisation_title">Temi</string>
+    <string name="buttons_category">Menu tasto accensione</string>
+    <string name="lockscreen_gestures_category">Gesti Schermata di Blocco</string>
+    <string name="signal_category">Icone di rete</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="save">Salva</string>
+    <string name="general_category">Personalizzazioni Generali</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selettore colore</string>
+    <string name="press_color_to_apply">Tocca un colore qui sotto per applicarlo</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_check_button_text">ANTEPRIMA</string>
+    <string name="hex_reset_button_text">RIPRISTINA</string>
+    <string name="set">Imposta</string>
+    <string name="color_default">Predefinito</string>
+    <string name="longpress_info">Premi a lungo la casella per salvare il colore</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">Personalizzazioni QS</string>
+    <string name="qstiles_title">Stile QSTile</string>
+    <string name="qstiles_default">Stile predefinito</string>
+    <string name="qstiles_custom1">Stile Classico</string>
+    <string name="qstiles_custom2">Stile MaybeRectangle</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Musica sulla schermata di blocco</string>
+    <string name="media_art_title">Copertina multimediale</string>
+    <string name="media_art_summary">Abilita copertina multimediale sulla schermata di blocco</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Filtro copertina multimediale</string>
+    <string name="lockscreen_albumart_filter_none">Niente</string>
+    <string name="lockscreen_albumart_filter_grayscale">Scala di grigi</string>
+    <string name="lockscreen_albumart_filter_tint">Colore accentato</string>
+    <string name="lockscreen_albumart_filter_blur">Sfocato</string>
+    <string name="lockscreen_albumart_filter_grayblur">Scala di grigi e sfocato</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Livello sfocatura per la copertina multimediale sulla schermata di blocco</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Richiedi lo sblocco per utilizzare i riquadri sensibili</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Chiedi di sbloccare la schermata di blocco quando usi riquadri sensibili</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Abilita riavvio avanzato</string>
+    <string name="global_actions_advanced_reboot_summary">Mostra opzioni per recovery e bootloader nel menu di spegnimento</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Temi</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Carattere titoli / paragrafi</string>
+    <string name="theme_customization_font_summary">Imposta lo stile del carattere di sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Forma icona</string>
+    <string name="theme_customization_icon_shape_summary">Imposta la forma delle icone di sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Pacchetto icone</string>
+    <string name="theme_customization_icon_pack_summary">Imposta un pacchetto di icone personalizzato</string>
+    <string name="theme_customization_signal_icon_title">Stile icona segnale</string>
+    <string name="theme_customization_signal_icon_summary">Imposta lo stile dell\'icona del segnale personalizzato</string>
+    <string name="theme_customization_wifi_icon_title">Stile icona WiFi</string>
+    <string name="theme_customization_wifi_icon_summary">Imposta un\'icona del WiFi personalizzata</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Predefinito del dispositivo</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Info batteria schermata di blocco</string>
+    <string name="lockscreen_battery_info_summary">Mostra la corrente di carica, la tensione, la potenza e la temperatura della batteria sulla schermata di blocco durante la ricarica</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">Impostazioni Traffico di Rete</string>
+    <string name="traffic_title">Indicatori di traffico</string>
+    <string name="traffic_summary">Personalizza gli indicatori di traffico</string>
+    <string name="network_traffic_autohide_threshold_title">Nascondi automaticamente la soglia</string>
+    <string name="network_traffic_location_title">Posizione</string>
+    <string name="network_traffic_disabled">Disattivato</string>
+    <string name="network_traffic_statusbar">Barra di Stato</string>
+    <string name="network_traffic_qs_header">Intestazione QS</string>
+    <string name="network_traffic_refresh_interval_title">Intervallo Aggiornamento</string>
+    <string name="network_traffic_mode_title">Modalità visualizzazione</string>
+    <string name="network_traffic_dynamic">Dinamico</string>
+    <string name="network_traffic_download">Download</string>
+    <string name="network_traffic_upload">Upload</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignora flag di sicurezza</string>
+    <string name="ignore_window_secure_summary">Questo rimuove la limitazione per gli screenshot e registrazione dello schermo per tutte le applicazioni. Normalmente, le applicazioni speciali sono rimpiazzate da un\'area nera nelle registrazioni. Questo può essere utile in alcuni casi, ma potrebbe condurre ad una fuga di dati privati. Dopo aver cambiato questa opzione dovrai riavviare l\'applicazione poiché le modifiche abbiano effetto.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Gestore Icone</string>
+    <string name="icon_manager_summary">Controlla la visibilità delle icone sulla barra di stato</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Effetto ondulazione</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Mostra effetto ondulazione allo sblocco con impronta digitale</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">Piè di Pagina QS</string>
+    <string name="qs_footer_datausage_title">Utilizzo dati</string>
+    <string name="qs_footer_datausage_summary">Mostra il sommario dell\'uso dei dati nel piè di pagina dei QS</string>
+    <!-- Screen off animation -->
+    <string name="default_string">Predefinita</string>
+    <string name="screen_off_animation_title">Animazione schermo spento</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scala</string>
+    <string name="lockscreen_effects_cat">Animazioni Blocco Schermo</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opzioni di vibrazione per le chiamate in entrata</string>
+    <string name="incall_vibrate_connect_title">Vibra alla connessione</string>
+    <string name="incall_vibrate_call_wait_title">Vibra per chiamate in attesa</string>
+    <string name="incall_vibrate_disconnect_title">Vibra alla disconnessione</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Attiva/Disattiva la torcia allo spegnimento dello schermo</string>
+    <string name="torch_power_button_gesture_none">Disabilitato</string>
+    <string name="torch_power_button_gesture_dt">Doppio tocco pulsante accensione (risposta rallentata al tocco singolo), Disabilita doppio tocco accensione per la fotocamera.</string>
+    <string name="torch_power_button_gesture_dt_toast">Il gesto salta alla fotocamera è ora disabilitato</string>
+    <string name="torch_power_button_gesture_lp">Pressione prolungata pulsante accensione</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">QS rapide a tendina</string>
+    <string name="quick_pulldown_none">Disabilitate</string>
+    <string name="quick_pulldown_right">Barra di stato a tendina dal lato destro</string>
+    <string name="quick_pulldown_left">Barra di stato a tendina dal lato sinistro</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Cursore luminosità</string>
+    <string name="qs_show_brightness_slider_never">Non mostrare mai</string>
+    <string name="qs_show_brightness_slider_expanded">Mostra quando estesa</string>
+    <string name="qs_show_brightness_slider_always">Mostra sempre</string>
+    <string name="qs_show_brightness_slider_not_expanded">Mostra quando non estesa</string>
+    <string name="qs_brightness_slider_position_title">Posizione</string>
+    <string name="qs_brightness_slider_position_top">Alto</string>
+    <string name="qs_brightness_slider_position_bottom">Basso</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Icona luminosità automatica</string>
+    <string name="qs_show_auto_brightness_summary">Mostra l\'interruttore per la luminosità adattiva affianco al cursore</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Icona 4G</string>
+    <string name="show_fourg_icon_summary">Mostra l\'icona del 4G nell\'icona del segnale, invece di LTE</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Icona tipo mobile piccola</string>
+    <string name="use_old_mobiletype_summary">Mostra l\'icona tipo mobile piccola sull\'indicatore di segnale</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indicatore di roaming</string>
+    <string name="roaming_indicator_icon_summary">Mostra l\'indicatore di roaming nell\'icona del segnale in modalità roaming</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Mostra l\'icona dei dati disabilitati</string>
+    <string name="data_disabled_icon_summary">Mostra il segno della croce affianco alla barra del segnale quando i dati sono disabilitati</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">Doppio tocco per spegnere lo schermo</string>
+    <string name="double_tap_sleep_lockscreen_summary">Doppio tocco ovunque sulla schermata di blocco per spegnere lo schermo</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Doppio tocco sulla barra di stato per spegnere lo schermo</string>
+    <string name="double_tap_sleep_gesture_summary">Toccare due volte un punto qualsiasi della barra di stato per spegnere lo schermo</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrazione al tocco</string>
+    <string name="quick_settings_vibrate_summary">Vibrazione quando si toccano le QS</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Usa tema personalizzato</string>
+    <string name="custom_theme_summary">Forza colori di sfondo personalizzati</string>
+    <string name="custom_theme_default">Predefinito</string>
+    <string name="custom_theme_black">Nero</string>
+    <string name="custom_theme_vivid">Vivido(Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Paint in the Snow</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Impronta</string>
+    <string name="fprint_error_vib_title">Vibrazione impronta errata</string>
+    <string name="fprint_error_vib_summary">Vibrazione in caso di errore nell\'autenticazione dell\'impronta</string>
+    <string name="fprint_success_vib_title">Vibrazione all\'autenticazione dell\'impronta</string>
+    <string name="fprint_success_vib_summary">Vibrazione in caso di successo nell\'autenticazione dell\'impronta</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Stile Cursore Luminosità</string>
+    <string name="brightness_custom1">Stile Contorno</string>
+    <string name="brightness_custom2">Stile Filled</string>
+    <string name="brightness_custom3">Stile Thin</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Tasto interruzione forzata</string>
+    <string name="notification_guts_kill_app_button_summary">Mostra il tasto per l\'arresto forzato nel menu della pressione prolungata sulla notifica</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">Opzioni Modalità Gioco</string>
+    <string name="gaming_mode_title">Spazio gioco</string>
+    <string name="gaming_mode_summary">Funzionalità extra per un\'esperienza di gioco immersiva</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Mostra icona tipo Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Mostra il tipo di Wi-Fi nell\'icona del segnale</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Sostituisci la notifica di avvertimento con la versione ripensata, ridotta e meno invasiva del ticker</string>
+    <string name="reticker_colored_title">Utilizza lo sfondo colorato dell\'app</string>
+    <string name="reticker_colored_summary">Sostituisci il colore di sfondo del reTicker utilizzando il colore principale dell\'app della notifica</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Stili di elementi QS combinati</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Accento Two-tone</string>
+    <string name="qs_color_pop">Colore pop</string>
+    <string name="qs_shaded">Sfumato</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Illuminazione bordo</string>
+    <string name="edge_light_summary">Illumina i lati dello schermo sull\'impulso della notifica</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Attiva sempre su impulso</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Se mostrare l\'illuminazione del bordo ogni volta che il display ambient è mostrato e non solo per le notifiche</string>
+    <string name="edge_light_repeat_animation_title">Ripeti animazione</string>
+    <string name="edge_light_repeat_animation_summary_on">Ripeti fino al timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Mostra solo una volta</string>
+    <string name="edge_light_color_mode_title">Modalità colore illuminazione bordo</string>
+    <string name="accent_color">Colore di accento (Default)</string>
+    <string name="notification_color">Colore notifica</string>
+    <string name="wallpaper_color">Colore Wallpaper</string>
+    <string name="custom_color">Colore personalizzato</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Impostazioni Batteria</string>
+    <string name="battery_style_category_title">Stili batteria</string>
+    <string name="battery_percent_title">Percentuale batteria</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Stile batteria</string>
+    <string name="status_bar_battery_style_icon_portrait">Icona verticale (predefinita)</string>
+    <string name="status_bar_battery_style_circle">Cerchio</string>
+    <string name="status_bar_battery_style_dotted_circle">Cerchio (Tratteggiato)</string>
+    <string name="status_bar_battery_style_filled_circle">Cerchio (Pieno)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icona orizzontale (a destra)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icona orizzontale (a sinistra)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Orizzontale DX Stile A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Orizzontale SX Stile A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Orizzontale DX Stile B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Orizzontale SX Stile B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Verticale Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Orizzontale Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Verticale iOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Orizzontale Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Orizzontale Capsule</string>
+    <string name="status_bar_battery_style_text">Testo</string>
+    <string name="status_bar_battery_style_hidden">Nascosto</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Percentuale batteria</string>
+    <string name="status_bar_battery_percentage_default">Nascosto (predefinito)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro l\'icona</string>
+    <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Immagine intestazione QS</string>
+    <string name="qs_header_random_image_title">Immagine casuale intestazione QS</string>
+    <string name="qs_header_random_image_summary">Visualizza un\'immagine casuale nell\'intestazione dei QS</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">Presonalizzazioni orologio</string>
+    <string name="clocksettings_title">Impostazioni orologio</string>
+    <string name="clocksettings_summary">Impostazioni orologio barra di stato</string>
+    <string name="status_bar_clock_date_title">Ora e Data</string>
+    <string name="status_bar_clock_date_summary">Personalizza l\'orologio e la data nella barra di stato</string>
+    <string name="status_bar_clock_title">Impostazioni orologio</string>
+    <string name="status_bar_clock_show">Mostra ora e data</string>
+    <string name="status_bar_clock_style_title">Stile orologio</string>
+    <string name="status_bar_clock_style_right">Destra</string>
+    <string name="status_bar_clock_style_center">Centro</string>
+    <string name="status_bar_clock_style_left">Sinistra</string>
+    <string name="status_bar_date_title">Impostazioni data</string>
+    <string name="status_bar_am_pm_title">Stile AM/PM</string>
+    <string name="status_bar_am_pm_info">Formato 24 ore attivo</string>
+    <string name="status_bar_am_pm_normal">Normale</string>
+    <string name="status_bar_am_pm_small">Piccolo</string>
+    <string name="status_bar_am_pm_hidden">Nascosto (predefinito)</string>
+    <string name="clock_seconds_display">Mostra secondi</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostra formato data personalizzato a fianco dell\'orario</string>
+    <string name="clock_date_display_none">Non mostrare</string>
+    <string name="clock_date_display_small">Dimensione del font piccola</string>
+    <string name="clock_date_display_normal">Dimensione del font normale</string>
+    <string name="clock_date_style">Stile Data</string>
+    <string name="clock_date_style_normal">Normale</string>
+    <string name="clock_date_style_lowercase">Minuscolo</string>
+    <string name="clock_date_style_uppercase">Maiuscolo</string>
+    <string name="clock_date_format_custom">Formato Java personalizzato</string>
+    <string name="clock_date_format">Formato data</string>
+    <string name="clock_date_string_edittext_title">Deve essere in formato data es. MM/gg/aa</string>
+    <string name="clock_date_string_edittext_summary">Inserisci stringa</string>
+    <string name="clock_date_right">A destra dell\'orologio</string>
+    <string name="clock_date_left">A sinistra dell\'orologio</string>
+    <string name="clock_date_position">Posizione data</string>
+    <string name="status_bar_clock_auto_hide_title">Nascondi automaticamente orologio</string>
+    <string name="status_bar_clock_auto_hide_summary">Nascondi e mostra l\'ora a intervalli regolari</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Durata scomparsa</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Durata visualizzazione</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">Trasparenza sfondo QS</string>
+    <string name="qs_transparency_summary">Imposta il livello di trasparenza per lo sfondo dei QS</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_artwork_fade_percent_title">Fade percent for media notification artwork</string>
+</resources>

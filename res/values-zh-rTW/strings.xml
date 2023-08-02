@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">您今天過得好嗎？</string>
+    <!-- General app strings -->
+    <string name="add">新增</string>
+    <string name="advanced">進階</string>
+    <string name="cancel">取消</string>
+    <string name="default_text">預設</string>
+    <string name="dlg_ok">好</string>
+    <string name="attention">注意</string>
+    <string name="loading">讀取中\u2026</string>
+    <string name="reset">重設</string>
+    <string name="reset_colors">重設顏色</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">文字</string>
+    <string name="icon_title">圖示</string>
+    <string name="color_title">顏色</string>
+    <string name="colors_title">顏色</string>
+    <string name="enable">啟用</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">狀態列</string>
+    <string name="system_category">團隊</string>
+    <string name="themes_category">主題</string>
+    <string name="qs_category">快速設定</string>
+    <string name="lockscreen_category">鎖定畫面</string>
+    <string name="hardware_category">附加功能</string>
+    <string name="build_tweaks_summary_title">追求卓越</string>
+    <string name="listview">清單列表</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">開發者與團隊</string>
+    <string name="aboutus_tab">認識我們</string>
+    <!-- Developers -->
+    <string name="note">重要提醒</string>
+    <string name="note_summary">請勿直接私訊任何開發者！請動腦想想，群組的存在是有原因的！如果我們發現有人進行任何的私訊行為，我們將會將您列為黑名單！我們並不是全天候提供服務，所以請保持耐心等待，讓我們過著平靜的生活！</string>
+    <!-- Contact and Download -->
+    <string name="download">下載您的建置版本</string>
+    <string name="download_summary">點擊此處下載適用於您的設備的建置版本</string>
+    <string name="paypal">Paypal</string>
+    <string name="donate_summary">您的慷慨贊助將是對我們付出的鼓勵和肯定</string>
+    <string name="don_summ1">• 事實上，要建立自訂ROM需要一些先決條件，例如高階建置伺服器 (Jenkins) 或具備高階技術規格的電腦，以及高速網路連線</string>
+    <string name="don_summ2">• 身為開發者，我們需要在繁忙的學業安排中撥出時間和精力，來維護自訂的ROM，以便能夠及時且穩定地為使用者提供更新</string>
+    <string name="don_summ3">• 如果您想表達對我們工作的鼓勵，可以考慮在PayPal上給我們贊助或請我們喝杯咖啡，也歡迎成為我們的Patreon會員，以獲得持續的支持和回饋</string>
+    <string name="tele_group">Telegram討論群組</string>
+    <string name="grp_summary">如果您有任何問題，請在我們的Telegram討論群組分享</string>
+    <string name="tele_channel">Telegram更新訊息群組</string>
+    <string name="update_summary">想獲得更即時的更新訊息，請訂閱我們的Telegram頻道</string>
+    <string name="website">我們的官方網站</string>
+    <string name="website_summary">歡迎造訪我們的網站，您可以在這裡找到所有必要的資訊</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">下載和網站</string>
+    <string name="telegram">Telegram支援</string>
+    <string name="donateus">贊助支持我們</string>
+    <string name="patreon">想要獲得早期建置版本？</string>
+    <string name="patreon_summary">Patreon是給那些想要支持開發者的贊助平台，您可以獲得早期建置版本、專屬功能和特別福利等等</string>
+    <!-- Summery -->
+    <string name="summ_gesture">播放控制 • 系統操作機制</string>
+    <string name="summ_lock">雙擊鎖定 • 媒體封面藝術 • 螢幕邊緣燈光效果</string>
+    <string name="summ_misc">遊戲空間 • 電源選單 • 硬體按鍵</string>
+    <string name="summ_monet">Monet • 主題 • 螢幕鎖定畫面時鐘</string>
+    <string name="summ_quick">快速選單主題 • 媒體藝術 • 數據用量</string>
+    <string name="summ_sbar">網路流量 • VoLTE/VoWiFi</string>
+    <string name="summ_about">關於Project Elixir ROM與開發者</string>
+    <string name="donate">點我贊助</string>
+    <!-- Categories -->
+    <string name="gestures_title">手勢</string>
+    <string name="lockscreen_title">鎖定畫面</string>
+    <string name="misc_title">其他設定</string>
+    <string name="navbar_title">導航列</string>
+    <string name="notifications_title">通知</string>
+    <string name="powermenu_title">電源選單</string>
+    <string name="quicksettings_title">快速設定</string>
+    <string name="recents_title">最近使用程式</string>
+    <string name="statusbar_title">狀態列</string>
+    <string name="volume_title">音量設定</string>
+    <string name="network_traffic_catagories">網路流量</string>
+    <string name="clock_date">時間與日期設定</string>
+    <string name="status_bar_actions">狀態列操作</string>
+    <string name="lockscreen_settings">螢幕鎖定畫面設定</string>
+    <string name="customisation_title">主題</string>
+    <string name="buttons_category">電源選單</string>
+    <string name="lockscreen_gestures_category">鎖定螢幕手勢</string>
+    <string name="signal_category">網路圖示</string>
+    <!-- General strings -->
+    <string name="ok">確定</string>
+    <string name="save">儲存</string>
+    <string name="general_category">一般</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">顏色挑選器</string>
+    <string name="press_color_to_apply">點選下方的顏色進行套用</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">十六進制值：</string>
+    <string name="hex_check_button_text">預覽</string>
+    <string name="hex_reset_button_text">重設</string>
+    <string name="set">設定</string>
+    <string name="color_default">預設</string>
+    <string name="longpress_info">長按方塊以儲存顏色</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">快速設定個人化</string>
+    <string name="qstiles_title">快速設定風格</string>
+    <string name="qstiles_default">預設風格</string>
+    <string name="qstiles_custom1">經典風格</string>
+    <string name="qstiles_custom2">圓弧矩形風格</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">鎖定螢幕音樂</string>
+    <string name="media_art_title">媒體封面藝術</string>
+    <string name="media_art_summary">在螢幕鎖定畫面上啟用媒體封面藝術</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">媒體封面藝術濾鏡</string>
+    <string name="lockscreen_albumart_filter_none">無</string>
+    <string name="lockscreen_albumart_filter_grayscale">灰階</string>
+    <string name="lockscreen_albumart_filter_tint">強調色</string>
+    <string name="lockscreen_albumart_filter_blur">模糊</string>
+    <string name="lockscreen_albumart_filter_grayblur">灰階和模糊</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">鎖定螢幕上媒體封面藝術的模糊程度</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">敏感快速設定項目需要解鎖後才能使用</string>
+    <string name="use_tiles_on_secure_keyguard_summary">使用敏感快速設定項目時，需要解鎖螢幕</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">啟用進階重新啟動</string>
+    <string name="global_actions_advanced_reboot_summary">在電源選單中，顯示Recovery和Bootloader模式</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">主題</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">標題/內文字體</string>
+    <string name="theme_customization_font_summary">設定系統字體風格</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">圖示形狀</string>
+    <string name="theme_customization_icon_shape_summary">設定系統圖示形狀風格</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">圖示主題包</string>
+    <string name="theme_customization_icon_pack_summary">設定自訂圖示主題包</string>
+    <string name="theme_customization_signal_icon_title">訊號圖示風格</string>
+    <string name="theme_customization_signal_icon_summary">設定自訂訊號圖示風格</string>
+    <string name="theme_customization_wifi_icon_title">WiFi圖示風格</string>
+    <string name="theme_customization_wifi_icon_summary">設定自訂WiFI圖示風格</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">裝置預設值</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">鎖定畫面充電資訊</string>
+    <string name="lockscreen_battery_info_summary">充電時在鎖定畫面上顯示充電電壓、功率和電池溫度</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">網路流量設定</string>
+    <string name="traffic_title">網路流量指示器</string>
+    <string name="traffic_summary">自訂網路流量指示器</string>
+    <string name="network_traffic_autohide_threshold_title">自動隱藏閥值</string>
+    <string name="network_traffic_location_title">位置</string>
+    <string name="network_traffic_disabled">停用</string>
+    <string name="network_traffic_statusbar">狀態列</string>
+    <string name="network_traffic_qs_header">快速設定標題列</string>
+    <string name="network_traffic_refresh_interval_title">更新間隔時間</string>
+    <string name="network_traffic_mode_title">顯示模式</string>
+    <string name="network_traffic_dynamic">動態</string>
+    <string name="network_traffic_download">下載</string>
+    <string name="network_traffic_upload">上傳</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">忽略視窗安全旗標</string>
+    <string name="ignore_window_secure_summary">這將移除所有應用程式的螢幕截圖和螢幕錄影限制。通常，特定的應用程式在螢幕截圖或螢幕錄影時會以黑色區塊替換。這在某些情況下可能很方便，但可能會導致洩漏隱私。開啟此設定後，您可能需要重新啟動應用程式才能生效。</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">圖示管理器</string>
+    <string name="icon_manager_summary">控制狀態列可視圖示</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">漣波效果</string>
+    <string name="enable_fingerprint_ripple_effect_summary">指紋解鎖時顯示漣波效果</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">快速設定底部列</string>
+    <string name="qs_footer_datausage_title">數據使用量</string>
+    <string name="qs_footer_datausage_summary">在快速設定底部列顯示數據使用量</string>
+    <!-- Screen off animation -->
+    <string name="default_string">預設</string>
+    <string name="screen_off_animation_title">螢幕關閉動畫</string>
+    <string name="screen_off_animation_crt">CRT效果</string>
+    <string name="screen_off_animation_scale">縮放效果</string>
+    <string name="lockscreen_effects_cat">螢幕鎖定動畫</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">通話中震動選項</string>
+    <string name="incall_vibrate_connect_title">通話時震動</string>
+    <string name="incall_vibrate_call_wait_title">來電等待時震動</string>
+    <string name="incall_vibrate_disconnect_title">通話結束時震動</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">螢幕關閉時開啟手電筒</string>
+    <string name="torch_power_button_gesture_none">停用</string>
+    <string name="torch_power_button_gesture_dt">雙擊電源鍵(單次點擊反應較慢)，停用雙擊電源鍵切換相機</string>
+    <string name="torch_power_button_gesture_dt_toast">快速切換到相機手勢已停用</string>
+    <string name="torch_power_button_gesture_lp">長壓電源鍵</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">下拉快速設定區域</string>
+    <string name="quick_pulldown_none">停用</string>
+    <string name="quick_pulldown_right">從右側狀態列下拉快速設定</string>
+    <string name="quick_pulldown_left">從左側狀態列下拉快速設定</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">螢幕亮度滑桿</string>
+    <string name="qs_show_brightness_slider_never">不顯示</string>
+    <string name="qs_show_brightness_slider_expanded">全部展開時顯示</string>
+    <string name="qs_show_brightness_slider_always">永遠顯示</string>
+    <string name="qs_show_brightness_slider_not_expanded">未展開時顯示</string>
+    <string name="qs_brightness_slider_position_title">位置</string>
+    <string name="qs_brightness_slider_position_top">上方</string>
+    <string name="qs_brightness_slider_position_bottom">下方</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">自動調整亮度圖示</string>
+    <string name="qs_show_auto_brightness_summary">在滑桿旁顯示自動調整亮度開關</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G圖示</string>
+    <string name="show_fourg_icon_summary">訊號圖示中使用4G圖示，而不是LTE圖示</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">小型行動網路圖示</string>
+    <string name="use_old_mobiletype_summary">在訊號指示器上方顯示行動網路圖示</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">漫遊指示器</string>
+    <string name="roaming_indicator_icon_summary">漫遊模式下，在訊號圖示中顯示漫遊指示器</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">顯示數據停用圖示</string>
+    <string name="data_disabled_icon_summary">網路停用時，在訊號欄旁邊顯示叉叉符號</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">雙擊鎖定螢幕</string>
+    <string name="double_tap_sleep_lockscreen_summary">在鎖定畫面上雙擊關閉螢幕</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">在狀態列上雙擊關閉螢幕</string>
+    <string name="double_tap_sleep_gesture_summary">在狀態列上雙擊關閉螢幕</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">螢幕觸控時震動</string>
+    <string name="quick_settings_vibrate_summary">點選快速設定項目時震動</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">使用自訂主題</string>
+    <string name="custom_theme_summary">強制使用自訂背景顏色</string>
+    <string name="custom_theme_default">預設</string>
+    <string name="custom_theme_black">黑</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Paint in the Snow</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Fingerprint</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Brightness Slider Style</string>
+    <string name="brightness_custom1">Outline Style</string>
+    <string name="brightness_custom2">Filled Style</string>
+    <string name="brightness_custom3">Thin Style</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Force stop button</string>
+    <string name="notification_guts_kill_app_button_summary">Show force stop button in the notification\'s longpress menu</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">Gaming Mode Options</string>
+    <string name="gaming_mode_title">Game space</string>
+    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Replace heads-up notification with slim and less invasive version of redesigned ticker</string>
+    <string name="reticker_colored_title">Use app colored background</string>
+    <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Combined QS element styles</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Two-tone accent</string>
+    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_shaded">Shaded</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Edge light</string>
+    <string name="edge_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Whether to show edge light whenever ambient display is shown and not just for notifications</string>
+    <string name="edge_light_repeat_animation_title">Repeat animation</string>
+    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
+    <string name="edge_light_color_mode_title">Edge light color mode</string>
+    <string name="accent_color">Accent color (Default)</string>
+    <string name="notification_color">Notification color</string>
+    <string name="wallpaper_color">Wallpaper color</string>
+    <string name="custom_color">Custom color</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Battery Settings</string>
+    <string name="battery_style_category_title">Battery styles</string>
+    <string name="battery_percent_title">Battery percent</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS Header Image</string>
+    <string name="qs_header_random_image_title">QS Header Random Image</string>
+    <string name="qs_header_random_image_summary">Enable random QS header image</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">Clock Customizations</string>
+    <string name="clocksettings_title">Clock Settings</string>
+    <string name="clocksettings_summary">Statusbar clock settings</string>
+    <string name="status_bar_clock_date_title">Clock and Date</string>
+    <string name="status_bar_clock_date_summary">Customize your statusbar clock and date</string>
+    <string name="status_bar_clock_title">Clock settings</string>
+    <string name="status_bar_clock_show">Show clock and date</string>
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="status_bar_clock_style_right">Right</string>
+    <string name="status_bar_clock_style_center">Center</string>
+    <string name="status_bar_clock_style_left">Left</string>
+    <string name="status_bar_date_title">Date settings</string>
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
+    <string name="clock_seconds_display">Show seconds</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="status_bar_clock_auto_hide_title">Auto-hide clock</string>
+    <string name="status_bar_clock_auto_hide_summary">Hide and show clock at regular intervals of time</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Hide duration</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Show duration</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">QS Background transparency</string>
+    <string name="qs_transparency_summary">Set transparency level for QS background</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_artwork_fade_percent_title">Fade percent for media notification artwork</string>
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">Как поживаете?</string>
+    <!-- General app strings -->
+    <string name="add">Добавить</string>
+    <string name="advanced">Дополнительные настройки</string>
+    <string name="cancel">Отмена</string>
+    <string name="default_text">По умолчанию</string>
+    <string name="dlg_ok">ОК</string>
+    <string name="attention">Внимание</string>
+    <string name="loading">Загрузка\u2026</string>
+    <string name="reset">Сброс</string>
+    <string name="reset_colors">Сбросить цвета</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Текст</string>
+    <string name="icon_title">Иконки</string>
+    <string name="color_title">Цвет</string>
+    <string name="colors_title">Цвета</string>
+    <string name="enable">Включить</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">Строка состояния</string>
+    <string name="system_category">Команда</string>
+    <string name="themes_category">Темы</string>
+    <string name="qs_category">Быстрые настройки</string>
+    <string name="lockscreen_category">Экран блокировки</string>
+    <string name="hardware_category">Дополнения</string>
+    <string name="build_tweaks_summary_title">В стремление к совершенству</string>
+    <string name="listview">Список</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">Разработчики и команда</string>
+    <string name="aboutus_tab">Узнайте больше о нас</string>
+    <!-- Developers -->
+    <string name="note">Важное ПРИМЕЧАНИЕ</string>
+    <string name="note_summary">Не пишите разработчикам напрямую, для этого существуют группы. Если мы увидим какое-либо прямое сообщение, мы внесём вас в черный список. Мы не можем постоянно работать для вас, поэтому просто ждите обновления</string>
+    <!-- Contact and Download -->
+    <string name="download">Загрузите ваши сборки</string>
+    <string name="download_summary">Нажмите здесь, чтобы загрузить сборку для вашего устройства</string>
+    <string name="paypal">PayPal</string>
+    <string name="donate_summary">Пожертвовать нам, за нашу работу</string>
+    <string name="don_summ1">• Для сборки прошивок существуют необходимые предварительные условия, такие как мощные сервера для сборки (Jenkins) или очень мощный ПК вместе с высокоскоростным интернетом.</string>
+    <string name="don_summ2">• Нам, разработчикам, нужно выделять наше время из загруженного графика и усердно работать над надлежащим обслуживанием прошивки, чтобы мы могли предоставлять нашим пользователям своевременные и стабильные обновления</string>
+    <string name="don_summ3">• Подумайте о пожертвовании или покупке нам кофе с помощью PayPal, присоединяйтесь к нам на Patreon для стабильной поддержки и вознаграждения, если Вы благодарны за нашу работу</string>
+    <string name="tele_group">Обсуждение в Telegram</string>
+    <string name="grp_summary">Если у вас возникли вопросы, спросите в нашей Telegram группе</string>
+    <string name="tele_channel">Telegram канал с обновлениями</string>
+    <string name="update_summary">Подпишитесь на Telegram канал для более быстрых обновлений</string>
+    <string name="website">Официальный сайт</string>
+    <string name="website_summary">Посетите наш сайт, там вы найдете всю необходимую информацию</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">Загрузка и Веб-сайт</string>
+    <string name="telegram">Поддержка в Telegram</string>
+    <string name="donateus">Поддержать нас</string>
+    <string name="patreon">Хотите ранний доступ к сборкам?</string>
+    <string name="patreon_summary">Patreon предназначен для тех, кто хочет поддержать разработчиков, получить ранний доступ к сборкам, некоторым эксклюзивным возможностям и преимуществам.</string>
+    <!-- Summery -->
+    <string name="summ_gesture">Управление воспроизведением • Системная навигация</string>
+    <string name="summ_lock">Спящий режим • Обложка • Боковое освещение</string>
+    <string name="summ_misc">Игровое пространство • Меню питания • Аппаратные кнопки</string>
+    <string name="summ_monet">Monet • Темы • Часы экрана блокировки</string>
+    <string name="summ_quick">Стили быстрых настроек • Обложка • Использование данных</string>
+    <string name="summ_sbar">Сетевой трафик • VoLTE/VoWifi </string>
+    <string name="summ_about">О Project Elixir и его разработчиках</string>
+    <string name="donate">Поддержать нас</string>
+    <!-- Categories -->
+    <string name="gestures_title">Жесты</string>
+    <string name="lockscreen_title">Экран блокировки</string>
+    <string name="misc_title">Разное</string>
+    <string name="navbar_title">Панель навигации</string>
+    <string name="notifications_title">Уведомления</string>
+    <string name="powermenu_title">Меню питания</string>
+    <string name="quicksettings_title">Панель быстрых настроек</string>
+    <string name="recents_title">Последние приложения</string>
+    <string name="statusbar_title">Строка состояния</string>
+    <string name="volume_title">Настройки громкости</string>
+    <string name="network_traffic_catagories">Сетевой трафик</string>
+    <string name="clock_date">Настройки часов и даты</string>
+    <string name="status_bar_actions">Действия строки состояния</string>
+    <string name="lockscreen_settings">Настройки экрана блокировки</string>
+    <string name="customisation_title">Темы</string>
+    <string name="buttons_category">Меню питания</string>
+    <string name="lockscreen_gestures_category">Жесты на экране блокировки</string>
+    <string name="signal_category">Иконка сети</string>
+    <!-- General strings -->
+    <string name="ok">ОК</string>
+    <string name="save">Сохранить</string>
+    <string name="general_category">Общие настройки</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Выбор цвета</string>
+    <string name="press_color_to_apply">Нажмите на цвет, чтобы применить его</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_check_button_text">ПРЕДПРОСМОТР</string>
+    <string name="hex_reset_button_text">СБРОС</string>
+    <string name="set">Задать</string>
+    <string name="color_default">По умолчанию</string>
+    <string name="longpress_info">Удерживайте поле для сохранения цвета</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">Настройки панели быстрых настроек</string>
+    <string name="qstiles_title">Стиль плиток быстрых настроек</string>
+    <string name="qstiles_default">Стиль по умолчанию</string>
+    <string name="qstiles_custom1">Классический стиль</string>
+    <string name="qstiles_custom2">Прямоугольный стиль</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Музыка на экране блокировки</string>
+    <string name="media_art_title">Отображение обложки альбома</string>
+    <string name="media_art_summary">Включить обложку альбома на экране блокировки</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Фильтр обложки альбома</string>
+    <string name="lockscreen_albumart_filter_none">Нет</string>
+    <string name="lockscreen_albumart_filter_grayscale">Оттенки серого</string>
+    <string name="lockscreen_albumart_filter_tint">Тон акцента</string>
+    <string name="lockscreen_albumart_filter_blur">Размытие</string>
+    <string name="lockscreen_albumart_filter_grayblur">Оттенки серого и размытие</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Уровень размытия для обложки альбома, на экране блокировки</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Требовать разблокировку для использования защищенных плиток</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Просить разблокировать экран блокировки при использовании защищенных плиток</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Включить расширенную перезагрузку</string>
+    <string name="global_actions_advanced_reboot_summary">Показывать опции Рекавери и Загрузчика в меню питания</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Оформление</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Заголовок/Основной шрифт</string>
+    <string name="theme_customization_font_summary">Задать системный шрифт</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Форма иконок</string>
+    <string name="theme_customization_icon_shape_summary">Установить системный стиль формы иконок</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Набор иконок</string>
+    <string name="theme_customization_icon_pack_summary">Установить свой набор иконок</string>
+    <string name="theme_customization_signal_icon_title">Стиль значка сигнала</string>
+    <string name="theme_customization_signal_icon_summary">Задать свой стиль значка сигнала</string>
+    <string name="theme_customization_wifi_icon_title">Стиль значка WiFi</string>
+    <string name="theme_customization_wifi_icon_summary">Установить свой стиль значка Wi-Fi</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">По умолчанию</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
+    <string name="lockscreen_battery_info_summary">Показывать ток зарядки, напряжение, мощность и температуру батареи на экране блокировки во время зарядки</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">Настройки сетевого трафика</string>
+    <string name="traffic_title">Индикаторы трафика</string>
+    <string name="traffic_summary">Настройка индикаторов трафика</string>
+    <string name="network_traffic_autohide_threshold_title">Порог автоскрытия</string>
+    <string name="network_traffic_location_title">Местоположение</string>
+    <string name="network_traffic_disabled">Отключено</string>
+    <string name="network_traffic_statusbar">Строка состояния</string>
+    <string name="network_traffic_qs_header">Заголовок панели быстрых настроек</string>
+    <string name="network_traffic_refresh_interval_title">Период обновления</string>
+    <string name="network_traffic_mode_title">Режим отображения</string>
+    <string name="network_traffic_dynamic">Динамический</string>
+    <string name="network_traffic_download">Скачивание</string>
+    <string name="network_traffic_upload">Загрузка</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Игнорировать флаги безопасности</string>
+    <string name="ignore_window_secure_summary">Убирает ограничение на снимки и запись экрана, из-за которого содержимое некоторых приложений заменяется на черную область. Это может быть удобным в некоторых случаях, но может привести к утечке конфиденциальной информации. После изменения этой настройки может потребоваться перезапустить приложения, чтобы изменения вступили в силу.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Менеджер иконок</string>
+    <string name="icon_manager_summary">Управление видимостью значков в строке состояния</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Эффект волны</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Показывать эффект волны при разблокировке с помощью отпечатка пальца</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">Нижняя часть панели быстрых настроек</string>
+    <string name="qs_footer_datausage_title">Расход трафика</string>
+    <string name="qs_footer_datausage_summary">Показывать расход трафика в нижней части панели быстрых настроек</string>
+    <!-- Screen off animation -->
+    <string name="default_string">По умолчанию</string>
+    <string name="screen_off_animation_title">Анимация отключения экрана</string>
+    <string name="screen_off_animation_crt">ЭЛТ</string>
+    <string name="screen_off_animation_scale">Масштаб</string>
+    <string name="lockscreen_effects_cat">Анимации экрана блокировки</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Параметры вибрации при вызове</string>
+    <string name="incall_vibrate_connect_title">Вибрация при подключении</string>
+    <string name="incall_vibrate_call_wait_title">Вибрация при ожидании вызова</string>
+    <string name="incall_vibrate_disconnect_title">Вибрация при отключении</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Включение фонарика при выключенном экране</string>
+    <string name="torch_power_button_gesture_none">Отключено</string>
+    <string name="torch_power_button_gesture_dt">Двойное нажатие на кнопку питания (одиночное нажатие станет медленнее), отключает двойное нажатие кнопки питания для камеры.</string>
+    <string name="torch_power_button_gesture_dt_toast">Жест для перехода к камере теперь отключен</string>
+    <string name="torch_power_button_gesture_lp">Долгое нажатие кнопки питания</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">Быстрый доступ к панели быстрых настроек</string>
+    <string name="quick_pulldown_none">Отключено</string>
+    <string name="quick_pulldown_right">Выпадающая строка состояния справа</string>
+    <string name="quick_pulldown_left">Выпадающая строка состояния слева</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Ползунок яркости</string>
+    <string name="qs_show_brightness_slider_never">Никогда не показывать</string>
+    <string name="qs_show_brightness_slider_expanded">Показать при раскрытии</string>
+    <string name="qs_show_brightness_slider_always">Показывать всегда</string>
+    <string name="qs_show_brightness_slider_not_expanded">Показывать в свёрнутом виде</string>
+    <string name="qs_brightness_slider_position_title">Положение</string>
+    <string name="qs_brightness_slider_position_top">Сверху</string>
+    <string name="qs_brightness_slider_position_bottom">Снизу</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Значок автояркости</string>
+    <string name="qs_show_auto_brightness_summary">Показывать значок автояркости рядом с ползунком</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Значок 4G</string>
+    <string name="show_fourg_icon_summary">Отображать значок 4G вместо LTE</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Маленький значок типа сети</string>
+    <string name="use_old_mobiletype_summary">Показывать значок типа сети поверх индикатора уровня сигнала</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Индикатор роуминга</string>
+    <string name="roaming_indicator_icon_summary">Отображать индикатор роуминга в значке сигнала, в режиме роуминга</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Показывать значок отключенной передачи данных</string>
+    <string name="data_disabled_icon_summary">Показывать крестик рядом с уровнем сигнала, когда передача данных отключена</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">Двойное касание для отключения экрана</string>
+    <string name="double_tap_sleep_lockscreen_summary">Двойное касание в любом месте экрана блокировки, чтобы выключить экран</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Дважды коснитесь строки состояния, чтобы выключить экран</string>
+    <string name="double_tap_sleep_gesture_summary">Дважды коснитесь в любом месте строки состояния, чтобы выключить экран устройства</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Вибрация при нажатии</string>
+    <string name="quick_settings_vibrate_summary">Вибрация при переключении быстрых настроек</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Использовать собственную тему</string>
+    <string name="custom_theme_summary">Принудительно установить цвета фона</string>
+    <string name="custom_theme_default">По умолчанию</string>
+    <string name="custom_theme_black">Чёрный</string>
+    <string name="custom_theme_vivid">Vivid (Monet)</string>
+    <string name="custom_theme_espresso">Эспрессо</string>
+    <string name="custom_theme_snowpaintdrop">Красочный снег</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Отпечаток пальца</string>
+    <string name="fprint_error_vib_title">Вибрация при ошибке отпечатка пальца</string>
+    <string name="fprint_error_vib_summary">Вибрирует при ошибке аутентификации по отпечатку пальца</string>
+    <string name="fprint_success_vib_title">Вибрация при аутентификации по отпечатку пальца</string>
+    <string name="fprint_success_vib_summary">Вибрирует при успешной аутентификации по отпечатку пальца</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Стиль ползунка яркости</string>
+    <string name="brightness_custom1">Стиль с обводкой</string>
+    <string name="brightness_custom2">Заполненный стиль</string>
+    <string name="brightness_custom3">Тонкий стиль</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Кнопка принудительной остановки</string>
+    <string name="notification_guts_kill_app_button_summary">Показывать кнопку принудительной остановки в меню уведомлений при длительном нажатии</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">Параметры игрового режима</string>
+    <string name="gaming_mode_title">Игровое пространство</string>
+    <string name="gaming_mode_summary">Дополнительные возможности для полноценного погружения в игру</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Отображать значок стандарта Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Отображать значок стандарта Wi-Fi в индикаторе сигнала</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Замените всплывающие уведомления на переработанную, более тонкую и менее агрессивную версию</string>
+    <string name="reticker_colored_title">Использовать цвет приложений для фона</string>
+    <string name="reticker_colored_summary">Заменить цвет фона, используя основной цвет приложения уведомлений</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Стиль элементов быстрых настроек</string>
+    <string name="qs_outline">Контур</string>
+    <string name="qs_two_tone">Двухцветный акцент</string>
+    <string name="qs_color_pop">Яркий цвет</string>
+    <string name="qs_shaded">Затененный</string>
+    <string name="qs_cyberpunk">Киберпанк</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Подсветка краёв экрана</string>
+    <string name="edge_light_summary">Подсвечивать края экрана при уведомлениях</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Всегда запускать при уведомлениях</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Воспроизводить анимацию, даже когда Всегда включенный экран включён, и не только для уведомлений</string>
+    <string name="edge_light_repeat_animation_title">Повтор анимации</string>
+    <string name="edge_light_repeat_animation_summary_on">Повторять до тайм-аута</string>
+    <string name="edge_light_repeat_animation_summary_off">Показывать один раз</string>
+    <string name="edge_light_color_mode_title">Цвет подсветки краёв экрана</string>
+    <string name="accent_color">Цвет акцента (по умолчанию)</string>
+    <string name="notification_color">Цвет уведомлений</string>
+    <string name="wallpaper_color">Цвет обоев</string>
+    <string name="custom_color">Пользовательский цвет</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Настройки батареи</string>
+    <string name="battery_style_category_title">Стили значка батареи</string>
+    <string name="battery_percent_title">Процент заряда батареи</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Стиль значка батареи</string>
+    <string name="status_bar_battery_style_icon_portrait">Вертикальный (по умолчанию)</string>
+    <string name="status_bar_battery_style_circle">Круг</string>
+    <string name="status_bar_battery_style_dotted_circle">Круг (Точками)</string>
+    <string name="status_bar_battery_style_filled_circle">Круг (Заполненный)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Горизонтальный (Справа)</string>
+    <string name="status_bar_battery_style_icon_landscape">Горизонтальный (Слева)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Портретный режим правый, стиль 1</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Портретный режим левый, стиль 1</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Портретный режим правый, стиль 2</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Портретный режим левый, стиль 2</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Портрет МХ</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Портретный Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Портретный IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Портретный Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Портретный капсульный</string>
+    <string name="status_bar_battery_style_text">Текст</string>
+    <string name="status_bar_battery_style_hidden">Скрыть</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
+    <string name="status_bar_battery_percentage_default">Скрыто (по умолчанию)</string>
+    <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
+    <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Изображение заголовка быстрых настроек</string>
+    <string name="qs_header_random_image_title">Случайное изображение заголовка быстрых настроек</string>
+    <string name="qs_header_random_image_summary">Включить случайное изображение заголовка быстрых настроек</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">Персонализация часов</string>
+    <string name="clocksettings_title">Настройки часов</string>
+    <string name="clocksettings_summary">Настройки часов в строке состояния</string>
+    <string name="status_bar_clock_date_title">Часы и дата</string>
+    <string name="status_bar_clock_date_summary">Настройте часы и дату в строке состояния</string>
+    <string name="status_bar_clock_title">Настройки часов</string>
+    <string name="status_bar_clock_show">Показывать часы и дату</string>
+    <string name="status_bar_clock_style_title">Стиль часов</string>
+    <string name="status_bar_clock_style_right">Справа</string>
+    <string name="status_bar_clock_style_center">По центру</string>
+    <string name="status_bar_clock_style_left">Слева</string>
+    <string name="status_bar_date_title">Настройки даты</string>
+    <string name="status_bar_am_pm_title">Стиль AM/PM</string>
+    <string name="status_bar_am_pm_info">Включен 24-часовой формат</string>
+    <string name="status_bar_am_pm_normal">Обычный</string>
+    <string name="status_bar_am_pm_small">Маленький</string>
+    <string name="status_bar_am_pm_hidden">Скрыто (по умолчанию)</string>
+    <string name="clock_seconds_display">Показывать секунды</string>
+    <string name="clock_date_display">Дата</string>
+    <string name="clock_date_display_summary">Отображение пользовательской даты перед часами</string>
+    <string name="clock_date_display_none">Не показывать</string>
+    <string name="clock_date_display_small">Маленький размер шрифта</string>
+    <string name="clock_date_display_normal">Обычный размер шрифта</string>
+    <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_style_normal">Обычный</string>
+    <string name="clock_date_style_lowercase">Строчные буквы</string>
+    <string name="clock_date_style_uppercase">Прописные буквы</string>
+    <string name="clock_date_format_custom">Пользовательский java формат</string>
+    <string name="clock_date_format">Формат даты</string>
+    <string name="clock_date_string_edittext_title">Значение должно соответствовать формату, например: ММ/дд/гг</string>
+    <string name="clock_date_string_edittext_summary">Ввести значение</string>
+    <string name="clock_date_right">Справа от времени</string>
+    <string name="clock_date_left">Слева от времени</string>
+    <string name="clock_date_position">Расположение даты</string>
+    <string name="status_bar_clock_auto_hide_title">Автоматическое скрытие часов</string>
+    <string name="status_bar_clock_auto_hide_summary">Скрыть и показать часы через равные промежутки времени</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Длительность скрытия</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Длительность показа</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">Прозрачность фона быстрых настроек</string>
+    <string name="qs_transparency_summary">Установка уровня прозрачности фона быстрых настроек</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Разблокировать высокий FPS в играх</string>
+    <string name="use_games_spoof_summary">Маскировать ваше устройство под другую модель для некоторых игр, чтобы разблокировать высокий FPS</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Размытие фона обложки уведомления медиа</string>
+    <string name="artwork_media_background_blur_radius_title">Сила размытия обложки уведомления медиа</string>
+    <string name="media_artwork_fade_percent_title">Процент затемнения обложки уведомления медиа</string>
+</resources>

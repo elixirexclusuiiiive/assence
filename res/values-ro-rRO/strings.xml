@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">Cum te simți azi?</string>
+    <!-- General app strings -->
+    <string name="add">Adăugare</string>
+    <string name="advanced">Avansat</string>
+    <string name="cancel">Anulare</string>
+    <string name="default_text">Implicit</string>
+    <string name="dlg_ok">OK</string>
+    <string name="attention">Atenție</string>
+    <string name="loading">Se încarcă\u2026</string>
+    <string name="reset">Resetare</string>
+    <string name="reset_colors">Resetare culori</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Pictogramă</string>
+    <string name="color_title">Culoare</string>
+    <string name="colors_title">Culori</string>
+    <string name="enable">Enable</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">Bară de stare</string>
+    <string name="system_category">Echipă</string>
+    <string name="themes_category">Teme</string>
+    <string name="qs_category">Setări rapide</string>
+    <string name="lockscreen_category">Ecran de blocare</string>
+    <string name="hardware_category">Suplimentar</string>
+    <string name="build_tweaks_summary_title">Personalizări și multe altele!</string>
+    <string name="listview">Vizualizare listă</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">Dezvoltatori și Echipa</string>
+    <string name="aboutus_tab">Know more about us</string>
+    <!-- Developers -->
+    <string name="note">Notă importantă</string>
+    <string name="note_summary">Nu trimite mesaje directe niciunui dezvoltatori, grupuri sunt acolo dintr-un anumit motiv și folosesc ceva creier. Dacă vedem vreun mesaj direct, îl vom interzice peste tot. Nu suntem aici pentru a vă servi non-stop, așa că ai răbdare. Doar lasă-ne să ne trăim viața în pace</string>
+    <!-- Contact and Download -->
+    <string name="download">Descărcare</string>
+    <string name="download_summary">Atinge aici pentru a descărca</string>
+    <string name="paypal">Paypal</string>
+    <string name="donate_summary">Donează pentru a sprijini efortul nostru</string>
+    <string name="don_summ1">• De fapt, pentru a construi un ROM personalizat, există anumite premise, cum ar fi un High-End Building Server (Jenkins) sau un PC cu specificații tehnice foarte High-End combinate cu o conexiune la internet de foarte mare viteză.</string>
+    <string name="don_summ2">• Noi, dezvoltatorii, trebuie să ne alocăm timpul și munca grea din programul nostru academic pentru întreținerea corespunzătoare a ROM-ului personalizat, astfel încât să putem oferi utilizatorilor actualizări în timp util și stabile</string>
+    <string name="don_summ3">• Ia în considerare să donezi sau să cumperi o cafea pe Paypal sau alătură-te nouă pe Patreon pentru sprijin și recompense durabile dacă dorești să apreciezi munca noastră</string>
+    <string name="tele_group">Grup de discuții în Telegram</string>
+    <string name="grp_summary">Dacă ai probleme, partajează-le în grupul nostru de discuții Telegram</string>
+    <string name="tele_channel">Canal de actualizare Telegram</string>
+    <string name="update_summary">Abonează-te la canalul telegram pentru actualizări mai rapide</string>
+    <string name="website">Pagina web oficială</string>
+    <string name="website_summary">Vizitează site-ul nostru, vei obține toate informațiile necesare aici</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">Descărcare și website</string>
+    <string name="telegram">Suport Telegram</string>
+    <string name="donateus">Ajută-ne prin donație</string>
+    <string name="patreon">Dorești acces la compilare timpurie?</string>
+    <string name="patreon_summary">Patreon este pentru cei care doresc să susțină dezvoltatorii, să obțină acces timpuriu la compilare, câteva caracteristici și beneficii exclusive.</string>
+    <!-- Summery -->
+    <string name="summ_gesture">Control redare • Navigare sistem</string>
+    <string name="summ_lock">Atingere dublă • Copertă media • Iluminare margini</string>
+    <string name="summ_misc">Spațiu de joc • Meniu de alimentare • Butoane </string>
+    <string name="summ_monet">Monet • Tematică • Ceas ecran de blocare</string>
+    <string name="summ_quick">Stiluri QS • Copertă Media • Utilizarea datelor</string>
+    <string name="summ_sbar">Trafic de rețea • VoLTE/VoWifi </string>
+    <string name="summ_about">Despre Proiectul Elixir ROM și dezvoltatorii săi</string>
+    <string name="donate">Donează aici</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gesturi</string>
+    <string name="lockscreen_title">Ecran de blocare</string>
+    <string name="misc_title">Diverse</string>
+    <string name="navbar_title">Bară de navigare</string>
+    <string name="notifications_title">Notificări</string>
+    <string name="powermenu_title">Meniu de alimentare</string>
+    <string name="quicksettings_title">Setări rapide</string>
+    <string name="recents_title">Aplicații recente</string>
+    <string name="statusbar_title">Bară de stare</string>
+    <string name="volume_title">Setări de volum</string>
+    <string name="network_traffic_catagories">Trafic rețea</string>
+    <string name="clock_date">Setări ceas și data</string>
+    <string name="status_bar_actions">Acțiuni bară de stare</string>
+    <string name="lockscreen_settings">Setări ecran de blocare</string>
+    <string name="customisation_title">Teme</string>
+    <string name="buttons_category">Meniu de alimentare</string>
+    <string name="lockscreen_gestures_category">Gesturi pe ecranul blocat</string>
+    <string name="signal_category">Pictogramă rețea</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="save">Salvare</string>
+    <string name="general_category">Personalizări generale</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selector culoare</string>
+    <string name="press_color_to_apply">Apasă pe culoarea de mai jos pentru a aplica</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_check_button_text">PREVIZUALIZARE</string>
+    <string name="hex_reset_button_text">RESETARE</string>
+    <string name="set">Setează</string>
+    <string name="color_default">Implicit</string>
+    <string name="longpress_info">Apasă lung caseta pentru a salva culoarea</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">Personalizări setări rapide</string>
+    <string name="qstiles_title">Stiluri panou Setări rapide</string>
+    <string name="qstiles_default">Stil implicit</string>
+    <string name="qstiles_custom1">Stil clasic</string>
+    <string name="qstiles_custom2">MaybeRectangle Style</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Lockscreen Music</string>
+    <string name="media_art_title">Copertă media</string>
+    <string name="media_art_summary">Activează coperta media pe ecranul de blocare</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Filtru copertă media</string>
+    <string name="lockscreen_albumart_filter_none">Niciunul</string>
+    <string name="lockscreen_albumart_filter_grayscale">Nuanțe de gri</string>
+    <string name="lockscreen_albumart_filter_tint">Accentuare colorată</string>
+    <string name="lockscreen_albumart_filter_blur">Estompare</string>
+    <string name="lockscreen_albumart_filter_grayblur">Tonuri de gri și translucente</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Cantitatea de estompare pentru coperta media a ecranului de blocare</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Necesită deblocare pentru a folosi dale sensibile</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Solicită deblocarea ecranului când se utilizează dale sensibile</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Activare repornire avansată</string>
+    <string name="global_actions_advanced_reboot_summary">Arată opțiuni pentru modul recuperare și bootloader în meniul de alimentare</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Tematică</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Font pentru Titlu / Corp text</string>
+    <string name="theme_customization_font_summary">Setare stil font de sistem</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Forma pictogramelor</string>
+    <string name="theme_customization_icon_shape_summary">Setează stilul pictogramei de sistem</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Pachet de pictograme</string>
+    <string name="theme_customization_icon_pack_summary">Setează stilul personalizat al pachetului de pictograme</string>
+    <string name="theme_customization_signal_icon_title">Stil pictogramă semnal</string>
+    <string name="theme_customization_signal_icon_summary">Setează stilul personalizat al pictogramei de semnal</string>
+    <string name="theme_customization_wifi_icon_title">Stil pictogramă WiFi</string>
+    <string name="theme_customization_wifi_icon_summary">Setează stilul de pictogramă wifi personalizat</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Implicit</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informații despre încărcare pe ecranul de blocare</string>
+    <string name="lockscreen_battery_info_summary">Afișează curentul și tensiunea maximă negociată a încărcătorului și temperatura bateriei pe ecranul de blocare în timpul încărcării</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">Setări Trafic rețea</string>
+    <string name="traffic_title">Indicatori de trafic</string>
+    <string name="traffic_summary">Personalizare indicatori de trafic</string>
+    <string name="network_traffic_autohide_threshold_title">Pragul de ascunde automată</string>
+    <string name="network_traffic_location_title">Locație</string>
+    <string name="network_traffic_disabled">Dezactivat</string>
+    <string name="network_traffic_statusbar">Bară de stare</string>
+    <string name="network_traffic_qs_header">Antet setări rapide</string>
+    <string name="network_traffic_refresh_interval_title">Rată de reîmprospătare</string>
+    <string name="network_traffic_mode_title">Mod afișare</string>
+    <string name="network_traffic_dynamic">Dinamic</string>
+    <string name="network_traffic_download">Descărcare</string>
+    <string name="network_traffic_upload">Încărcare</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignoră semnalările sigure ale ferestrelor</string>
+    <string name="ignore_window_secure_summary">Acest lucru elimină limitările pentru capturile de ecran și înregistrările de ecran pentru toate aplicațiile. În mod normal, aplicațiile speciale sunt înlocuite cu zone negre în înregistrări. Acest lucru poate fi convenabil în unele cazuri, dar poate duce la scurgeri de confidențialitate. După ce ați schimbat această opțiune, poate fi necesar să reporniți aplicațiile pentru ca modificarea să intre în vigoare.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Gestionare pictograme</string>
+    <string name="icon_manager_summary">Controlează vizibilitatea pictogramelor din bara de stare</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Efect ondulare</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Arată efectul de undă la deblocare cu amprenta</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">Subsol setări rapide</string>
+    <string name="qs_footer_datausage_title">Utilizare date</string>
+    <string name="qs_footer_datausage_summary">Afișează rezumatul utilizării datelor în subsolul setărilor rapide</string>
+    <!-- Screen off animation -->
+    <string name="default_string">Implicit</string>
+    <string name="screen_off_animation_title">Animație oprire ecran</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Dimensionare</string>
+    <string name="lockscreen_effects_cat">Animații ecran de blocare</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opțiuni de vibrație în apel</string>
+    <string name="incall_vibrate_connect_title">Vibrare la conectare apel</string>
+    <string name="incall_vibrate_call_wait_title">Vibrare la apel în așteptare</string>
+    <string name="incall_vibrate_disconnect_title">Vibrează la deconectare apel</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Aprinde lanterna când ecranul este oprit</string>
+    <string name="torch_power_button_gesture_none">Dezactivat</string>
+    <string name="torch_power_button_gesture_dt">Atinge de două ori butonul de pornire (răspuns mai lent la o singură atingere), Dezactivează atingerea dublă a butonului de alimentare pentru cameră.</string>
+    <string name="torch_power_button_gesture_dt_toast">Gestul de accesare a Camerei foto este dezactivat acum</string>
+    <string name="torch_power_button_gesture_lp">Apăsare lungă pe butonul de alimentare</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">Extindere rapidă a barei de stare</string>
+    <string name="quick_pulldown_none">Dezactivat</string>
+    <string name="quick_pulldown_right">Bară de stare extensibilă din partea dreaptă</string>
+    <string name="quick_pulldown_left">Bară de stare extensibilă din partea stângă</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Cursor luminozitate</string>
+    <string name="qs_show_brightness_slider_never">Nu se afișează niciodată</string>
+    <string name="qs_show_brightness_slider_expanded">Se afișează când este extins</string>
+    <string name="qs_show_brightness_slider_always">Se afișează mereu</string>
+    <string name="qs_show_brightness_slider_not_expanded">Se afișează când nu este extins</string>
+    <string name="qs_brightness_slider_position_title">Poziție</string>
+    <string name="qs_brightness_slider_position_top">Sus</string>
+    <string name="qs_brightness_slider_position_bottom">Jos</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Pictogramă luminozitate automată</string>
+    <string name="qs_show_auto_brightness_summary">Afișează comutator pentru luminozitate adaptivă lângă glisor</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Pictograma 4G</string>
+    <string name="show_fourg_icon_summary">Înlocuiește indicatorul LTE cu 4G</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Pictogramă mică tip date mobile</string>
+    <string name="use_old_mobiletype_summary">Se afișează pictograma tipului de rețea mobilă deasupra indicatorului de semnal</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indicator de roaming</string>
+    <string name="roaming_indicator_icon_summary">Afișare indicator roaming în modul roaming</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Afișare pictogramă date dezactivate</string>
+    <string name="data_disabled_icon_summary">Afișarea semnului x lângă bara de semnal atunci când datele sunt dezactivate</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">Apăsare dublă pentru a opri ecranul</string>
+    <string name="double_tap_sleep_lockscreen_summary">Atinge de două ori oriunde pe ecranul de blocare pentru a opri ecranul</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Dublă atingere pe bara de stare pentru oprire ecran</string>
+    <string name="double_tap_sleep_gesture_summary">Atinge de două ori oriunde pe bara de stare pentru a opri ecranul</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrare la atingere</string>
+    <string name="quick_settings_vibrate_summary">Vibrare la atingerea dalelor setărilor rapide</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Utilizare temă personalizată</string>
+    <string name="custom_theme_summary">Forțează culori de fundal personalizate</string>
+    <string name="custom_theme_default">Implicit</string>
+    <string name="custom_theme_black">Neagră</string>
+    <string name="custom_theme_vivid">Vivid(Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Paint in the Snow</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Fingerprint</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Stil cursor luminozitate</string>
+    <string name="brightness_custom1">Stil contur</string>
+    <string name="brightness_custom2">Filled Style</string>
+    <string name="brightness_custom3">Thin Style</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Force stop button</string>
+    <string name="notification_guts_kill_app_button_summary">Show force stop button in the notification\'s longpress menu</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">Opțiuni pentru modul de joc</string>
+    <string name="gaming_mode_title">Spațiu de jocuri</string>
+    <string name="gaming_mode_summary">Funcții suplimentare pentru o experiență de joc captivantă</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Afișare pictogramă tip Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Afișează tipul Wi-Fi în indicatorul de semnal Wi-Fi</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Înlocuiește notificările de atenționare cu o versiune subțire și mai puțin invazivă a ticker-ului reproiectat</string>
+    <string name="reticker_colored_title">Folosește fundal colorat pentru aplicații</string>
+    <string name="reticker_colored_summary">Înlocuiește culoarea de fundal reTicker folosind culoarea principală a aplicației de notificare</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Combined QS element styles</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Two-tone accent</string>
+    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_shaded">Shaded</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Edge light</string>
+    <string name="edge_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Whether to show edge light whenever ambient display is shown and not just for notifications</string>
+    <string name="edge_light_repeat_animation_title">Repeat animation</string>
+    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
+    <string name="edge_light_color_mode_title">Edge light color mode</string>
+    <string name="accent_color">Accent color (Default)</string>
+    <string name="notification_color">Notification color</string>
+    <string name="wallpaper_color">Wallpaper color</string>
+    <string name="custom_color">Custom color</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Battery Settings</string>
+    <string name="battery_style_category_title">Battery styles</string>
+    <string name="battery_percent_title">Battery percent</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS Header Image</string>
+    <string name="qs_header_random_image_title">QS Header Random Image</string>
+    <string name="qs_header_random_image_summary">Enable random QS header image</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">Clock Customizations</string>
+    <string name="clocksettings_title">Clock Settings</string>
+    <string name="clocksettings_summary">Statusbar clock settings</string>
+    <string name="status_bar_clock_date_title">Clock and Date</string>
+    <string name="status_bar_clock_date_summary">Customize your statusbar clock and date</string>
+    <string name="status_bar_clock_title">Clock settings</string>
+    <string name="status_bar_clock_show">Show clock and date</string>
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="status_bar_clock_style_right">Right</string>
+    <string name="status_bar_clock_style_center">Center</string>
+    <string name="status_bar_clock_style_left">Left</string>
+    <string name="status_bar_date_title">Date settings</string>
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
+    <string name="clock_seconds_display">Show seconds</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="status_bar_clock_auto_hide_title">Auto-hide clock</string>
+    <string name="status_bar_clock_auto_hide_summary">Hide and show clock at regular intervals of time</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Hide duration</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Show duration</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">QS Background transparency</string>
+    <string name="qs_transparency_summary">Set transparency level for QS background</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_artwork_fade_percent_title">Fade percent for media notification artwork</string>
+</resources>

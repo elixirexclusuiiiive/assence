@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">調子はどうだい?</string>
+    <!-- General app strings -->
+    <string name="add">追加</string>
+    <string name="advanced">高度</string>
+    <string name="cancel">キャンセル</string>
+    <string name="default_text">デフォルト</string>
+    <string name="dlg_ok">OK</string>
+    <string name="attention">注意</string>
+    <string name="loading">読み込み中\u2026</string>
+    <string name="reset">リセット</string>
+    <string name="reset_colors">色をリセット</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">テキスト</string>
+    <string name="icon_title">アイコン</string>
+    <string name="color_title">色</string>
+    <string name="colors_title">色</string>
+    <string name="enable">有効</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">ステータスバー</string>
+    <string name="system_category">チーム</string>
+    <string name="themes_category">テーマ</string>
+    <string name="qs_category">クイック設定</string>
+    <string name="lockscreen_category">ロック画面</string>
+    <string name="hardware_category">エクストラ</string>
+    <string name="build_tweaks_summary_title">システムの改善を提供します</string>
+    <string name="listview">リストビュー</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">開発者とチーム</string>
+    <string name="aboutus_tab">私達について更に知る</string>
+    <!-- Developers -->
+    <string name="note">重要なお知らせ</string>
+    <string name="note_summary">開発者達にダイレクトメッセージを送らないでください。もしも、ダイレクトメッセージを見かけた場合は私達は彼または彼女とのコンタクトを禁じます。私達は24 時間365 日、サービスを提供している訳ではありません。気長にお待ち下さい。そうしてくれる事で私達は平和に生活を送る事ができます。</string>
+    <!-- Contact and Download -->
+    <string name="download">ビルドをダウンロード</string>
+    <string name="download_summary">各デバイスのビルドをダウンロードするにはこちらをタップしてください</string>
+    <string name="paypal">PayPal</string>
+    <string name="donate_summary">私達の活動に感謝をしている方は寄付をお願いします</string>
+    <string name="don_summ1">• 実はね。カスタム ROM を作るにはハイエンドなビルド用サーバー (Jenkins) やハイエンド環境な PC、高速なインターネット接続などの前提条件があるんだ。</string>
+    <string name="don_summ2">• 我々開発者は、ユーザーにタイムリーで安定したアップデートを提供できるように多忙な学業のスケジュールの中でカスタム ROM の適切なメンテンスをする為に時間と労力を割いているんですよ。</string>
+    <string name="don_summ3">• 私達の活動に感謝をしている方は PayPal でコーヒーを奢ったり、Patreon で定期的な支援や報酬を与えてくれる事ですごく励みになります。</string>
+    <string name="tele_group">Telegram ディスカッショングループ</string>
+    <string name="grp_summary">問題があった場合は Telegram ディスカッショングループで共有をしてください</string>
+    <string name="tele_channel">Telegram アップデートチャンネル</string>
+    <string name="update_summary">Telegram チャンネルに登録するとより早くアップデートが可能です</string>
+    <string name="website">オフィシャル Web サイト</string>
+    <string name="website_summary">公式の Web サイトをチェックしてみてください、必要な情報が見つかるかもしれません</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">ダウンロードと Web サイト</string>
+    <string name="telegram">Telegram サポート</string>
+    <string name="donateus">寄付で支援をする</string>
+    <string name="patreon">早期ビルドのアクセスをご希望ですか?</string>
+    <string name="patreon_summary">Patreon で支援をする事で早期ビルドの入手、いくつかの限定機能などの特典を入手できます。</string>
+    <!-- Summery -->
+    <string name="summ_gesture">再生コントロール、システム ナビゲーション</string>
+    <string name="summ_lock">ダブルタップでスリープ、メディアカバー画像、エッジライト</string>
+    <string name="summ_misc">ゲームスペース、電源メニュー、ハードウェアキー </string>
+    <string name="summ_monet">Monet、テーマ、ロック画面の時計</string>
+    <string name="summ_quick">クイック設定のスタイル、メディアカバー画像、データ使用量</string>
+    <string name="summ_sbar">ネットワークトラフィック、VoLTE/Wi-Fi 通話 </string>
+    <string name="summ_about">Project Elixir ROM と開発者について</string>
+    <string name="donate">寄付はこちらから</string>
+    <!-- Categories -->
+    <string name="gestures_title">ジェスチャー</string>
+    <string name="lockscreen_title">ロック画面</string>
+    <string name="misc_title">その他</string>
+    <string name="navbar_title">ナビゲーションバー</string>
+    <string name="notifications_title">通知</string>
+    <string name="powermenu_title">電源メニュー</string>
+    <string name="quicksettings_title">クイック設定</string>
+    <string name="recents_title">最近のアプリ</string>
+    <string name="statusbar_title">ステータスバー</string>
+    <string name="volume_title">音量設定</string>
+    <string name="network_traffic_catagories">ネットワークトラフィック</string>
+    <string name="clock_date">時計と日付の設定</string>
+    <string name="status_bar_actions">ステータスバーのアクション</string>
+    <string name="lockscreen_settings">ロック画面の設定</string>
+    <string name="customisation_title">テーマ</string>
+    <string name="buttons_category">電源メニュー</string>
+    <string name="lockscreen_gestures_category">ロック画面ジェスチャー</string>
+    <string name="signal_category">ネットワークアイコン</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="save">保存</string>
+    <string name="general_category">一般的なカスタマイズ</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">カラーピッカー</string>
+    <string name="press_color_to_apply">下の色を押して適用をします</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_check_button_text">プレビュー</string>
+    <string name="hex_reset_button_text">リセット</string>
+    <string name="set">設定</string>
+    <string name="color_default">デフォルト</string>
+    <string name="longpress_info">ボックスを長押しして色を保存</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">クイック設定のカスタマイズ</string>
+    <string name="qstiles_title">クイック設定タイルのスタイル</string>
+    <string name="qstiles_default">デフォルトスタイル</string>
+    <string name="qstiles_custom1">クラシックスタイル</string>
+    <string name="qstiles_custom2">MaybeRectangle スタイル</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">音楽再生時のロック画面</string>
+    <string name="media_art_title">メディアカバー画像</string>
+    <string name="media_art_summary">ロック画面上にメディアのカバー画像を表示できるようにします</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">メディアカバー画像のフィルター</string>
+    <string name="lockscreen_albumart_filter_none">なし</string>
+    <string name="lockscreen_albumart_filter_grayscale">グレースケール</string>
+    <string name="lockscreen_albumart_filter_tint">アクセントの色</string>
+    <string name="lockscreen_albumart_filter_blur">ぼかし</string>
+    <string name="lockscreen_albumart_filter_grayblur">グレースケールとぼかし</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">ロック画面のメディアカバー画像のぼかし具合</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">センシティブなタイルを使用するにはロックの解除を必要とする</string>
+    <string name="use_tiles_on_secure_keyguard_summary">センシティブタイルの使用時にロックの解除を要求します</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">高度な再起動メニューを有効化</string>
+    <string name="global_actions_advanced_reboot_summary">電源メニューにリカバリーとブートローダーのオプションを表示します</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">テーマ</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">見出し / 本文のフォント</string>
+    <string name="theme_customization_font_summary">システムフォントのスタイルを設定します</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">アイコンの形状</string>
+    <string name="theme_customization_icon_shape_summary">システムアイコンの形状のスタイルを設定します</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">アイコンパック</string>
+    <string name="theme_customization_icon_pack_summary">カスタムアイコンパックのスタイルを設定</string>
+    <string name="theme_customization_signal_icon_title">電波アイコンのスタイル</string>
+    <string name="theme_customization_signal_icon_summary">カスタム電波アイコンを設定</string>
+    <string name="theme_customization_wifi_icon_title">Wi-Fi アイコンのスタイル</string>
+    <string name="theme_customization_wifi_icon_summary">カスタム Wi-Fi アイコンを設定</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">デバイスのデフォルト</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">ロック画面の充電中の情報を表示</string>
+    <string name="lockscreen_battery_info_summary">ロック画面に充電中の詳細情報 (充電電流、電圧、ワット数、バッテリーの温度) を表示します</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">ネットワークトラフィックの設定</string>
+    <string name="traffic_title">トラフィックインジケーター</string>
+    <string name="traffic_summary">トラフィックインジケーターのカスタマイズ</string>
+    <string name="network_traffic_autohide_threshold_title">自動非表示のしきい値</string>
+    <string name="network_traffic_location_title">位置</string>
+    <string name="network_traffic_disabled">無効</string>
+    <string name="network_traffic_statusbar">ステータスバー</string>
+    <string name="network_traffic_qs_header">クイック設定のヘッダー</string>
+    <string name="network_traffic_refresh_interval_title">更新の間隔</string>
+    <string name="network_traffic_mode_title">画面モード</string>
+    <string name="network_traffic_dynamic">ダイナミック</string>
+    <string name="network_traffic_download">ダウンロード</string>
+    <string name="network_traffic_upload">アップロード</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">ウィンドウセキュアフラグを無視</string>
+    <string name="ignore_window_secure_summary">これによりすべてのアプリのスクリーンショットやスクリーンレコードの制限が解除されます。通常の特別なアプリは記録部分が黒い部分に置き換わります。この機能は便利な場合もありますが、情報の漏洩に繋がる可能性があります。この機能を有効後は変更を適用する為にアプリを再起動する必要があります。</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">アイコンの管理</string>
+    <string name="icon_manager_summary">ステータスバーアイコンの表示を操作します</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple エフェクト</string>
+    <string name="enable_fingerprint_ripple_effect_summary">指紋認証によるロック解除時に波紋を表示します</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">クイック設定のフッター</string>
+    <string name="qs_footer_datausage_title">データ使用量</string>
+    <string name="qs_footer_datausage_summary">クイック設定の下部にデータの使用量のサマリーを表示します</string>
+    <!-- Screen off animation -->
+    <string name="default_string">デフォルト</string>
+    <string name="screen_off_animation_title">画面消灯時のアニメーション</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">スケール</string>
+    <string name="lockscreen_effects_cat">ロック画面のアニメーション</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">通話中時のバイブレーションのオプション</string>
+    <string name="incall_vibrate_connect_title">接続時にバイブレーション</string>
+    <string name="incall_vibrate_call_wait_title">通話待機中にバイブレーション</string>
+    <string name="incall_vibrate_disconnect_title">切断時にバイブレーション</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">画面の消灯時にライトの点灯に切り替え</string>
+    <string name="torch_power_button_gesture_none">無効</string>
+    <string name="torch_power_button_gesture_dt">電源ボタンの2 回押し (1 回押しの反応が遅くなります)、2 回押しでカメラを起動を無効化します</string>
+    <string name="torch_power_button_gesture_dt_toast">カメラにジャンプをするジェスチャー操作を無効化しました</string>
+    <string name="torch_power_button_gesture_lp">電源ボタンの長押し</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">クイック設定を完全に展開</string>
+    <string name="quick_pulldown_none">無効</string>
+    <string name="quick_pulldown_right">ステータスバーの右側をプルダウン</string>
+    <string name="quick_pulldown_left">ステータスバーの左側をプルダウン</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">明るさのスライダー</string>
+    <string name="qs_show_brightness_slider_never">常に非表示</string>
+    <string name="qs_show_brightness_slider_expanded">展開時に表示</string>
+    <string name="qs_show_brightness_slider_always">常に表示</string>
+    <string name="qs_show_brightness_slider_not_expanded">非展開時に表示</string>
+    <string name="qs_brightness_slider_position_title">位置</string>
+    <string name="qs_brightness_slider_position_top">上</string>
+    <string name="qs_brightness_slider_position_bottom">下</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">自動輝度調整のアイコン</string>
+    <string name="qs_show_auto_brightness_summary">明るさスライダーに自動明るさ調整のボタンを表示します</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G アイコン</string>
+    <string name="show_fourg_icon_summary">LTE アイコンではなく4G アイコンを表示します</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">小さいモバイルタイプアイコン</string>
+    <string name="use_old_mobiletype_summary">電波アイコンにモバイルタイプのインジケーターを表示します</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">ローミングのインジケーター</string>
+    <string name="roaming_indicator_icon_summary">ローミング時に電波アイコンにローミングのインジケーターを表示します</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">データ通信無効のアイコンを表示</string>
+    <string name="data_disabled_icon_summary">データ通信が無効の場合「×」のアイコンを表示する</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">ダブルタップでスリープ</string>
+    <string name="double_tap_sleep_lockscreen_summary">ロック画面の任意の場所をダブルタップで画面を消灯します</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">ステータスバーをダブルタップでスリープ</string>
+    <string name="double_tap_sleep_gesture_summary">ステータスバーをダブルタップで画面を消灯します</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">タッチ時にバイブレーションをさせる</string>
+    <string name="quick_settings_vibrate_summary">クイック設定のタイルをタッチ時にバイブレーションをさせます</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">カスタムテーマを使用</string>
+    <string name="custom_theme_summary">カスタム背景色を強制的に使用します</string>
+    <string name="custom_theme_default">デフォルト</string>
+    <string name="custom_theme_black">ブラック</string>
+    <string name="custom_theme_vivid">ビビッド (Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Paint in the Snow</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">指紋認証</string>
+    <string name="fprint_error_vib_title">指紋認証のエラー時にバイブレーション</string>
+    <string name="fprint_error_vib_summary">指紋認証の失敗時にバイブレーションをします</string>
+    <string name="fprint_success_vib_title">指紋認証のバイブレーション</string>
+    <string name="fprint_success_vib_summary">指紋認証の成功時にバイブレーションをします</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">明るさのスライダーのスタイル</string>
+    <string name="brightness_custom1">アウトラインのスタイル</string>
+    <string name="brightness_custom2">Filled スタイル</string>
+    <string name="brightness_custom3">Thin スタイル</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">強制停止ボタン</string>
+    <string name="notification_guts_kill_app_button_summary">通知を長押し時のメニューに強制停止の項目を表示します</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">ゲーミングモードのオプション</string>
+    <string name="gaming_mode_title">ゲームスペース</string>
+    <string name="gaming_mode_summary">没入感のあるゲーム体験を実現する追加機能です</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Wi-Fi タイプのアイコンを表示</string>
+    <string name="show_wifi_standard_icon_summary">Wi-Fi アイコンのインジケーターに Wi-Fi タイプを表示します</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">ヘッドアップ通知を再設計されたスリムで邪魔になりにくいティッカー通知に置き換えます</string>
+    <string name="reticker_colored_title">アプリの背景色を使用する</string>
+    <string name="reticker_colored_summary">reTicker の背景色をアプリ通知のメインカラーに置き換えます</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">クイック設定のエレメントを結合したスタイル</string>
+    <string name="qs_outline">アウトライン</string>
+    <string name="qs_two_tone">ツートンカラーアクセント</string>
+    <string name="qs_color_pop">カラーポップ</string>
+    <string name="qs_shaded">シェード</string>
+    <string name="qs_cyberpunk">サイバーパンク</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">エッジライト</string>
+    <string name="edge_light_summary">通知パルスで画面のサイドエッジを明るくします</string>
+    <string name="edge_light_always_trigger_on_pulse_title">常にパルスでトリガー</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">通知以外にアンビエント表示時にエッジライトを表示するか選択します</string>
+    <string name="edge_light_repeat_animation_title">アニメーションをリピート</string>
+    <string name="edge_light_repeat_animation_summary_on">タイムアウトまで繰り返します</string>
+    <string name="edge_light_repeat_animation_summary_off">1 回のみ表示</string>
+    <string name="edge_light_color_mode_title">エッジライトカラーモード</string>
+    <string name="accent_color">アクセントカラー (デフォルト)</string>
+    <string name="notification_color">通知の色</string>
+    <string name="wallpaper_color">壁紙の色</string>
+    <string name="custom_color">カスタムカラー</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">バッテリーの設定</string>
+    <string name="battery_style_category_title">バッテリーのスタイル</string>
+    <string name="battery_percent_title">バッテリーのパーセント表示</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">バッテリーのスタイル</string>
+    <string name="status_bar_battery_style_icon_portrait">縦のアイコン (デフォルト)</string>
+    <string name="status_bar_battery_style_circle">サークル</string>
+    <string name="status_bar_battery_style_dotted_circle">サークル (ドット)</string>
+    <string name="status_bar_battery_style_filled_circle">サークル (充填)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">横のアイコン (右)</string>
+    <string name="status_bar_battery_style_icon_landscape">横のアイコン (左)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_text">テキスト</string>
+    <string name="status_bar_battery_style_hidden">非表示</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">バッテリーパーセンテージ</string>
+    <string name="status_bar_battery_percentage_default">非表示 (デフォルト)</string>
+    <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
+    <string name="status_bar_battery_percentage_text_next">アイコンの横</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">クイック設定のヘッダー画像</string>
+    <string name="qs_header_random_image_title">クイック設定ヘッダーランダム画像</string>
+    <string name="qs_header_random_image_summary">クイック設定ヘッダーランダム画像を有効化します</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">時計のカスタマイズ</string>
+    <string name="clocksettings_title">時計の設定</string>
+    <string name="clocksettings_summary">ステータスバーの時計の設定</string>
+    <string name="status_bar_clock_date_title">時計と日付</string>
+    <string name="status_bar_clock_date_summary">ステータスバーの時計と日付のカスタマイズをします</string>
+    <string name="status_bar_clock_title">時計の設定</string>
+    <string name="status_bar_clock_show">時計と日付を表示</string>
+    <string name="status_bar_clock_style_title">時計のスタイル</string>
+    <string name="status_bar_clock_style_right">右</string>
+    <string name="status_bar_clock_style_center">中央</string>
+    <string name="status_bar_clock_style_left">左</string>
+    <string name="status_bar_date_title">日付の設定</string>
+    <string name="status_bar_am_pm_title">AM/PM のスタイル</string>
+    <string name="status_bar_am_pm_info">時計の 24 時間表示を有効化</string>
+    <string name="status_bar_am_pm_normal">ノーマル</string>
+    <string name="status_bar_am_pm_small">小</string>
+    <string name="status_bar_am_pm_hidden">非表示 (デフォルト)</string>
+    <string name="clock_seconds_display">秒を表示</string>
+    <string name="clock_date_display">日付</string>
+    <string name="clock_date_display_summary">時計の前にカスタムされた日付を表示します</string>
+    <string name="clock_date_display_none">表示しない</string>
+    <string name="clock_date_display_small">小さいフォントサイズ</string>
+    <string name="clock_date_display_normal">通常のフォントサイズ</string>
+    <string name="clock_date_style">日付のスタイル</string>
+    <string name="clock_date_style_normal">ノーマル</string>
+    <string name="clock_date_style_lowercase">小文字</string>
+    <string name="clock_date_style_uppercase">大文字</string>
+    <string name="clock_date_format_custom">カスタム Java フォーマット</string>
+    <string name="clock_date_format">日付のフォーマット</string>
+    <string name="clock_date_string_edittext_title">日付フォーマットで設定をしてください。(例: MM/dd/yy)</string>
+    <string name="clock_date_string_edittext_summary">文字列を入力</string>
+    <string name="clock_date_right">時計を右側に表示</string>
+    <string name="clock_date_left">時計を左側に表示</string>
+    <string name="clock_date_position">日付の位置</string>
+    <string name="status_bar_clock_auto_hide_title">時計を自動で非表示</string>
+    <string name="status_bar_clock_auto_hide_summary">一定時間ごとに時計を表示、非表示にします</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">非表示時間</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">表示時間</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">クイック設定の背景の透過</string>
+    <string name="qs_transparency_summary">クイック設定の背景の透明度を設定します</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">ゲームでより高い FPS を可能にする</string>
+    <string name="use_games_spoof_summary">特定のゲームでデバイス情報を偽装し、より高い FPS を出せるようにします</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">メディア通知のカバー画像の背景をぼかす</string>
+    <string name="artwork_media_background_blur_radius_title">メディア通知のカバー画像の背景のぼかし具合</string>
+    <string name="media_artwork_fade_percent_title">メディア通知のカバー画像のフェード率</string>
+</resources>

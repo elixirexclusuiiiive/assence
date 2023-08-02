@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2017 AICP
+ * Copyright (C) 2022 ProjectElixir
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="seekbar_no_default_value">Geen standaardwaarde</string>
+    <string name="seekbar_default_value_set">Standaardwaarde is ingesteld op <xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_already_set">Standaardwaarde is al ingesteld</string>
+    <string name="seekbar_default_string">Standaard</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Waarde: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Standaard</string>
+    <string name="custom_seekbar_default_value_to_set">Standaardwaarde: <xliff:g id="v">%s</xliff:g>\n Houd lang ingedrukt om in te stellen</string>
+    <string name="custom_seekbar_default_value_is_set">Standaardwaarde is ingesteld</string>
+</resources>

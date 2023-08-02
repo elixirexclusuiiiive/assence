@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">Як справи сьогодні?</string>
+    <!-- General app strings -->
+    <string name="add">Додати</string>
+    <string name="advanced">Розширені</string>
+    <string name="cancel">Скасувати</string>
+    <string name="default_text">За замовчуванням</string>
+    <string name="dlg_ok">Так</string>
+    <string name="attention">Попередження</string>
+    <string name="loading">Завантаження\u2026</string>
+    <string name="reset">Скинути</string>
+    <string name="reset_colors">Скидання кольорів</string>
+    <string name="reset_android">Андроід</string>
+    <string name="text_title">Текст</string>
+    <string name="icon_title">Іконка</string>
+    <string name="color_title">Колір</string>
+    <string name="colors_title">Кольори</string>
+    <string name="enable">Увімкнути</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">Рядок стану</string>
+    <string name="system_category">Команда</string>
+    <string name="themes_category">Теми</string>
+    <string name="qs_category">Швидкі налаштування</string>
+    <string name="lockscreen_category">Екран блокування</string>
+    <string name="hardware_category">Додатково</string>
+    <string name="build_tweaks_summary_title">Боротьба за амеліацію</string>
+    <string name="listview">Список</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">Розробники та команда</string>
+    <string name="aboutus_tab">Дізнайтесь про нас більше</string>
+    <!-- Developers -->
+    <string name="note">Важлива примітка</string>
+    <string name="note_summary">Не надсилайте прямих повідомлень жодному із розробників, для цього є групи в Телеграмі. Якщо ми побачимо будь-яке пряме повідомлення, ми будемо змушені Вас заблокувати. Ми не можемо щоденно обслуговувати Вас, тому просто запасіться терпінням і чекайте на нові оновлення.</string>
+    <!-- Contact and Download -->
+    <string name="download">Завантажте свої збірки</string>
+    <string name="download_summary">Натисніть тут, щоб завантажити збірку для відповідних пристроїв</string>
+    <string name="paypal">PayPal</string>
+    <string name="donate_summary">Пожертвуйте нам, щоб оцінити нашу роботу</string>
+    <string name="don_summ1">• Насправді для того, щоб створити спеціальну ПЗУ, є певні передумови, такі як висококласні сервери (Дженкінс), або ПК з високоякісними технічними характеристиками в поєднанні з дуже високошвидкісним підключенням до Інтернету.</string>
+    <string name="don_summ2">• Нам, розробникам, потрібно приділяти свій час і наполегливу роботу з нашого щільного графіка Академіків на належне обслуговування спеціального ПЗУ, щоб ми могли надавати користувачам своєчасні та стабільні оновлення</string>
+    <string name="don_summ3">• Подумайте про те, щоб пожертвувати чи купити нам каву через PayPal або приєднатися до нас на Patreon для постійної підтримки та винагород, якщо ви хочете оцінити нашу роботу</string>
+    <string name="tele_group">Група для обговорення Telegram</string>
+    <string name="grp_summary">Якщо у вас виникли проблеми, поділіться ними в нашій групі обговорення в Telegram</string>
+    <string name="tele_channel">Слідкуйте за оновленнями ПЗУ в нашому Telegram каналі</string>
+    <string name="update_summary">Підпишіться на Telegram канал для швидших оновлень</string>
+    <string name="website">Офіційний сайт</string>
+    <string name="website_summary">Відвідайте наш сайт, ви отримаєте тут всю необхідну інформацію</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">Завантажити з сайту</string>
+    <string name="telegram">Підтримка в Telegram</string>
+    <string name="donateus">Підтримайте нас через пожертву</string>
+    <string name="patreon">Хочете ранній доступ до збірки?</string>
+    <string name="patreon_summary">Patreon — для тих, хто хоче підтримати розробку, отримати доступ до ПЗУ на ранньому рівні, деякі ексклюзивні особливості та переваги.</string>
+    <!-- Summery -->
+    <string name="summ_gesture">Керування відтворенням • Система навігації</string>
+    <string name="summ_lock">DT2S • Медіа Арт • Освітлення на краях</string>
+    <string name="summ_misc">Простір гри • Меню живлення • HwKey </string>
+    <string name="summ_monet">Теми інших людей • Годинник екрану блокування</string>
+    <string name="summ_quick">Швидкі стилі • Мультимедійна робота • Використання даних</string>
+    <string name="summ_sbar">Мережевий трафік • VoLTE/VoWifi </string>
+    <string name="summ_about">Про Проєкт Еліксир та його розробників</string>
+    <string name="donate">Пожертвуйте нам тут</string>
+    <!-- Categories -->
+    <string name="gestures_title">Жести</string>
+    <string name="lockscreen_title">Екран блокування</string>
+    <string name="misc_title">Інше</string>
+    <string name="navbar_title">Панель навігації</string>
+    <string name="notifications_title">Сповіщення</string>
+    <string name="powermenu_title">Меню кнопки живлення</string>
+    <string name="quicksettings_title">Швидкі налаштування</string>
+    <string name="recents_title">Нещодавні додатки</string>
+    <string name="statusbar_title">Рядок стану</string>
+    <string name="volume_title">Налаштування гучності</string>
+    <string name="network_traffic_catagories">Мережевий трафік</string>
+    <string name="clock_date">Налаштування годинника і дати</string>
+    <string name="status_bar_actions">Значки в рядку стану</string>
+    <string name="lockscreen_settings">Параметри екрану блокування</string>
+    <string name="customisation_title">Теми</string>
+    <string name="buttons_category">Меню кнопки живлення</string>
+    <string name="lockscreen_gestures_category">Жести на екрані блокування</string>
+    <string name="signal_category">Значки мережі</string>
+    <!-- General strings -->
+    <string name="ok">Так</string>
+    <string name="save">Зберегти</string>
+    <string name="general_category">Загальні налаштування</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Палітра кольорів</string>
+    <string name="press_color_to_apply">Натисніть на колір, щоб застосувати його</string>
+    <string name="arrow_right">Стрілка вправо</string>
+    <string name="arrow_down">Стрілка вниз</string>
+    <string name="hex">Шістнадцятковий:</string>
+    <string name="hex_check_button_text">Попередній перегляд</string>
+    <string name="hex_reset_button_text">СКИНУТИ</string>
+    <string name="set">Задати</string>
+    <string name="color_default">За замовчуванням</string>
+    <string name="longpress_info">Щоб зберегти колір натисніть і утримуйте</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">Налаштування швидких налаштувань</string>
+    <string name="qstiles_title">Стиль швидких плиток</string>
+    <string name="qstiles_default">Стиль за замовчуванням</string>
+    <string name="qstiles_custom1">Класичний стиль</string>
+    <string name="qstiles_custom2">Прямокутний стиль</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Музика на екрані блокування</string>
+    <string name="media_art_title">Обкладинка медіа</string>
+    <string name="media_art_summary">Увімкнути обкладинки альбомів на екрані блокування</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Фільтр медіа обкладинки</string>
+    <string name="lockscreen_albumart_filter_none">Нічого</string>
+    <string name="lockscreen_albumart_filter_grayscale">Відтінки сірого</string>
+    <string name="lockscreen_albumart_filter_tint">У колір акценту</string>
+    <string name="lockscreen_albumart_filter_blur">Розмиття</string>
+    <string name="lockscreen_albumart_filter_grayblur">Розмиті відтінки сірого</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Інтенсивність розмиття обкладинки медіа на екрані блокування</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Вимагати розблокування для використання чутливих плиток</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Запитувати розблокування екрану при використанні чутливих плиток</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Увімкнути розширене меню перезавантаження</string>
+    <string name="global_actions_advanced_reboot_summary">Показувати в меню кнопки живлення варіанти Recovery та Bootloader</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Теми</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Заголовок / Головний шрифт</string>
+    <string name="theme_customization_font_summary">Встановити стиль системного шрифту</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Форма іконок</string>
+    <string name="theme_customization_icon_shape_summary">Встановити системний стиль іконок</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Набір іконок</string>
+    <string name="theme_customization_icon_pack_summary">Встановити стиль набору іконок</string>
+    <string name="theme_customization_signal_icon_title">Стиль індикатора сигналу</string>
+    <string name="theme_customization_signal_icon_summary">Встановити стиль іконки сигналу</string>
+    <string name="theme_customization_wifi_icon_title">Стиль іконки Wi-Fi</string>
+    <string name="theme_customization_wifi_icon_summary">Встановити стиль іконки Wi-Fi</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Пристрій за замовчуванням</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Інформація про заряджання на екрані блокування</string>
+    <string name="lockscreen_battery_info_summary">Відобразити струм заряджання, напругу, потужність та температуру акумулятора на екрані блокування під час зарядки</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">Мережевий трафік у рядку стану</string>
+    <string name="traffic_title">Індикатор трафіку</string>
+    <string name="traffic_summary">Налаштування індикатора трафіку</string>
+    <string name="network_traffic_autohide_threshold_title">Поріг неактивності</string>
+    <string name="network_traffic_location_title">Місцезнаходження</string>
+    <string name="network_traffic_disabled">Вимкнено</string>
+    <string name="network_traffic_statusbar">Рядок стану</string>
+    <string name="network_traffic_qs_header">Заголовок швидких налаштувань</string>
+    <string name="network_traffic_refresh_interval_title">Інтервал оновлення</string>
+    <string name="network_traffic_mode_title">Режим відображення</string>
+    <string name="network_traffic_dynamic">Динамічний</string>
+    <string name="network_traffic_download">Завантажити</string>
+    <string name="network_traffic_upload">Завантажити</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ігнорувати віконні мітки безпеки</string>
+    <string name="ignore_window_secure_summary">Це видаляє ліміти даних з екрану та записи екрану для всіх програм. Зазвичай такі програми замінюються чорними областями в записах. Це може бути зручним в деяких випадках, але може призвести до витоку конфіденційності. Після зміни цього перемикача, вам, можливо, доведеться перезапустити додатки, щоб зміни набрали сили.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Менеджер іконок</string>
+    <string name="icon_manager_summary">Налаштування видимості значків рядка стану</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ефект пульсації</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Показувати ефекти на екрані під час розблокування відбитком</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">Швидкі налаштування колонтитул</string>
+    <string name="qs_footer_datausage_title">Використання даних</string>
+    <string name="qs_footer_datausage_summary">Відображати підсумок використання даних у нижньому колонтитулі швидких налаштувань</string>
+    <!-- Screen off animation -->
+    <string name="default_string">За замовчуванням</string>
+    <string name="screen_off_animation_title">Анімація вимкнення екрана</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Масштаб</string>
+    <string name="lockscreen_effects_cat">Анімація на екрані блокування</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Параметри вібрації під час дзвінка</string>
+    <string name="incall_vibrate_connect_title">Вібрація при з\'єднанні</string>
+    <string name="incall_vibrate_call_wait_title">Вібрувати під час очікування дзвінка</string>
+    <string name="incall_vibrate_disconnect_title">Вібрувати при відключенні</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Увімкнути ліхтарик, коли екран вимкнено</string>
+    <string name="torch_power_button_gesture_none">Вимкнено</string>
+    <string name="torch_power_button_gesture_dt">Подвійне натискання кнопки живлення (повільніша реакція на одне натискання), вимикає подвійне натискання для камери.</string>
+    <string name="torch_power_button_gesture_dt_toast">Жест переходу до камери тепер вимкнено</string>
+    <string name="torch_power_button_gesture_lp">Тривале натискання кнопки живлення</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">Швидке випадання ШН</string>
+    <string name="quick_pulldown_none">Вимкнено</string>
+    <string name="quick_pulldown_right">Випадаюча панель стану з правого боку</string>
+    <string name="quick_pulldown_left">Випадаюча панель стану з лівого боку</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Повзунок яскравості</string>
+    <string name="qs_show_brightness_slider_never">Ніколи не показувати</string>
+    <string name="qs_show_brightness_slider_expanded">Показати в розгорнутому вигляді</string>
+    <string name="qs_show_brightness_slider_always">Показувати завжди</string>
+    <string name="qs_show_brightness_slider_not_expanded">Показувати, коли не розгорнуто</string>
+    <string name="qs_brightness_slider_position_title">Позиція</string>
+    <string name="qs_brightness_slider_position_top">Верх</string>
+    <string name="qs_brightness_slider_position_bottom">Нижній</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Значок автоматичної яскравості</string>
+    <string name="qs_show_auto_brightness_summary">Показати перемикач адаптивної яскравості біля повзунка</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Значок 4G</string>
+    <string name="show_fourg_icon_summary">Показувати значок 4G у значку сигналу замість LTE</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Невеликий мобільний тип значка</string>
+    <string name="use_old_mobiletype_summary">Показати піктограму мобільного типу вгорі індикатора сигналу</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Індикатор роумінгу</string>
+    <string name="roaming_indicator_icon_summary">Показувати індикатор роумінгу в піктограмі сигналу в режимі роумінгу</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Показати значок вимкнених даних</string>
+    <string name="data_disabled_icon_summary">Показувати хрестик поруч із сигнальною панеллю, коли дані вимкнено</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">Подвійне натискання для блокування екрану</string>
+    <string name="double_tap_sleep_lockscreen_summary">Двічі торкніться будь-де на екрані блокування, щоб перевести телефон у режим сну</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Двічі торкніться рядка стану щоб вимкнути екран</string>
+    <string name="double_tap_sleep_gesture_summary">Двічі торкніться в будь-якому місці рядка стану, щоб перевести пристрій у режим сну</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Вібрація при дотику</string>
+    <string name="quick_settings_vibrate_summary">Вібрувати при торканні плиток ШН</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Власна тема</string>
+    <string name="custom_theme_summary">Примусово використовувати індивідуальні фонові кольори</string>
+    <string name="custom_theme_default">За замовчуванням</string>
+    <string name="custom_theme_black">Чорний</string>
+    <string name="custom_theme_vivid">Вівід(Монет)</string>
+    <string name="custom_theme_espresso">Еспресо/експрес</string>
+    <string name="custom_theme_snowpaintdrop">Фарба в снігу</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Відбиток пальця</string>
+    <string name="fprint_error_vib_title">Вібрація помилки відбитка пальця</string>
+    <string name="fprint_error_vib_summary">Вібрує при не вірній авторизації по відбитку пальця</string>
+    <string name="fprint_success_vib_title">Вібрація при авторизації за відбитком пальця</string>
+    <string name="fprint_success_vib_summary">Вібрація при вдалій автентифікації по відбитку пальця</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Стиль повзунка яскравості</string>
+    <string name="brightness_custom1">Стиль контуру</string>
+    <string name="brightness_custom2">Стиль заповнений</string>
+    <string name="brightness_custom3">Стиль тонкий</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Кнопка примусової зупинки</string>
+    <string name="notification_guts_kill_app_button_summary">Показувати кнопку примусового завершення в меню сповіщень при довгому натисканні</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">Параметри ігрового режиму</string>
+    <string name="gaming_mode_title">Ігровий простір</string>
+    <string name="gaming_mode_summary">Додаткові можливості для поглибленого ігрового досвіду</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Показувати піктограму стандарту Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Показувати піктограму стандарту Wi-Fi в індикаторі сигналу</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Замінити спливаючі повідомлення на оновлену, більш витончену та менш агресивну версію</string>
+    <string name="reticker_colored_title">Використовувати колір додатку як фон</string>
+    <string name="reticker_colored_summary">Замінити колір фону, використати основний колір додатку сповіщень</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Combined QS element styles</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Two-tone accent</string>
+    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_shaded">Shaded</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Edge light</string>
+    <string name="edge_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Whether to show edge light whenever ambient display is shown and not just for notifications</string>
+    <string name="edge_light_repeat_animation_title">Repeat animation</string>
+    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
+    <string name="edge_light_color_mode_title">Edge light color mode</string>
+    <string name="accent_color">Accent color (Default)</string>
+    <string name="notification_color">Notification color</string>
+    <string name="wallpaper_color">Wallpaper color</string>
+    <string name="custom_color">Custom color</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Налаштування батареї</string>
+    <string name="battery_style_category_title">Стиль значка батареї</string>
+    <string name="battery_percent_title">Відсоток заряду батареї</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Стиль значка батареї</string>
+    <string name="status_bar_battery_style_icon_portrait">Портрет значка (за замовчуванням)</string>
+    <string name="status_bar_battery_style_circle">Коло</string>
+    <string name="status_bar_battery_style_dotted_circle">Коло (пунктирне)</string>
+    <string name="status_bar_battery_style_filled_circle">Коло (заповнене)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Горизонтальна іконка (праворуч)</string>
+    <string name="status_bar_battery_style_icon_landscape">Горизонтальна іконка (ліворуч)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_text">Текст</string>
+    <string name="status_bar_battery_style_hidden">Прихований</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Відсоток заряду батареї</string>
+    <string name="status_bar_battery_percentage_default">Приховані (за замовчуванням)</string>
+    <string name="status_bar_battery_percentage_text_inside">Всередині значка</string>
+    <string name="status_bar_battery_percentage_text_next">Поруч зі значком</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS Header Image</string>
+    <string name="qs_header_random_image_title">QS Header Random Image</string>
+    <string name="qs_header_random_image_summary">Enable random QS header image</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">Clock Customizations</string>
+    <string name="clocksettings_title">Clock Settings</string>
+    <string name="clocksettings_summary">Statusbar clock settings</string>
+    <string name="status_bar_clock_date_title">Clock and Date</string>
+    <string name="status_bar_clock_date_summary">Customize your statusbar clock and date</string>
+    <string name="status_bar_clock_title">Clock settings</string>
+    <string name="status_bar_clock_show">Show clock and date</string>
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="status_bar_clock_style_right">Right</string>
+    <string name="status_bar_clock_style_center">Center</string>
+    <string name="status_bar_clock_style_left">Left</string>
+    <string name="status_bar_date_title">Date settings</string>
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
+    <string name="clock_seconds_display">Show seconds</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="status_bar_clock_auto_hide_title">Auto-hide clock</string>
+    <string name="status_bar_clock_auto_hide_summary">Hide and show clock at regular intervals of time</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Hide duration</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Show duration</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">QS Background transparency</string>
+    <string name="qs_transparency_summary">Set transparency level for QS background</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Розблокування вищого FPS в іграх</string>
+    <string name="use_games_spoof_summary">Підробіть ваш пристрій як іншу модель для використання вищих FPS для конкретних ігор</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Blur media media notification artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media notification artwork</string>
+    <string name="media_artwork_fade_percent_title">Fade percent for media notification artwork</string>
+</resources>

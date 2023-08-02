@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2017 AICP
+ * Copyright (C) 2022 ProjectElixir
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="seekbar_no_default_value">Není nastavená výchozí hodnota</string>
+    <string name="seekbar_default_value_set">Vychozí hodnota nastavena na <xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_already_set">Výchozí hodnota již byla nastavena</string>
+    <string name="seekbar_default_string">Výchozí</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Hodnota:<xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Výchozí</string>
+    <string name="custom_seekbar_default_value_to_set">Výchozí hodnota<xliff:g id="v">%s</xliff:g>\nPodržte pro nastavení</string>
+    <string name="custom_seekbar_default_value_is_set">Výchozí hodnota nastavena</string>
+</resources>

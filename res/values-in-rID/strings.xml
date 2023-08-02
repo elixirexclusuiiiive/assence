@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">Apa kabarnya hari ini?</string>
+    <!-- General app strings -->
+    <string name="add">Tambah</string>
+    <string name="advanced">Tingkat lanjut</string>
+    <string name="cancel">Batal</string>
+    <string name="default_text">Bawaan</string>
+    <string name="dlg_ok">OKE</string>
+    <string name="attention">Perhatian</string>
+    <string name="loading">Memuat\u2026</string>
+    <string name="reset">Setel ulang</string>
+    <string name="reset_colors">Setel ulang warna</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Teks</string>
+    <string name="icon_title">Ikon</string>
+    <string name="color_title">Warna</string>
+    <string name="colors_title">Warna</string>
+    <string name="enable">Aktifkan</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">Bilah status</string>
+    <string name="system_category">Tim</string>
+    <string name="themes_category">Tema</string>
+    <string name="qs_category">Setelan Cepat</string>
+    <string name="lockscreen_category">Layar kunci</string>
+    <string name="hardware_category">Tambahan</string>
+    <string name="build_tweaks_summary_title">Berjuang untuk Ameliorasi</string>
+    <string name="listview">Tampilan Daftar</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">Pengembang dan Tim</string>
+    <string name="aboutus_tab">Ketahui lebih banyak tentang kami</string>
+    <!-- Developers -->
+    <string name="note">Catatan penting</string>
+    <string name="note_summary">Jangan Direct Message pengembang apa pun, grup ada di sana karena alasan tertentu dan gunakan otak. Jika kami melihat pesan langsung apa pun, kami akan melarangnya dari mana saja. Kami tidak di sini untuk melayani Anda 24/7 jadi tetap bersabar. Biarkan saja kami menjalani hidup kami dengan damai</string>
+    <!-- Contact and Download -->
+    <string name="download">Unduh Build Anda</string>
+    <string name="download_summary">Ketuk di sini untuk mengunduh build untuk perangkat Anda masing-masing</string>
+    <string name="paypal">PayPal</string>
+    <string name="donate_summary">Donasi kami untuk menghargai pekerjaan kami</string>
+    <string name="don_summ1">• Sebenarnya untuk membuat Custom ROM ada prasyarat tertentu seperti High-End Building Server (Jenkins) atau PC yang memiliki spesifikasi teknis sangat High-End yang dipadukan dengan koneksi internet yang sangat High-Speed.</string>
+    <string name="don_summ2">• Kami para pengembang perlu mengalokasikan waktu dan kerja keras kami dari jadwal Akademik kami yang padat dalam pemeliharaan ROM kustom yang tepat sehingga kami dapat memberikan pembaruan yang tepat waktu dan stabil kepada pengguna</string>
+    <string name="don_summ3">• Pertimbangkan untuk menyumbang atau membelikan saya kopi di Paypal atau bergabunglah dengan kami di Patreon untuk mendapatkan dukungan dan hadiah yang berkelanjutan jika Anda ingin menghargai pekerjaan kami</string>
+    <string name="tele_group">Grup Diskusi Telegram</string>
+    <string name="grp_summary">Jika Anda memiliki masalah, bagikan di grup diskusi telegram kami</string>
+    <string name="tele_channel">Saluran Pembaruan Telegram</string>
+    <string name="update_summary">Berlangganan di saluran telegram kami untuk pembaruan yang lebih cepat</string>
+    <string name="website">Situs web resmi kami</string>
+    <string name="website_summary">Kunjungi situs web kami, Anda akan mendapatkan semua info yang diperlukan di sini</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">Unduh dan Situs Web</string>
+    <string name="telegram">Dukungan Telegram</string>
+    <string name="donateus">Dukung Kami dengan Berdonasi</string>
+    <string name="patreon">Ingin akses Early Build?</string>
+    <string name="patreon_summary">Patreon adalah untuk mereka yang ingin mendukung pengembang, mendapatkan akses build awal, beberapa fitur dan manfaat eksklusif.</string>
+    <!-- Summery -->
+    <string name="summ_gesture">Kontrol Pemutaran • Navigasi Sistem</string>
+    <string name="summ_lock">Ketuk dua kali untuk membangunkan • Seni Media • Pencahayaan Tepi</string>
+    <string name="summ_misc">Ruang Game • Menu Daya • Tombol Fisik </string>
+    <string name="summ_monet">Monet • Tema • Jam Layar Kunci</string>
+    <string name="summ_quick">Gaya Setelan Cepat • Karya Seni Media • Penggunaan Data</string>
+    <string name="summ_sbar">Lalu Lintas Jaringan • VoLTE/VoWiFi </string>
+    <string name="summ_about">Tentang Project Elixir ROM dan Pengembangnya</string>
+    <string name="donate">Donasi kami di sini</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gestur</string>
+    <string name="lockscreen_title">Layar kunci</string>
+    <string name="misc_title">Lain-lain</string>
+    <string name="navbar_title">Bilah navigasi</string>
+    <string name="notifications_title">Notifikasi</string>
+    <string name="powermenu_title">Menu daya</string>
+    <string name="quicksettings_title">Setelan Cepat</string>
+    <string name="recents_title">Aplikasi baru-baru ini</string>
+    <string name="statusbar_title">Bilah status</string>
+    <string name="volume_title">Setelan Volume</string>
+    <string name="network_traffic_catagories">Lalu Lintas Jaringan</string>
+    <string name="clock_date">Setelan Jam dan Tanggal</string>
+    <string name="status_bar_actions">Tindakan Bilah Status</string>
+    <string name="lockscreen_settings">Setelan Layar Kunci</string>
+    <string name="customisation_title">Tema</string>
+    <string name="buttons_category">Menu Daya</string>
+    <string name="lockscreen_gestures_category">Gestur Layar Kunci</string>
+    <string name="signal_category">Ikon Jaringan</string>
+    <!-- General strings -->
+    <string name="ok">OKE</string>
+    <string name="save">Simpan</string>
+    <string name="general_category">Penyesuaian Umum</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Pemilih Warna</string>
+    <string name="press_color_to_apply">Tekan pada warna di bawah untuk menerapkan</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_check_button_text">PRATINJAU</string>
+    <string name="hex_reset_button_text">SETEL ULANG</string>
+    <string name="set">Setel</string>
+    <string name="color_default">Bawaan</string>
+    <string name="longpress_info">Tekan lama kotak untuk menyimpan warna</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">Kustomisasi Setelan Cepat</string>
+    <string name="qstiles_title">Gaya Ubin Setelan Cepat</string>
+    <string name="qstiles_default">Gaya default</string>
+    <string name="qstiles_custom1">Gaya klasik</string>
+    <string name="qstiles_custom2">Gaya seperti Persegi Panjang</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Musik Layar Kunci</string>
+    <string name="media_art_title">Seni sampul media</string>
+    <string name="media_art_summary">Aktifkan seni sampul media di layar kunci</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Filter seni sampul media</string>
+    <string name="lockscreen_albumart_filter_none">Tidak ada</string>
+    <string name="lockscreen_albumart_filter_grayscale">Skala abu-abu</string>
+    <string name="lockscreen_albumart_filter_tint">Aksen berwarna</string>
+    <string name="lockscreen_albumart_filter_blur">Blur</string>
+    <string name="lockscreen_albumart_filter_grayblur">Skala abu-abu dan blur</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Jumlah blur untuk karya seni media layar kunci</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Perlu membuka kunci untuk menggunakan ubin sensitif</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Minta untuk membuka kunci layar saat menggunakan ubin sensitif</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Aktifkan mulai ulang lanjutan</string>
+    <string name="global_actions_advanced_reboot_summary">Tampilkan opsi untuk mode recovery dan bootloader di menu daya</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Tema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Font Judul/Isi</string>
+    <string name="theme_customization_font_summary">Setel gaya font sistem</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Bentuk ikon</string>
+    <string name="theme_customization_icon_shape_summary">Setel gaya bentuk ikon sistem</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Paket ikon</string>
+    <string name="theme_customization_icon_pack_summary">Setel gaya paket ikon kustom</string>
+    <string name="theme_customization_signal_icon_title">Gaya ikon sinyal</string>
+    <string name="theme_customization_signal_icon_summary">Setel gaya ikon sinyal kustom</string>
+    <string name="theme_customization_wifi_icon_title">Gaya ikon WiFi</string>
+    <string name="theme_customization_wifi_icon_summary">Setel gaya ikon wifi kustom</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Bawaan perangkat</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Info pengisian daya pada layar kunci</string>
+    <string name="lockscreen_battery_info_summary">Tampilkan arus pengisian, voltase, watt, dan suhu baterai pada layar kunci saat mengisi daya</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">Setelan Lalu Lintas Jaringan</string>
+    <string name="traffic_title">Indikator lalu lintas jaringan</string>
+    <string name="traffic_summary">Sesuaikan indikator lalu lintas jaringan</string>
+    <string name="network_traffic_autohide_threshold_title">Otomatis sembunyi pada ambang batas</string>
+    <string name="network_traffic_location_title">Lokasi</string>
+    <string name="network_traffic_disabled">Dinonaktifkan</string>
+    <string name="network_traffic_statusbar">Bilah status</string>
+    <string name="network_traffic_qs_header">Bagian atas Setelan Cepat</string>
+    <string name="network_traffic_refresh_interval_title">Selang waktu refresh</string>
+    <string name="network_traffic_mode_title">Mode tampilan</string>
+    <string name="network_traffic_dynamic">Dinamis</string>
+    <string name="network_traffic_download">Unduh</string>
+    <string name="network_traffic_upload">Unggah</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Abaikan hamparan pengaman privasi</string>
+    <string name="ignore_window_secure_summary">Ini menghapus batas tangkapan layar dan rekaman layar untuk semua aplikasi. Biasanya, aplikasi khusus diganti dengan area hitam dalam rekaman. Ini bisa nyaman dalam beberapa kasus tetapi dapat menyebabkan kebocoran privasi. Setelah mengubah sakelar ini, Anda mungkin perlu memulai ulang aplikasi agar perubahan diterapkan.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Pengelola ikon</string>
+    <string name="icon_manager_summary">Kontrol visibilitas ikon bilah status</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Efek riak</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Tampilkan efek riak saat membuka kunci dengan sidik jari</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">Footer Setelan Cepat</string>
+    <string name="qs_footer_datausage_title">Penggunaan data</string>
+    <string name="qs_footer_datausage_summary">Tampilkan ringkasan penggunaan data di footer setelan cepat</string>
+    <!-- Screen off animation -->
+    <string name="default_string">Bawaan</string>
+    <string name="screen_off_animation_title">Animasi Layar Mati</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skala</string>
+    <string name="lockscreen_effects_cat">Animasi Layar Kunci</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Opsi getar dalam panggilan</string>
+    <string name="incall_vibrate_connect_title">Getar saat terhubung</string>
+    <string name="incall_vibrate_call_wait_title">Getar saat menunggu panggilan</string>
+    <string name="incall_vibrate_disconnect_title">Getar saat terputus</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Tombol senter saat layar mati</string>
+    <string name="torch_power_button_gesture_none">Dinonaktifkan</string>
+    <string name="torch_power_button_gesture_dt">Ketuk dua kali tombol daya (respon ketukan tunggal lebih lambat), Menonaktifkan ketukan daya ganda untuk kamera.</string>
+    <string name="torch_power_button_gesture_dt_toast">Gestur jalan pintas ke kamera telah dinonaktifkan</string>
+    <string name="torch_power_button_gesture_lp">Tekan lama tombol daya</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">Menurunkan cepat Setelan Cepat</string>
+    <string name="quick_pulldown_none">Dinonaktifkan</string>
+    <string name="quick_pulldown_right">Menurunkan cepat dari sisi kanan bilah status</string>
+    <string name="quick_pulldown_left">Menurunkan cepat dari sisi kiri bilah status</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Slider kecerahan</string>
+    <string name="qs_show_brightness_slider_never">Jangan tampilkan</string>
+    <string name="qs_show_brightness_slider_expanded">Tampilkan saat diperluas</string>
+    <string name="qs_show_brightness_slider_always">Selalu tampilkan</string>
+    <string name="qs_show_brightness_slider_not_expanded">Tampilkan saat tidak diperluas</string>
+    <string name="qs_brightness_slider_position_title">Posisi</string>
+    <string name="qs_brightness_slider_position_top">Atas</string>
+    <string name="qs_brightness_slider_position_bottom">Bawah</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Ikon kecerahan otomatis</string>
+    <string name="qs_show_auto_brightness_summary">Tampilkan tombol untuk kecerahan otomatis di dekat slider</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">Ikon 4G</string>
+    <string name="show_fourg_icon_summary">Tampilkan ikon 4G di ikon sinyal, bukan LTE</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Ikon tipe ponsel kecil</string>
+    <string name="use_old_mobiletype_summary">Tampilkan ikon tipe seluler di atas indikator sinyal</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Indikator roaming</string>
+    <string name="roaming_indicator_icon_summary">Tampilkan indikator roaming di ikon sinyal saat dalam mode roaming</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Tampilkan ikon data nonaktif</string>
+    <string name="data_disabled_icon_summary">Tampilkan tanda seru di sebelah bilah sinyal saat data dinonaktifkan</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">Ketuk dua kali untuk tidur</string>
+    <string name="double_tap_sleep_lockscreen_summary">Ketuk dua kali di mana saja pada layar kunci untuk mematikan layar</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Ketuk dua kali bilah status untuk tidur</string>
+    <string name="double_tap_sleep_gesture_summary">Ketuk dua kali pada bilah status untuk mematikan layar</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Bergetar saat disentuh</string>
+    <string name="quick_settings_vibrate_summary">Bergetar saat menyentuh ubin Setelan Cepat</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Gunakan Tema Kustom</string>
+    <string name="custom_theme_summary">Paksa warna latar belakang kustom</string>
+    <string name="custom_theme_default">Bawaan</string>
+    <string name="custom_theme_black">Hitam</string>
+    <string name="custom_theme_vivid">Jelas (Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Melukis di Salju</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Sidik jari</string>
+    <string name="fprint_error_vib_title">Getaran kesalahan sidik jari</string>
+    <string name="fprint_error_vib_summary">Bergetar saat kesalahan autentikasi sidik jari</string>
+    <string name="fprint_success_vib_title">Getaran autentikasi sidik jari</string>
+    <string name="fprint_success_vib_summary">Bergetar saat autentikasi sidik jari berhasil</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Gaya Slider Kecerahan</string>
+    <string name="brightness_custom1">Gaya Garis Besar</string>
+    <string name="brightness_custom2">Gaya Penuh</string>
+    <string name="brightness_custom3">Gaya Tipis</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Tombol berhenti paksa</string>
+    <string name="notification_guts_kill_app_button_summary">Tampilkan tombol berhenti paksa di menu tekan lama notifikasi</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">Opsi Mode Game</string>
+    <string name="gaming_mode_title">Ruang Game</string>
+    <string name="gaming_mode_summary">Fitur ekstra untuk pengalaman bermain game yang impresif</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Tampilkan ikon jenis Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Tampilkan jenis Wi-Fi di indikator sinyal Wi-Fi</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Ganti notifikasi mengambang dengan versi ticker yang didesain ulang dan tidak terlalu invasif</string>
+    <string name="reticker_colored_title">Gunakan latar belakang berwarna aplikasi</string>
+    <string name="reticker_colored_summary">Ganti warna latar belakang reTicker menggunakan warna utama aplikasi notifikasi</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Gaya elemen Setelan Cepat gabungan</string>
+    <string name="qs_outline">Garis besar</string>
+    <string name="qs_two_tone">Aksen dua nada</string>
+    <string name="qs_color_pop">Pop warna</string>
+    <string name="qs_shaded">Berbayang</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Cahaya Tepi</string>
+    <string name="edge_light_summary">Nyalakan tepi samping layar pada saat ada notifikasi</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Selalu terpicu</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Apakah akan menampilkan Cahaya Tepi setiap kali tampilan ambien ditampilkan dan bukan hanya untuk notifikasi</string>
+    <string name="edge_light_repeat_animation_title">Ulangi animasi</string>
+    <string name="edge_light_repeat_animation_summary_on">Ulangi sampai waktu habis</string>
+    <string name="edge_light_repeat_animation_summary_off">Tampilkan hanya sekali</string>
+    <string name="edge_light_color_mode_title">Mode warna Cahaya Tepi</string>
+    <string name="accent_color">Warna aksen (Bawaan)</string>
+    <string name="notification_color">Warna notifikasi</string>
+    <string name="wallpaper_color">Warna wallpaper</string>
+    <string name="custom_color">Warna kustom</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Setelan Baterai</string>
+    <string name="battery_style_category_title">Gaya Baterai</string>
+    <string name="battery_percent_title">Persentase baterai</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Gaya baterai</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikon tegak (bawaan)</string>
+    <string name="status_bar_battery_style_circle">Lingkaran</string>
+    <string name="status_bar_battery_style_dotted_circle">Lingkaran (Titik-titik)</string>
+    <string name="status_bar_battery_style_filled_circle">Lingkaran (Terisi)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Ikon mendatar (Kanan)</string>
+    <string name="status_bar_battery_style_icon_landscape">Ikon mendatar (Kiri)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Lanskap R Gaya A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Lanskap L Gaya A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Lanskap R Gaya B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Lanskap L Gaya B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Lanskap Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Lanskap Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Lanskap Capsule</string>
+    <string name="status_bar_battery_style_text">Teks</string>
+    <string name="status_bar_battery_style_hidden">Tersembunyi</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Persentase baterai</string>
+    <string name="status_bar_battery_percentage_default">Tersembunyi (bawaan)</string>
+    <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
+    <string name="status_bar_battery_percentage_text_next">Di samping ikon</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Gambar Header Setelan Cepat</string>
+    <string name="qs_header_random_image_title">Gambar Header Acak Setelan Cepat</string>
+    <string name="qs_header_random_image_summary">Aktifkan gambar header acak Setelan Cepat</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">Kustomisasi Jam</string>
+    <string name="clocksettings_title">Setelan Jam</string>
+    <string name="clocksettings_summary">Setelan jam bilah status</string>
+    <string name="status_bar_clock_date_title">Jam dan Tanggal</string>
+    <string name="status_bar_clock_date_summary">Sesuaikan jam dan tanggal bilah status Anda</string>
+    <string name="status_bar_clock_title">Setelan Jam</string>
+    <string name="status_bar_clock_show">Tampilkan jam dan tanggal</string>
+    <string name="status_bar_clock_style_title">Gaya jam</string>
+    <string name="status_bar_clock_style_right">Kanan</string>
+    <string name="status_bar_clock_style_center">Tengah</string>
+    <string name="status_bar_clock_style_left">Kiri</string>
+    <string name="status_bar_date_title">Setelan tanggal</string>
+    <string name="status_bar_am_pm_title">Gaya AM/PM</string>
+    <string name="status_bar_am_pm_info">Waktu 24-jam aktif</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Kecil</string>
+    <string name="status_bar_am_pm_hidden">Tersembunyi (bawaan)</string>
+    <string name="clock_seconds_display">Tampilkan detik</string>
+    <string name="clock_date_display">Tanggal</string>
+    <string name="clock_date_display_summary">Tampilkan tanggal kustom sebelum jam</string>
+    <string name="clock_date_display_none">Jangan tampilkan</string>
+    <string name="clock_date_display_small">Ukuran font kecil</string>
+    <string name="clock_date_display_normal">Ukuran font normal</string>
+    <string name="clock_date_style">Gaya tanggal</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Huruf kecil</string>
+    <string name="clock_date_style_uppercase">Huruf besar</string>
+    <string name="clock_date_format_custom">Format java khusus</string>
+    <string name="clock_date_format">Format tanggal</string>
+    <string name="clock_date_string_edittext_title">Harus dalam format tanggal seperti. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Masukkan teks</string>
+    <string name="clock_date_right">Sebelah kanan waktu</string>
+    <string name="clock_date_left">Sebelah kiri waktu</string>
+    <string name="clock_date_position">Posisi tanggal</string>
+    <string name="status_bar_clock_auto_hide_title">Otomatis sembunyikan jam</string>
+    <string name="status_bar_clock_auto_hide_summary">Sembunyikan dan tampilkan jam secara berkala</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Sembunyikan durasi</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Tampilkan durasi</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">Transparansi Setelan Cepat</string>
+    <string name="qs_transparency_summary">Tetapkan tingkat transparansi untuk latar belakang Setelan Cepat</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Buka FPS yang lebih tinggi dalam game</string>
+    <string name="use_games_spoof_summary">Palsukan perangkat Anda sebagai model yang berbeda untuk game tertentu untuk membuka FPS yang lebih tinggi</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">Blur latar belakang karya seni notifikasi media</string>
+    <string name="artwork_media_background_blur_radius_title">Jumlah blur untuk karya seni notifikasi media</string>
+    <string name="media_artwork_fade_percent_title">Persentase pudar untuk karya seni notifikasi media</string>
+</resources>

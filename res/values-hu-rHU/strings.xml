@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App Title-->
+    <string name="essence_settings_subtitle">Hogy van ma?</string>
+    <!-- General app strings -->
+    <string name="add">Hozzáadás</string>
+    <string name="advanced">Haladó</string>
+    <string name="cancel">Mégsem</string>
+    <string name="default_text">Alapértelmezett</string>
+    <string name="dlg_ok">Oké</string>
+    <string name="attention">Figyelem</string>
+    <string name="loading">\u2026 betöltése</string>
+    <string name="reset">Visszaállítás</string>
+    <string name="reset_colors">Színek visszaállítása</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Szöveg</string>
+    <string name="icon_title">Ikon</string>
+    <string name="color_title">Szín</string>
+    <string name="colors_title">Színek</string>
+    <string name="enable">Engedélyezés</string>
+    <!-- Extensions categories -->
+    <string name="status_bar_category">Állapotsáv</string>
+    <string name="system_category">Csapat</string>
+    <string name="themes_category">Témák</string>
+    <string name="qs_category">Csempe</string>
+    <string name="lockscreen_category">Képernyőzár</string>
+    <string name="hardware_category">Extrák</string>
+    <string name="build_tweaks_summary_title">Törekedjen a Javításra</string>
+    <string name="listview">Listanézet</string>
+    <!-- Project Elixir Team -->
+    <string name="dev_support">A fejlesztők és a csapat</string>
+    <string name="aboutus_tab">Tudjon meg többet rólunk</string>
+    <!-- Developers -->
+    <string name="note">Fontos megjegyzés</string>
+    <string name="note_summary">Ne küldjön közvetlen üzenetet egyik fejlesztőnek sem, a csoportok nem véletlenül lettek létrehozva. Ha bármilyen közvetlen üzenetet látunk, akkor mindenhol tiltani fogjuk az üzenetküldési lehetőséget. Nem vagyunk elérhetőek 24*7 időszakban, ezért legyen türelmes. Engedje meg, hogy békésen élhessük az életünket.</string>
+    <!-- Contact and Download -->
+    <string name="download">Töltse le a szükséges verziót</string>
+    <string name="download_summary">Érintse meg itt, hogy letöltse a készülékének megfelelő verziót</string>
+    <string name="paypal">Paypal</string>
+    <string name="donate_summary">Küldjön támogatást munkánk támogatásához</string>
+    <string name="don_summ1">• Egy custom ROM készítéséhez olyan előfeltételek is szükségesek, mint például egy High-End Building Server (Jenkins) vagy egy PC, amely nagyon high-end műszaki specifikációkkal és nagyon nagy sebességű internetkapcsolattal rendelkezik.</string>
+    <string name="don_summ2">• Nekünk fejlesztőként rengeteg időnket és munkánkat kell fordítanunk a custom ROM megfelelő karbantartására, hogy rendszeres és stabil frissítéseket tudjunk biztosítani a felhasználóknak</string>
+    <string name="don_summ3">• Fontolja meg az adományozást vagy hívjon meg minket egy kávéra Paypalon vagy csatlakozzon hozzánk a Patreonon fenntartható támogatásért és jutalmakért, ha értékelni szeretné munkánkat</string>
+    <string name="tele_group">Telegram beszélgető csoport</string>
+    <string name="grp_summary">Ha bármilyen problémát tapasztal, ossza meg velünk a Telegram beszélgető csoportunkban</string>
+    <string name="tele_channel">Telegram frissítési csatorna</string>
+    <string name="update_summary">Iratkozzon fel a Telegram csatornánkra a frissítések gyorsabb eléréséhez</string>
+    <string name="website">Hivatalos weboldalunk</string>
+    <string name="website_summary">Látogassa meg weboldalunkat, ahol minden szükséges információ rendelkezésére áll</string>
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">Letöltés és weboldal</string>
+    <string name="telegram">Telegram támogatási csoport</string>
+    <string name="donateus">Támogasson minket adománnyal</string>
+    <string name="patreon">Szeretne korai hozzáférést?</string>
+    <string name="patreon_summary">A Patraonon keresztül támogathatja a fejlesztést, hozzáférhet a korai verziókhoz és néhány exkluzív funkcióhoz, előnyhöz juthat.</string>
+    <!-- Summery -->
+    <string name="summ_gesture">Lejátszásvezérlés • Rendszernavigáció</string>
+    <string name="summ_lock">DT2S • Albumborító • Élfény</string>
+    <string name="summ_misc">Játéktér • Kikapcsoló menü • Hardveres gombok </string>
+    <string name="summ_monet">Monet • Témák • Képernyőzár óra</string>
+    <string name="summ_quick">QS stílusok • Albumborító • Adathasználat</string>
+    <string name="summ_sbar">Hálózati forgalom • VoLTE/VoWiFi </string>
+    <string name="summ_about">A Project Elixir ROM névjegye és Fejlesztői</string>
+    <string name="donate">Itt támogathat minket</string>
+    <!-- Categories -->
+    <string name="gestures_title">Gesztusok</string>
+    <string name="lockscreen_title">Képernyőzár</string>
+    <string name="misc_title">Egyebek</string>
+    <string name="navbar_title">Navigációs sáv</string>
+    <string name="notifications_title">Értesítések</string>
+    <string name="powermenu_title">Kikapcsoló menü</string>
+    <string name="quicksettings_title">Gyorsbeállítások</string>
+    <string name="recents_title">Legutóbbi alkalmazások</string>
+    <string name="statusbar_title">Állapotsor</string>
+    <string name="volume_title">Hangerő beállítások</string>
+    <string name="network_traffic_catagories">Hálózati forgalom</string>
+    <string name="clock_date">Óra és dátum beállításai</string>
+    <string name="status_bar_actions">Állapotsor műveletek</string>
+    <string name="lockscreen_settings">Képernyőzár beállításai</string>
+    <string name="customisation_title">Témák</string>
+    <string name="buttons_category">Kikapcsoló menü</string>
+    <string name="lockscreen_gestures_category">Képernyőzár gesztusok</string>
+    <string name="signal_category">Hálózat ikon</string>
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="save">Mentés</string>
+    <string name="general_category">Általános testreszabás</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Színválasztó</string>
+    <string name="press_color_to_apply">Bökjön egy színre az alkalmazáshoz</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_check_button_text">ELŐNÉZET</string>
+    <string name="hex_reset_button_text">VISSZAÁLLÍTÁS</string>
+    <string name="set">Beállítás</string>
+    <string name="color_default">Alapértelmezett</string>
+    <string name="longpress_info">Nyomja meg hosszan a dobozt a szín mentéséhez</string>
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">Gyorsbeállítások panel testreszabása</string>
+    <string name="qstiles_title">Csempék stílusa</string>
+    <string name="qstiles_default">Alapértelmezett stílus</string>
+    <string name="qstiles_custom1">Klasszikus stílus</string>
+    <string name="qstiles_custom2">Téglalapszerű stílus</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Zene a záróképernyőn</string>
+    <string name="media_art_title">Médiakép megjelenítése</string>
+    <string name="media_art_summary">A lejátszott média borítóképének engedélyezése a képernyőzáron</string>
+    <!-- Lockscreen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Médiakép filter</string>
+    <string name="lockscreen_albumart_filter_none">Nincs</string>
+    <string name="lockscreen_albumart_filter_grayscale">Szürkeárnyalatos</string>
+    <string name="lockscreen_albumart_filter_tint">Kiemelő szín használata</string>
+    <string name="lockscreen_albumart_filter_blur">Elmosás</string>
+    <string name="lockscreen_albumart_filter_grayblur">Szürkeárnyalatos és elmosott</string>
+    <string name="lockscreen_albumart_filter_blur_radius_title">Elmosás mértéke a képernyőzáron megjelenő médiaképhez</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Érzékeny csempék használata csak feloldott képernyőnél</string>
+    <string name="use_tiles_on_secure_keyguard_summary">A képernyőzárat fel kell oldani az érzékeny csempék használatához</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Haladó újraindítási lehetőségek engedélyezése</string>
+    <string name="global_actions_advanced_reboot_summary">Recovery és bootloader lehetőség megjelenítése a kikapcsoló menüben</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Témázás</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Címsor / Alap betűtípus</string>
+    <string name="theme_customization_font_summary">Rendszer betűtípus beállítása</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Ikonforma</string>
+    <string name="theme_customization_icon_shape_summary">Rendszer ikonforma beállítása</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Ikoncsomag</string>
+    <string name="theme_customization_icon_pack_summary">Egyedi ikoncsomag beállítása</string>
+    <string name="theme_customization_signal_icon_title">Jelerősség ikon stílusa</string>
+    <string name="theme_customization_signal_icon_summary">Egyedi jelerősség ikon beállítása</string>
+    <string name="theme_customization_wifi_icon_title">WiFi ikon stílusa</string>
+    <string name="theme_customization_wifi_icon_summary">Egyedi WiFi ikon beállítása</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Eszköz alapértelmezett</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Képernyőzár töltési információ</string>
+    <string name="lockscreen_battery_info_summary">Töltési állapot, áramerősség és akku hőmérséklet megjelenítése a képernyőzáron töltés közben</string>
+    <!-- Network Traffic -->
+    <string name="network_traffic_state_title ">Hálózati forgalom beállításai</string>
+    <string name="traffic_title">Adatforgalom megjelenítése</string>
+    <string name="traffic_summary">Adatforgalom megjelenítés testreszabása</string>
+    <string name="network_traffic_autohide_threshold_title">Automatikus elrejtés időköze</string>
+    <string name="network_traffic_location_title">Tartózkodási hely</string>
+    <string name="network_traffic_disabled">Letiltva</string>
+    <string name="network_traffic_statusbar">Állapotsor</string>
+    <string name="network_traffic_qs_header">Gyors beállítások fejléc</string>
+    <string name="network_traffic_refresh_interval_title">Frissítési időköz</string>
+    <string name="network_traffic_mode_title">Megjelenítés módja</string>
+    <string name="network_traffic_dynamic">Dinamikus</string>
+    <string name="network_traffic_download">Letöltés</string>
+    <string name="network_traffic_upload">Feltöltés</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Biztonságos képernyő figyelmen kívül hagyása</string>
+    <string name="ignore_window_secure_summary">Ez a beállítás kikapcsolja a felvétel készítési korlátozást minden alkalmazásnál. Ezáltal bármelyik alkalmazásról tud felvételt készíteni, azonban bizonyos esetekben ez adatvédelmi problémákhoz vezethet. Változtatás esetén újra kell indítani a készüléket a beállítások hatályba lépéséhez.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Ikonkezelő</string>
+    <string name="icon_manager_summary">Kezelheti az állapotsoron megjelenő ikonokat</string>
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Hullámzó effekt</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Hullámzás effekt megjelenítése ujjlenyomattal feloldáskor</string>
+    <!-- Footer -->
+    <string name="qs_footer_category">QS lábléc</string>
+    <string name="qs_footer_datausage_title">Adathasználat</string>
+    <string name="qs_footer_datausage_summary">Használt adatmennyiség megjelenítése a gyorsbeállítás panelen</string>
+    <!-- Screen off animation -->
+    <string name="default_string">Alapértelmezett</string>
+    <string name="screen_off_animation_title">Képernyő kikapcsolási animáció</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skála</string>
+    <string name="lockscreen_effects_cat">Képernyőzár animáció</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Hívás közbeni rezgés beállításai</string>
+    <string name="incall_vibrate_connect_title">Rezgés csatlakozáskor</string>
+    <string name="incall_vibrate_call_wait_title">Rezgés hívás várakoztatásakor</string>
+    <string name="incall_vibrate_disconnect_title">Rezgés szétkapcsoláskor</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Zseblámpa lezárt képernyőnél</string>
+    <string name="torch_power_button_gesture_none">Letiltva</string>
+    <string name="torch_power_button_gesture_dt">Bekapcsológomb dupla megnyomására (lassabb egyszeri megnyomás érzékenység). A kamera indítása dupla érintésre letiltásra kerül.</string>
+    <string name="torch_power_button_gesture_dt_toast">A kamera megnyitása gesztus letiltásra került</string>
+    <string name="torch_power_button_gesture_lp">Bekapcsoló gomb hosszan nyomva</string>
+    <!-- Quick QS pulldown -->
+    <string name="qs_quick_pulldown">Gyorsbeállítások panel lenyitása</string>
+    <string name="quick_pulldown_none">Letiltva</string>
+    <string name="quick_pulldown_right">Állapotsor jobb oldalának lehúzásakor</string>
+    <string name="quick_pulldown_left">Állapotsor bal oldalának lehúzásakor</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_slider_title">Fényerő csúszka</string>
+    <string name="qs_show_brightness_slider_never">Sose jelenítse meg</string>
+    <string name="qs_show_brightness_slider_expanded">Megjelenítés kinyitott állapotban</string>
+    <string name="qs_show_brightness_slider_always">Mindig jelenjen meg</string>
+    <string name="qs_show_brightness_slider_not_expanded">Megjelenik, ha nincs kinyitva</string>
+    <string name="qs_brightness_slider_position_title">Pozíció</string>
+    <string name="qs_brightness_slider_position_top">Legfelül</string>
+    <string name="qs_brightness_slider_position_bottom">Legalul</string>
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Auto fényerő ikon</string>
+    <string name="qs_show_auto_brightness_summary">Alkalmazkodó fényerő ikon megjelenítése a csúszka mellett</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G ikon</string>
+    <string name="show_fourg_icon_summary">4G ikon megjelenítése az LTE ikon helyett</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Kis mobilhálózat ikon</string>
+    <string name="use_old_mobiletype_summary">Mobilhálózat ikonjának megjelenítése a térerő ikonon</string>
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Barangolás jelző</string>
+    <string name="roaming_indicator_icon_summary">Barangolás jelző megjelenítése a jelerősség ikonon barangolás közben</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Adatkapcsolat letiltva ikon megjelenítése</string>
+    <string name="data_disabled_icon_summary">X jelölés megjelenítése a jelerősség mellett, ha az adatkapcsolat le van tiltva</string>
+    <!-- Double Tap to Sleep Lockscreen -->
+    <string name="double_tap_sleep_lockscreen_title">Alvó állapot dupla érintésre</string>
+    <string name="double_tap_sleep_lockscreen_summary">Alvó állapot a képernyőzár dupla érintésére</string>
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">Alvó állapot az állapotsáv dupla érintésére</string>
+    <string name="double_tap_sleep_gesture_summary">Az állapotsáv dupla érintésére az eszköz alvó állapotba kerül</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Rezgés érintésre</string>
+    <string name="quick_settings_vibrate_summary">Rezgés gyorbeállítás csempe érintésekor</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Egyedi téma használata</string>
+    <string name="custom_theme_summary">Egyedi háttérszínek kényszerítése</string>
+    <string name="custom_theme_default">Alapértelmezett</string>
+    <string name="custom_theme_black">Fekete</string>
+    <string name="custom_theme_vivid">Élénk (Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Paint in the Snow</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Ujjlenyomat</string>
+    <string name="fprint_error_vib_title">Rezgás hibás ujjlenyomat esetén</string>
+    <string name="fprint_error_vib_summary">Rezegjen sikertelen ujjlenyomat érzékelésnél</string>
+    <string name="fprint_success_vib_title">Rezgés ujjlenyomat érzékelésénél</string>
+    <string name="fprint_success_vib_summary">Rezegjen sikeres ujjlenyomat érzékelésnél</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Fényerő csúszka stílusa</string>
+    <string name="brightness_custom1">Körvonal stílus</string>
+    <string name="brightness_custom2">Kitöltött stílus</string>
+    <string name="brightness_custom3">Vékony stílus</string>
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kényszerbezárás ikon</string>
+    <string name="notification_guts_kill_app_button_summary">Kényszerített bezárás ikon megjelenítése a hosszan nyomásra megjelenő menüben</string>
+    <!-- Gaming mode -->
+    <string name="game_custs">Játék üzemmód beállításai</string>
+    <string name="gaming_mode_title">Játéktér</string>
+    <string name="gaming_mode_summary">Extra szolgáltatások a magával ragadó játékélményhez</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">WiFi típus ikonjának megjelenítése</string>
+    <string name="show_wifi_standard_icon_summary">WiFi megjelenítése a WiFi jelerősség mutatón</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Cserélje ki a felugró értesítést az átalakított ticker vékony és kevésbé invazív verziójára</string>
+    <string name="reticker_colored_title">Használja az alkalmazás színes hátterét</string>
+    <string name="reticker_colored_summary">Cserélje ki a reTicker háttér színét az értesítési alkalmazás fő színével</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Kombinált QS elemek stílusa</string>
+    <string name="qs_outline">Körvonal</string>
+    <string name="qs_two_tone">Kéttónusú kiemelőszín</string>
+    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_shaded">Árnyékolt</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Edge light -->
+    <string name="edge_light_title">Élfény</string>
+    <string name="edge_light_summary">Értesítés érkezése esetén a képernyő széle világít</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Impulzusra mindig kapcsoljon</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Élfény megjelenítése környezeti kijelzőn, ne csak értesítésekre</string>
+    <string name="edge_light_repeat_animation_title">Animáció ismétlése</string>
+    <string name="edge_light_repeat_animation_summary_on">Ismétlődés hossza</string>
+    <string name="edge_light_repeat_animation_summary_off">Csak egyszer</string>
+    <string name="edge_light_color_mode_title">Élfény színe</string>
+    <string name="accent_color">Kiemelőszín (alapértelmezett)</string>
+    <string name="notification_color">Értesítési szín</string>
+    <string name="wallpaper_color">Háttérkép szín</string>
+    <string name="custom_color">Egyedi szín</string>
+    <!-- Battery Styles -->
+    <string name="battery_settings_title">Akkumulátor beállítások</string>
+    <string name="battery_style_category_title">Akkumulátor stílusok</string>
+    <string name="battery_percent_title">Akkumulátor százalék</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Akkumulátor stílus</string>
+    <string name="status_bar_battery_style_icon_portrait">Álló ikon (alapértelmezett)</string>
+    <string name="status_bar_battery_style_circle">Kör</string>
+    <string name="status_bar_battery_style_dotted_circle">Kör (pontozott)</string>
+    <string name="status_bar_battery_style_filled_circle">Kör (kitöltött)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Fekvő ikon (jobbra)</string>
+    <string name="status_bar_battery_style_icon_landscape">Fekvő ikon (balra)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Jobbra fektetett stílus A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Balra fektetett stílus A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Jobbra fektetett stílus B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Balra fektetett stílus B</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Álló Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Fekvő Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">IOS álló</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Fekvő Airoo</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Fekvő Capsule</string>
+    <string name="status_bar_battery_style_text">Szöveg</string>
+    <string name="status_bar_battery_style_hidden">Elrejtve</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Akku százalék</string>
+    <string name="status_bar_battery_percentage_default">Elrejtve (alapértelmezett)</string>
+    <string name="status_bar_battery_percentage_text_inside">Az ikonon belül</string>
+    <string name="status_bar_battery_percentage_text_next">Az ikon mellett</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS fejléckép</string>
+    <string name="qs_header_random_image_title">Véletlenszerű QS fejléckép</string>
+    <string name="qs_header_random_image_summary">Véletlenszerű kép megjelenítése a QS fejlécében</string>
+    <!-- Clock Customizations -->
+    <string name="clocksettings_category_title">Óra testreszabása</string>
+    <string name="clocksettings_title">Óra beállításai</string>
+    <string name="clocksettings_summary">Állapotsori óra beállításai</string>
+    <string name="status_bar_clock_date_title">Óra és dátum</string>
+    <string name="status_bar_clock_date_summary">Testreszabhatja az óra és a dátum megjelenését</string>
+    <string name="status_bar_clock_title">Óra beállításai</string>
+    <string name="status_bar_clock_show">Óra és dátum megjelenítése</string>
+    <string name="status_bar_clock_style_title">Óra stílusa</string>
+    <string name="status_bar_clock_style_right">Jobbra</string>
+    <string name="status_bar_clock_style_center">Középen</string>
+    <string name="status_bar_clock_style_left">Balra</string>
+    <string name="status_bar_date_title">Dátum beállítások</string>
+    <string name="status_bar_am_pm_title">DE/DU stílus</string>
+    <string name="status_bar_am_pm_info">24 órás óra engedélyezve</string>
+    <string name="status_bar_am_pm_normal">Normál</string>
+    <string name="status_bar_am_pm_small">Kicsi</string>
+    <string name="status_bar_am_pm_hidden">Elrejtve (alapértelmezett)</string>
+    <string name="clock_seconds_display">Másodperc megjelenítése</string>
+    <string name="clock_date_display">Dátum</string>
+    <string name="clock_date_display_summary">Dátum megjelenítése az óra előtt</string>
+    <string name="clock_date_display_none">Ne mutassa</string>
+    <string name="clock_date_display_small">Kis betűméret</string>
+    <string name="clock_date_display_normal">Normál betűméret</string>
+    <string name="clock_date_style">Dátum stílusa</string>
+    <string name="clock_date_style_normal">Normál</string>
+    <string name="clock_date_style_lowercase">Kisbetűs</string>
+    <string name="clock_date_style_uppercase">Nagybetűs</string>
+    <string name="clock_date_format_custom">Egyedi Java formátum</string>
+    <string name="clock_date_format">Dátumformátum</string>
+    <string name="clock_date_string_edittext_title">Dátumformátumban kell megadni pl. hh/nn/éé</string>
+    <string name="clock_date_string_edittext_summary">Szöveg megadása</string>
+    <string name="clock_date_right">Jobbra az időtől</string>
+    <string name="clock_date_left">Balra az időtől</string>
+    <string name="clock_date_position">Dátum elhelyezkedése</string>
+    <string name="status_bar_clock_auto_hide_title">Óra automatikus elrejtése</string>
+    <string name="status_bar_clock_auto_hide_summary">Dátum és idő megjelenítése megadott időközönként</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Elrejtési idő</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Megjelenítés időtartama</string>
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">QS panel hátterének átlátszósága</string>
+    <string name="qs_transparency_summary">Beállíthatja a QS panel hátterének átlátszóságát</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Magasabb FPS engedélyezése játékok közben</string>
+    <string name="use_games_spoof_summary">Másik modell imitálása bizonyos játékoknál a magasabb FPS elérése érdekében</string>
+    <!-- Media artwork -->
+    <string name="artwork_media_background_enable_blur_title">A médiaértesítés háttérgrafikájának elmosása</string>
+    <string name="artwork_media_background_blur_radius_title">Médiaértesítés grafika elmosásának mértéke</string>
+    <string name="media_artwork_fade_percent_title">Médiaértesítés áttűnése százalékban</string>
+</resources>
