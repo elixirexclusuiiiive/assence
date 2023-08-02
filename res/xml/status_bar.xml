@@ -87,18 +87,11 @@
         android:title="@string/general_category">
     
         <org.elixir.essence.preferences.SystemSettingSwitchPreference	    
-	    android:key="double_tap_sleep_gesture"
-	    settings:layout="@layout/xd_pref_card_top"
+	        android:key="double_tap_sleep_gesture"
+	        settings:layout="@layout/xd_pref_card_top"
             android:title="@string/double_tap_sleep_gesture_title"
             android:summary="@string/double_tap_sleep_gesture_summary"
             android:defaultValue="false" />
-
-	<org.elixir.essence.preferences.SystemSettingSwitchPreference	
-            android:key="status_bar_brightness_control"
-            android:title="@string/status_bar_toggle_brightness"
-	    settings:layout="@layout/xd_pref_card_mid"
-	    android:summary="@string/status_bar_toggle_brightness_summary"
-            android:defaultValue="false"/>
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="reticker_status"
