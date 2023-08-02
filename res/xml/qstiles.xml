@@ -14,6 +14,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
 
     <!-- Header -->
@@ -54,7 +55,7 @@
             android:max="75"
             android:min="0" />
 
-	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
+	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_fade_level"
             app:layout_pos="2"
             android:title="@string/qs_header_image_fade_level_level_title"
@@ -64,7 +65,7 @@
             android:max="100"
             android:min="1"/>
 
-	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
+	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_height"
             app:layout_pos="2"
             android:title="@string/qs_header_image_height_title"
@@ -73,7 +74,7 @@
             android:max="255"
 	        android:min="1"/>
 
-	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
+	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_opacity_level"
             app:layout_pos="3"
             android:title="@string/qs_header_image_opacity_level_title"
@@ -81,7 +82,7 @@
             android:defaultValue="30"
             settings:interval="1"
             android:max="100"
-	    android:min="1"/>
+	        android:min="1"/>
 
         <org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
             android:key="qs_header_image_filter_color"
