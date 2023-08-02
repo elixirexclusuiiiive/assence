@@ -28,43 +28,43 @@
 
         <ListPreference
             android:key="qs_quick_pulldown"
-		android:title="@string/qs_quick_pulldown"
-		settings:layout="@layout/xd_pref_card_top"
+		    android:title="@string/qs_quick_pulldown"
+		    settings:layout="@layout/essence_pref_card_top"
             android:entries="@array/quick_pulldown_entries"
             android:entryValues="@array/quick_pulldown_values"
             android:defaultValue="0" />
 
- 	<org.elixir.essence.preferences.SystemSettingSwitchPreference
-		android:key="show_fourg_icon"
-		settings:layout="@layout/xd_pref_card_mid"
-             android:title="@string/show_fourg_icon_title"
-             android:summary="@string/show_fourg_icon_summary"
-	     android:defaultValue="false"/>
+ 	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
+	    	android:key="show_fourg_icon"
+	    	settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/show_fourg_icon_title"
+            android:summary="@string/show_fourg_icon_summary"
+	        android:defaultValue="false"/>
 
-	<org.elixir.essence.preferences.SecureSettingSwitchPreference
-		android:key="show_wifi_standard_icon"
-		settings:layout="@layout/xd_pref_card_mid"
+	    <org.elixir.essence.preferences.SecureSettingSwitchPreference
+	    	android:key="show_wifi_standard_icon"
+	    	settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/show_wifi_standard_icon_title"
             android:summary="@string/show_wifi_standard_icon_summary"
             android:defaultValue="false" />
 
-	<org.elixir.essence.preferences.SystemSettingSwitchPreference
-		android:key="use_old_mobiletype"
-		settings:layout="@layout/xd_pref_card_mid"
+	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
+	    	android:key="use_old_mobiletype"
+	    	settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/use_old_mobiletype_title"
             android:summary="@string/use_old_mobiletype_summary"
-	    android:defaultValue="false" />  
+	        android:defaultValue="false" />  
 
-	<org.elixir.essence.preferences.SystemSettingSwitchPreference
+	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="roaming_indicator_icon"
             settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/roaming_indicator_icon_title"
             android:summary="@string/roaming_indicator_icon_summary"
-		android:defaultValue="true"/>
+	    	android:defaultValue="true"/>
 
-	<org.elixir.essence.preferences.SystemSettingSwitchPreference
-		android:key="data_disabled_icon"
-		settings:layout="@layout/xd_pref_card_bot"
+	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
+	    	android:key="data_disabled_icon"
+	    	settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/data_disabled_icon_title"
             android:summary="@string/data_disabled_icon_summary"
             android:defaultValue="true"/>
@@ -76,8 +76,8 @@
         <Preference
             android:key="traffic"
             android:fragment="org.elixir.essence.fragments.Traffic"
-   	    android:title="@string/traffic_title"
-   	    settings:layout="@layout/xd_pref_card_mid2"
+   	        android:title="@string/traffic_title"
+       	    settings:layout="@layout/essence_pref_card_mid2"
             android:summary="@string/traffic_summary" />
 
     </PreferenceCategory>
@@ -127,7 +127,7 @@
 	    android:key="status_bar_battery_style"
             android:title="@string/status_bar_battery_style_title"
             android:summary="%s"
-            settings:layout="@layout/xd_pref_card_top"
+            settings:layout="@layout/essence_pref_card_top"
             android:dialogTitle="@string/status_bar_battery_style_title"
             android:entries="@array/status_bar_battery_style_entries"
             android:entryValues="@array/status_bar_battery_style_values"
@@ -136,7 +136,7 @@
     <org.elixir.essence.preferences.SystemSettingListPreference
 	    android:key="status_bar_show_battery_percent"
             android:title="@string/battery_percent_title"
-            settings:layout="@layout/xd_pref_card_bot"
+            settings:layout="@layout/essence_pref_card_bot"
             android:dialogTitle="@string/battery_percent_title"
             android:entries="@array/battery_percent_entries"
             android:entryValues="@array/battery_percent_values"

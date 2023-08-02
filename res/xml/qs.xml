@@ -33,6 +33,17 @@
             android:fragment="org.elixir.essence.fragments.QSTiles"
             android:title="@string/qstiles_cust" />
 
+ 	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference	    
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+	        android:defaultValue="95"
+  	        app:layout_pos="2"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
+
         <org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image"
             android:title="@string/qs_header_image_title"
@@ -98,7 +109,7 @@
         <!-- Brightness slider -->
 	<org.elixir.essence.preferences.SecureSettingListPreference    
 		android:key="qs_show_brightness_slider"
-		settings:layout="@layout/xd_pref_card_top"
+		settings:layout="@layout/essence_pref_card_top"
             android:title="@string/qs_show_brightness_slider_title"
             android:entries="@array/qs_show_brightness_slider_entries"
             android:entryValues="@array/qs_show_brightness_slider_values"
@@ -106,7 +117,7 @@
 
 	<org.elixir.essence.preferences.SecureSettingListPreference
 		android:key="qs_brightness_slider_position"
-		settings:layout="@layout/xd_pref_card_mid"
+		settings:layout="@layout/essence_pref_card_mid"
             android:title="@string/qs_brightness_slider_position_title"
             android:entries="@array/qs_brightness_slider_position_entries"
             android:entryValues="@array/qs_brightness_slider_position_values"
@@ -120,17 +131,6 @@
             android:defaultValue="true" />
 
     </PreferenceCategory>
-
- 	<org.elixir.essence.preferences.SystemSettingSeekBarPreference	    
-            android:key="qs_transparency"
-            android:title="@string/qs_transparency_title"
-            android:summary="@string/qs_transparency_summary"
-	    android:defaultValue="95"
-  	    app:layout_pos="0"
-            settings:interval="1"
-            settings:units="%"
-            android:max="100"
-            android:min="1" />
 
     <PreferenceCategory
             android:key="datausage_category"

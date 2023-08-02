@@ -79,7 +79,7 @@
         <Preference
             android:key="gaming_mode"
 		    android:title="@string/gaming_mode_title"
-		    settings:layout="@layout/xd_pref_card_bot"
+		    settings:layout="@layout/essence_pref_card_bot"
             android:summary="@string/gaming_mode_summary">
             <intent
                 android:action="android.intent.action.MAIN"

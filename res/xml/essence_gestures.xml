@@ -29,63 +29,63 @@
     <Preference
         android:key="swipe_to_screenshot"
         android:title="@string/three_finger_gesture"
-        settings:layout="@layout/xd_pref_card_top"
+        settings:layout="@layout/essence_pref_card_top"
         android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings" />
 
   <Preference
         android:key="doze_double_tap_summary"
             android:title="@string/double_tap_title"
-            settings:layout="@layout/xd_pref_card_bot"
+            settings:layout="@layout/essence_pref_card_bot"
         settings:userRestriction="no_ambient_display"
         android:fragment="com.android.settings.gestures.DoubleTapAmbientSettings"/>
 
     <Preference
         android:key="gesture_system_navigation_input"
         android:title="@string/system_navigation_title"
-        settings:layout="@layout/xd_pref_card_top"
+        settings:layout="@layout/essence_pref_card_top"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings" />
 
     <Preference
         android:key="gesture_one_hand"
         android:title="@string/one_handed_title"
-        settings:layout="@layout/xd_pref_card_bot"
+        settings:layout="@layout/essence_pref_card_bot"
         android:fragment="com.android.settings.gestures.OneHandedSettings" />
 
     <Preference
         android:key="volume_button_music_control_sumary"
-        settings:layout="@layout/xd_pref_card_top"
+        settings:layout="@layout/essence_pref_card_top"
         android:title="@string/volume_button_music_control_title"
         android:fragment="com.android.settings.gestures.VolumeButtonMusicControlGestureSettings" />
   
     <Preference
         android:key="gesture_adaptive_playback_summary"
-        settings:layout="@layout/xd_pref_card_bot"
+        settings:layout="@layout/essence_pref_card_bot"
         android:title="@string/adaptive_playback_screen_title"
         android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings" />
 
     <Preference
         android:key="gesture_double_tap_power_input"
         android:title="@string/double_tap_power_for_camera_title"
-        settings:layout="@layout/xd_pref_card_top"
+        settings:layout="@layout/essence_pref_card_top"
         android:fragment="com.android.settings.gestures.DoubleTapPowerSettings" />
 
     <Preference
         android:key="gesture_power_menu"
         android:title="@string/power_menu_setting_name"
-        settings:layout="@layout/xd_pref_card_bot"
+        settings:layout="@layout/essence_pref_card_bot"
         android:fragment="com.android.settings.gestures.PowerMenuSettings" />
 
     <Preference
         android:key="gesture_pick_up_input"
         android:title="@string/ambient_display_pickup_title"
-        settings:layout="@layout/xd_pref_card_mid2"
+        settings:layout="@layout/essence_pref_card_mid2"
         android:fragment="com.android.settings.gestures.PickupGestureSettings" />
 
     <Preference
         android:key="touchscreen_gesture"
         android:persistent="false"
         android:title="@string/touchscreen_gesture_settings_title"
-        settings:layout="@layout/xd_pref_card_mid2"
+        settings:layout="@layout/essence_pref_card_mid2"
         android:summary="@string/touchscreen_gesture_settings_summary">
         <intent
             android:action="android.intent.action.MAIN"

@@ -15,20 +15,26 @@
 <PreferenceScreen 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/lockscreen_shortcuts">
+    android:title=" ">
 
-    <org.derpfest.support.preferences.SystemSettingListPreference
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="@string/lockscreen_shortcuts"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+
+    <org.elixir.essence.preferences.SystemSettingListPreference
         android:key="lockscreen_shortcut_start"
-        android:icon="@drawable/ic_bottom_left"
+        settings:layout="@layout/essence_pref_card_top"
         android:title="@string/lockscreen_shortcut_start_title"
         android:summary="%s"
         android:entries="@array/lockscreen_shortcut_entries"
         android:entryValues="@array/lockscreen_shortcut_values"
         android:defaultValue="1" />
 
-    <org.derpfest.support.preferences.SystemSettingListPreference
+    <org.elixir.essence.preferences.SystemSettingListPreference
         android:key="lockscreen_shortcut_end"
-        android:icon="@drawable/ic_bottom_right"
+        settings:layout="@layout/essence_pref_card_mid"
         android:title="@string/lockscreen_shortcut_end_title"
         android:summary="%s"
         android:entries="@array/lockscreen_shortcut_entries"
@@ -37,6 +43,7 @@
 
     <SwitchPreference
         android:key="lockscreen_shortcut_enforce"
+        settings:layout="@layout/xd_pref_card_bot"
         android:title="@string/lockscreen_shortcut_enforce_title"
         android:summary="@string/lockscreen_shortcut_enforce_summary"
         android:defaultValue="false" />

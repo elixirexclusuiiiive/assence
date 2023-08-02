@@ -47,7 +47,7 @@
 	 android:title="@string/dev_support">
 
      <Preference
-        settings:layout="@layout/xd_pref_card_top" 
+        settings:layout="@layout/essence_pref_card_top" 
         android:title="@string/dev1"
 	android:summary="@string/dev1_summary">
      <intent
@@ -57,7 +57,7 @@
 
      <Preference
         android:title="@string/dev2"
-        settings:layout="@layout/xd_pref_card_bot"
+        settings:layout="@layout/essence_pref_card_bot"
 	android:summary="@string/dev2_summary">
      <intent
         android:action="android.intent.action.VIEW"
