@@ -50,7 +50,7 @@
             app:layout_pos="2"
             android:defaultValue="0"
             settings:interval="1"
-            android:max="64"
+            android:max="75"
             android:min="0" />
 
 	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
