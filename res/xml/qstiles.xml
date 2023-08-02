@@ -40,4 +40,54 @@
         android:defaultValue="Default"
         android:persistent="false" />
 
+    <PreferenceCategory
+            android:key="qsheader_category"
+            android:layout="@layout/custom_preference_category"
+            android:title="QS Header">
+
+        <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image"
+            android:title="@string/qs_header_image_title"
+            app:layout_pos="1"
+            android:defaultValue="0"
+            settings:interval="1"
+            android:max="75"
+            android:min="0" />
+
+	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image_fade_level"
+            app:layout_pos="2"
+            android:title="@string/qs_header_image_fade_level_level_title"
+            android:summary="@string/qs_header_image_fade_level_level_summary"
+            android:defaultValue="40"
+            settings:interval="1"
+            android:max="100"
+            android:min="1"/>
+
+	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image_height"
+            app:layout_pos="2"
+            android:title="@string/qs_header_image_height_title"
+            android:defaultValue="80"
+            settings:interval="1"
+            android:max="255"
+	        android:min="1"/>
+
+	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image_opacity_level"
+            app:layout_pos="3"
+            android:title="@string/qs_header_image_opacity_level_title"
+            android:summary="@string/qs_header_image_opacity_level_summary"
+            android:defaultValue="30"
+            settings:interval="1"
+            android:max="100"
+	    android:min="1"/>
+
+        <org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
+            android:key="qs_header_image_filter_color"
+            android:title="@string/qs_header_image_filter_color_title"
+            android:defaultValue="0xFFFFFFFF"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

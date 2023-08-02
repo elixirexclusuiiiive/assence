@@ -46,7 +46,7 @@
 
     <Preference
 	android:title="@string/paypal"
-	settings:layout="@layout/xd_pref_card_top"
+	    settings:layout="@layout/essence_pref_card_top"
 	android:summary="Do consider donating or buying me a coffee on Paypal if you want to appreciate our work">
     <intent
         android:action="android.intent.action.VIEW"
@@ -55,7 +55,7 @@
 
     <Preference
         android:title="UPI"
-        settings:layout="@layout/xd_pref_card_mid"
+	    settings:layout="@layout/essence_pref_card_mid"
         android:summary="Unified Payments Interface is for the Indian users who wants to support devs">
     <intent
         android:action="android.intent.action.VIEW"
@@ -64,7 +64,7 @@
 
     <Preference
         android:title="@string/patreon"
-        settings:layout="@layout/xd_pref_card_bot"
+	    settings:layout="@layout/essence_pref_card_bot"
         android:summary="@string/patreon_summary">
     <intent
         android:action="android.intent.action.VIEW"

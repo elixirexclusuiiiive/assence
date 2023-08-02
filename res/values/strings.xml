@@ -432,5 +432,6 @@
 
     <!-- Lockscreen icons -->
     <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
+    <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
 
 </resources>

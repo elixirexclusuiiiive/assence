@@ -30,7 +30,8 @@
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
 		    android:key="double_tap_sleep_lockscreen"
 		    settings:layout="@layout/xd_pref_card_top"
-            android:title="@string/double_tap_sleep_lockscreen_title"
+		android:summary="@string/double_tap_sleep_gesture_summary"
+		android:title="@string/double_tap_sleep_lockscreen_title"
             android:defaultValue="false" />
 
         <Preference
@@ -140,7 +141,8 @@
             android:defaultValue="true" />
 
         <Preference
-            android:key="lockscreen_shortcuts"
+		android:key="lockscreen_shortcuts"
+		android:summary="@string/lockscreen_targets_summary"
             settings:layout="@layout/essence_pref_card_mid"
             android:fragment="org.elixir.essence.fragments.LockscreenShortcuts"
 	        android:title="@string/lockscreen_shortcuts" />

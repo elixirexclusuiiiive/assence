@@ -71,7 +71,7 @@
 	android:title="@string/download_donate">
     <Preference
         android:title="@string/download"
-        settings:layout="@layout/xd_pref_card_top"
+	    settings:layout="@layout/essence_pref_card_top"
 	android:summary="@string/download_summary">
     <intent
         android:action="android.intent.action.VIEW"
@@ -80,7 +80,7 @@
 
     <Preference
         android:title="@string/website"
-        settings:layout="@layout/xd_pref_card_bot"
+	    settings:layout="@layout/essence_pref_card_bot"
         android:summary="@string/website_summary">
     <intent
         android:action="android.intent.action.VIEW"
@@ -95,7 +95,7 @@
 
     <Preference
         android:title="@string/tele_group"
-        settings:layout="@layout/xd_pref_card_top"
+	    settings:layout="@layout/essence_pref_card_top"
 	android:summary="@string/grp_summary">
     <intent
         android:action="android.intent.action.VIEW"
@@ -104,7 +104,7 @@
 
     <Preference
 	android:title="@string/tele_channel"
-	settings:layout="@layout/xd_pref_card_bot"
+	    settings:layout="@layout/essence_pref_card_bot"
 	android:summary="@string/update_summary">
     <intent
         android:action="android.intent.action.VIEW"
