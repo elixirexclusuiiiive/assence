@@ -137,46 +137,17 @@
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">Habilitar reinicio avanzado</string>
     <string name="global_actions_advanced_reboot_summary">Mostrar opciones de recuperación y gestor de arranque en el menú de encendido</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
-    <string name="theme_customization_category">Tematización</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Fuente del título/cuerpo</string>
-    <string name="theme_customization_font_summary">Establecer el estilo de fuente del sistema</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Forma de icono</string>
-    <string name="theme_customization_icon_shape_summary">Establecer estilo de forma de icono de sistema</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">Paquete de iconos</string>
-    <string name="theme_customization_icon_pack_summary">Establecer estilo de paquetes de iconos personalizado</string>
-    <string name="theme_customization_signal_icon_title">Estilo de icono de señal</string>
-    <string name="theme_customization_signal_icon_summary">Establecer un estilo de icono de señal personalizado</string>
-    <string name="theme_customization_wifi_icon_title">Estilo del icono WiFi</string>
-    <string name="theme_customization_wifi_icon_summary">Establecer un estilo del icono wifi personalizado</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
-    <string name="theme_customization_device_default">Valor predeterminado del dispositivo</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Información de carga de la pantalla de bloqueo</string>
     <string name="lockscreen_battery_info_summary">Muestra la corriente de carga, el voltaje, la potencia y la temperatura de la batería en la pantalla de bloqueo mientras se carga</string>
     <!-- Network Traffic -->
-    <string name="network_traffic_state_title ">Configuración de tráfico de red</string>
     <string name="traffic_title">Indicadores de tráfico</string>
     <string name="traffic_summary">Personaliza los indicadores de tráfico</string>
+    <string name="network_traffic_state_title">Mostrar tráfico de red</string>
     <string name="network_traffic_autohide_threshold_title">Umbral de ocultación automática</string>
-    <string name="network_traffic_location_title">Ubicación</string>
-    <string name="network_traffic_disabled">Desactivado</string>
-    <string name="network_traffic_statusbar">Barra de estado</string>
-    <string name="network_traffic_qs_header">Encabezado QS</string>
-    <string name="network_traffic_refresh_interval_title">Intervalo de actualización</string>
-    <string name="network_traffic_mode_title">Modo de visualización</string>
-    <string name="network_traffic_dynamic">Dinámico</string>
-    <string name="network_traffic_download">Descargar</string>
-    <string name="network_traffic_upload">Subir</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Ignorar indicadores de seguridad de ventana</string>
     <string name="ignore_window_secure_summary">Esto elimina los límites de capturas de pantalla y registros de pantalla para todas las aplicaciones. Normalmente, las aplicaciones especiales se reemplazan con áreas negras en los registros. Esto puede ser conveniente en algunos casos, pero puede dar lugar a filtraciones de privacidad. Después de cambiar esta opción, es posible que deba reiniciar las aplicaciones para que el cambio surta efecto.</string>
-    <!-- Status bar Icon Manager -->
-    <string name="icon_manager_title">administrador de iconos</string>
-    <string name="icon_manager_summary">Controle la visibilidad de los iconos de la barra de estado</string>
     <!-- Fingerprint Ripple Effect -->
     <string name="enable_fingerprint_ripple_effect_title">efecto dominó</string>
     <string name="enable_fingerprint_ripple_effect_summary">Mostrar efecto dominó al desbloquear con huella digital</string>
@@ -236,50 +207,25 @@
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">Doble toque en la barra de estado para apagar la pantalla</string>
     <string name="double_tap_sleep_gesture_summary">Toque dos veces en cualquier lugar de la barra de estado para poner el dispositivo en reposo</string>
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibra al tocarlo</string>
-    <string name="quick_settings_vibrate_summary">Vibrar al tocar mosaicos QS</string>
-    <!-- Themes -->
-    <string name="custom_theme_title">Usar tema personalizado</string>
-    <string name="custom_theme_summary">Forzar colores de fondo personalizados</string>
-    <string name="custom_theme_default">Por defecto</string>
-    <string name="custom_theme_black">Negro</string>
-    <string name="custom_theme_vivid">Vívido (Monet)</string>
-    <string name="custom_theme_espresso">Café exprés</string>
-    <string name="custom_theme_snowpaintdrop">Pintar en la nieve</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fingerprint_category">Huella dactilar</string>
     <string name="fprint_error_vib_title">Vibración de error de huella digital</string>
     <string name="fprint_error_vib_summary">Vibrar en la autenticación de huellas dactilares de error</string>
     <string name="fprint_success_vib_title">Vibración de autenticación de huellas dactilares</string>
     <string name="fprint_success_vib_summary">Vibrar en la autenticación exitosa de huellas dactilares</string>
-    <!-- Brightness Slider Customisations -->
-    <string name="brightness_title">Estilo del control deslizante de brillo</string>
-    <string name="brightness_custom1">Estilo de esquema</string>
-    <string name="brightness_custom2">Estilo relleno</string>
-    <string name="brightness_custom3">Estilo delgado</string>
-    <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Forzar botón de parada</string>
-    <string name="notification_guts_kill_app_button_summary">Mostrar el botón de detención forzada en el menú de pulsación prolongada de la notificación</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibra al tocarlo</string>
+    <string name="quick_settings_vibrate_summary">Vibrar al tocar mosaicos QS</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Mostrar icono de tipo de Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Mostrar el tipo de Wi-Fi en el indicador de señal de Wi-Fi</string>
     <!-- Gaming mode -->
     <string name="game_custs">Opciones de modo de juego</string>
     <string name="gaming_mode_title">Espacio de juego</string>
     <string name="gaming_mode_summary">Funciones adicionales para una experiencia de juego inmersiva</string>
-    <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Mostrar icono de tipo de Wi-Fi</string>
-    <string name="show_wifi_standard_icon_summary">Mostrar el tipo de Wi-Fi en el indicador de señal de Wi-Fi</string>
-    <!-- reTicker -->
-    <string name="reticker_title">reTicker</string>
-    <string name="reticker_summary">Reemplace la notificación de advertencia con una versión delgada y menos invasiva del teletipo rediseñado</string>
-    <string name="reticker_colored_title">Usar el fondo de color de la aplicación</string>
-    <string name="reticker_colored_summary">Reemplace el color de fondo de reTicker usando el color principal de la aplicación de notificación</string>
-    <!-- Quick settings styles -->
-    <string name="qs_styles_title">Estilos de elementos QS combinados</string>
-    <string name="qs_outline">Describir</string>
-    <string name="qs_two_tone">Acento de dos tonos</string>
-    <string name="qs_color_pop">Color pop</string>
-    <string name="qs_shaded">Sombreado</string>
-    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Avisos menos aburridos</string>
+    <string name="less_boring_heads_up_summary">Mostrar avisos solo para el marcador, la mensajería y la aplicación de alarma</string>
     <!-- Edge light -->
     <string name="edge_light_title">Luz de borde</string>
     <string name="edge_light_summary">Ilumina los bordes laterales de la pantalla en el pulso de notificación</string>
@@ -293,6 +239,56 @@
     <string name="notification_color">Color de notificación</string>
     <string name="wallpaper_color">Color de fondo de pantalla</string>
     <string name="custom_color">Color personalizado</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Usar tema personalizado</string>
+    <string name="custom_theme_summary">Forzar colores de fondo personalizados</string>
+    <string name="custom_theme_default">Por defecto</string>
+    <string name="custom_theme_black">Negro</string>
+    <string name="custom_theme_vivid">Vívido (Monet)</string>
+    <string name="custom_theme_espresso">Café exprés</string>
+    <string name="custom_theme_snowpaintdrop">Pintar en la nieve</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Estilo del control deslizante de brillo</string>
+    <string name="brightness_custom1">Estilo de esquema</string>
+    <string name="brightness_custom2">Estilo relleno</string>
+    <string name="brightness_custom3">Estilo delgado</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Estilos de elementos QS combinados</string>
+    <string name="qs_outline">Describir</string>
+    <string name="qs_two_tone">Acento de dos tonos</string>
+    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_shaded">Sombreado</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Udfps -->
+    <string name="udfps_category">Huella digital debajo de la pantalla</string>
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">Usar animación UDFPS</string>
+    <string name="udfps_recog_animation_summary">Muestra una animación mientras lee su dedo</string>
+    <string name="udfps_recog_animation_effect_title">Animación personalizada UDFPS</string>
+    <string name="udfps_recog_animation_effect_summary">Elige el efecto de animación</string>
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">Selector de iconos UDFPS</string>
+    <string name="udfps_icon_picker_summary">Elija su icono de huella digital favorito</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Tematización</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Fuente del título/cuerpo</string>
+    <string name="theme_customization_font_summary">Establecer el estilo de fuente del sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Forma de icono</string>
+    <string name="theme_customization_icon_shape_summary">Establecer estilo de forma de icono de sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Paquete de iconos</string>
+    <string name="theme_customization_icon_pack_summary">Establecer estilo de paquetes de iconos personalizado</string>
+    <string name="theme_customization_signal_icon_title">Estilo de icono de señal</string>
+    <string name="theme_customization_signal_icon_summary">Establecer un estilo de icono de señal personalizado</string>
+    <string name="theme_customization_wifi_icon_title">Estilo del icono WiFi</string>
+    <string name="theme_customization_wifi_icon_summary">Establecer un estilo del icono wifi personalizado</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Valor predeterminado del dispositivo</string>
+    <!-- GamesPropsUtils -->
+    <string name="games_device_spoof_title">Desbloquea FPS más altos en los juegos</string>
+    <string name="games_device_spoof_summary">Falsificar dispositivo como modelo de gama alta en ciertos juegos, para desbloquear FPS más altos</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Configuración de la batería</string>
     <string name="battery_style_category_title">Estilos de batería</string>
@@ -316,62 +312,51 @@
     <string name="status_bar_battery_style_icon_landscape_buddy">Cápsula de paisaje</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
+    <string name="status_bar_battery_style_icon_landscape_miui_pill">Píldora MIUI</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Paisaje Origami</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Paisaje iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Paisaje iOS 16</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Porcentaje de batería</string>
     <string name="status_bar_battery_percentage_default">Oculto (predeterminado)</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
     <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Reemplace la notificación de advertencia con una versión delgada y menos invasiva del teletipo rediseñado</string>
+    <string name="reticker_colored_title">Usar el fondo de color de la aplicación</string>
+    <string name="reticker_colored_summary">Reemplace el color de fondo de reTicker usando el color principal de la aplicación de notificación</string>
+    <string name="reticker_landscape_only_title">Solo paisaje</string>
+    <string name="reticker_landscape_only_summary">Solo habilite reTicker cuando el dispositivo esté en modo horizontal</string>
     <!-- QS Header -->
     <string name="qs_header_image_title">Imagen de encabezado QS</string>
     <string name="qs_header_random_image_title">Imagen aleatoria del encabezado QS</string>
     <string name="qs_header_random_image_summary">Habilitar imagen de encabezado QS aleatorio</string>
-    <!-- Clock Customizations -->
-    <string name="clocksettings_category_title">Personalizaciones del reloj</string>
-    <string name="clocksettings_title">Configuración del reloj</string>
-    <string name="clocksettings_summary">Configuración del reloj de la barra de estado</string>
-    <string name="status_bar_clock_date_title">Reloj y Fecha</string>
-    <string name="status_bar_clock_date_summary">Personaliza el reloj y la fecha de tu barra de estado</string>
-    <string name="status_bar_clock_title">Configuración del reloj</string>
-    <string name="status_bar_clock_show">Mostrar reloj y fecha</string>
-    <string name="status_bar_clock_style_title">Estilo de reloj</string>
-    <string name="status_bar_clock_style_right">Derecha</string>
-    <string name="status_bar_clock_style_center">Centro</string>
-    <string name="status_bar_clock_style_left">Izquierda</string>
-    <string name="status_bar_date_title">Ajustes de fecha</string>
-    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
-    <string name="status_bar_am_pm_info">El reloj de 24 horas está habilitado</string>
-    <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Pequeño</string>
-    <string name="status_bar_am_pm_hidden">Oculto (predeterminado)</string>
-    <string name="clock_seconds_display">Mostrar segundos</string>
-    <string name="clock_date_display">Fecha</string>
-    <string name="clock_date_display_summary">Mostrar fecha personalizada antes del reloj</string>
-    <string name="clock_date_display_none">No mostrar</string>
-    <string name="clock_date_display_small">Tamaño de fuente pequeño</string>
-    <string name="clock_date_display_normal">Tamaño de letra normal</string>
-    <string name="clock_date_style">Estilo de fecha</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Minúsculas</string>
-    <string name="clock_date_style_uppercase">Mayúsculas</string>
-    <string name="clock_date_format_custom">Formato Java personalizado</string>
-    <string name="clock_date_format">Formato de fecha</string>
-    <string name="clock_date_string_edittext_title">Debe estar en formato de fecha, por ejemplo. MM/DD/AA</string>
-    <string name="clock_date_string_edittext_summary">Introducir cadena</string>
-    <string name="clock_date_right">Derecho de tiempo</string>
-    <string name="clock_date_left">Izquierda de tiempo</string>
-    <string name="clock_date_position">Posición de la fecha</string>
-    <string name="status_bar_clock_auto_hide_title">Ocultar automáticamente el reloj</string>
-    <string name="status_bar_clock_auto_hide_summary">Ocultar y mostrar el reloj a intervalos regulares de tiempo</string>
-    <string name="status_bar_clock_auto_hide_hdur_title">Ocultar duración</string>
-    <string name="status_bar_clock_auto_hide_sdur_title">Mostrar duración</string>
+    <string name="qs_header_image_blur_level_title">Nivel de efecto de desenfoque de la imagen del encabezado QS</string>
+    <string name="qs_header_image_blur_level_summary">Fuerza del efecto de desenfoque aplicado a la imagen del encabezado QS</string>
+    <string name="qs_header_image_fade_level_level_title">Nivel de desvanecimiento de la imagen del encabezado QS</string>
+    <string name="qs_header_image_fade_level_level_summary">Nivel de desvanecimiento de la imagen del encabezado QS</string>
+    <string name="qs_header_image_opacity_level_title">Nivel de opacidad de la imagen del encabezado QS</string>
+    <string name="qs_header_image_opacity_level_summary">Nivel de opacidad de la imagen del encabezado QS</string>
+    <string name="qs_header_image_filter_color_title">Color de filtro de imagen de encabezado QS</string>
+    <string name="qs_header_image_height_title">Altura de la imagen del encabezado QS</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Transparencia de fondo QS</string>
     <string name="qs_transparency_summary">Establecer el nivel de transparencia para el fondo QS</string>
-    <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Desbloquea FPS más altos en juegos</string>
-    <string name="use_games_spoof_summary">Falsifica tu dispositivo como un modelo diferente para juegos específicos para desbloquear FPS más altos</string>
-    <!-- Media artwork -->
-    <string name="artwork_media_background_enable_blur_title">Desenfocar fondo de ilustraciones de notificación multimedia</string>
-    <string name="artwork_media_background_blur_radius_title">Cantidad de desenfoque para ilustraciones de notificación de medios</string>
-    <string name="media_artwork_fade_percent_title">Porcentaje de fundido para ilustraciones de notificación de medios</string>
+    <!-- Lockscreen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">Atajos inferiores</string>
+    <string name="lockscreen_shortcut_start_title">Acceso directo a la izquierda</string>
+    <string name="lockscreen_shortcut_end_title">Atajo derecho</string>
+    <string name="lockscreen_shortcut_wallet">Billetera</string>
+    <string name="lockscreen_shortcut_home">Controles del hogar</string>
+    <string name="lockscreen_shortcut_flashlight">Linterna</string>
+    <string name="lockscreen_shortcut_qr">Escáner de código QR</string>
+    <string name="lockscreen_shortcut_camera">Cámara</string>
+    <string name="lockscreen_shortcut_dnd">No molestar</string>
+    <string name="lockscreen_shortcut_none">Ninguno</string>
+    <string name="lockscreen_shortcut_enforce_title">Atajo único</string>
+    <string name="lockscreen_shortcut_enforce_summary">Aplicar el atajo elegido para que sea la única prioridad existente\nNo se mostrará nada hasta que el atajo elegido específico esté disponible</string>
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_shortcuts">Atajos de pantalla de bloqueo</string>
+    <string name="lockscreen_targets_summary">Personaliza los accesos directos inferiores en la pantalla de bloqueo</string>
 </resources>

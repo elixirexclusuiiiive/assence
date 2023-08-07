@@ -137,46 +137,17 @@
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">تفعيل إعادة التشغيل المتقدمة</string>
     <string name="global_actions_advanced_reboot_summary">عرض خيارات الريكفري و البوت لودر في قائمة الطاقة</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
-    <string name="theme_customization_category">التصميم</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">خط العنوان / النص الأساسي</string>
-    <string name="theme_customization_font_summary">تعيين شكل خط النظام</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">شكل الرمز</string>
-    <string name="theme_customization_icon_shape_summary">تعيين نمط شكل رمز النظام</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">حزمة الرموز</string>
-    <string name="theme_customization_icon_pack_summary">تعيين شكل حزمة رمز مخصص</string>
-    <string name="theme_customization_signal_icon_title">شكل رمز الإشارة</string>
-    <string name="theme_customization_signal_icon_summary">تعيين شكل رمز إشارة مخصص</string>
-    <string name="theme_customization_wifi_icon_title">شكل رمز WiFi</string>
-    <string name="theme_customization_wifi_icon_summary">تعيين شكل رمز wifi مخصص</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
-    <string name="theme_customization_device_default">الجهاز الافتراضي</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">معلومات الشحن لقفل الشاشة</string>
     <string name="lockscreen_battery_info_summary">اعرض تيار الشحن والجهد والقوة الكهربائية ودرجة حرارة البطارية على شاشة القفل أثناء الشحن</string>
     <!-- Network Traffic -->
-    <string name="network_traffic_state_title ">إعدادات سرعة الشبكة</string>
     <string name="traffic_title">مؤشرات الحركة</string>
     <string name="traffic_summary">تخصيص مؤشرات الحركة</string>
+    <string name="network_traffic_state_title">إظهار حركة مرور الشبكة</string>
     <string name="network_traffic_autohide_threshold_title">الإخفاء التلقائي</string>
-    <string name="network_traffic_location_title">موقع العلامة</string>
-    <string name="network_traffic_disabled">معطلة</string>
-    <string name="network_traffic_statusbar">شريط الاشعارات</string>
-    <string name="network_traffic_qs_header">شريط الاشعارات (السفلي)</string>
-    <string name="network_traffic_refresh_interval_title">الوقت الزمني للتحديث</string>
-    <string name="network_traffic_mode_title">وضع العرض</string>
-    <string name="network_traffic_dynamic">تنزيل و رفع</string>
-    <string name="network_traffic_download">تنزيل</string>
-    <string name="network_traffic_upload">رفع</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">تجاهل الأعلام الآمنة للنافذة</string>
     <string name="ignore_window_secure_summary">يؤدي هذا إلى إزالة حدود لقطات الشاشة وسجلات الشاشة لجميع التطبيقات. عادة ، يتم استبدال التطبيقات الخاصة بالمناطق السوداء في السجلات. قد يكون هذا مناسبًا في بعض الحالات ولكنه قد يؤدي إلى تسرب الخصوصية. بعد تغيير هذا التبديل ، قد تحتاج إلى إعادة تشغيل التطبيقات حتى يسري التغيير.</string>
-    <!-- Status bar Icon Manager -->
-    <string name="icon_manager_title">مدير الأيقونات</string>
-    <string name="icon_manager_summary">التحكم في رؤية أيقونات شريط الحالة</string>
     <!-- Fingerprint Ripple Effect -->
     <string name="enable_fingerprint_ripple_effect_title">تاثيرات اضافية</string>
     <string name="enable_fingerprint_ripple_effect_summary">أظهر تأثير اضافية عند فتح القفل ببصمة الإصبع</string>
@@ -236,50 +207,25 @@
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">انقر نقرًا مزدوجًا على شريط الاشعارات لقفل الشاشة</string>
     <string name="double_tap_sleep_gesture_summary">انقر نقرًا مزدوجًا في أي مكان على شريط الاشعارات لوضع الجهاز في وضع السكون</string>
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">اهتزاز عند اللمس</string>
-    <string name="quick_settings_vibrate_summary">الاهتزاز عند لمس ايقونات الاشعارات</string>
-    <!-- Themes -->
-    <string name="custom_theme_title">استخدام شكل معين</string>
-    <string name="custom_theme_summary">فرض ألوان خلفية مخصصة</string>
-    <string name="custom_theme_default">افتراضي</string>
-    <string name="custom_theme_black">أسود</string>
-    <string name="custom_theme_vivid">اسود (غامق)</string>
-    <string name="custom_theme_espresso">إسبرسو</string>
-    <string name="custom_theme_snowpaintdrop">الطلاء في الثلج</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fingerprint_category">بصمة</string>
     <string name="fprint_error_vib_title">اهتزاز خطأ بصمات الأصابع</string>
     <string name="fprint_error_vib_summary">الاهتزاز عند مصادقة بصمة الخطأ</string>
     <string name="fprint_success_vib_title">اهتزاز المصادقة ببصمة الإصبع</string>
     <string name="fprint_success_vib_summary">الاهتزاز عند نجاح المصادقة ببصمة الإصبع</string>
-    <!-- Brightness Slider Customisations -->
-    <string name="brightness_title">شكل السطوع</string>
-    <string name="brightness_custom1">شكل الخطوط العريضة</string>
-    <string name="brightness_custom2">شكل مملوء</string>
-    <string name="brightness_custom3">شكل رفيع</string>
-    <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">زر الإيقاف الإجباري</string>
-    <string name="notification_guts_kill_app_button_summary">إظهار زر الإيقاف الإجباري في قائمة الإشعارات ذات الضغط الطويل</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">اهتزاز عند اللمس</string>
+    <string name="quick_settings_vibrate_summary">الاهتزاز عند لمس ايقونات الاشعارات</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">إظهار رمز نوع Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">إظهار نوع Wi-Fi في مؤشر إشارة Wi-Fi</string>
     <!-- Gaming mode -->
     <string name="game_custs">خيارات وضع الألعاب</string>
     <string name="gaming_mode_title">مساحة الالعاب</string>
     <string name="gaming_mode_summary">ميزات إضافية لتجربة ألعاب غامرة</string>
-    <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">إظهار رمز نوع Wi-Fi</string>
-    <string name="show_wifi_standard_icon_summary">إظهار نوع Wi-Fi في مؤشر إشارة Wi-Fi</string>
-    <!-- reTicker -->
-    <string name="reticker_title">تنبيهات صغيره</string>
-    <string name="reticker_summary">استبدل إشعار التنبيه بإصدار نحيف وأقل تدخلاً من الشريط المعاد تصميمه</string>
-    <string name="reticker_colored_title">استخدم خلفية ملونة للتطبيق</string>
-    <string name="reticker_colored_summary">استبدل لون خلفية reTicker باستخدام اللون الرئيسي لتطبيق الإشعارات</string>
-    <!-- Quick settings styles -->
-    <string name="qs_styles_title">أنماط عناصر QS المجمعة</string>
-    <string name="qs_outline">الخطوط العريضة</string>
-    <string name="qs_two_tone">لهجة نغمتين</string>
-    <string name="qs_color_pop">اللون البوب</string>
-    <string name="qs_shaded">مظللة</string>
-    <string name="qs_cyberpunk">سايبربانك</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">نقطة أقل مملة</string>
+    <string name="less_boring_heads_up_summary">إظهار نقطة فقط لتطبيق المسجل والمراسلة والإنذار</string>
     <!-- Edge light -->
     <string name="edge_light_title">ضوء الحافة</string>
     <string name="edge_light_summary">قم بإضاءة الحواف الجانبية للشاشة عند نبض الإشعارات</string>
@@ -293,6 +239,56 @@
     <string name="notification_color">لون الإشعارات</string>
     <string name="wallpaper_color">لون الخلفية</string>
     <string name="custom_color">تخصيص لون</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">استخدام شكل معين</string>
+    <string name="custom_theme_summary">فرض ألوان خلفية مخصصة</string>
+    <string name="custom_theme_default">افتراضي</string>
+    <string name="custom_theme_black">أسود</string>
+    <string name="custom_theme_vivid">اسود (غامق)</string>
+    <string name="custom_theme_espresso">إسبرسو</string>
+    <string name="custom_theme_snowpaintdrop">الطلاء في الثلج</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">شكل السطوع</string>
+    <string name="brightness_custom1">شكل الخطوط العريضة</string>
+    <string name="brightness_custom2">شكل مملوء</string>
+    <string name="brightness_custom3">شكل رفيع</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">أنماط عناصر QS المجمعة</string>
+    <string name="qs_outline">الخطوط العريضة</string>
+    <string name="qs_two_tone">لهجة نغمتين</string>
+    <string name="qs_color_pop">اللون البوب</string>
+    <string name="qs_shaded">مظللة</string>
+    <string name="qs_cyberpunk">سايبربانك</string>
+    <!-- Udfps -->
+    <string name="udfps_category">بصمة تحت الشاشة</string>
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">استخدم الرسوم المتحركة UDFPS</string>
+    <string name="udfps_recog_animation_summary">يظهر رسوم متحركة أثناء قراءة إصبعك</string>
+    <string name="udfps_recog_animation_effect_title">الرسوم المتحركة المخصصة UDFPS</string>
+    <string name="udfps_recog_animation_effect_summary">اختر تأثير الرسوم المتحركة</string>
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">شكل رمز UDFPS</string>
+    <string name="udfps_icon_picker_summary">اختر رمز بصمة الإصبع المفضل لديك</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">التصميم</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">خط العنوان / النص الأساسي</string>
+    <string name="theme_customization_font_summary">تعيين شكل خط النظام</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">شكل الرمز</string>
+    <string name="theme_customization_icon_shape_summary">تعيين نمط شكل رمز النظام</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">حزمة الرموز</string>
+    <string name="theme_customization_icon_pack_summary">تعيين شكل حزمة رمز مخصص</string>
+    <string name="theme_customization_signal_icon_title">شكل رمز الإشارة</string>
+    <string name="theme_customization_signal_icon_summary">تعيين شكل رمز إشارة مخصص</string>
+    <string name="theme_customization_wifi_icon_title">شكل رمز WiFi</string>
+    <string name="theme_customization_wifi_icon_summary">تعيين شكل رمز wifi مخصص</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">الجهاز الافتراضي</string>
+    <!-- GamesPropsUtils -->
+    <string name="games_device_spoof_title">افتح فريمات أعلى في الألعاب</string>
+    <string name="games_device_spoof_summary">جهاز محاكاة كنموذج متطور في ألعاب معينة ، لفتح فريمات أعلى</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">اعدادات البطارية</string>
     <string name="battery_style_category_title">اشكل البطارية</string>
@@ -316,62 +312,51 @@
     <string name="status_bar_battery_style_icon_landscape_buddy">كبسولة المناظر الطبيعية</string>
     <string name="status_bar_battery_style_text">نص</string>
     <string name="status_bar_battery_style_hidden">مختفي</string>
+    <string name="status_bar_battery_style_icon_landscape_miui_pill">حبة MIUI</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">افقي المناظر الطبيعية</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">أفقي iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">أفقي iOS 16</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">نسبة البطارية</string>
     <string name="status_bar_battery_percentage_default">مخفي (افتراضي)</string>
     <string name="status_bar_battery_percentage_text_inside">داخل الأيقونة</string>
     <string name="status_bar_battery_percentage_text_next">بجانب الرمز</string>
+    <!-- reTicker -->
+    <string name="reticker_title">تنبيهات صغيره</string>
+    <string name="reticker_summary">استبدل إشعار التنبيه بإصدار نحيف وأقل تدخلاً من الشريط المعاد تصميمه</string>
+    <string name="reticker_colored_title">استخدم خلفية ملونة للتطبيق</string>
+    <string name="reticker_colored_summary">استبدل لون خلفية reTicker باستخدام اللون الرئيسي لتطبيق الإشعارات</string>
+    <string name="reticker_landscape_only_title">افقي فقط</string>
+    <string name="reticker_landscape_only_summary">قم بتمكين reTicker فقط عندما يكون الجهاز في الوضع الأفقي</string>
     <!-- QS Header -->
     <string name="qs_header_image_title">صورة رأس QS</string>
     <string name="qs_header_random_image_title">صور عشوائية لي QS</string>
     <string name="qs_header_random_image_summary">تفعيل صورة رأس QS العشوائية</string>
-    <!-- Clock Customizations -->
-    <string name="clocksettings_category_title">تخصيصات الساعة</string>
-    <string name="clocksettings_title">إعدادات الساعة</string>
-    <string name="clocksettings_summary">إعدادات ساعة شريط الاشعارات</string>
-    <string name="status_bar_clock_date_title">الساعة والتاريخ</string>
-    <string name="status_bar_clock_date_summary">تخصيص ساعة وتاريخ شريط الاشعارات الخاص بك</string>
-    <string name="status_bar_clock_title">إعدادات الساعة</string>
-    <string name="status_bar_clock_show">عرض الساعة والتاريخ</string>
-    <string name="status_bar_clock_style_title">شكل الساعة</string>
-    <string name="status_bar_clock_style_right">يمين</string>
-    <string name="status_bar_clock_style_center">المنتصف</string>
-    <string name="status_bar_clock_style_left">يسار</string>
-    <string name="status_bar_date_title">إعدادات التاريخ</string>
-    <string name="status_bar_am_pm_title">شكل AM/PM</string>
-    <string name="status_bar_am_pm_info">تمكين تنسيق 24 ساعة</string>
-    <string name="status_bar_am_pm_normal">عادي</string>
-    <string name="status_bar_am_pm_small">صغير</string>
-    <string name="status_bar_am_pm_hidden">مخفي (افتراضي)</string>
-    <string name="clock_seconds_display">عرض الثواني</string>
-    <string name="clock_date_display">التاريخ</string>
-    <string name="clock_date_display_summary">عرض التاريخ المخصص قبل الساعة</string>
-    <string name="clock_date_display_none">لا تظهر</string>
-    <string name="clock_date_display_small">حجم الخط الصغير</string>
-    <string name="clock_date_display_normal">حجم الخط عادي</string>
-    <string name="clock_date_style">شكل التاريخ</string>
-    <string name="clock_date_style_normal">عادي</string>
-    <string name="clock_date_style_lowercase">أحرف صغيرة</string>
-    <string name="clock_date_style_uppercase">الأحرف الكبيرة</string>
-    <string name="clock_date_format_custom">تنسيق مخصص</string>
-    <string name="clock_date_format">صيغة التاريخ</string>
-    <string name="clock_date_string_edittext_title">يجب أن يكون في DateFormat مثل. MM / dd / yy</string>
-    <string name="clock_date_string_edittext_summary">أدخل السلسلة</string>
-    <string name="clock_date_right">حق الوقت</string>
-    <string name="clock_date_left">بقي من الوقت</string>
-    <string name="clock_date_position">موقف التاريخ</string>
-    <string name="status_bar_clock_auto_hide_title">إخفاء الساعة تلقائيًا</string>
-    <string name="status_bar_clock_auto_hide_summary">إخفاء وإظهار الساعة في فترات زمنية منتظمة</string>
-    <string name="status_bar_clock_auto_hide_hdur_title">إخفاء المدة</string>
-    <string name="status_bar_clock_auto_hide_sdur_title">مدة العرض</string>
+    <string name="qs_header_image_blur_level_title">مستوى تأثير ضبابية صورة خلفية QS</string>
+    <string name="qs_header_image_blur_level_summary">قوة تأثير التمويه المطبق على صورة خلفية QS</string>
+    <string name="qs_header_image_fade_level_level_title">مستوى تلاشي صورة خلفية QS</string>
+    <string name="qs_header_image_fade_level_level_summary">مستوى الخبو لصورة الخلفيةQS</string>
+    <string name="qs_header_image_opacity_level_title">مستوى تعتيم صورة خلفية QS</string>
+    <string name="qs_header_image_opacity_level_summary">مستوى التعتيم لصورة الخلفية QS</string>
+    <string name="qs_header_image_filter_color_title">لون مرشح صورة خلفية QS</string>
+    <string name="qs_header_image_height_title">ارتفاع صورة خلفية QS</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS خلفية الشفافية</string>
     <string name="qs_transparency_summary">مستوى الشفافية لخلفية QS</string>
-    <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">افتح فريمات أعلى في الألعاب</string>
-    <string name="use_games_spoof_summary">تنشيط الميزه لفتح 90 fps في الالعاب </string>
-    <!-- Media artwork -->
-    <string name="artwork_media_background_enable_blur_title">ضباب خلفية الاغاني </string>
-    <string name="artwork_media_background_blur_radius_title">مقدار التعتيم لخلفية الاغاني</string>
-    <string name="media_artwork_fade_percent_title">تتلاشى في المئة للاغاني</string>
+    <!-- Lockscreen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">الاختصارات السفلية</string>
+    <string name="lockscreen_shortcut_start_title">الاختصار الأيسر</string>
+    <string name="lockscreen_shortcut_end_title">الاختصار الايمن</string>
+    <string name="lockscreen_shortcut_wallet">محفظة</string>
+    <string name="lockscreen_shortcut_home">التحكم الرئيسية</string>
+    <string name="lockscreen_shortcut_flashlight">الفلاش</string>
+    <string name="lockscreen_shortcut_qr">الماسح الضوئي لرمز QR</string>
+    <string name="lockscreen_shortcut_camera">الكاميرا</string>
+    <string name="lockscreen_shortcut_dnd">DND</string>
+    <string name="lockscreen_shortcut_none">لا شي</string>
+    <string name="lockscreen_shortcut_enforce_title">اختصار واحد</string>
+    <string name="lockscreen_shortcut_enforce_summary">فرض الاختصار المختار ليكون الأولوية الوحيدة الموجودة \n لن يظهر أي شيء حتى يتوفر الاختصار المحدد محدد</string>
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_shortcuts">اختصارات شاشة القفل</string>
+    <string name="lockscreen_targets_summary">تخصيص الاختصارات السفلية على شاشة القفل</string>
 </resources>

@@ -137,46 +137,17 @@
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">Erweiterten Neustart aktivieren</string>
     <string name="global_actions_advanced_reboot_summary">Optionen für Wiederherstellung und Bootloader im Power-Menü anzeigen</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
-    <string name="theme_customization_category">Darstellung</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Überschriften/Schriftart</string>
-    <string name="theme_customization_font_summary">Systemschriftart festlegen</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Symbolform</string>
-    <string name="theme_customization_icon_shape_summary">Systemsymbolform festlegen</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">Symbolpaket</string>
-    <string name="theme_customization_icon_pack_summary">Benutzerdefinierten Symbolpaket-Stil einstellen</string>
-    <string name="theme_customization_signal_icon_title">Signal-Symbolstil</string>
-    <string name="theme_customization_signal_icon_summary">Benutzerdefiniertes Signalsymbol einstellen</string>
-    <string name="theme_customization_wifi_icon_title">WLAN-Symbolstil</string>
-    <string name="theme_customization_wifi_icon_summary">Benutzerdefiniertes WLAN-Symbol einstellen</string>
-    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
-    <string name="theme_customization_device_default">Gerätestandard</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Ladeinfo auf Sperrbildschirm</string>
     <string name="lockscreen_battery_info_summary">Ladestrom, Spannung, Wattleistung und Akkutemperatur auf Sperrbildschirm während des Ladevorgangs anzeigen</string>
     <!-- Network Traffic -->
-    <string name="network_traffic_state_title ">Einstellungen Netzwerkverkehr</string>
     <string name="traffic_title">Netzwerkanzeige</string>
     <string name="traffic_summary">Netzwerkanzeige anpassen</string>
+    <string name="network_traffic_state_title">Netzwerkverkehr anzeigen</string>
     <string name="network_traffic_autohide_threshold_title">Schwellenwert autom. Ausblenden</string>
-    <string name="network_traffic_location_title">Standort</string>
-    <string name="network_traffic_disabled">Deaktiviert</string>
-    <string name="network_traffic_statusbar">Statusleiste</string>
-    <string name="network_traffic_qs_header">QS-Kopfzeile</string>
-    <string name="network_traffic_refresh_interval_title">Aktualisierungsintervall</string>
-    <string name="network_traffic_mode_title">Anzeigemodus</string>
-    <string name="network_traffic_dynamic">Dynamisch</string>
-    <string name="network_traffic_download">Download</string>
-    <string name="network_traffic_upload">Upload</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Secure Flags Ignorieren</string>
     <string name="ignore_window_secure_summary">Dadurch werden die Beschränkungen für Screenshots und Bildschirmaufzeichnungen für alle Apps aufgehoben. Normalerweise werden spezielle Apps durch schwarze Bereiche in Aufzeichnungen ersetzt. Dies kann in manchen Fällen praktisch sein, kann aber auch zu Lecks in der Privatsphäre führen. Nach dem Ändern dieses Schalters musst du möglicherweise die Apps neu starten, damit die Änderung wirksam wird.</string>
-    <!-- Status bar Icon Manager -->
-    <string name="icon_manager_title">Symbolmanager</string>
-    <string name="icon_manager_summary">Sichtbarkeit von Statusleistensymbolen steuern</string>
     <!-- Fingerprint Ripple Effect -->
     <string name="enable_fingerprint_ripple_effect_title">Welleneffekt</string>
     <string name="enable_fingerprint_ripple_effect_summary">Welleneffekt beim Entsperren mit Fingerabdruck anzeigen</string>
@@ -236,50 +207,25 @@
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">Auf Statusleiste doppeltippen, um zu sperren</string>
     <string name="double_tap_sleep_gesture_summary">Beliebige Stelle der Statusleiste doppeltippen, um Gerät zu sperren</string>
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrieren bei Berührung</string>
-    <string name="quick_settings_vibrate_summary">Beim Berühren von QS-Kacheln vibrieren</string>
-    <!-- Themes -->
-    <string name="custom_theme_title">Benutzerdefiniertes Thema verwenden</string>
-    <string name="custom_theme_summary">Benutzerdefinierte Hintergrundfarben erzwingen</string>
-    <string name="custom_theme_default">Standard</string>
-    <string name="custom_theme_black">Schwarz</string>
-    <string name="custom_theme_vivid"> Vivid (Monet)</string>
-    <string name="custom_theme_espresso">Espresso</string>
-    <string name="custom_theme_snowpaintdrop">Im Schnee malen</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fingerprint_category">Fingerabdruck</string>
     <string name="fprint_error_vib_title">Fingerabdruck, bei Fehler vibrieren</string>
     <string name="fprint_error_vib_summary">Vibrationsalarm bei fehlerhafter Fingerabdruck-Authentifizierung</string>
     <string name="fprint_success_vib_title">Vibration bei Fingerabdruck-Authentifizierung</string>
     <string name="fprint_success_vib_summary">Bei erfolgreicher Authentifizierung per Fingerabdruck vibrieren</string>
-    <!-- Brightness Slider Customisations -->
-    <string name="brightness_title">Stil Helligkeitsregler</string>
-    <string name="brightness_custom1">Stil Umriss</string>
-    <string name="brightness_custom2">Gefüllter Stil</string>
-    <string name="brightness_custom3">Schlanker Stil</string>
-    <!-- Notification guts kill app button -->
-    <string name="notification_guts_kill_app_button_title">Zwangstopptaste</string>
-    <string name="notification_guts_kill_app_button_summary">Zwangsstopptaste im lange Drücken-Menü der Benachrichtigung anzeigen</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrieren bei Berührung</string>
+    <string name="quick_settings_vibrate_summary">Beim Berühren von QS-Kacheln vibrieren</string>
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Symbol für WLAN-Typ anzeigen</string>
+    <string name="show_wifi_standard_icon_summary">WLAN-Typ in WLAN-Signalanzeige anzeigen</string>
     <!-- Gaming mode -->
     <string name="game_custs">Spielmodus-Optionen</string>
     <string name="gaming_mode_title">Spielprofil</string>
     <string name="gaming_mode_summary">Zusätzliche Funktionen für intensives Spielerlebnis</string>
-    <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Symbol für WLAN-Typ anzeigen</string>
-    <string name="show_wifi_standard_icon_summary">WLAN-Typ in WLAN-Signalanzeige anzeigen</string>
-    <!-- reTicker -->
-    <string name="reticker_title">reTicker</string>
-    <string name="reticker_summary">Popup-Benachrichtigungen durch eine schlanke und weniger eingreifende Version des neu gestalteten Tickers ersetzen</string>
-    <string name="reticker_colored_title">Farbigen Hintergrund der App verwenden</string>
-    <string name="reticker_colored_summary">Hintergrundfarbe von reTicker durch die Hauptfarbe der Benachrichtigungs-App ersetzen</string>
-    <!-- Quick settings styles -->
-    <string name="qs_styles_title">Kombinierte QS-Elementstile</string>
-    <string name="qs_outline">Kontur</string>
-    <string name="qs_two_tone">Zweifarbiger Akzent</string>
-    <string name="qs_color_pop">ColorPop</string>
-    <string name="qs_shaded">Schattiert</string>
-    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Weniger langweilige Popup-Benachrichtigungen</string>
+    <string name="less_boring_heads_up_summary">Popup-Benachrichtigungen nur für Telefon-, Nachrichten- und Alarm-App anzeigen</string>
     <!-- Edge light -->
     <string name="edge_light_title">Edge Lighting</string>
     <string name="edge_light_summary">Bei Benachrichtigung Lichtimpulse an den seitlichen Bildschirmrändern</string>
@@ -293,6 +239,56 @@
     <string name="notification_color">Benachrichtigungsfarbe</string>
     <string name="wallpaper_color">Hintergrundfarbe</string>
     <string name="custom_color">Benutzerdefinierte Farbe</string>
+    <!-- Themes -->
+    <string name="custom_theme_title">Benutzerdefiniertes Thema verwenden</string>
+    <string name="custom_theme_summary">Benutzerdefinierte Hintergrundfarben erzwingen</string>
+    <string name="custom_theme_default">Standard</string>
+    <string name="custom_theme_black">Schwarz</string>
+    <string name="custom_theme_vivid"> Vivid (Monet)</string>
+    <string name="custom_theme_espresso">Espresso</string>
+    <string name="custom_theme_snowpaintdrop">Im Schnee malen</string>
+    <!-- Brightness Slider Customisations -->
+    <string name="brightness_title">Stil Helligkeitsregler</string>
+    <string name="brightness_custom1">Stil Umriss</string>
+    <string name="brightness_custom2">Gefüllter Stil</string>
+    <string name="brightness_custom3">Schlanker Stil</string>
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Kombinierte QS-Elementstile</string>
+    <string name="qs_outline">Kontur</string>
+    <string name="qs_two_tone">Zweifarbiger Akzent</string>
+    <string name="qs_color_pop">ColorPop</string>
+    <string name="qs_shaded">Schattiert</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <!-- Udfps -->
+    <string name="udfps_category">Fingerabdruck unter dem Display</string>
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">UDFPS-Animation verwenden</string>
+    <string name="udfps_recog_animation_summary">Zeigt eine Animation beim Finger lesen</string>
+    <string name="udfps_recog_animation_effect_title">Benutzerdefinierte UDFPS-Animation</string>
+    <string name="udfps_recog_animation_effect_summary">Animationseffekt auswählen</string>
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">UDFPS-Symbolauswahl</string>
+    <string name="udfps_icon_picker_summary">Bevorzugtes Fingerabdruck-Symbol auswählen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Darstellung</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Überschriften/Schriftart</string>
+    <string name="theme_customization_font_summary">Systemschriftart festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Symbolform</string>
+    <string name="theme_customization_icon_shape_summary">Systemsymbolform festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Symbolpaket</string>
+    <string name="theme_customization_icon_pack_summary">Benutzerdefinierten Symbolpaket-Stil einstellen</string>
+    <string name="theme_customization_signal_icon_title">Signal-Symbolstil</string>
+    <string name="theme_customization_signal_icon_summary">Benutzerdefiniertes Signalsymbol einstellen</string>
+    <string name="theme_customization_wifi_icon_title">WLAN-Symbolstil</string>
+    <string name="theme_customization_wifi_icon_summary">Benutzerdefiniertes WLAN-Symbol einstellen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Gerätestandard</string>
+    <!-- GamesPropsUtils -->
+    <string name="games_device_spoof_title">Höhere FPS in Spielen freischalten</string>
+    <string name="games_device_spoof_summary">Gerät in bestimmten Spielen zum High-End-Modell fälschen, um höhere FPS freizuschalten</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Akkueinstellungen</string>
     <string name="battery_style_category_title">Akkustil</string>
@@ -316,62 +312,51 @@
     <string name="status_bar_battery_style_icon_landscape_buddy">Querformat Capsule</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
+    <string name="status_bar_battery_style_icon_landscape_miui_pill">MIUI-Pille</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Querformat Origami</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Querformat iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Querformat iOS 16</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Akkuprozentsatz</string>
     <string name="status_bar_battery_percentage_default">Ausgeblendet (Standard)</string>
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Popup-Benachrichtigungen durch eine schlanke und weniger eingreifende Version des neu gestalteten Tickers ersetzen</string>
+    <string name="reticker_colored_title">Farbigen Hintergrund der App verwenden</string>
+    <string name="reticker_colored_summary">Hintergrundfarbe von reTicker durch die Hauptfarbe der Benachrichtigungs-App ersetzen</string>
+    <string name="reticker_landscape_only_title">Nur Querformat</string>
+    <string name="reticker_landscape_only_summary">reTicker nur aktivieren, wenn das Gerät im Querformat ist</string>
     <!-- QS Header -->
     <string name="qs_header_image_title">QS-Bild in Kopfzeile</string>
     <string name="qs_header_random_image_title">Zufälliges QS-Bild in Kopfzeile</string>
     <string name="qs_header_random_image_summary">Zufälliges QS-Bild in Kopfzeile aktivieren</string>
-    <!-- Clock Customizations -->
-    <string name="clocksettings_category_title">Uhrzeit Anpassungen</string>
-    <string name="clocksettings_title">Uhrzeit Einstellungen</string>
-    <string name="clocksettings_summary">Uhreinstellungen in Statusleiste</string>
-    <string name="status_bar_clock_date_title">Uhrzeit und Datum</string>
-    <string name="status_bar_clock_date_summary">Uhr und Datum in Statusleiste anpassen</string>
-    <string name="status_bar_clock_title">Uhreinstellungen</string>
-    <string name="status_bar_clock_show">Uhrzeit und Datum anzeigen</string>
-    <string name="status_bar_clock_style_title">Uhrenstil</string>
-    <string name="status_bar_clock_style_right">Rechts</string>
-    <string name="status_bar_clock_style_center">Mitte</string>
-    <string name="status_bar_clock_style_left">Links</string>
-    <string name="status_bar_date_title">Datumseinstellungen</string>
-    <string name="status_bar_am_pm_title">AM/PM-Stil</string>
-    <string name="status_bar_am_pm_info">24-Stunden-Uhr aktiviert</string>
-    <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Klein</string>
-    <string name="status_bar_am_pm_hidden">Ausgeblendet (Standard)</string>
-    <string name="clock_seconds_display">Sekunden anzeigen</string>
-    <string name="clock_date_display">Datum</string>
-    <string name="clock_date_display_summary">Benutzerdefiniertes Datum vor der Uhr anzeigen</string>
-    <string name="clock_date_display_none">Nicht anzeigen</string>
-    <string name="clock_date_display_small">Kleine Schriftgröße</string>
-    <string name="clock_date_display_normal">Normal Schriftgröße</string>
-    <string name="clock_date_style">Datumsstil</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
-    <string name="clock_date_style_uppercase">Großbuchstaben</string>
-    <string name="clock_date_format_custom">Benutzerdefiniertes Java-Format</string>
-    <string name="clock_date_format">Datumsformat</string>
-    <string name="clock_date_string_edittext_title">Muss im Datumsformat sein, z. B. dd.MM.yy</string>
-    <string name="clock_date_string_edittext_summary">Zeichenfolge eingeben</string>
-    <string name="clock_date_right">Rechts neben der Zeit</string>
-    <string name="clock_date_left">Links neben der Zeit</string>
-    <string name="clock_date_position">Datumsposition</string>
-    <string name="status_bar_clock_auto_hide_title">Uhr automatisch ausblenden</string>
-    <string name="status_bar_clock_auto_hide_summary">Uhr in regelmäßigen Zeitabständen ein- und ausblenden</string>
-    <string name="status_bar_clock_auto_hide_hdur_title">Ausblenddauer</string>
-    <string name="status_bar_clock_auto_hide_sdur_title">Anzeigedauer</string>
+    <string name="qs_header_image_blur_level_title">QS-Kopfzeile Bildunschärfe Effektstufe</string>
+    <string name="qs_header_image_blur_level_summary">Stärke des Unschärfeeffekts, der auf die QS-Kopfzeile angewendet wird</string>
+    <string name="qs_header_image_fade_level_level_title">QS-Kopfzeile Überblendungsstufe</string>
+    <string name="qs_header_image_fade_level_level_summary">QS-Kopfzeile Bild-Überblendstufe</string>
+    <string name="qs_header_image_opacity_level_title">QS-Kopfzeile Bilddeckkraftstufe</string>
+    <string name="qs_header_image_opacity_level_summary">QS-Kopfzeile Bilddeckkraft</string>
+    <string name="qs_header_image_filter_color_title">QS-Kopfzeile Bildfilterfarbe</string>
+    <string name="qs_header_image_height_title">QS-Kopfzeile Bildhöhe</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS-Hintergrundtransparenz</string>
     <string name="qs_transparency_summary">QS-Hintergrund-Transparenzstufe einstellen</string>
-    <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Höhere FPS in Spielen freischalten</string>
-    <string name="use_games_spoof_summary">Deinem Gerät für bestimmte Spiele ein anderes Modell vortäuschen, um höhere FPS freizuschalten</string>
-    <!-- Media artwork -->
-    <string name="artwork_media_background_enable_blur_title">Hintergrund Medien-Benachrichtigungsgrafik verwischen</string>
-    <string name="artwork_media_background_blur_radius_title">Unschärfe Medien Benachrichtigungsgrafik</string>
-    <string name="media_artwork_fade_percent_title">Ausblendung in Prozent für Medien Benachrichtigungsgrafik</string>
+    <!-- Lockscreen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">Verknüpfungen unten</string>
+    <string name="lockscreen_shortcut_start_title">Verknüpfung links</string>
+    <string name="lockscreen_shortcut_end_title">Verknüpfung rechts</string>
+    <string name="lockscreen_shortcut_wallet">Wallet</string>
+    <string name="lockscreen_shortcut_home">Sperrbildschirm-Steuerung</string>
+    <string name="lockscreen_shortcut_flashlight">Lampe</string>
+    <string name="lockscreen_shortcut_qr">QR-Code-Scanner</string>
+    <string name="lockscreen_shortcut_camera">Kamera</string>
+    <string name="lockscreen_shortcut_dnd">DND</string>
+    <string name="lockscreen_shortcut_none">Keine</string>
+    <string name="lockscreen_shortcut_enforce_title">Einzelne Verknüpfung</string>
+    <string name="lockscreen_shortcut_enforce_summary">Erzwingen, dass die gewählte Verknüpfung die einzige bestehende Priorität ist\nZeigt nichts an, bis die gewählte Verknüpfung verfügbar ist</string>
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_shortcuts">Sperrbildschirm-Verknüpfungen</string>
+    <string name="lockscreen_targets_summary">Untere Verknüpfungen auf dem Sperrbildschirm anpassen</string>
 </resources>
