@@ -260,12 +260,12 @@
     <string name="qs_shaded">Shaded</string>
     <string name="qs_cyberpunk">Cyberpunk</string>
     <!-- Udfps -->
-    <string name="udfps_category">Under-display fingerprint</string>
+    <string name="udfps_category">螢幕下指紋辨識</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Use UDFPS animation</string>
-    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
-    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="udfps_recog_animation">使用螢幕下指紋辨識動畫</string>
+    <string name="udfps_recog_animation_summary">讀取指紋時顯示動畫</string>
+    <string name="udfps_recog_animation_effect_title">自訂螢幕下指紋辨識動畫</string>
+    <string name="udfps_recog_animation_effect_summary">選擇動畫效果</string>
     <!-- Udfps icon picker -->
     <string name="udfps_icon_picker_title">UDFPS icon picker</string>
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
@@ -286,9 +286,9 @@
     <string name="theme_customization_wifi_icon_summary">設定自訂WiFI圖示風格</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">裝置預設值</string>
-    <!-- GamesPropsUtils -->
-    <string name="games_device_spoof_title">Unlock higher FPS in games</string>
-    <string name="games_device_spoof_summary">Spoof device as a high-end model in certain games, to unlock higher FPS</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">在遊戲中解鎖更高的FPS</string>
+    <string name="use_games_spoof_summary">將您的設備偽裝成各遊戲所需的高階設備型號已解鎖更高的FPS</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Battery Settings</string>
     <string name="battery_style_category_title">Battery styles</string>
@@ -359,4 +359,7 @@
     <!-- Lockscreen icons -->
     <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
     <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
+    <!-- Combined signal icons -->
+    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
 </resources>

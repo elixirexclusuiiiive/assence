@@ -286,9 +286,9 @@
     <string name="theme_customization_wifi_icon_summary">Nastavit vlastní styl ikony Wi‑Fi</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Výchozí nastavení zařízení</string>
-    <!-- GamesPropsUtils -->
-    <string name="games_device_spoof_title">Unlock higher FPS in games</string>
-    <string name="games_device_spoof_summary">Spoof device as a high-end model in certain games, to unlock higher FPS</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Battery Settings</string>
     <string name="battery_style_category_title">Battery styles</string>
@@ -359,4 +359,7 @@
     <!-- Lockscreen icons -->
     <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
     <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
+    <!-- Combined signal icons -->
+    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
 </resources>

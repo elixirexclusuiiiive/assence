@@ -286,9 +286,9 @@
     <string name="theme_customization_wifi_icon_summary">Establecer un estilo del icono wifi personalizado</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Valor predeterminado del dispositivo</string>
-    <!-- GamesPropsUtils -->
-    <string name="games_device_spoof_title">Desbloquea FPS más altos en los juegos</string>
-    <string name="games_device_spoof_summary">Falsificar dispositivo como modelo de gama alta en ciertos juegos, para desbloquear FPS más altos</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Configuración de la batería</string>
     <string name="battery_style_category_title">Estilos de batería</string>
@@ -359,4 +359,7 @@
     <!-- Lockscreen icons -->
     <string name="lockscreen_shortcuts">Atajos de pantalla de bloqueo</string>
     <string name="lockscreen_targets_summary">Personaliza los accesos directos inferiores en la pantalla de bloqueo</string>
+    <!-- Combined signal icons -->
+    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
 </resources>

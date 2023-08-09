@@ -77,7 +77,7 @@
     <string name="summ_monet">المعتم • التصميم • ساعة قفل الشاشة</string>
     <string name="summ_quick">شكل QS • شكل الوسائط • استخدام البيانات</string>
     <string name="summ_sbar">سرعة الشبكة • VoLTE / VoWifi</string>
-    <string name="summ_about">مطور اللغة إسماعيل ماجدي حول إيلكسر</string>
+    <string name="summ_about">مطور اللغة: إسماعيل ماجدي</string>
     <string name="donate">تبرع بنا هنا</string>
     <!-- Categories -->
     <string name="gestures_title">الإيماءات</string>
@@ -286,9 +286,9 @@
     <string name="theme_customization_wifi_icon_summary">تعيين شكل رمز wifi مخصص</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">الجهاز الافتراضي</string>
-    <!-- GamesPropsUtils -->
-    <string name="games_device_spoof_title">افتح فريمات أعلى في الألعاب</string>
-    <string name="games_device_spoof_summary">جهاز محاكاة كنموذج متطور في ألعاب معينة ، لفتح فريمات أعلى</string>
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">اعدادات البطارية</string>
     <string name="battery_style_category_title">اشكل البطارية</string>
@@ -359,4 +359,7 @@
     <!-- Lockscreen icons -->
     <string name="lockscreen_shortcuts">اختصارات شاشة القفل</string>
     <string name="lockscreen_targets_summary">تخصيص الاختصارات السفلية على شاشة القفل</string>
+    <!-- Combined signal icons -->
+    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
 </resources>
