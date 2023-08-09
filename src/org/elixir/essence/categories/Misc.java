@@ -53,9 +53,12 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
     private static final String KEY_HIDE_ICONS = "hide_essence_icons";
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String KEY_GAMES_SPOOF = "use_games_spoof";
+    private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
 
     private ListPreference mTorchPowerButton;
     private SwitchPreference mHideIcons;
+    private SwitchPreference mGamesSpoof;
     private boolean enabled;
 
     @Override
@@ -89,6 +92,12 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
             mTorchPowerButton.setValue(Integer.toString(mTorchPowerButtonValue));
             mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
             mTorchPowerButton.setOnPreferenceChangeListener(this);
+        }
+
+        mGamesSpoof = (SwitchPreference) findPreference(KEY_GAMES_SPOOF);
+        if (mGamesSpoof != null) {
+            mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
+            mGamesSpoof.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -124,6 +133,10 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
                     mTorchPowerButton.getEntries()[index]);
             Settings.System.putInt(resolver, Settings.System.TORCH_POWER_BUTTON_GESTURE,
                     mTorchPowerButtonValue);
+            return true;
+        } else if (preference == mGamesSpoof) {
+            boolean value = (Boolean) objValue;
+            SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
             return true;
         }
         return false;

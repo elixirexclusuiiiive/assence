@@ -68,12 +68,12 @@
         android:layout="@layout/custom_preference_category"
         android:title="@string/game_custs" >
 
-        <org.elixir.essence.preferences.SecureSettingSwitchPreference
-            android:key="games_device_spoof"
+        <!-- Unlock FPS for specific games -->
+        <SwitchPreference
+            android:key="use_games_spoof"
+            android:title="@string/use_games_spoof_title"
             settings:layout="@layout/xd_pref_card_top"
-            android:title="@string/games_device_spoof_title"
-            android:summary="@string/games_device_spoof_summary"
-            android:defaultValue="false"/>
+            android:summary="@string/use_games_spoof_summary" />
 
         <!-- Gaming mode -->
         <Preference
