@@ -18,7 +18,11 @@ package org.elixir.essence.categories;
 
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
 import android.os.Bundle;
+import android.os.ServiceManager;
+import android.util.Log;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
@@ -29,6 +33,7 @@ import android.os.UserHandle;
 import android.os.Handler;
 import android.content.res.Resources;
 
+import com.android.internal.util.custom.customUtils;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -42,20 +47,27 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
     private static final String PREF_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String PREF_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+    private static final String PREF_COMBINED_SIGNAL_ICON = "combined_signal_icon";
+    private static final String COMBINED_OVERLAY_PACKAGE = "com.android.systemui.combined.signal";
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
     private static final int BATTERY_STYLE_HIDDEN = 5;
     private static final int BATTERY_PERCENT_HIDDEN = 0;
     private ListPreference mBatteryPercent;
     private ListPreference mBatteryStyle;
+    private SwitchPreference mCombinedSignal;
     private int mBatteryPercentValue;
     private int mBatteryPercentValuePrev;
+    private IOverlayManager mOverlayService;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.status_bar);
+
+        mOverlayService = IOverlayManager.Stub
+                .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
 
         ContentResolver resolver = getActivity().getContentResolver();
         int qpmode = Settings.System.getIntForUser(getContentResolver(),
@@ -82,6 +94,12 @@ public class StatusBar extends SettingsPreferenceFragment implements
         mBatteryPercent.setOnPreferenceChangeListener(this);
         mBatteryPercent.setEnabled(
             batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
+
+        mCombinedSignal = (SwitchPreference) findPreference(PREF_COMBINED_SIGNAL_ICON);
+        if (mCombinedSignal != null) {
+            mCombinedSignal.setChecked(isOverlayEnabled(COMBINED_OVERLAY_PACKAGE));
+            mCombinedSignal.setOnPreferenceChangeListener(this);
+        }
 
 	}
 
@@ -129,6 +147,11 @@ public class StatusBar extends SettingsPreferenceFragment implements
             int index = mBatteryPercent.findIndexOfValue((String) objValue);
             mBatteryPercent.setSummary(mBatteryPercent.getEntries()[index]);
             return true;
+        } else if (preference == mCombinedSignal) {
+            boolean value = (Boolean) objValue;
+            RROManager(COMBINED_OVERLAY_PACKAGE, value);
+            mCombinedSignal.setChecked(value);
+            customUtils.showSystemUiRestartDialog(getActivity());
         }
         return false;
     }
@@ -150,5 +173,34 @@ public class StatusBar extends SettingsPreferenceFragment implements
         int index = mBatteryPercent.findIndexOfValue(String.valueOf(batterypercent));
         mBatteryPercent.setSummary(mBatteryPercent.getEntries()[index]);
         mBatteryPercent.setEnabled(false);
+    }
+
+    private void RROManager(String name, boolean status) {
+        if (status) {
+            Log.d(TAG, "Enabling Overlay Package :- " + name);
+        }
+        else {
+            Log.d(TAG, "Disabling Overlay Package :- " + name);
+        }
+        try {
+            mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Overlay " + name + " doesn't exists");
+        } catch (Exception re) {
+            Log.e(TAG, String.valueOf(re));
+        }
+    }
+
+    private boolean isOverlayEnabled(String name) {
+        OverlayInfo info = null;
+        Log.i(TAG, "Getting information of overlay :- " + name);
+        try {
+            info = mOverlayService.getOverlayInfo(name, UserHandle.USER_CURRENT);
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Overlay " + name + " doesn't exists");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return info != null && info.isEnabled();
     }
 }

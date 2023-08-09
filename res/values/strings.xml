@@ -434,4 +434,8 @@
     <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
     <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
 
+    <!-- Combined signal icons -->
+    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+
 </resources>

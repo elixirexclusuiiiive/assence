@@ -34,6 +34,12 @@
             android:entryValues="@array/quick_pulldown_values"
             android:defaultValue="0" />
 
+        <SwitchPreference
+            android:key="combined_signal_icon"
+            android:title="@string/combined_signal_icon_title"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:summary="@string/combined_signal_icon_summary" />
+
  	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
 	    	android:key="show_fourg_icon"
 	    	settings:layout="@layout/xd_pref_card_mid"
