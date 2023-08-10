@@ -40,6 +40,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     private static final String TAG = "Lockscreen";
     private FingerprintManager mFingerprintManager;
 
+    private static final String FINGERPRINT_VIB_CAT = "lockscreen_ui_finterprint_category";
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
 
@@ -75,14 +76,16 @@ public class Lockscreen extends SettingsPreferenceFragment implements
             prefScreen.removePreference(udfps);
         }
 
+        final PreferenceCategory perfFingerVibCat = (PreferenceCategory) prefScreen
+                .findPreference(FINGERPRINT_VIB_CAT);
+
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintSuccessVib = (SwitchPreference) findPreference(FINGERPRINT_SUCCESS_VIB);
         mFingerprintErrorVib = (SwitchPreference) findPreference(FINGERPRINT_ERROR_VIB);
         if (mPm.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT) &&
                  mFingerprintManager != null) {
             if (!mFingerprintManager.isHardwareDetected()){
-                prefSet.removePreference(mFingerprintSuccessVib);
-                prefSet.removePreference(mFingerprintErrorVib);
+                prefSet.removePreference(perfFingerVibCat);
             } else {
                 mFingerprintSuccessVib.setChecked((Settings.System.getInt(getContentResolver(),
                         Settings.System.FP_SUCCESS_VIBRATE, 1) == 1));
@@ -92,8 +95,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
                 mFingerprintErrorVib.setOnPreferenceChangeListener(this);
             }
         } else {
-            prefSet.removePreference(mFingerprintSuccessVib);
-            prefSet.removePreference(mFingerprintErrorVib);
+            prefSet.removePreference(perfFingerVibCat);
         }
     }
 

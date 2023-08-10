@@ -93,15 +93,15 @@
 	    android:title="@string/fingerprint_category">
 
         <SwitchPreference
-		android:key="fingerprint_success_vib"
-		settings:layout="@layout/xd_pref_card_top"
+		    android:key="fingerprint_success_vib"
+		    settings:layout="@layout/xd_pref_card_top"
             android:title="@string/fprint_success_vib_title"
             android:summary="@string/fprint_success_vib_summary"
             android:persistent="true" />
 
         <SwitchPreference
-		android:key="fingerprint_error_vib"
-		settings:layout="@layout/xd_pref_card_bot"
+		    android:key="fingerprint_error_vib"
+		    settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/fprint_error_vib_title"
             android:summary="@string/fprint_error_vib_summary"
             android:persistent="true" />
@@ -133,17 +133,10 @@
 	    android:layout="@layout/custom_preference_category"
         android:title="General Options">
 
-        <org.elixir.essence.preferences.SystemSettingSwitchPreference
-		    android:key="enable_ripple_effect"
-		    settings:layout="@layout/xd_pref_card_top"
-            android:title="@string/enable_fingerprint_ripple_effect_title"
-            android:summary="@string/enable_fingerprint_ripple_effect_summary"
-            android:defaultValue="true" />
-
         <Preference
-		android:key="lockscreen_shortcuts"
-		android:summary="@string/lockscreen_targets_summary"
-            settings:layout="@layout/essence_pref_card_mid"
+		    android:key="lockscreen_shortcuts"
+		    android:summary="@string/lockscreen_targets_summary"
+            settings:layout="@layout/essence_pref_card_top"
             android:fragment="org.elixir.essence.fragments.LockscreenShortcuts"
 	        android:title="@string/lockscreen_shortcuts" />
 
@@ -152,6 +145,20 @@
 	        settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/lockscreen_battery_info_title"
             android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+	    android:layout="@layout/custom_preference_category"
+        android:title="Ripple effect"
+        android:key="ripple_effect_category">
+
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+		    android:key="enable_ripple_effect"
+		    settings:layout="@layout/xd_pref_card_mid2"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
             android:defaultValue="true" />
 
     </PreferenceCategory>
