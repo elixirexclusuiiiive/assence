@@ -123,6 +123,8 @@
     <string name="buttons_category">Power Menu</string>
     <string name="lockscreen_gestures_category">LockScreen Gesture</string>
     <string name="signal_category">Network Icon</string>
+    <string name="misc_gnrl_category">General Options</string>
+    <string name="pwrbtn_category">Power Button Options</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>

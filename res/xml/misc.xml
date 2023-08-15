@@ -11,6 +11,10 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/pwrbtn_category" >
+
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="advanced_reboot"
             settings:layout="@layout/xd_pref_card_top"
@@ -20,15 +24,22 @@
    
         <ListPreference
             android:key="torch_power_button_gesture"
-            settings:layout="@layout/essence_pref_card_mid"
+            settings:layout="@layout/essence_pref_card_bot"
             android:title="@string/torch_power_button_gesture_title"
             android:entries="@array/torch_power_button_gesture_entries"
             android:entryValues="@array/torch_power_button_gesture_values" />
 
-      <!-- Launch music player when headset is connected -->
+   </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/misc_gnrl_category" >
+
+        <!-- Launch music player when headset is connected -->
 	<org.elixir.essence.preferences.SystemSettingSwitchPreference	
            android:key="headset_connect_player"
-           android:title="@string/headset_connect_player_title"
+       	   settings:layout="@layout/xd_pref_card_top"	
+	   android:title="@string/headset_connect_player_title"
            android:summary="@string/headset_connect_player_summary"
            android:defaultValue="false" />
 
@@ -45,6 +56,8 @@
 	    android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="incall_vib_options"
