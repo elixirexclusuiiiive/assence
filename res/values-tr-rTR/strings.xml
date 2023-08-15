@@ -143,7 +143,7 @@
     <!-- Network Traffic -->
     <string name="traffic_title">Trafik göstergeleri</string>
     <string name="traffic_summary">Trafik göstergelerini özelleştir</string>
-    <string name="network_traffic_state_title">Show network traffic</string>
+    <string name="network_traffic_state_title">İnternet Trafiğini Göster</string>
     <string name="network_traffic_autohide_threshold_title">Eşiği otomatik gizle</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Pencere güvenlik bayraklarını yoksay</string>
@@ -262,13 +262,13 @@
     <!-- Udfps -->
     <string name="udfps_category">Under-display fingerprint</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Use UDFPS animation</string>
+    <string name="udfps_recog_animation">UDFPS Animasyon Kullan</string>
     <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
     <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="udfps_recog_animation_effect_summary">Animasyon Efektini Seç</string>
     <!-- Udfps icon picker -->
     <string name="udfps_icon_picker_title">UDFPS icon picker</string>
-    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="udfps_icon_picker_summary">Favori Parmak İzi İkonunu Seç</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <string name="theme_customization_category">Tema Oluştur</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
@@ -287,8 +287,8 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Cihaz varsayılanı</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">FPS kilidini aç</string>
+    <string name="use_games_spoof_summary">Belirli oyunlarda daha yüksek FPS almak içincihazınızı farklı bir model olarak gösterin</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Pil ayarları</string>
     <string name="battery_style_category_title">Pil stilleri</string>
@@ -350,14 +350,14 @@
     <string name="lockscreen_shortcut_wallet">Wallet</string>
     <string name="lockscreen_shortcut_home">Home controls</string>
     <string name="lockscreen_shortcut_flashlight">Flashlight</string>
-    <string name="lockscreen_shortcut_qr">QR code scanner</string>
-    <string name="lockscreen_shortcut_camera">Camera</string>
+    <string name="lockscreen_shortcut_qr">QR Kod Okuyucu</string>
+    <string name="lockscreen_shortcut_camera">Kamera</string>
     <string name="lockscreen_shortcut_dnd">DND</string>
     <string name="lockscreen_shortcut_none">None</string>
     <string name="lockscreen_shortcut_enforce_title">Single shortcut</string>
     <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
     <!-- Lockscreen icons -->
-    <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts">Kilitekranı Kısayolları</string>
     <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">Combined signal icon</string>

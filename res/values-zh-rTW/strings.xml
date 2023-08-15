@@ -288,7 +288,7 @@
     <string name="theme_customization_device_default">裝置預設值</string>
     <!-- Unlock FPS for specific games -->
     <string name="use_games_spoof_title">在遊戲中解鎖更高的FPS</string>
-    <string name="use_games_spoof_summary">將您的設備偽裝成各遊戲所需的高階設備型號已解鎖更高的FPS</string>
+    <string name="use_games_spoof_summary">将您的设备伪装成特定游戏的不同型号，以解锁更高的 FPS</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Battery Settings</string>
     <string name="battery_style_category_title">Battery styles</string>

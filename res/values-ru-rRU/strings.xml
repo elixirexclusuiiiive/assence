@@ -264,11 +264,11 @@
     <!-- Udfps animations -->
     <string name="udfps_recog_animation">Use UDFPS animation</string>
     <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
-    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="udfps_recog_animation_effect_title">Своя анимация UDFPS</string>
+    <string name="udfps_recog_animation_effect_summary">Выберите эффект анимации</string>
     <!-- Udfps icon picker -->
-    <string name="udfps_icon_picker_title">UDFPS icon picker</string>
-    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="udfps_icon_picker_title">Выбрать иконку для UDFPS</string>
+    <string name="udfps_icon_picker_summary">Выберите вашу любимую иконку отпечатка пальца</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <string name="theme_customization_category">Оформление</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
@@ -287,8 +287,8 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">По умолчанию</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">Разблокировать высокий FPS в играх</string>
+    <string name="use_games_spoof_summary">Маскировать ваше устройство под другую модель для некоторых игр, чтобы разблокировать высокий FPS</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Настройки батареи</string>
     <string name="battery_style_category_title">Стили значка батареи</string>
@@ -312,10 +312,10 @@
     <string name="status_bar_battery_style_icon_landscape_buddy">Портретный капсульный</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрыть</string>
-    <string name="status_bar_battery_style_icon_landscape_miui_pill">MIUI pill</string>
-    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
-    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
-    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_miui_pill">Miui крестик</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Горизонтально Оригами</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Горизонтально iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Горизонтально iOS 16</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
     <string name="status_bar_battery_percentage_default">Скрыто (по умолчанию)</string>
@@ -326,7 +326,7 @@
     <string name="reticker_summary">Замените всплывающие уведомления на переработанную, более тонкую и менее агрессивную версию</string>
     <string name="reticker_colored_title">Использовать цвет приложений для фона</string>
     <string name="reticker_colored_summary">Заменить цвет фона, используя основной цвет приложения уведомлений</string>
-    <string name="reticker_landscape_only_title">Landscape only</string>
+    <string name="reticker_landscape_only_title">Только горизонтально</string>
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
     <!-- QS Header -->
     <string name="qs_header_image_title">Изображение заголовка быстрых настроек</string>
@@ -360,6 +360,6 @@
     <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
     <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
     <!-- Combined signal icons -->
-    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_title">Совмещенные значки сигнала</string>
     <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
 </resources>

@@ -360,6 +360,6 @@
     <string name="lockscreen_shortcuts">锁屏快捷方式</string>
     <string name="lockscreen_targets_summary">自定义锁屏底部的快捷方式</string>
     <!-- Combined signal icons -->
-    <string name="combined_signal_icon_title">Combined signal icon</string>
-    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <string name="combined_signal_icon_title">合并信号图标</string>
+    <string name="combined_signal_icon_summary">切换合并信号图标</string>
 </resources>

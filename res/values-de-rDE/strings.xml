@@ -287,8 +287,8 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Gerätestandard</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">Höhere FPS in Spielen freischalten</string>
+    <string name="use_games_spoof_summary">Deinem Gerät für bestimmte Spiele ein anderes Modell vortäuschen, um höhere FPS freizuschalten</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Akkueinstellungen</string>
     <string name="battery_style_category_title">Akkustil</string>
@@ -360,6 +360,6 @@
     <string name="lockscreen_shortcuts">Sperrbildschirm-Verknüpfungen</string>
     <string name="lockscreen_targets_summary">Untere Verknüpfungen auf dem Sperrbildschirm anpassen</string>
     <!-- Combined signal icons -->
-    <string name="combined_signal_icon_title">Combined signal icon</string>
-    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <string name="combined_signal_icon_title">Kombiniertes Signalsymbol</string>
+    <string name="combined_signal_icon_summary">Kombiniertes Signalesymbol umschalten</string>
 </resources>

@@ -287,8 +287,8 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Bawaan perangkat</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">Buka FPS yang lebih tinggi dalam game</string>
+    <string name="use_games_spoof_summary">Palsukan perangkat Anda sebagai model yang berbeda untuk game tertentu untuk membuka FPS yang lebih tinggi</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">Setelan Baterai</string>
     <string name="battery_style_category_title">Gaya Baterai</string>
@@ -360,6 +360,6 @@
     <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
     <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
     <!-- Combined signal icons -->
-    <string name="combined_signal_icon_title">Combined signal icon</string>
-    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <string name="combined_signal_icon_title">Ikon sinyal gabungan</string>
+    <string name="combined_signal_icon_summary">Alihkan ikon sinyal gabungan</string>
 </resources>
