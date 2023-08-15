@@ -88,7 +88,8 @@ public class Essence extends SettingsPreferenceFragment implements
             removeIconMid(6);
             removeIconMid(7);
             removeIconMid(8);
-            removeIconBot(9);
+            removeIconMid(9);
+            removeIconBot(10);
         }
         updateGreetings();
     }
