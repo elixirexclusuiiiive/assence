@@ -438,4 +438,8 @@
     <string name="combined_signal_icon_title">Combined signal icon</string>
     <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
 
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
 </resources>

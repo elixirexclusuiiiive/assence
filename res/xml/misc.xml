@@ -25,6 +25,13 @@
             android:entries="@array/torch_power_button_gesture_entries"
             android:entryValues="@array/torch_power_button_gesture_values" />
 
+      <!-- Launch music player when headset is connected -->
+	<org.elixir.essence.preferences.SystemSettingSwitchPreference	
+           android:key="headset_connect_player"
+           android:title="@string/headset_connect_player_title"
+           android:summary="@string/headset_connect_player_summary"
+           android:defaultValue="false" />
+
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
             settings:layout="@layout/xd_pref_card_mid"
@@ -34,8 +41,8 @@
 
     	 <org.elixir.essence.preferences.SystemSettingSwitchPreference   
             android:key="less_boring_heads_up"
-		    settings:layout="@layout/xd_pref_card_bot"
-		    android:title="@string/less_boring_heads_up_title"
+	    settings:layout="@layout/xd_pref_card_bot"
+	    android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
 
