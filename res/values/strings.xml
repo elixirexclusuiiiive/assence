@@ -125,6 +125,7 @@
     <string name="signal_category">Network Icon</string>
     <string name="misc_gnrl_category">General Options</string>
     <string name="pwrbtn_category">Power Button Options</string>
+    <string name="sbicon_category">Statusbar Icon Manager</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -443,5 +444,9 @@
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app on headset connection</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
 
 </resources>
