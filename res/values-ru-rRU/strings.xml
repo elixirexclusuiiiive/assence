@@ -98,6 +98,9 @@
     <string name="buttons_category">Меню питания</string>
     <string name="lockscreen_gestures_category">Жесты на экране блокировки</string>
     <string name="signal_category">Иконка сети</string>
+    <string name="misc_gnrl_category">Общие настройки</string>
+    <string name="pwrbtn_category">Настройки кнопки питания</string>
+    <string name="sbicon_category">Менеджер значков панели состояния</string>
     <!-- General strings -->
     <string name="ok">ОК</string>
     <string name="save">Сохранить</string>
@@ -143,7 +146,7 @@
     <!-- Network Traffic -->
     <string name="traffic_title">Индикаторы трафика</string>
     <string name="traffic_summary">Настройка индикаторов трафика</string>
-    <string name="network_traffic_state_title">Show network traffic</string>
+    <string name="network_traffic_state_title">Показать сетевой трафик</string>
     <string name="network_traffic_autohide_threshold_title">Порог автоскрытия</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Игнорировать флаги безопасности</string>
@@ -224,8 +227,8 @@
     <string name="gaming_mode_title">Игровое пространство</string>
     <string name="gaming_mode_summary">Дополнительные возможности для полноценного погружения в игру</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
+    <string name="less_boring_heads_up_title">Менее скучные сообщения</string>
+    <string name="less_boring_heads_up_summary">Показывать заголовки только для приложения для телефона, сообщений и будильника</string>
     <!-- Edge light -->
     <string name="edge_light_title">Подсветка краёв экрана</string>
     <string name="edge_light_summary">Подсвечивать края экрана при уведомлениях</string>
@@ -260,10 +263,10 @@
     <string name="qs_shaded">Затененный</string>
     <string name="qs_cyberpunk">Киберпанк</string>
     <!-- Udfps -->
-    <string name="udfps_category">Under-display fingerprint</string>
+    <string name="udfps_category">Отпечаток пальца под дисплеем</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Use UDFPS animation</string>
-    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
+    <string name="udfps_recog_animation">Использовать анимацию отпечатка</string>
+    <string name="udfps_recog_animation_summary">Показывает анимацию при чтении пальцем</string>
     <string name="udfps_recog_animation_effect_title">Своя анимация UDFPS</string>
     <string name="udfps_recog_animation_effect_summary">Выберите эффект анимации</string>
     <!-- Udfps icon picker -->
@@ -327,39 +330,45 @@
     <string name="reticker_colored_title">Использовать цвет приложений для фона</string>
     <string name="reticker_colored_summary">Заменить цвет фона, используя основной цвет приложения уведомлений</string>
     <string name="reticker_landscape_only_title">Только горизонтально</string>
-    <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
+    <string name="reticker_landscape_only_summary">Включать бегущую строку только в том случае, если устройство находится в горизонтальном режиме</string>
     <!-- QS Header -->
     <string name="qs_header_image_title">Изображение заголовка быстрых настроек</string>
     <string name="qs_header_random_image_title">Случайное изображение заголовка быстрых настроек</string>
     <string name="qs_header_random_image_summary">Включить случайное изображение заголовка быстрых настроек</string>
-    <string name="qs_header_image_blur_level_title">QS header image blur effect level</string>
-    <string name="qs_header_image_blur_level_summary">Strength of the blur effect applied to the QS header image</string>
-    <string name="qs_header_image_fade_level_level_title">QS header image fade level</string>
-    <string name="qs_header_image_fade_level_level_summary">Fade level of the QS header image</string>
-    <string name="qs_header_image_opacity_level_title">QS header image opacity level</string>
-    <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
-    <string name="qs_header_image_filter_color_title">QS header image filter color</string>
-    <string name="qs_header_image_height_title">QS header image height</string>
+    <string name="qs_header_image_blur_level_title">Уровень эффекта размытия изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_blur_level_summary">Сила эффекта размытия, примененного к изображению заголовка быстрых настроек</string>
+    <string name="qs_header_image_fade_level_level_title">Уровень затухания изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_fade_level_level_summary">Уровень затемнения изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_opacity_level_title">Уровень непрозрачности изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_opacity_level_summary">Уровень непрозрачности изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_filter_color_title">Цвет фильтра изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_height_title">Высота изображения заголовка быстрых настроек</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Прозрачность фона быстрых настроек</string>
     <string name="qs_transparency_summary">Установка уровня прозрачности фона быстрых настроек</string>
     <!-- Lockscreen bottom shortcuts -->
-    <string name="lockscreen_shortcut_category">Bottom shortcuts</string>
-    <string name="lockscreen_shortcut_start_title">Left shortcut</string>
-    <string name="lockscreen_shortcut_end_title">Right shortcut</string>
-    <string name="lockscreen_shortcut_wallet">Wallet</string>
-    <string name="lockscreen_shortcut_home">Home controls</string>
-    <string name="lockscreen_shortcut_flashlight">Flashlight</string>
-    <string name="lockscreen_shortcut_qr">QR code scanner</string>
-    <string name="lockscreen_shortcut_camera">Camera</string>
-    <string name="lockscreen_shortcut_dnd">DND</string>
-    <string name="lockscreen_shortcut_none">None</string>
-    <string name="lockscreen_shortcut_enforce_title">Single shortcut</string>
-    <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
+    <string name="lockscreen_shortcut_category">Нижние ярлыки</string>
+    <string name="lockscreen_shortcut_start_title">Ярлык слева</string>
+    <string name="lockscreen_shortcut_end_title">Ярлык справа</string>
+    <string name="lockscreen_shortcut_wallet">Кошелек</string>
+    <string name="lockscreen_shortcut_home">Управление домом</string>
+    <string name="lockscreen_shortcut_flashlight">Фонарик</string>
+    <string name="lockscreen_shortcut_qr">Сканер QR-кодов</string>
+    <string name="lockscreen_shortcut_camera">Камера</string>
+    <string name="lockscreen_shortcut_dnd">Не беспокоить</string>
+    <string name="lockscreen_shortcut_none">Ничего</string>
+    <string name="lockscreen_shortcut_enforce_title">Единый ярлык</string>
+    <string name="lockscreen_shortcut_enforce_summary">Заставить выбранный ярлык быть единственным существующим приоритетом\nНичего не будет отображаться до тех пор, пока выбранный ярлык не станет доступен</string>
     <!-- Lockscreen icons -->
-    <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
-    <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
+    <string name="lockscreen_shortcuts">Ярлыки экрана блокировки</string>
+    <string name="lockscreen_targets_summary">Настройка нижних ярлыков на экране блокировки</string>
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">Совмещенные значки сигнала</string>
-    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <string name="combined_signal_icon_summary">Переключить значок комбинированного сигнала</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Запуск музыкального приложения при подключении гарнитуры</string>
+    <string name="headset_connect_player_summary">Запуск музыкального приложения по умолчанию при подключении гарнитуры</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Менеджер значков</string>
+    <string name="icon_manager_summary">Управление видимостью значков в строке состояния</string>
 </resources>

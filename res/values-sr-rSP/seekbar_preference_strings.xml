@@ -18,13 +18,13 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="seekbar_no_default_value">No default value set</string>
-    <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
-    <string name="seekbar_default_value_already_set">Default value is already set</string>
-    <string name="seekbar_default_string">Default</string>
+    <string name="seekbar_no_default_value">Подразумевана вредност није постављена</string>
+    <string name="seekbar_default_value_set">Постављена подразумевана вредност: <xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_already_set">Подразумевана вредност је већ постављена</string>
+    <string name="seekbar_default_string">Подразумевано</string>
     <!-- Custom seekbar -->
-    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
-    <string name="custom_seekbar_default_value">Default</string>
-    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
-    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
+    <string name="custom_seekbar_value">Вредност: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Подразумевано</string>
+    <string name="custom_seekbar_default_value_to_set">Подразумевана вредност: <xliff:g id="v">%s</xliff:g>\nЗадржите да бисте подесили</string>
+    <string name="custom_seekbar_default_value_is_set">Подразумевана вредност је постављена</string>
 </resources>

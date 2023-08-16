@@ -98,6 +98,9 @@
     <string name="buttons_category">Menu tasto accensione</string>
     <string name="lockscreen_gestures_category">Gesti Schermata di Blocco</string>
     <string name="signal_category">Icone di rete</string>
+    <string name="misc_gnrl_category">General Options</string>
+    <string name="pwrbtn_category">Power Button Options</string>
+    <string name="sbicon_category">Statusbar Icon Manager</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Salva</string>
@@ -362,4 +365,10 @@
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">Combined signal icon</string>
     <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
 </resources>

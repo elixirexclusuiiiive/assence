@@ -26,7 +26,7 @@
     <string name="default_text">デフォルト</string>
     <string name="dlg_ok">OK</string>
     <string name="attention">注意</string>
-    <string name="loading">読み込み中\u2026</string>
+    <string name="loading">\u2026 を読み込み中</string>
     <string name="reset">リセット</string>
     <string name="reset_colors">色をリセット</string>
     <string name="reset_android">Android</string>
@@ -98,6 +98,9 @@
     <string name="buttons_category">電源メニュー</string>
     <string name="lockscreen_gestures_category">ロック画面ジェスチャー</string>
     <string name="signal_category">ネットワークアイコン</string>
+    <string name="misc_gnrl_category">一般オプション</string>
+    <string name="pwrbtn_category">電源ボタンのオプション</string>
+    <string name="sbicon_category">ステータスバーアイコンの管理</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">保存</string>
@@ -224,8 +227,8 @@
     <string name="gaming_mode_title">ゲームスペース</string>
     <string name="gaming_mode_summary">没入感のあるゲーム体験を実現する追加機能です</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
+    <string name="less_boring_heads_up_title">退屈しないヘッドアップ通知</string>
+    <string name="less_boring_heads_up_summary">電話、メッセージ、アラームアプリのみでヘッドアップ通知を表示します</string>
     <!-- Edge light -->
     <string name="edge_light_title">エッジライト</string>
     <string name="edge_light_summary">通知パルスで画面のサイドエッジを明るくします</string>
@@ -260,15 +263,15 @@
     <string name="qs_shaded">シェード</string>
     <string name="qs_cyberpunk">サイバーパンク</string>
     <!-- Udfps -->
-    <string name="udfps_category">Under-display fingerprint</string>
+    <string name="udfps_category">画面下部の指紋認証</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Use UDFPS animation</string>
+    <string name="udfps_recog_animation">指紋認証アニメーションを使用する</string>
     <string name="udfps_recog_animation_summary">指紋の読み取り時のアニメーションを表示します</string>
-    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
+    <string name="udfps_recog_animation_effect_title">指紋認証カスタムアニメーション</string>
     <string name="udfps_recog_animation_effect_summary">アニメーション効果を選択してください</string>
     <!-- Udfps icon picker -->
-    <string name="udfps_icon_picker_title">UDFPS icon picker</string>
-    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+    <string name="udfps_icon_picker_title">指紋認証アイコンを選択</string>
+    <string name="udfps_icon_picker_summary">お好みの指紋アイコンを選択してください</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <string name="theme_customization_category">テーマ</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
@@ -287,8 +290,8 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">デバイスのデフォルト</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
-    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+    <string name="use_games_spoof_title">ゲームでより高い FPS を可能にする</string>
+    <string name="use_games_spoof_summary">特定のゲームでデバイス情報を偽装し、より高い FPS を出せるようにします</string>
     <!-- Battery Styles -->
     <string name="battery_settings_title">バッテリーの設定</string>
     <string name="battery_style_category_title">バッテリーのスタイル</string>
@@ -326,20 +329,20 @@
     <string name="reticker_summary">ヘッドアップ通知を再設計されたスリムで邪魔になりにくいティッカー通知に置き換えます</string>
     <string name="reticker_colored_title">アプリの背景色を使用する</string>
     <string name="reticker_colored_summary">reTicker の背景色をアプリ通知のメインカラーに置き換えます</string>
-    <string name="reticker_landscape_only_title">Landscape only</string>
-    <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
+    <string name="reticker_landscape_only_title">横画面表示のみ</string>
+    <string name="reticker_landscape_only_summary">横画面表示時のみで reTicker を有効化します</string>
     <!-- QS Header -->
     <string name="qs_header_image_title">クイック設定のヘッダー画像</string>
     <string name="qs_header_random_image_title">クイック設定ヘッダーランダム画像</string>
     <string name="qs_header_random_image_summary">クイック設定ヘッダーランダム画像を有効化します</string>
-    <string name="qs_header_image_blur_level_title">QS header image blur effect level</string>
-    <string name="qs_header_image_blur_level_summary">Strength of the blur effect applied to the QS header image</string>
-    <string name="qs_header_image_fade_level_level_title">QS header image fade level</string>
-    <string name="qs_header_image_fade_level_level_summary">Fade level of the QS header image</string>
-    <string name="qs_header_image_opacity_level_title">QS header image opacity level</string>
-    <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
-    <string name="qs_header_image_filter_color_title">QS header image filter color</string>
-    <string name="qs_header_image_height_title">QS header image height</string>
+    <string name="qs_header_image_blur_level_title">クイック設定のヘッダー画像のぼかし効果レベル</string>
+    <string name="qs_header_image_blur_level_summary">クイック設定のヘッダー画像のぼかし効果の強さを設定します</string>
+    <string name="qs_header_image_fade_level_level_title">クイック設定のヘッダー画像のフェードレベル</string>
+    <string name="qs_header_image_fade_level_level_summary">クイック設定の画像のフェードレベルを設定します</string>
+    <string name="qs_header_image_opacity_level_title">クイック設定のヘッダー画像の不透過レベル</string>
+    <string name="qs_header_image_opacity_level_summary">クイック設定のヘッダー画像の不透過レベルを設定します</string>
+    <string name="qs_header_image_filter_color_title">クイック設定のヘッダー画像のフィルター色</string>
+    <string name="qs_header_image_height_title">クイック設定のヘッダー画像の高さ</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">クイック設定の背景の透過</string>
     <string name="qs_transparency_summary">クイック設定の背景の透明度を設定します</string>
@@ -355,11 +358,17 @@
     <string name="lockscreen_shortcut_dnd">サイレント</string>
     <string name="lockscreen_shortcut_none">なし</string>
     <string name="lockscreen_shortcut_enforce_title">単一のショートカット</string>
-    <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
+    <string name="lockscreen_shortcut_enforce_summary">選択されたショートカットが既存の優先順位となるように強制します。\n選択されたショートカットが使用可能になるまで何も表示されません。</string>
     <!-- Lockscreen icons -->
     <string name="lockscreen_shortcuts">ロック画面のショートカット</string>
-    <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
+    <string name="lockscreen_targets_summary">ロック画面下部のショートカットをカスタマイズします</string>
     <!-- Combined signal icons -->
-    <string name="combined_signal_icon_title">Combined signal icon</string>
-    <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <string name="combined_signal_icon_title">結合された電波アイコン</string>
+    <string name="combined_signal_icon_summary">結合された電波アイコンに切り替えます</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">ヘッドセットの接続時に音楽アプリを起動</string>
+    <string name="headset_connect_player_summary">ヘッドセット接続時にデフォルトの音楽アプリを起動します</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">アイコンの管理</string>
+    <string name="icon_manager_summary">ステータスバーアイコンの表示を制御します</string>
 </resources>

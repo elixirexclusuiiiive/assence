@@ -98,6 +98,9 @@
     <string name="buttons_category">قائمة الطاقة</string>
     <string name="lockscreen_gestures_category">إيمإيات قفل الشاشة</string>
     <string name="signal_category">رمز الشبكة</string>
+    <string name="misc_gnrl_category">خيارات عامة</string>
+    <string name="pwrbtn_category">خيارات زر الطاقة</string>
+    <string name="sbicon_category">مدير أيقونة شريط الحالة</string>
     <!-- General strings -->
     <string name="ok">حسنا</string>
     <string name="save">حفظ</string>
@@ -362,4 +365,10 @@
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">رمز الإشارة المجمعة</string>
     <string name="combined_signal_icon_summary">تبديل رمز الإشارة المجمعة</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">تشغيل تطبيق الموسيقى على اتصال سماعة الرأس</string>
+    <string name="headset_connect_player_summary">تشغيل تطبيق الموسيقى الافتراضي عند توصيل سماعة الرأس</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">مدير أيقونة</string>
+    <string name="icon_manager_summary">التحكم في رؤية أيقونات شريط الحالة</string>
 </resources>

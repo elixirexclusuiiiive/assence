@@ -18,58 +18,58 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title-->
-    <string name="essence_settings_subtitle">How are you today?</string>
+    <string name="essence_settings_subtitle">Како сте данас?</string>
     <!-- General app strings -->
-    <string name="add">Add</string>
-    <string name="advanced">Advanced</string>
-    <string name="cancel">Cancel</string>
-    <string name="default_text">Default</string>
-    <string name="dlg_ok">OK</string>
-    <string name="attention">Attention</string>
-    <string name="loading">Loading\u2026</string>
-    <string name="reset">Reset</string>
-    <string name="reset_colors">Reset colors</string>
+    <string name="add">Додај</string>
+    <string name="advanced">Напредно</string>
+    <string name="cancel">Откажи</string>
+    <string name="default_text">Подразумевано</string>
+    <string name="dlg_ok">У реду</string>
+    <string name="attention">Пажња</string>
+    <string name="loading">Учитавање\u2026</string>
+    <string name="reset">Ресетуј</string>
+    <string name="reset_colors">Ресетуј боје</string>
     <string name="reset_android">Android</string>
-    <string name="text_title">Text</string>
-    <string name="icon_title">Icon</string>
-    <string name="color_title">Color</string>
-    <string name="colors_title">Colors</string>
-    <string name="enable">Enable</string>
+    <string name="text_title">Текст</string>
+    <string name="icon_title">Икона</string>
+    <string name="color_title">Боја</string>
+    <string name="colors_title">Боје</string>
+    <string name="enable">Омогући</string>
     <!-- Extensions categories -->
-    <string name="status_bar_category">Statusbar</string>
-    <string name="system_category">Team</string>
-    <string name="themes_category">Themes</string>
-    <string name="qs_category">QS</string>
-    <string name="lockscreen_category">Lockscreen</string>
-    <string name="hardware_category">Extras</string>
-    <string name="build_tweaks_summary_title">Strive for Amelioration</string>
-    <string name="listview">ListView</string>
+    <string name="status_bar_category">Статусна трака</string>
+    <string name="system_category">Тим</string>
+    <string name="themes_category">Теме</string>
+    <string name="qs_category">Брза подешавања</string>
+    <string name="lockscreen_category">Закључани екран</string>
+    <string name="hardware_category">Додаци</string>
+    <string name="build_tweaks_summary_title">У потрази за савршенством</string>
+    <string name="listview">Листа</string>
     <!-- Project Elixir Team -->
-    <string name="dev_support">Developers and Team</string>
-    <string name="aboutus_tab">Know more about us</string>
+    <string name="dev_support">Програмери и тим</string>
+    <string name="aboutus_tab">Сазнајте више о нама</string>
     <!-- Developers -->
-    <string name="note">Important NOTE</string>
+    <string name="note">Важна напомена</string>
     <string name="note_summary">Dont Direct Message any devs, groups are there for some reason and use some brain. If we see any direct message we will ban him or her from everywhere. We arent here to serve you 24*7 so just keep patience. Just let us live our life peacefully</string>
     <!-- Contact and Download -->
-    <string name="download">Download your Builds</string>
-    <string name="download_summary">Tap here to download builds for your respective devices</string>
-    <string name="paypal">Paypal</string>
-    <string name="donate_summary">Donate us to appreciate our work</string>
+    <string name="download">Преузмите своје верзије</string>
+    <string name="download_summary">Додирните овде да бисте преузели верзију за ваш уређај</string>
+    <string name="paypal">PayPal</string>
+    <string name="donate_summary">Донирајте да бисте подржали наш рад</string>
     <string name="don_summ1">• As a matter of fact that in order to build a Custom ROM there are certain pre-requisite such as a High-End Building Server (Jenkins) or PC having very High-End technical specification combined with a very High-Speed internet connection.</string>
     <string name="don_summ2">• We developers need to allot our time and hard work from our Academics hefty schedule in the proper maintenance of the custom ROM so that we can provide users with timely and stable updates</string>
     <string name="don_summ3">• Do consider donating or buying me a coffee on Paypal or join us on Patreon for sustainable support and rewards if you want to appreciate our work</string>
-    <string name="tele_group">Telegram Discussion Group</string>
+    <string name="tele_group">Група за дискусију на Telegram-у</string>
     <string name="grp_summary">If you have any issues, do share in our telegram discussion group</string>
-    <string name="tele_channel">Telegram Update Channel</string>
-    <string name="update_summary">Subscribe us on telegram channel for faster updates</string>
-    <string name="website">Our Official WebSite</string>
+    <string name="tele_channel">Канал са ажурирањима на Telegram-у</string>
+    <string name="update_summary">Пријавите се на наш Telegram канал да бисте били у току са ажурирањима</string>
+    <string name="website">Званични веб-сајт</string>
     <string name="website_summary">Do visit our website, You will get all necessary info here</string>
     <!-- Telegram Website Donate -->
-    <string name="download_donate">Download and Website</string>
-    <string name="telegram">Telegram Support</string>
-    <string name="donateus">Support Us by Donating</string>
-    <string name="patreon">Want Early Build access ?</string>
-    <string name="patreon_summary">Patreon is for those who wants to support devs, get early build access, some exclusive features and benefits.</string>
+    <string name="download_donate">Преузимање и веб-сајт</string>
+    <string name="telegram">Подршка на Telegram-у</string>
+    <string name="donateus">Подржите нас донацијом</string>
+    <string name="patreon">Желите рани приступ верзијама?</string>
+    <string name="patreon_summary">Patreon је намењен за све који желе да подрже програмере, добију рани приступ верзијама и другим ексклузивним могућностима и предностима.</string>
     <!-- Summery -->
     <string name="summ_gesture">Playback Control • System Navigation</string>
     <string name="summ_lock">DT2S • Media Art • Edge Lighting</string>
@@ -78,38 +78,41 @@
     <string name="summ_quick">QS Styles • Media Artwork • Data Usage</string>
     <string name="summ_sbar">Network Traffic • VoLTE/VoWifi </string>
     <string name="summ_about">About Project Elixir ROM and Its Developers</string>
-    <string name="donate">Donate us here</string>
+    <string name="donate">Донирајте</string>
     <!-- Categories -->
-    <string name="gestures_title">Gestures</string>
-    <string name="lockscreen_title">Lock screen</string>
-    <string name="misc_title">Miscellaneous</string>
-    <string name="navbar_title">Navigation bar</string>
-    <string name="notifications_title">Notifications</string>
-    <string name="powermenu_title">Power menu</string>
-    <string name="quicksettings_title">Quick Settings</string>
-    <string name="recents_title">Recents apps</string>
-    <string name="statusbar_title">Status bar</string>
-    <string name="volume_title">Volume Settings</string>
-    <string name="network_traffic_catagories">Network Traffic</string>
-    <string name="clock_date">Clock and Date Settings</string>
-    <string name="status_bar_actions">Status Bar Actions</string>
-    <string name="lockscreen_settings">LockScreen Settings</string>
-    <string name="customisation_title">Themes</string>
-    <string name="buttons_category">Power Menu</string>
-    <string name="lockscreen_gestures_category">LockScreen Gesture</string>
-    <string name="signal_category">Network Icon</string>
+    <string name="gestures_title">Покрети</string>
+    <string name="lockscreen_title">Закључани екран</string>
+    <string name="misc_title">Разно</string>
+    <string name="navbar_title">Трака за навигацију</string>
+    <string name="notifications_title">Обавештења</string>
+    <string name="powermenu_title">Мени дугмета за напајање</string>
+    <string name="quicksettings_title">Брза подешавања</string>
+    <string name="recents_title">Недавне апликације</string>
+    <string name="statusbar_title">Статусна трака</string>
+    <string name="volume_title">Подешавања јачине звука</string>
+    <string name="network_traffic_catagories">Мрежни саобраћај</string>
+    <string name="clock_date">Подешавања сата и датума</string>
+    <string name="status_bar_actions">Иконе на статусној траци</string>
+    <string name="lockscreen_settings">Подешавања закључаног екрана</string>
+    <string name="customisation_title">Теме</string>
+    <string name="buttons_category">Мени дугмета за напајање</string>
+    <string name="lockscreen_gestures_category">Покрети на закључаном екрану</string>
+    <string name="signal_category">Икона мреже</string>
+    <string name="misc_gnrl_category">Опште опције</string>
+    <string name="pwrbtn_category">Опције дугмета за напајање</string>
+    <string name="sbicon_category">Statusbar Icon Manager</string>
     <!-- General strings -->
-    <string name="ok">OK</string>
-    <string name="save">Save</string>
-    <string name="general_category">General Customisations</string>
+    <string name="ok">У реду</string>
+    <string name="save">Сачувај</string>
+    <string name="general_category">Општа подешавања</string>
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="dialog_color_picker">Бирач боја</string>
+    <string name="press_color_to_apply">Додирните боју да бисте је применили</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
-    <string name="hex_check_button_text">PREVIEW</string>
-    <string name="hex_reset_button_text">RESET</string>
+    <string name="hex_check_button_text">ПРЕГЛЕДАЈ</string>
+    <string name="hex_reset_button_text">РЕСЕТУЈ</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
     <string name="longpress_info">Longpress box to save color</string>
@@ -157,72 +160,72 @@
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
     <!-- Screen off animation -->
     <string name="default_string">Default</string>
-    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_title">Анимација искључивања екрана</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
-    <string name="lockscreen_effects_cat">Lockscreen Animations</string>
+    <string name="lockscreen_effects_cat">Анимација на закључаном екрану</string>
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_category">In-call vibration options</string>
-    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
-    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
-    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <string name="incall_vibration_category">Опције вибрације током позива</string>
+    <string name="incall_vibrate_connect_title">Вибрација након успостављања везе</string>
+    <string name="incall_vibrate_call_wait_title">Вибрација током позива на чекању</string>
+    <string name="incall_vibrate_disconnect_title">Вибрација након прекида везе</string>
     <!-- Torch Power button gestures -->
-    <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
-    <string name="torch_power_button_gesture_none">Disabled</string>
-    <string name="torch_power_button_gesture_dt">Double tap power button (slower single tap response), Disables double power tap for camera.</string>
-    <string name="torch_power_button_gesture_dt_toast">Jump to camera gesture is now disabled</string>
-    <string name="torch_power_button_gesture_lp">Long press power button</string>
+    <string name="torch_power_button_gesture_title">Укључи/искључи лампу када је екран искључен</string>
+    <string name="torch_power_button_gesture_none">Онемогућено</string>
+    <string name="torch_power_button_gesture_dt">Двоструки додир на дугме за напајање (одзив за један додир ће бити спорији) онемогућава покретање камере тим покретом.</string>
+    <string name="torch_power_button_gesture_dt_toast">Покрет за прелазак на камеру је сада онемогућен</string>
+    <string name="torch_power_button_gesture_lp">Дуги притисак на дугме за напајање</string>
     <!-- Quick QS pulldown -->
-    <string name="qs_quick_pulldown">Quick QS pulldown</string>
-    <string name="quick_pulldown_none">Disabled</string>
+    <string name="qs_quick_pulldown">Брзи приступ панелу са брзим подешавањима</string>
+    <string name="quick_pulldown_none">Онемогућено</string>
     <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
     <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
     <!-- Quick Settings brightness slider -->
-    <string name="qs_show_brightness_slider_title">Brightness slider</string>
-    <string name="qs_show_brightness_slider_never">Never show</string>
-    <string name="qs_show_brightness_slider_expanded">Show when expanded</string>
-    <string name="qs_show_brightness_slider_always">Show always</string>
-    <string name="qs_show_brightness_slider_not_expanded">Show when not expanded</string>
-    <string name="qs_brightness_slider_position_title">Position</string>
-    <string name="qs_brightness_slider_position_top">Top</string>
-    <string name="qs_brightness_slider_position_bottom">Bottom</string>
+    <string name="qs_show_brightness_slider_title">Клизач за осветљеност</string>
+    <string name="qs_show_brightness_slider_never">Никад не приказуј</string>
+    <string name="qs_show_brightness_slider_expanded">Прикажи када је проширено</string>
+    <string name="qs_show_brightness_slider_always">Увек приказуј</string>
+    <string name="qs_show_brightness_slider_not_expanded">Прикажи када је скупљено</string>
+    <string name="qs_brightness_slider_position_title">Положај</string>
+    <string name="qs_brightness_slider_position_top">На врху</string>
+    <string name="qs_brightness_slider_position_bottom">На дну</string>
     <!-- Quick Settings brightness icon -->
-    <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
-    <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
+    <string name="qs_show_auto_brightness_title">Икона прилагодљиве осветљености</string>
+    <string name="qs_show_auto_brightness_summary">Приказује икону прилагодљиве осветљености поред клизача</string>
     <!-- 4G icon -->
-    <string name="show_fourg_icon_title">4G icon</string>
-    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+    <string name="show_fourg_icon_title">Икона 4G</string>
+    <string name="show_fourg_icon_summary">Приказује икону 4G уместо LTE</string>
     <!-- Old mobile type icons -->
-    <string name="use_old_mobiletype_title">Small mobile type icon</string>
-    <string name="use_old_mobiletype_summary">Show mobile type icon on top of the signal indicator</string>
+    <string name="use_old_mobiletype_title">Мала икона типа мреже</string>
+    <string name="use_old_mobiletype_summary">Приказује икону типа мреже изнад индикатора нивоа сигнала</string>
     <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Roaming indicator</string>
+    <string name="roaming_indicator_icon_title">Индикатор роминга</string>
     <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Show data disabled icon</string>
     <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
     <!-- Double Tap to Sleep Lockscreen -->
-    <string name="double_tap_sleep_lockscreen_title">Double tap to sleep</string>
-    <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreeen to sleep</string>
+    <string name="double_tap_sleep_lockscreen_title">Двапут додирните за спавање</string>
+    <string name="double_tap_sleep_lockscreen_summary">Двапут додирните било који део закључаног екрана да бисте искључили екран</string>
     <!-- Double Tap to Sleep Statusbar -->
-    <string name="double_tap_sleep_gesture_title">Double tap statusbar to sleep</string>
-    <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
+    <string name="double_tap_sleep_gesture_title">Двапут додирните статусну траку за спавање</string>
+    <string name="double_tap_sleep_gesture_summary">Двапут додирните било који део статусне траке да бисте искључили екран</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">Fingerprint</string>
-    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
-    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
-    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
-    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+    <string name="fingerprint_category">Отисак прста</string>
+    <string name="fprint_error_vib_title">Вибрација при грешци у отиску прста</string>
+    <string name="fprint_error_vib_summary">Вибрира приликом грешке у потврди идентитета помоћу отиска прста</string>
+    <string name="fprint_success_vib_title">Вибрација при потврди идентитета отиском прста</string>
+    <string name="fprint_success_vib_summary">Вибрира приликом успешне потврде идентитета помоћу отиска прста</string>
     <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="quick_settings_vibrate_title">Вибрација при додиру</string>
+    <string name="quick_settings_vibrate_summary">Вибрира када додирнете брза подешавања</string>
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">Прикажи икону типа Wi-Fi-а</string>
+    <string name="show_wifi_standard_icon_summary">Приказује икону типа Wi-Fi-а у индикатору нивоа сигнала</string>
     <!-- Gaming mode -->
-    <string name="game_custs">Gaming Mode Options</string>
-    <string name="gaming_mode_title">Game space</string>
-    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+    <string name="game_custs">Опције режима за игре</string>
+    <string name="gaming_mode_title">Простор за игре</string>
+    <string name="gaming_mode_summary">Додатне функције за потпуни доживљај у игри</string>
     <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Less boring heads up</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
@@ -275,52 +278,52 @@
     <string name="theme_customization_font_title">Headline / Body font</string>
     <string name="theme_customization_font_summary">Set system font style</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="theme_customization_icon_shape_title">Облик икона</string>
     <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">Icon pack</string>
+    <string name="theme_customization_icon_pack_title">Пакет икона</string>
     <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
     <string name="theme_customization_signal_icon_title">Signal icon style</string>
     <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
-    <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
-    <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
+    <string name="theme_customization_wifi_icon_title">Стил иконе Wi-Fi-а</string>
+    <string name="theme_customization_wifi_icon_summary">Поставите стил иконе Wi-Fi-а</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
-    <string name="theme_customization_device_default">Device default</string>
+    <string name="theme_customization_device_default">Подразумевани</string>
     <!-- Unlock FPS for specific games -->
-    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_title">Откључај високи FPS у играма</string>
     <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
     <!-- Battery Styles -->
-    <string name="battery_settings_title">Battery Settings</string>
-    <string name="battery_style_category_title">Battery styles</string>
-    <string name="battery_percent_title">Battery percent</string>
+    <string name="battery_settings_title">Подешавања батерије</string>
+    <string name="battery_style_category_title">Стил иконе батерије</string>
+    <string name="battery_percent_title">Проценат напуњености батерије</string>
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_style_title">Battery style</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
-    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
-    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
-    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
-    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
-    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
-    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
-    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
-    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
-    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
-    <string name="status_bar_battery_style_text">Text</string>
-    <string name="status_bar_battery_style_hidden">Hidden</string>
-    <string name="status_bar_battery_style_icon_landscape_miui_pill">MIUI pill</string>
-    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
-    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
-    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
+    <string name="status_bar_battery_style_title">Стил иконе батерије</string>
+    <string name="status_bar_battery_style_icon_portrait">Вертикално (подразумевано)</string>
+    <string name="status_bar_battery_style_circle">Круг</string>
+    <string name="status_bar_battery_style_dotted_circle">Круг (тачкаст)</string>
+    <string name="status_bar_battery_style_filled_circle">Круг (попуњен)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Хоризонтално (десно)</string>
+    <string name="status_bar_battery_style_icon_landscape">Хоризонтално (лево)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Хоризонтално и десно, стил 1</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Хоризонтално и лево, стил 1</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Хоризонтално и десно, стил 2</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Хоризонтално и лево, стил 2</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">MX (вертикално)</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Lorn (хоризонтално)</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">iOS (вертикално)</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Airoo (хоризонтално)</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Капсула (хоризонтално)</string>
+    <string name="status_bar_battery_style_text">Текст</string>
+    <string name="status_bar_battery_style_hidden">Скривено</string>
+    <string name="status_bar_battery_style_icon_landscape_miui_pill">MIUI пилула</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Оригами (хоризонтално)</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">iOS 15 (хоризонтално)</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">iOS 16 (хоризонтално)</string>
     <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
-    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_percentage_title">Проценат напуњености батерије</string>
+    <string name="status_bar_battery_percentage_default">Скривено (подразумевано)</string>
+    <string name="status_bar_battery_percentage_text_inside">Унутар иконе</string>
+    <string name="status_bar_battery_percentage_text_next">Поред иконе</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Replace heads-up notification with slim and less invasive version of redesigned ticker</string>
@@ -362,4 +365,10 @@
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">Combined signal icon</string>
     <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
 </resources>

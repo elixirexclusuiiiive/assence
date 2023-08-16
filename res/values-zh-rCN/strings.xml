@@ -49,13 +49,13 @@
     <string name="aboutus_tab">更多的了解我们</string>
     <!-- Developers -->
     <string name="note">重要提示</string>
-    <string name="note_summary">不要私聊开发者！群组为何而存在？请好好想想。如果你还是私聊我们，你将会在本项目的任何官方群组内被列入黑名单。我们也很想给你提供7x24的服务，所以请保持着耐心，让我们和平共处。</string>
+    <string name="note_summary">不要私聊开发者！请好好想想群组为何而存在？如果还是一意孤行，您将会被我们被列入黑名单。我们也希望可以提供7x24的服务，所以耐心些，让我们和平共处。</string>
     <!-- Contact and Download -->
     <string name="download">下载你的构建</string>
     <string name="download_summary">点击此处下载你自己设备的构建</string>
     <string name="paypal">PayPal</string>
     <string name="donate_summary">捐赠支持我们的工作</string>
-    <string name="don_summ1">• 实际上，创建一个自定义ROM需要一些很有必要的先决条件，比如高性能的构建服务器(Jenkins) 或个人电脑以及高速的网络连接。</string>
+    <string name="don_summ1">• 实际上，创建一个自定义ROM需要一些很有必要的条件，比如高性能的服务器(Jenkins) ，或电脑以及高速的网络。</string>
     <string name="don_summ2">• 我们的开发者需要从学业中抽出大量时间，投入大量精力去维护这个项目，这样才能为用户提供及时和稳定的更新</string>
     <string name="don_summ3">如果您欣赏我们的工作，请考虑在 Paypal 上捐赠或给我买杯咖啡，或者加入我们的 Patreon 以获得持续的支持和特权</string>
     <string name="tele_group">Telegram 讨论群组</string>
@@ -72,7 +72,7 @@
     <string name="patreon_summary">Patreon是为那些想支持开发者的人准备的，他们可以获得早期构建的机会，以及一些独家功能和好处。</string>
     <!-- Summery -->
     <string name="summ_gesture">播放控制 • 系统导航</string>
-    <string name="summ_lock">双击锁屏 • 媒体艺术家 • Edge Lighting</string>
+    <string name="summ_lock">双击锁屏 • 媒体艺术 • 边缘光效</string>
     <string name="summ_misc">游戏空间 • 电源菜单 • 硬件相关 </string>
     <string name="summ_monet">Monet • 主题 • 锁屏时钟</string>
     <string name="summ_quick">快速设置风格 • 媒体作品 • 数据使用情况</string>
@@ -98,6 +98,9 @@
     <string name="buttons_category">电源菜单</string>
     <string name="lockscreen_gestures_category">锁屏手势</string>
     <string name="signal_category">网络图标</string>
+    <string name="misc_gnrl_category">常规选项</string>
+    <string name="pwrbtn_category">电源键选项</string>
+    <string name="sbicon_category">状态栏图标管理</string>
     <!-- General strings -->
     <string name="ok">确定</string>
     <string name="save">保存</string>
@@ -222,9 +225,9 @@
     <!-- Gaming mode -->
     <string name="game_custs">游戏模式选项</string>
     <string name="gaming_mode_title">游戏空间</string>
-    <string name="gaming_mode_summary">额外的功能，让人有身临其境的游戏体验</string>
+    <string name="gaming_mode_summary">更多的功能，带来更好的游戏体验</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">少一点无聊的抬头</string>
+    <string name="less_boring_heads_up_title">减少浮动通知</string>
     <string name="less_boring_heads_up_summary">仅为电话、短信、闹钟显示浮动通知</string>
     <!-- Edge light -->
     <string name="edge_light_title">边缘光效</string>
@@ -362,4 +365,10 @@
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">合并信号图标</string>
     <string name="combined_signal_icon_summary">切换合并信号图标</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">连接耳机时启动音乐软件</string>
+    <string name="headset_connect_player_summary">在连接耳机时启动默认音乐软件</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">图标管理</string>
+    <string name="icon_manager_summary">控制状态栏图标的可见性</string>
 </resources>

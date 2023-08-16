@@ -98,6 +98,9 @@
     <string name="buttons_category">Menú de energía</string>
     <string name="lockscreen_gestures_category">Gestos en Pantalla de Bloqueo</string>
     <string name="signal_category">Ícono de Red</string>
+    <string name="misc_gnrl_category">Opciones Generales</string>
+    <string name="pwrbtn_category">Opciones del Botón de Encendido</string>
+    <string name="sbicon_category">Gestor de Iconos de la Barra de Estado</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Guardar</string>
@@ -362,4 +365,10 @@
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">Icono de señal combinada</string>
     <string name="combined_signal_icon_summary">Alternar icono de señal combinada</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Inicie la aplicación de música en la conexión de auriculares</string>
+    <string name="headset_connect_player_summary">Inicie la aplicación de música predeterminada cuando los auriculares estén conectados</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Gestor de iconos</string>
+    <string name="icon_manager_summary">Controlar la visibilidad de los iconos de la barra de estado</string>
 </resources>

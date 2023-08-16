@@ -98,6 +98,9 @@
     <string name="buttons_category">Menu de Energia</string>
     <string name="lockscreen_gestures_category">Gesto da tela de bloqueio</string>
     <string name="signal_category">Ícone de rede</string>
+    <string name="misc_gnrl_category">Opções gerais</string>
+    <string name="pwrbtn_category">Opções do botão liga/desliga</string>
+    <string name="sbicon_category">Gerenciador de Ícones da Barra de Status</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Salvar</string>
@@ -362,4 +365,10 @@
     <!-- Combined signal icons -->
     <string name="combined_signal_icon_title">Ícone de sinal combinado</string>
     <string name="combined_signal_icon_summary">Alternar ícone de sinal combinado</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Inicie o aplicativo de música quando conectar fone de ouvido</string>
+    <string name="headset_connect_player_summary">Inicie o aplicativo de música padrão quando o fone de ouvido estiver conectado</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Gerenciador de ícones</string>
+    <string name="icon_manager_summary">Controlar a visibilidade dos ícones da barra de status</string>
 </resources>

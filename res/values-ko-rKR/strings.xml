@@ -98,6 +98,9 @@
     <string name="buttons_category">Power Menu</string>
     <string name="lockscreen_gestures_category">LockScreen Gesture</string>
     <string name="signal_category">Network Icon</string>
+    <string name="misc_gnrl_category">일반 옵션</string>
+    <string name="pwrbtn_category">전원 버튼 옵션</string>
+    <string name="sbicon_category">상태표시줄 아이콘 설정</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Save</string>
@@ -224,8 +227,8 @@
     <string name="gaming_mode_title">Game space</string>
     <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Less boring heads up</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer, messaging and alarm app</string>
+    <string name="less_boring_heads_up_title">덜 지루한 heads up 알림</string>
+    <string name="less_boring_heads_up_summary">통화, 메시지 및 알람 앱에 대한 알림만 표시</string>
     <!-- Edge light -->
     <string name="edge_light_title">Edge light</string>
     <string name="edge_light_summary">Light up the side edges of the screen on notification pulse</string>
@@ -260,11 +263,11 @@
     <string name="qs_shaded">Shaded</string>
     <string name="qs_cyberpunk">Cyberpunk</string>
     <!-- Udfps -->
-    <string name="udfps_category">Under-display fingerprint</string>
+    <string name="udfps_category">내장 지문인식</string>
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Use UDFPS animation</string>
-    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
-    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
+    <string name="udfps_recog_animation">UDFPS 애니메이션 사용</string>
+    <string name="udfps_recog_animation_summary">지문 인식 중 애니메이션 사용</string>
+    <string name="udfps_recog_animation_effect_title">UDFPS 커스텀 애니메이션</string>
     <string name="udfps_recog_animation_effect_summary">에니메이션 효과 선택</string>
     <!-- Udfps icon picker -->
     <string name="udfps_icon_picker_title">UDFPS 아이콘 선택기</string>
@@ -348,18 +351,24 @@
     <string name="lockscreen_shortcut_start_title">왼쪽 바로가기</string>
     <string name="lockscreen_shortcut_end_title">오른쪽 바로가기</string>
     <string name="lockscreen_shortcut_wallet">Wallet</string>
-    <string name="lockscreen_shortcut_home">Home controls</string>
-    <string name="lockscreen_shortcut_flashlight">Flashlight</string>
-    <string name="lockscreen_shortcut_qr">QR code scanner</string>
-    <string name="lockscreen_shortcut_camera">Camera</string>
-    <string name="lockscreen_shortcut_dnd">DND</string>
-    <string name="lockscreen_shortcut_none">None</string>
-    <string name="lockscreen_shortcut_enforce_title">Single shortcut</string>
-    <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
+    <string name="lockscreen_shortcut_home">홈 설정</string>
+    <string name="lockscreen_shortcut_flashlight">손전등</string>
+    <string name="lockscreen_shortcut_qr">QR코드 스캐너</string>
+    <string name="lockscreen_shortcut_camera">카메라</string>
+    <string name="lockscreen_shortcut_dnd">방해 금지 모드</string>
+    <string name="lockscreen_shortcut_none">없음</string>
+    <string name="lockscreen_shortcut_enforce_title">단일 단축키</string>
+    <string name="lockscreen_shortcut_enforce_summary">선택한 바로 가기를 유일한 기존 우선 순위로 강제 적용\n선택한 바로 가기를 사용할 수 있을 때까지 아무것도 표시하지 않습니다.</string>
     <!-- Lockscreen icons -->
-    <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
-    <string name="lockscreen_targets_summary">Customize the bottom shortcuts on lockscreen</string>
+    <string name="lockscreen_shortcuts">잠금화면 단축키</string>
+    <string name="lockscreen_targets_summary">잠금화면에서 하단 단축키 사용자 지정</string>
     <!-- Combined signal icons -->
-    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_title">신호 아이콘 변경</string>
     <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">헤드셋 연결 시 음악 앱 실행</string>
+    <string name="headset_connect_player_summary">헤드셋이 연결되어 있을 때 기본 음악 앱 실행</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">아이콘 설정</string>
+    <string name="icon_manager_summary">상태표시줄 가시성 설정</string>
 </resources>
