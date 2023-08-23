@@ -67,13 +67,28 @@
 
 	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_opacity_level"
-            app:layout_pos="3"
+            app:layout_pos="2"
             android:title="@string/qs_header_image_opacity_level_title"
             android:summary="@string/qs_header_image_opacity_level_summary"
             android:defaultValue="30"
             settings:interval="1"
             android:max="100"
 	        android:min="1"/>
+
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="qs_header_custom_image_uri_enabled"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:title="@string/qs_header_custom_image_uri_enabled_title"
+            android:defaultValue="false"
+            android:summary="@string/qs_header_custom_image_uri_enabled_summary" />
+
+        <Preference
+            android:key="qs_header_custom_image_uri"
+            settings:layout="@layout/essence_pref_card_bot"
+            android:title="@string/file_header_select_title"
+            android:summary="@string/file_header_select_summary"
+            android:persistent="false"
+            android:dependency="qs_header_custom_image_uri_enabled" />
 
         <org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
             android:key="qs_header_image_filter_color"

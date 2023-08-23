@@ -410,6 +410,10 @@
     <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
     <string name="qs_header_image_filter_color_title">QS header image filter color</string>
     <string name="qs_header_image_height_title">QS header image height</string>
+    <string name="qs_header_custom_image_uri_enabled_title">Custom QS header image</string>
+    <string name="qs_header_custom_image_uri_enabled_summary">Apply custom QS image header</string>
+    <string name="file_header_select_title">Select local image</string>
+    <string name="file_header_select_summary">Select image from storage</string>
 
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Background transparency</string>
