@@ -227,17 +227,17 @@ public class WifiIcons extends SettingsPreferenceFragment {
     }
 
     public void enableOverlays(int position) {
-        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position), "android");
     }
 
     public void enableOverlay(String category, String target, String pattern) {
         if (pattern.isEmpty()) {
-            mThemeUtils.setOverlayEnabled(category, "android");
+            mThemeUtils.setOverlayEnabled(category, "android", "android");
             return;
         }
         for (String pkg: mThemeUtils.getOverlayPackagesForCategory(category, target)) {
             if (pkg.contains(pattern)) {
-                mThemeUtils.setOverlayEnabled(category, pkg);
+                mThemeUtils.setOverlayEnabled(category, pkg, "android");
             }
         }
     }

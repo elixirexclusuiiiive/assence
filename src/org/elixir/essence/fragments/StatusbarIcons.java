@@ -235,7 +235,7 @@ public class StatusbarIcons extends SettingsPreferenceFragment {
     }
 
     public void enableOverlays(int position) {
-        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position), "android");
         String pattern = "android".equals(mPkgs.get(position)) ? ""
                 : mPkgs.get(position).split("\\.")[4];
         for (Map.Entry<String, String> entry : overlayMap.entrySet()) {
@@ -245,12 +245,12 @@ public class StatusbarIcons extends SettingsPreferenceFragment {
 
     public void enableOverlay(String category, String target, String pattern) {
         if (pattern.isEmpty()) {
-            mThemeUtils.setOverlayEnabled(category, "android");
+            mThemeUtils.setOverlayEnabled(category, "android", "android");
             return;
         }
         for (String pkg: mThemeUtils.getOverlayPackagesForCategory(category, target)) {
             if (pkg.contains(pattern)) {
-                mThemeUtils.setOverlayEnabled(category, pkg);
+                mThemeUtils.setOverlayEnabled(category, pkg, "android");
             }
         }
     }
