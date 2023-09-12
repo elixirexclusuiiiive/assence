@@ -371,4 +371,14 @@
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">Gerenciador de ícones</string>
     <string name="icon_manager_summary">Controlar a visibilidade dos ícones da barra de status</string>
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Estilo de ícone de dados móveis</string>
+    <string name="theme_customization_data_summary">Definir estilo de ícone de dados móveis personalizado</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Serviços do Google</string>
+    <string name="gms_enabled_summary">Controle os serviços e aplicativos principais do Google</string>
+    <string name="gms_enabled_text">Antes de desativar os serviços e aplicativos principais do Google, você deve desativar \"Encontre Meu Dispositivo\" e a verificação em duas etapas em sua conta do Google. É altamente recomendável manter esta configuração ativada, caso contrário os aplicativos dependentes dos componentes do Google serão afetados. Se você tiver algum problema após alterar essa configuração, execute uma redefinição de fábrica.</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Espaço paralelo</string>
+    <string name="laboratory_parallel_space_summary">Permitir a execução de várias instâncias do mesmo aplicativo em paralelo</string>
 </resources>

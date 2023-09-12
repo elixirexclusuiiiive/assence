@@ -100,7 +100,7 @@
     <string name="signal_category">Netzwerksymbol</string>
     <string name="misc_gnrl_category">Allgemeine Optionen</string>
     <string name="pwrbtn_category">Optionen die Power-Taste</string>
-    <string name="sbicon_category">Statusbar Icon Manager</string>
+    <string name="sbicon_category">Statusleistensymbol-Manager</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Speichern</string>
@@ -369,6 +369,16 @@
     <string name="headset_connect_player_title">Musik-App bei Kopfhörerverbindung starten</string>
     <string name="headset_connect_player_summary">Standard-Musik-App starten, wenn der Kophörer angeschlossen ist</string>
     <!-- Status bar Icon Manager -->
-    <string name="icon_manager_title">Icon manager</string>
-    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+    <string name="icon_manager_title">Symbolmanager</string>
+    <string name="icon_manager_summary">Sichtbarkeit der Statusleistensymbole steuern</string>
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Datensymbolstil</string>
+    <string name="theme_customization_data_summary">Stil des benutzerdefinierten Datensymbols festlegen</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google-Dienste</string>
+    <string name="gms_enabled_summary">Google-Dienste und Kern-Apps steuern</string>
+    <string name="gms_enabled_text">Bevor du die Google-Dienste und Kern-Apps deaktivierst, solltest du \"Mein Gerät suchen\" und die 2-Schritt-Verifizierung in deinem Google-Konto deaktivieren. Es wird dringend empfohlen, diese Einstellung aktiviert zu lassen, da sonst Apps, die von Google-Komponenten abhängig sind, betroffen sind. Wenn du nach dem Ändern dieser Einstellung Probleme hast, führe ein Werksreset durch.</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">App klonen</string>
+    <string name="laboratory_parallel_space_summary">Ermöglicht die parallele Ausführung mehrerer Instanzen der gleichen App</string>
 </resources>

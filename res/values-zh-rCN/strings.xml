@@ -371,4 +371,14 @@
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">图标管理</string>
     <string name="icon_manager_summary">控制状态栏图标的可见性</string>
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">移动数据图标样式</string>
+    <string name="theme_customization_data_summary">设置自定义移动数据图标样式</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google 服务</string>
+    <string name="gms_enabled_summary">控制 Google 服务及核心应用程序</string>
+    <string name="gms_enabled_text">在禁用 Google 服务及核心应用前，您应当禁用“查找我的设备”及您 Google 账户的两步验证。强烈建议保持此设置启用，否则所有依赖 Google 组件的应用都将受到影响。若在更改此设置后产生了任何问题，请恢复出厂设置。</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">应用多开</string>
+    <string name="laboratory_parallel_space_summary">允许同时分别运行同一应用的不同实例</string>
 </resources>

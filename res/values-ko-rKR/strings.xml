@@ -371,4 +371,14 @@
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">아이콘 설정</string>
     <string name="icon_manager_summary">상태표시줄 가시성 설정</string>
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Data icon style</string>
+    <string name="theme_customization_data_summary">Set custom data icon style</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google 서비스</string>
+    <string name="gms_enabled_summary">Control Google services and core apps</string>
+    <string name="gms_enabled_text">Google 서비스 및 핵심 앱을 비활성화하기 전에 Google 계정에서 \'내 기기 찾기\' 및 2단계 인증을 비활성화해야 합니다. 이 설정을 활성화해 두는 것이 좋습니다. 그렇지 않으면 Google 구성 요소에 포함된 앱이 영향을 받게 됩니다. 이 설정을 변경한 후 문제가 발생하면 공장 초기화를 수행하세요.</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Parallel space</string>
+    <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel</string>
 </resources>

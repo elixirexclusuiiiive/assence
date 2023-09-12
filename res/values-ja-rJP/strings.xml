@@ -49,7 +49,7 @@
     <string name="aboutus_tab">私達について更に知る</string>
     <!-- Developers -->
     <string name="note">重要なお知らせ</string>
-    <string name="note_summary">開発者達にダイレクトメッセージを送らないでください。もしも、ダイレクトメッセージを見かけた場合は私達は彼または彼女とのコンタクトを禁じます。私達は24 時間365 日、サービスを提供している訳ではありません。気長にお待ち下さい。そうしてくれる事で私達は平和に生活を送る事ができます。</string>
+    <string name="note_summary">開発者達にダイレクトメッセージを送らないでください。もしも、ダイレクトメッセージを見かけた場合は私達は彼または彼女とのコンタクトを禁じます。私達は 24 時間 365 日、サービスを提供している訳ではありません。気長にお待ち下さい。そうしてくれる事で私達は平和に生活を送る事ができます。</string>
     <!-- Contact and Download -->
     <string name="download">ビルドをダウンロード</string>
     <string name="download_summary">各デバイスのビルドをダウンロードするにはこちらをタップしてください</string>
@@ -76,7 +76,7 @@
     <string name="summ_misc">ゲームスペース、電源メニュー、ハードウェアキー </string>
     <string name="summ_monet">Monet、テーマ、ロック画面の時計</string>
     <string name="summ_quick">クイック設定のスタイル、メディアカバー画像、データ使用量</string>
-    <string name="summ_sbar">ネットワークトラフィック、VoLTE/Wi-Fi 通話 </string>
+    <string name="summ_sbar">ネットワークトラフィック、VoLTE / Wi-Fi 通話 </string>
     <string name="summ_about">Project Elixir ROM と開発者について</string>
     <string name="donate">寄付はこちらから</string>
     <!-- Categories -->
@@ -145,7 +145,7 @@
     <string name="lockscreen_battery_info_summary">ロック画面に充電中の詳細情報 (充電電流、電圧、ワット数、バッテリーの温度) を表示します</string>
     <!-- Network Traffic -->
     <string name="traffic_title">トラフィックインジケーター</string>
-    <string name="traffic_summary">トラフィックインジケーターのカスタマイズ</string>
+    <string name="traffic_summary">トラフィックインジケーターのカスタマイズをします</string>
     <string name="network_traffic_state_title">ネットワークトラフィックを表示</string>
     <string name="network_traffic_autohide_threshold_title">自動非表示のしきい値</string>
     <!-- Ignore window secure -->
@@ -191,7 +191,7 @@
     <string name="qs_brightness_slider_position_bottom">下</string>
     <!-- Quick Settings brightness icon -->
     <string name="qs_show_auto_brightness_title">自動輝度調整のアイコン</string>
-    <string name="qs_show_auto_brightness_summary">明るさスライダーに自動明るさ調整のボタンを表示します</string>
+    <string name="qs_show_auto_brightness_summary">明るさスライダーに自動輝度調整のボタンを表示します</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G アイコン</string>
     <string name="show_fourg_icon_summary">LTE アイコンではなく4G アイコンを表示します</string>
@@ -203,7 +203,7 @@
     <string name="roaming_indicator_icon_summary">ローミング時に電波アイコンにローミングのインジケーターを表示します</string>
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">データ通信無効のアイコンを表示</string>
-    <string name="data_disabled_icon_summary">データ通信が無効の場合「×」のアイコンを表示する</string>
+    <string name="data_disabled_icon_summary">データ通信が無効の場合「×」のアイコンを表示します</string>
     <!-- Double Tap to Sleep Lockscreen -->
     <string name="double_tap_sleep_lockscreen_title">ダブルタップでスリープ</string>
     <string name="double_tap_sleep_lockscreen_summary">ロック画面の任意の場所をダブルタップで画面を消灯します</string>
@@ -282,11 +282,11 @@
     <string name="theme_customization_icon_shape_summary">システムアイコンの形状のスタイルを設定します</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">アイコンパック</string>
-    <string name="theme_customization_icon_pack_summary">カスタムアイコンパックのスタイルを設定</string>
+    <string name="theme_customization_icon_pack_summary">カスタムアイコンパックのスタイルを設定します</string>
     <string name="theme_customization_signal_icon_title">電波アイコンのスタイル</string>
-    <string name="theme_customization_signal_icon_summary">カスタム電波アイコンを設定</string>
+    <string name="theme_customization_signal_icon_summary">カスタム電波アイコンを設定します</string>
     <string name="theme_customization_wifi_icon_title">Wi-Fi アイコンのスタイル</string>
-    <string name="theme_customization_wifi_icon_summary">カスタム Wi-Fi アイコンを設定</string>
+    <string name="theme_customization_wifi_icon_summary">カスタム Wi-Fi アイコンを設定します</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">デバイスのデフォルト</string>
     <!-- Unlock FPS for specific games -->
@@ -371,4 +371,14 @@
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">アイコンの管理</string>
     <string name="icon_manager_summary">ステータスバーアイコンの表示を制御します</string>
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">データアイコンのスタイル</string>
+    <string name="theme_customization_data_summary">データアイコンのスタイルを設定します</string>
+    <!-- Google services -->
+    <string name="gms_enabled_title">Google サービス</string>
+    <string name="gms_enabled_summary">Google サービスとコアアプリのコントロールをします</string>
+    <string name="gms_enabled_text">Google サービスとコアアプリの無効化をする前に、Google アカウントの「端末を探す」と 2 段階認証を無効にしてください。この設定を有効化しておくことを強く推奨します。設定をしなかった場合、Google コンポーネントに依存しているアプリに影響を受けます。この設定を変更した後に何らかの問題が発生した場合は、ファクトリーリセットを実行してください。</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">パラレルスペース</string>
+    <string name="laboratory_parallel_space_summary">同じアプリを複数のインスタンス上で実行をできるようにします</string>
 </resources>
