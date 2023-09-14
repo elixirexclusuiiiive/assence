@@ -71,10 +71,20 @@
 
     	 <org.elixir.essence.preferences.SystemSettingSwitchPreference   
             android:key="less_boring_heads_up"
-	        settings:layout="@layout/xd_pref_card_bot"
+	        settings:layout="@layout/xd_pref_card_mid"
 	        android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
+
+	<org.elixir.essence.preferences.SystemSettingListPreference	 
+        	android:key="toast_animation"
+        	android:title="@string/toast_animation_title"
+		android:dialogTitle="@string/toast_animation_title"
+		settings:layout="@layout/xd_pref_card_bot"
+        	android:entries="@array/toast_animation_entries"
+        	android:entryValues="@array/toast_animation_values"
+        	android:summary="%s"
+        	android:defaultValue="1" />
 
     </PreferenceCategory>
 
