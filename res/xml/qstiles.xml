@@ -26,20 +26,11 @@
     <org.elixir.essence.preferences.SystemSettingListPreference
         android:key="qs_panel_style"
         android:title="@string/qstiles_title"
-        settings:layout="@layout/essence_pref_card_top"
+        settings:layout="@layout/essence_pref_card_mid2"
         android:entries="@array/qstiles_styles_entries"
         android:entryValues="@array/qstiles_styles_values"
         android:defaultValue="0"
         android:summary="%s" />
-	
-    <ListPreference
-        android:key="brightness_styles"
-	    android:title="@string/brightness_title"
-	    settings:layout="@layout/essence_pref_card_bot"
-        android:entries="@array/brightness_styles_entries"
-        android:entryValues="@array/brightness_styles_values"
-        android:defaultValue="Default"
-        android:persistent="false" />
 
     <PreferenceCategory
             android:key="qsheader_category"

@@ -53,7 +53,6 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import org.elixir.essence.preferences.SystemSettingListPreference;
 
-import static android.provider.Settings.Secure.BRIGHTNESS_SLIDER_STYLE;
 import static android.os.UserHandle.USER_SYSTEM;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
@@ -61,7 +60,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
 
     private static final String TAG = "QSTiles";
     private static final String KEY_QSTILES_STYLES = "qs_panel_style";
-    private static final String KEY_BRIGHTNESS_STYLE = "brightness_styles";
 
     public static final String[] QS_STYLES = {
         "com.android.system.qs.outline",
@@ -75,8 +73,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
     private Handler mHandler;
     private SystemSettingListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
-    private ListPreference mBrightnessStyles;
-    private String OLD_SLIDER = "DEFAULT";
     private ContentResolver resolver;
 
     @Override
@@ -97,13 +93,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             mQSTilesStyles.setOnPreferenceChangeListener(this);
         }
 
-        mBrightnessStyles = (ListPreference) findPreference(KEY_BRIGHTNESS_STYLE);
-        if (mBrightnessStyles != null) {
-            mBrightnessStyles.setValue(Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE));
-            OLD_SLIDER = Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE);
-            mBrightnessStyles.setSummary(mBrightnessStyles.getEntry());
-            mBrightnessStyles.setOnPreferenceChangeListener(this);
-        }
     }
 
     private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
@@ -144,32 +133,8 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         if (preference == mQSTilesStyles) {
             mCustomSettingsObserver.observe();
             return true;
-        } else if (preference == mBrightnessStyles) {
-            mBrightnessStyles.setValue((String) newValue);
-            mBrightnessStyles.setSummary(mBrightnessStyles.getEntry());
-            Settings.Secure.putString(resolver, BRIGHTNESS_SLIDER_STYLE, (String) newValue);
-            String current = Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE);
-            if (isOverlayEnabled(OLD_SLIDER)) {
-                RROManager(OLD_SLIDER, false);
-            }
-            OLD_SLIDER = Settings.Secure.getString(resolver, BRIGHTNESS_SLIDER_STYLE);
-            RROManager(current, true);
-            return true;
         }
         return true;
-    }
-
-    private boolean isOverlayEnabled(String name) {
-        OverlayInfo info = null;
-        Log.i(TAG, "Getting information of overlay :- " + name);
-        try {
-            info = mOverlayService.getOverlayInfo(name, UserHandle.USER_CURRENT);
-        } catch (IllegalArgumentException e) {
-            Log.e(TAG, "Overlay " + name + " doesn't exists");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return info != null && info.isEnabled();
     }
 
     private void updateQsStyle() {
@@ -218,22 +183,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             overlayManager.setEnabled(overlayName, true, USER_SYSTEM);
         } catch (RemoteException e) {
             e.printStackTrace();
-        }
-    }
-
-    private void RROManager(String name, boolean status) {
-        if (status) {
-            Log.d(TAG, "Enabling Overlay Package :- " + name);
-        }
-        else {
-            Log.d(TAG, "Disabling Overlay Package :- " + name);
-        }
-        try {
-            mOverlayService.setEnabled(name, status, UserHandle.USER_CURRENT);
-        } catch (IllegalArgumentException e) {
-            Log.e(TAG, "Overlay " + name + " doesn't exists");
-        } catch (Exception re) {
-            Log.e(TAG, String.valueOf(re));
         }
     }
 
