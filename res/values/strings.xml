@@ -482,4 +482,24 @@
     <string name="toast_SlideRightLeft_animation">Slide right to left</string>
     <string name="toast_animation_test">This is test for selected toast animation</string>
 
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">Brightness slider style</string>
+    <string name="brightness_slider_style_default">Default</string>
+    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_thin">Thin</string>
+    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
+    <string name="brightness_slider_style_gradiant">Double Layer</string>
+    <string name="brightness_slider_style_neumorph">Neumorph</string>
+    <string name="brightness_slider_style_outline">Outline</string>
+    <string name="brightness_slider_style_shaded">Shaded</string>
+    <string name="brightness_slider_style_thinoutline">Inline</string>
+    <string name="brightness_slider_style_translucent">Transparent</string>
+    <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
+    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
+    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
+    <string name="brightness_slider_style_roundedclip">Rounded clip</string>
+    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
+    <string name="brightness_slider_style_line">Thin Outline</string>
+    <string name="brightness_slider_style_lighty">Lighty</string>
+
 </resources>
