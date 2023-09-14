@@ -132,11 +132,20 @@
 
 	<org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:dependency="reticker_status"
-            settings:layout="@layout/xd_pref_card_bot"
+            settings:layout="@layout/xd_pref_card_mid"
             android:key="reticker_landscape_only"
             android:title="@string/reticker_landscape_only_title"
             android:summary="@string/reticker_landscape_only_summary"
             android:defaultValue="false" />
+
+	<org.elixir.essence.preferences.SystemSettingListPreference
+            android:key="statusbar_clock_chip"
+            android:title="@string/statusbar_clock_chip_title"
+            android:entries="@array/statusbar_clock_chip_entries"
+            android:entryValues="@array/statusbar_clock_chip_values"
+	    android:summary="%s"
+	    settings:layout="@layout/xd_pref_card_bot"
+            android:defaultValue="0" />
 
     </PreferenceCategory>
 
