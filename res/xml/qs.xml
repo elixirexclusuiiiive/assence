@@ -34,11 +34,11 @@
 	    android:fragment="org.elixir.essence.fragments.QSTiles"
             android:title="@string/qstiles_cust" />
 
-        <org.elixir.essence.preferences.SystemSettingSwitchPreference
-            android:key="use_tiles_on_secure_keyguard"
-                    settings:layout="@layout/xd_pref_card_mid"
-                    android:title="@string/use_tiles_on_secure_keyguard_title"
-            android:summary="@string/use_tiles_on_secure_keyguard_summary"
+        <org.elixir.essence.preferences.SecureSettingSwitchPreference
+            settings:layout="@layout/xd_pref_card_mid"
+            android:key="qstile_requires_unlocking"
+            android:title="@string/qstile_requires_unlocking_title"
+            android:summary="@string/qstile_requires_unlocking_summary"
             android:defaultValue="true" />
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
