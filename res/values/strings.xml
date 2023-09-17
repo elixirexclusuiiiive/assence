@@ -532,7 +532,7 @@
     <string name="unit_x1000ms" translatable="false">x1000 ms</string>
 
     <!-- Status bar - Clock -->
-    <string name="status_bar_clock_title">Clock &amp; date</string>
+    <string name="status_bar_clock_title">Clocks</string>
     <string name="status_bar_clock_summary">Customize clock &amp; date</string>
     <string name="status_bar_clock_seconds_title">Clock seconds</string>
     <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>

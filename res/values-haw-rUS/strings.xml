@@ -231,7 +231,6 @@
     <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
     <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
     <!-- Status bar clock and date options -->
-    <string name="status_bar_clock_title">Clock &amp; date Customisations</string>
     <string name="status_bar_clock_subtitle">Set Clock &amp; date Position</string>
     <string name="status_bar_clock_summary">Customize clock &amp; date</string>
     <string name="status_bar_clock_seconds_title">Clock seconds</string>

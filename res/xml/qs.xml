@@ -30,8 +30,8 @@
         <Preference
             android:key="qstiles"
             settings:layout="@layout/essence_pref_card_top"
-	    android:summary="Change qs layout"
-	    android:fragment="org.elixir.essence.fragments.QSTiles"
+	        android:summary="Change qs layout"
+	        android:fragment="org.elixir.essence.fragments.QSTiles"
             android:title="@string/qstiles_cust" />
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
@@ -44,6 +44,7 @@
         <org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_clock_size"
             settings:layout="@layout/xd_pref_card_mid"
+            app:layout_pos="2"
             android:title="@string/clock_font_size_title"
             android:max="27"
             settings:min="10"
