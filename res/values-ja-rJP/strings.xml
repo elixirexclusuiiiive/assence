@@ -134,9 +134,6 @@
     <string name="lockscreen_albumart_filter_blur">ぼかし</string>
     <string name="lockscreen_albumart_filter_grayblur">グレースケールとぼかし</string>
     <string name="lockscreen_albumart_filter_blur_radius_title">ロック画面のメディアカバー画像のぼかし具合</string>
-    <!-- Tiles on secure keyguard -->
-    <string name="use_tiles_on_secure_keyguard_title">センシティブなタイルを使用するにはロックの解除を必要とする</string>
-    <string name="use_tiles_on_secure_keyguard_summary">センシティブタイルの使用時にロックの解除を要求します</string>
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">高度な再起動メニューを有効化</string>
     <string name="global_actions_advanced_reboot_summary">電源メニューにリカバリーとブートローダーのオプションを表示します</string>
@@ -343,6 +340,10 @@
     <string name="qs_header_image_opacity_level_summary">クイック設定のヘッダー画像の不透過レベルを設定します</string>
     <string name="qs_header_image_filter_color_title">クイック設定のヘッダー画像のフィルター色</string>
     <string name="qs_header_image_height_title">クイック設定のヘッダー画像の高さ</string>
+    <string name="qs_header_custom_image_uri_enabled_title">クイック設定のカスタムヘッダー画像</string>
+    <string name="qs_header_custom_image_uri_enabled_summary">クイック設定のカスタムヘッダー画像を適用します</string>
+    <string name="file_header_select_title">ローカルの画像を選択</string>
+    <string name="file_header_select_summary">ストレージから画像を選択します</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">クイック設定の背景の透過</string>
     <string name="qs_transparency_summary">クイック設定の背景の透明度を設定します</string>
@@ -381,4 +382,135 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">パラレルスペース</string>
     <string name="laboratory_parallel_space_summary">同じアプリを複数のインスタンス上で実行をできるようにします</string>
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">トースト通知のアニメーション</string>
+    <string name="toast_none_animation">なし</string>
+    <string name="toast_default_animation">デフォルト</string>
+    <string name="toast_fade_animation">フェード</string>
+    <string name="toast_SlideRight_animation">右からスライド</string>
+    <string name="toast_SlideLeft_animation">左からスライド</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">高速フェード</string>
+    <string name="toast_GrowFade_animation">グローフェード</string>
+    <string name="toast_GrowFadeCenter_animation">グローフェード (中央)</string>
+    <string name="toast_GrowFadeBottom_animation">グローフェード (下部)</string>
+    <string name="toast_Translucent_animation">透過</string>
+    <string name="toast_SlideLeftRight_animation">左から右にスライド</string>
+    <string name="toast_SlideRightLeft_animation">右から左にスライド</string>
+    <string name="toast_animation_test">これはトースト通知のアニメーションのテストです</string>
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">明るさスライダーのスタイル</string>
+    <string name="brightness_slider_style_default">デフォルト</string>
+    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_thin">Thin</string>
+    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
+    <string name="brightness_slider_style_gradiant">Double Layer</string>
+    <string name="brightness_slider_style_neumorph">Neumorph</string>
+    <string name="brightness_slider_style_outline">アウトライン</string>
+    <string name="brightness_slider_style_shaded">Shaded</string>
+    <string name="brightness_slider_style_thinoutline">インライン</string>
+    <string name="brightness_slider_style_translucent">透過</string>
+    <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
+    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
+    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
+    <string name="brightness_slider_style_roundedclip">Rounded clip</string>
+    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
+    <string name="brightness_slider_style_line">Thin Outline</string>
+    <string name="brightness_slider_style_lighty">Lighty</string>
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Background chip</string>
+    <string name="statusbar_clock_chip_summary">時計の裏側にアクセントとなるチップを表示します</string>
+    <string name="status_bar_clock_font_style_title">時計のフォントのスタイル</string>
+    <string name="status_bar_clock_color_title">時計のフォントの色</string>
+    <string name="solid_accent">アクセント</string>
+    <string name="outline">アウトライン</string>
+    <string name="solid_accent_gradient">勾配</string>
+    <string name="accent1">Accent Leafy</string>
+    <string name="outline1">Outline Leafy</string>
+    <string name="gradiant1">Gradient Leafy</string>
+    <string name="solid_gradient_neumorph">Neumorph gradient</string>
+    <string name="solid_gradient_stroke">Sharp gradient stroke</string>
+    <string name="solid_accent_transperent">アクセントの透過</string>
+    <string name="solid_gradient_light">Gradient light</string>
+    <string name="solid_gradient_shape">Sharp gradient corner</string>
+    <string name="solid_gradient_void_light">Gradient Void light</string>
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">セキュアなクイック設定タイルでロックの解除を要求する</string>
+    <string name="qstile_requires_unlocking_summary">以下のクイック設定タイルをロック画面上で使用をする場合には、ロックの解除を要求します:\n機内モード、データ通信、NFC、Wi-Fi テザリング、USB テザリング、位置情報</string>
+    <!-- Units -->
+    <string name="unit_milliseconds">ミリ秒</string>
+    <string name="unit_seconds">秒</string>
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">時計</string>
+    <string name="status_bar_clock_summary">時計と日付をカスタマイズします</string>
+    <string name="status_bar_clock_seconds_title">時計の秒数</string>
+    <string name="status_bar_clock_seconds_summary">ステータスバーの時計に秒を表示します</string>
+    <string name="status_bar_clock_position_title">時計のスタイル</string>
+    <string name="status_bar_clock_position_right">右</string>
+    <string name="status_bar_clock_position_left">左</string>
+    <string name="status_bar_clock_position_center">中央</string>
+    <string name="status_bar_clock_position_hidden">非表示</string>
+    <string name="status_bar_clock_auto_hide_title">自動で非表示</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">ランチャーの表示時に時計を非表示にします</string>
+    <string name="status_bar_clock_auto_hide_summary">一定の間隔で時計を非表示にします</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">非表示をするまでの時間</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">時計を非表示にする秒数を設定します</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">表示をするまでの時間</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">時計を非表示にするまでの秒数を設定します</string>
+    <string name="status_bar_am_pm_title">AM/PM のスタイル</string>
+    <string name="status_bar_am_pm_info">時計の 24 時間表示を有効化する</string>
+    <string name="status_bar_am_pm_normal">ノーマル</string>
+    <string name="status_bar_am_pm_small">小</string>
+    <string name="status_bar_am_pm_hidden">非表示</string>
+    <string name="status_bar_date_title">日付</string>
+    <string name="status_bar_date_none">非表示</string>
+    <string name="status_bar_date_small">小</string>
+    <string name="status_bar_date_normal">ノーマル</string>
+    <string name="status_bar_date_format_title">日付のフォーマット</string>
+    <string name="status_bar_date_style">日付のスタイル</string>
+    <string name="status_bar_date_style_normal">ノーマル</string>
+    <string name="status_bar_date_style_lowercase">小文字</string>
+    <string name="status_bar_date_style_uppercase">大文字</string>
+    <string name="status_bar_date_format_custom">カスタム Java フォーマット</string>
+    <string name="status_bar_date_string_edittext_title">DateFormat で設定をしてください。(例: MM/dd/yy)</string>
+    <string name="status_bar_date_string_edittext_summary">文字列を入力してください</string>
+    <string name="clock_date_position">日付の位置</string>
+    <string name="clock_date_right">時計を右側に表示</string>
+    <string name="clock_date_left">時計を左側に表示</string>
+    <string name="clock_font_size_title">時計のフォントの大きさ</string>
+    <!-- QS clock -->
+    <string name="qs_clock_title">時計</string>
+    <string name="qs_clock_summary">クイック設定のヘッダーに時計を表示します</string>
+    <!-- QS date -->
+    <string name="qs_date_title">日付</string>
+    <string name="qs_date_summary">クイック設定のヘッダーに日付を表示します</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">ノーマル (デフォルト)</string>
+    <string name="function_font_bold">Bold</string>
+    <string name="function_font_italic">Italic</string>
+    <string name="function_font_bold_italic">Bold Italic</string>
+    <string name="function_font_light_italic">Light Italic</string>
+    <string name="function_font_thin_italic">Thin Italic</string>
+    <string name="function_font_light">Light</string>
+    <string name="function_font_thin">Thin</string>
+    <string name="function_font_condensed_normal">Condensed</string>
+    <string name="function_font_condensed_italic">Condensed Italic</string>
+    <string name="function_font_condensed_bold">Condensed Bold</string>
+    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="function_font_condensed_light">Condensed Light</string>
+    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_italic">Medium Italic</string>
+    <string name="function_font_black">Black</string>
+    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_dancingscript">DancingScript</string>
+    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_notoserif">NotoSerif Normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
 </resources>

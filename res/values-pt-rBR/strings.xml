@@ -134,9 +134,6 @@
     <string name="lockscreen_albumart_filter_blur">Desfocado</string>
     <string name="lockscreen_albumart_filter_grayblur">Tons de cinza e desfocados</string>
     <string name="lockscreen_albumart_filter_blur_radius_title">Quantidade de desfoque para arte de mídia de tela de bloqueio</string>
-    <!-- Tiles on secure keyguard -->
-    <string name="use_tiles_on_secure_keyguard_title">Requer desbloqueio para usar peças sensíveis</string>
-    <string name="use_tiles_on_secure_keyguard_summary">Peça para desbloquear a tela de bloqueio ao usar blocos sensíveis</string>
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">Ativar reinicialização avançada</string>
     <string name="global_actions_advanced_reboot_summary">Mostrar opções de recuperação e bootloader no menu de energia</string>
@@ -343,6 +340,10 @@
     <string name="qs_header_image_opacity_level_summary">Nível de opacidade da imagem do cabeçalho QS</string>
     <string name="qs_header_image_filter_color_title">Cor do filtro de imagem do cabeçalho QS</string>
     <string name="qs_header_image_height_title">Altura da imagem do cabeçalho QS</string>
+    <string name="qs_header_custom_image_uri_enabled_title">Imagem de cabeçalho QS personalizada</string>
+    <string name="qs_header_custom_image_uri_enabled_summary">Aplicar cabeçalho de imagem QS personalizado</string>
+    <string name="file_header_select_title">Selecione a imagem local</string>
+    <string name="file_header_select_summary">Selecione a imagem do armazenamento</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Transparência de fundo do QS</string>
     <string name="qs_transparency_summary">Defina o nível de transparência para o plano de fundo do QS</string>
@@ -381,4 +382,135 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Espaço paralelo</string>
     <string name="laboratory_parallel_space_summary">Permitir a execução de várias instâncias do mesmo aplicativo em paralelo</string>
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Estilo de Animação</string>
+    <string name="toast_none_animation">Nenhum</string>
+    <string name="toast_default_animation">Padrão</string>
+    <string name="toast_fade_animation">Desbotar</string>
+    <string name="toast_SlideRight_animation">Deslize para a direita</string>
+    <string name="toast_SlideLeft_animation">Deslize para a esquerda</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Desbotamento rápido</string>
+    <string name="toast_GrowFade_animation">Crescer desbotamento</string>
+    <string name="toast_GrowFadeCenter_animation">Crescer desbotamento no centro</string>
+    <string name="toast_GrowFadeBottom_animation">Crescer desbotamento inferior</string>
+    <string name="toast_Translucent_animation">Translúcido</string>
+    <string name="toast_SlideLeftRight_animation">Deslize da esquerda para a direita</string>
+    <string name="toast_SlideRightLeft_animation">Deslize da direita apara a esquerda</string>
+    <string name="toast_animation_test">Este é um teste para selecionar a animação toast</string>
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">Estilo do controle deslizante de brilho</string>
+    <string name="brightness_slider_style_default">Padrão</string>
+    <string name="brightness_slider_style_filled">Preenchido</string>
+    <string name="brightness_slider_style_thin">Afinar</string>
+    <string name="brightness_slider_style_cyberpunk">Thumb Bloqueada</string>
+    <string name="brightness_slider_style_gradiant">Dupla Camada</string>
+    <string name="brightness_slider_style_neumorph">Neumorph</string>
+    <string name="brightness_slider_style_outline">Contorno</string>
+    <string name="brightness_slider_style_shaded">Sombreado</string>
+    <string name="brightness_slider_style_thinoutline">Em linha</string>
+    <string name="brightness_slider_style_translucent">Transparente</string>
+    <string name="brightness_slider_style_leafyoutline">Contorno Frondoso</string>
+    <string name="brightness_slider_style_minimalthumb">Thumb Mínima</string>
+    <string name="brightness_slider_style_oldschoolthumb">Thumb Old School</string>
+    <string name="brightness_slider_style_roundedclip">Clipe arredondado</string>
+    <string name="brightness_slider_style_thumbslider">Controle Deslizante</string>
+    <string name="brightness_slider_style_line">Contorno Fino</string>
+    <string name="brightness_slider_style_lighty">Leve</string>
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Fundo do chip</string>
+    <string name="statusbar_clock_chip_summary">Exibir chip acentuado atrás do relógio</string>
+    <string name="status_bar_clock_font_style_title">Estilo da fonte do relógio</string>
+    <string name="status_bar_clock_color_title">Cor da fonte do relógio</string>
+    <string name="solid_accent">Acentuar</string>
+    <string name="outline">Contorno</string>
+    <string name="solid_accent_gradient">Grandiente</string>
+    <string name="accent1">Acentuação Frondosa</string>
+    <string name="outline1">Contorno Frondoso</string>
+    <string name="gradiant1">Gradiente Frondoso</string>
+    <string name="solid_gradient_neumorph">Gradiente Neumorph</string>
+    <string name="solid_gradient_stroke">Gradiente afiado nítido</string>
+    <string name="solid_accent_transperent">Acentuar transparente</string>
+    <string name="solid_gradient_light">Luz gradiente</string>
+    <string name="solid_gradient_shape">Gradiente afiado nítido</string>
+    <string name="solid_gradient_void_light">Luz gradiente vazia</string>
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">Blocos QS seguros exigem desbloqueio</string>
+    <string name="qstile_requires_unlocking_summary">Os seguintes blocos QS exigem desbloqueio antes que você possa acessá-los na tela de bloqueio:\nAvião, Celular, NFC, Hotspot, Tethering USB e Localização</string>
+    <!-- Units -->
+    <string name="unit_milliseconds">milissegundos</string>
+    <string name="unit_seconds">segundos</string>
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">Relógios</string>
+    <string name="status_bar_clock_summary">Personalize o relógio &amp; data</string>
+    <string name="status_bar_clock_seconds_title">Segundos do relógio</string>
+    <string name="status_bar_clock_seconds_summary">Exibir segundos ao lado do relógio na barra de status</string>
+    <string name="status_bar_clock_position_title">Estilo do relógio</string>
+    <string name="status_bar_clock_position_right">Direita</string>
+    <string name="status_bar_clock_position_left">Esquerda</string>
+    <string name="status_bar_clock_position_center">Centro</string>
+    <string name="status_bar_clock_position_hidden">Escondido</string>
+    <string name="status_bar_clock_auto_hide_title">Esconder automaticamente</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">Ocultar o relógio se o iniciador estiver visível</string>
+    <string name="status_bar_clock_auto_hide_summary">Ocultar o relógio em intervalos regulares</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Duração do ocultamento</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">Número de segundos para ocultar o relógio</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Duração da amostragem</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">Número de segundos de espera antes de ocultar o relógio</string>
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="status_bar_am_pm_info">O relógio de 24 horas está ativado</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Pequeno</string>
+    <string name="status_bar_am_pm_hidden">Escondido</string>
+    <string name="status_bar_date_title">Data</string>
+    <string name="status_bar_date_none">Escondido</string>
+    <string name="status_bar_date_small">Pequeno</string>
+    <string name="status_bar_date_normal">Normal</string>
+    <string name="status_bar_date_format_title">Formato da data</string>
+    <string name="status_bar_date_style">Estilo da data</string>
+    <string name="status_bar_date_style_normal">Normal</string>
+    <string name="status_bar_date_style_lowercase">Minúsculas</string>
+    <string name="status_bar_date_style_uppercase">Maiúsculas</string>
+    <string name="status_bar_date_format_custom">Formato java personalizado</string>
+    <string name="status_bar_date_string_edittext_title">Deve estar em formato da data, por exemplo. MM/dd/aa</string>
+    <string name="status_bar_date_string_edittext_summary">Digite a string</string>
+    <string name="clock_date_position">Posição da data</string>
+    <string name="clock_date_right">À direita do tempo</string>
+    <string name="clock_date_left">À esquerda do tempo</string>
+    <string name="clock_font_size_title">Tamanho da fonte do relógio</string>
+    <!-- QS clock -->
+    <string name="qs_clock_title">Relógio</string>
+    <string name="qs_clock_summary">Exibir o relógio no cabeçalho da barra de status rápida</string>
+    <!-- QS date -->
+    <string name="qs_date_title">Data</string>
+    <string name="qs_date_summary">Exibir data no cabeçalho da barra de status rápida</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">Normal (padrão)</string>
+    <string name="function_font_bold">Grande</string>
+    <string name="function_font_italic">Itálico</string>
+    <string name="function_font_bold_italic">Itálico grande</string>
+    <string name="function_font_light_italic">Itálico pequeno</string>
+    <string name="function_font_thin_italic">Itálico fino</string>
+    <string name="function_font_light">Pequeno</string>
+    <string name="function_font_thin">Fino</string>
+    <string name="function_font_condensed_normal">Condensado</string>
+    <string name="function_font_condensed_italic">Itálico condensado</string>
+    <string name="function_font_condensed_bold">Grande condensado</string>
+    <string name="function_font_condensed_bold_italic">Itálico grande condensado</string>
+    <string name="function_font_condensed_light">Condensado pequeno</string>
+    <string name="function_font_condensed_light_italic">Itálico pequeno condensado</string>
+    <string name="function_font_medium_normal">Médio</string>
+    <string name="function_font_medium_italic">Itálico médio</string>
+    <string name="function_font_black">Preto</string>
+    <string name="function_font_black_italic">Itálico preto</string>
+    <string name="function_font_dancingscript">Script dançante</string>
+    <string name="function_font_dancingscript_bold">Script dançante grande</string>
+    <string name="function_font_comingsoon">Chegando em breve</string>
+    <string name="function_font_notoserif">NotoSerif normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Itálico</string>
+    <string name="function_font_notoserif_bold">NotoSerif grande</string>
+    <string name="function_font_notoserif_bold_italic">Itálico NotoSerif grande</string>
 </resources>

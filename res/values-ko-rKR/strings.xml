@@ -134,9 +134,6 @@
     <string name="lockscreen_albumart_filter_blur">Blur</string>
     <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
     <string name="lockscreen_albumart_filter_blur_radius_title">Blur amount for lockscreen media artwork</string>
-    <!-- Tiles on secure keyguard -->
-    <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
-    <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lockscreen when using sensitive tiles</string>
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
@@ -343,6 +340,10 @@
     <string name="qs_header_image_opacity_level_summary">빠른설정 헤더 이미지의 투명도 레벨</string>
     <string name="qs_header_image_filter_color_title">빠른설정 헤더 이미지 필터 색상</string>
     <string name="qs_header_image_height_title">빠른설정 헤더 이미지 높이</string>
+    <string name="qs_header_custom_image_uri_enabled_title">Custom QS header image</string>
+    <string name="qs_header_custom_image_uri_enabled_summary">Apply custom QS image header</string>
+    <string name="file_header_select_title">기본 이미지 선택</string>
+    <string name="file_header_select_summary">저장소에서 이미지 선택</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
@@ -376,9 +377,140 @@
     <string name="theme_customization_data_summary">Set custom data icon style</string>
     <!-- Google services -->
     <string name="gms_enabled_title">Google 서비스</string>
-    <string name="gms_enabled_summary">Control Google services and core apps</string>
+    <string name="gms_enabled_summary">Google 서비스 및 핵심 앱 제어</string>
     <string name="gms_enabled_text">Google 서비스 및 핵심 앱을 비활성화하기 전에 Google 계정에서 \'내 기기 찾기\' 및 2단계 인증을 비활성화해야 합니다. 이 설정을 활성화해 두는 것이 좋습니다. 그렇지 않으면 Google 구성 요소에 포함된 앱이 영향을 받게 됩니다. 이 설정을 변경한 후 문제가 발생하면 공장 초기화를 수행하세요.</string>
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Parallel space</string>
-    <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel</string>
+    <string name="laboratory_parallel_space_summary">동일한 애플리케이션의 멀티 윈도우를 실행하도록 허용</string>
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">토스트 애니메이션</string>
+    <string name="toast_none_animation">없음</string>
+    <string name="toast_default_animation">기본값</string>
+    <string name="toast_fade_animation">Fade</string>
+    <string name="toast_SlideRight_animation">오른쪽으로 슬라이드</string>
+    <string name="toast_SlideLeft_animation">왼쪽으로 슬라이드</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Fast fade</string>
+    <string name="toast_GrowFade_animation">Grow fade</string>
+    <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
+    <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
+    <string name="toast_Translucent_animation">투명한</string>
+    <string name="toast_SlideLeftRight_animation">왼쪽에서 오른쪽으로 슬라이드</string>
+    <string name="toast_SlideRightLeft_animation">오른쪽에서 왼쪽으로 슬라이드</string>
+    <string name="toast_animation_test">선택한 토스트 애니메이션에 대한 테스트입니다</string>
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">밝기 슬라이더 모양</string>
+    <string name="brightness_slider_style_default">기본값</string>
+    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_thin">Thin</string>
+    <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
+    <string name="brightness_slider_style_gradiant">Double Layer</string>
+    <string name="brightness_slider_style_neumorph">Neumorph</string>
+    <string name="brightness_slider_style_outline">Outline</string>
+    <string name="brightness_slider_style_shaded">Shaded</string>
+    <string name="brightness_slider_style_thinoutline">Inline</string>
+    <string name="brightness_slider_style_translucent">Transparent</string>
+    <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
+    <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
+    <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
+    <string name="brightness_slider_style_roundedclip">Rounded clip</string>
+    <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
+    <string name="brightness_slider_style_line">Thin Outline</string>
+    <string name="brightness_slider_style_lighty">Lighty</string>
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Background chip</string>
+    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
+    <string name="status_bar_clock_font_style_title">Clock font style</string>
+    <string name="status_bar_clock_color_title">Clock font color</string>
+    <string name="solid_accent">Accent</string>
+    <string name="outline">Outline</string>
+    <string name="solid_accent_gradient">Gradient</string>
+    <string name="accent1">Accent Leafy</string>
+    <string name="outline1">Outline Leafy</string>
+    <string name="gradiant1">Gradient Leafy</string>
+    <string name="solid_gradient_neumorph">Neumorph gradient</string>
+    <string name="solid_gradient_stroke">Sharp gradient stroke</string>
+    <string name="solid_accent_transperent">Accent transperent</string>
+    <string name="solid_gradient_light">Gradient light</string>
+    <string name="solid_gradient_shape">Sharp gradient corner</string>
+    <string name="solid_gradient_void_light">Gradient Void light</string>
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">보안 QS 타일은 잠금 해제가 필요함</string>
+    <string name="qstile_requires_unlocking_summary">다음 QS 타일은 잠금 화면에서 액세스하려면 잠금을 해제해야 합니다:\n비행기모드, 셀룰러, NFC, 핫스팟, USB 테더링 및 위치</string>
+    <!-- Units -->
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_seconds">seconds</string>
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">Clocks</string>
+    <string name="status_bar_clock_summary">Customize clock &amp; date</string>
+    <string name="status_bar_clock_seconds_title">Clock seconds</string>
+    <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
+    <string name="status_bar_clock_position_title">Clock style</string>
+    <string name="status_bar_clock_position_right">오른쪽</string>
+    <string name="status_bar_clock_position_left">왼쪽</string>
+    <string name="status_bar_clock_position_center">중앙</string>
+    <string name="status_bar_clock_position_hidden">숨김</string>
+    <string name="status_bar_clock_auto_hide_title">자동 숨김</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">Hide clock if launcher is visible</string>
+    <string name="status_bar_clock_auto_hide_summary">Hide clock at regular interval</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">항상 숨김</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">시계를 숨기는 시간(초)</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">항상 표시</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">시계를 숨기기 전까지 기다려야 하는 시간</string>
+    <string name="status_bar_am_pm_title">오전/오후 스타일</string>
+    <string name="status_bar_am_pm_info">24시간 표시 활성화 됨</string>
+    <string name="status_bar_am_pm_normal">보통</string>
+    <string name="status_bar_am_pm_small">작게</string>
+    <string name="status_bar_am_pm_hidden">숨김</string>
+    <string name="status_bar_date_title">날짜</string>
+    <string name="status_bar_date_none">숨김</string>
+    <string name="status_bar_date_small">작게</string>
+    <string name="status_bar_date_normal">보통</string>
+    <string name="status_bar_date_format_title">날짜 형식</string>
+    <string name="status_bar_date_style">Date style</string>
+    <string name="status_bar_date_style_normal">보통</string>
+    <string name="status_bar_date_style_lowercase">Lowercase</string>
+    <string name="status_bar_date_style_uppercase">Uppercase</string>
+    <string name="status_bar_date_format_custom">Custom java format</string>
+    <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_font_size_title">Clock font size</string>
+    <!-- QS clock -->
+    <string name="qs_clock_title">시계</string>
+    <string name="qs_clock_summary">빠른 상태 표시줄에 시계 표시</string>
+    <!-- QS date -->
+    <string name="qs_date_title">날짜</string>
+    <string name="qs_date_summary">빠른 상태 표시줄에 날짜 표시</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">보통 (기본값)</string>
+    <string name="function_font_bold">Bold</string>
+    <string name="function_font_italic">Italic</string>
+    <string name="function_font_bold_italic">Bold Italic</string>
+    <string name="function_font_light_italic">Light Italic</string>
+    <string name="function_font_thin_italic">Thin Italic</string>
+    <string name="function_font_light">Light</string>
+    <string name="function_font_thin">Thin</string>
+    <string name="function_font_condensed_normal">Condensed</string>
+    <string name="function_font_condensed_italic">Condensed Italic</string>
+    <string name="function_font_condensed_bold">Condensed Bold</string>
+    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="function_font_condensed_light">Condensed Light</string>
+    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_italic">Medium Italic</string>
+    <string name="function_font_black">Black</string>
+    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_dancingscript">DancingScript</string>
+    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_notoserif">NotoSerif Normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
 </resources>
