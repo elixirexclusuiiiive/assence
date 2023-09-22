@@ -65,7 +65,6 @@ import java.util.Random;
 
 import static android.provider.Settings.Secure.HIDE_ESSENCE_ICONS;
 
-
 public class Essence extends SettingsPreferenceFragment implements   
        Preference.OnPreferenceChangeListener {
 
@@ -81,7 +80,6 @@ public class Essence extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.essence_settings);
         enabled = Settings.Secure.getInt(resolver, HIDE_ESSENCE_ICONS, 0) == 1;
         if (enabled) {
-            removeIconTop(2);
             removeIconBot(3);
             removeIconTop(4);
             removeIconMid(5);

@@ -125,6 +125,7 @@ public class Misc extends SettingsPreferenceFragment implements OnPreferenceChan
             int put = (state) ? 1 : 0;
             Settings.Secure.putInt(getActivity().getContentResolver(), HIDE_ESSENCE_ICONS, put);
             mHideIcons.setChecked(state);
+            customUtils.restartSettings(getActivity());
             return true;
         } else if (preference == mTorchPowerButton) {
             int mTorchPowerButtonValue = Integer.valueOf((String) objValue);
