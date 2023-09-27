@@ -176,6 +176,7 @@
         <item>OOSAlike Nothing</item>
         <item>Lazy1</item>
         <item>Minimal2</item>
+        <item>IosStyle Depth1 (BETA)</item>
     </string-array>
 
     <string-array name="lsclock_styles_values" translatable="false">
@@ -192,6 +193,7 @@
         <item>com.android.systemui.lsclock.oosnothing</item>
         <item>com.android.systemui.lsclock.lazy1</item>
         <item>com.android.systemui.lsclock.minimal2</item>
+        <item>com.android.systemui.lsclock.depth1</item>
     </string-array>
 
    <!-- Battery percent -->

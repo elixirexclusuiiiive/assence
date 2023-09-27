@@ -16,15 +16,19 @@
 
 package org.elixir.essence.categories;
 
+import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.om.IOverlayManager;
 import android.content.om.OverlayInfo;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.provider.Settings;
+import android.widget.Toast;
 import static android.os.UserHandle.USER_SYSTEM;
 import static android.os.UserHandle.USER_CURRENT;
 
@@ -51,6 +55,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.Arrays;
+import java.io.File;
 
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK;
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_STYLES;
@@ -153,10 +158,37 @@ public class Themes extends SettingsPreferenceFragment
             } else {
                 RROManager(current, true);
             }
+            if ((Arrays.asList(mDepthClocks).contains(current))) {
+                Log.i(TAG, "One of depth clock is selected, enabling its wallpaper");
+                Toast.makeText(mContext, "Applying wallpaper to match with clock. Don't change wallapaper now!", Toast.LENGTH_LONG).show();
+                int position = findPosition(mDepthClocks, current);
+                if (position == 0) {
+                    File file = new File("/product/elixir/depth_wallpaper/depth1.jpg");
+                    Bitmap wallpaperBitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+                    WallpaperManager wallpaperManager = WallpaperManager.getInstance(mContext);
+                    try {
+                        wallpaperManager.setBitmap(wallpaperBitmap);
+                    } catch (Exception e) {
+                        Log.i(TAG, e.toString());
+                    }
+                }
+            } else {
+                Log.i(TAG, "None depth clock!");
+            }
             return true;
         }
         return false;
     }
+
+    public static int findPosition(String[] array, String target) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(target)) {
+                return i; // Found a match, return the index
+            }
+        }
+        return -1; // String not found in the array
+    }
+
 
     private void hideDateView(Boolean show) {
         Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE, show ? 0 : 1);
@@ -183,6 +215,11 @@ public class Themes extends SettingsPreferenceFragment
         "com.android.systemui.lsclock.nothing",
         "com.android.systemui.lsclock.hyperbox",
         "com.android.systemui.lsclock.oosalike"
+    };
+
+    // List of depth clocks added in rom
+    private static final String[] mDepthClocks = {
+        "com.android.systemui.lsclock.depth1"
     };
 
     private boolean isOverlayEnabled(String name) {
