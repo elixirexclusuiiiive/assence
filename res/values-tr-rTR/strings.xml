@@ -514,4 +514,19 @@ Uçak Modu, Mobil Veri, NFC, Hotspot, USB Bağlantısı Paylaşımı ve Konum</s
     <string name="function_font_notoserif_italic">NotoSerif Eğik</string>
     <string name="function_font_notoserif_bold">NotoSerif Kalın</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Kalın Eğik</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Ses Paneli Stili</string>
+    <string name="volume_panel_thirteen">AOSP A13</string>
+    <string name="volume_panel_aosp">AOSP A11</string>
+    <string name="volume_panel_compact">Sade</string>
+    <string name="volume_panel_tiled">Karo</string>
+    <string name="volume_panel_miui">MIUI Sade</string>
+    <string name="volume_panel_ssos">ShapeShift</string>
+    <string name="volume_panel_oos">OOS</string>
+    <string name="volume_panel_p404">P404</string>
+    <!--  Volume Panel Plugin Values   -->
+    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
+    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
 </resources>

@@ -354,9 +354,9 @@
     <string name="lockscreen_shortcut_wallet">Portefeuille</string>
     <string name="lockscreen_shortcut_home">Contrôles de la maison</string>
     <string name="lockscreen_shortcut_flashlight">Lampe torche</string>
-    <string name="lockscreen_shortcut_qr">QR code scanner</string>
+    <string name="lockscreen_shortcut_qr">Scanner de QR code</string>
     <string name="lockscreen_shortcut_camera">Caméra</string>
-    <string name="lockscreen_shortcut_dnd">DND</string>
+    <string name="lockscreen_shortcut_dnd">NPD</string>
     <string name="lockscreen_shortcut_none">Aucun</string>
     <string name="lockscreen_shortcut_enforce_title">Raccourci unique</string>
     <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
@@ -364,7 +364,7 @@
     <string name="lockscreen_shortcuts">Raccourcis de l\'écran de verrouillage</string>
     <string name="lockscreen_targets_summary">Personnaliser les boutons de raccourcis sur l\'écran de verrouillage</string>
     <!-- Combined signal icons -->
-    <string name="combined_signal_icon_title">Combined signal icon</string>
+    <string name="combined_signal_icon_title">Icônes de signaux combinés</string>
     <string name="combined_signal_icon_summary">Toggle combined signal icon</string>
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Lancer l\'application de musique à la connexion d\'un casque</string>
@@ -373,10 +373,10 @@
     <string name="icon_manager_title">Icon manager</string>
     <string name="icon_manager_summary">Control visibility of status bar icons</string>
     <!-- Custom Data icons -->
-    <string name="theme_customization_data_title">Data icon style</string>
-    <string name="theme_customization_data_summary">Set custom data icon style</string>
+    <string name="theme_customization_data_title">Style de l\'icône données mobiles</string>
+    <string name="theme_customization_data_summary">Définir le style de l\'icône de données mobiles</string>
     <!-- Google services -->
-    <string name="gms_enabled_title">Google services</string>
+    <string name="gms_enabled_title">Services Google</string>
     <string name="gms_enabled_summary">Control Google services and core apps</string>
     <string name="gms_enabled_text">Before disabling Google services and core apps, you should disable \"Find My Device\" and 2-step verification on your Google account. It is strongly recommended to keep this setting enabled else apps dependent on Google components will be affected. If you run into any issues after changing this setting, perform a factory reset.</string>
     <!-- Parallel space -->
@@ -384,33 +384,33 @@
     <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel</string>
     <!-- Toast Animation -->
     <string name="toast_animation_title">Toast animation</string>
-    <string name="toast_none_animation">None</string>
-    <string name="toast_default_animation">Default</string>
-    <string name="toast_fade_animation">Fade</string>
-    <string name="toast_SlideRight_animation">Slide right</string>
-    <string name="toast_SlideLeft_animation">Slide left</string>
+    <string name="toast_none_animation">Aucun</string>
+    <string name="toast_default_animation">Par défaut</string>
+    <string name="toast_fade_animation">Fondu</string>
+    <string name="toast_SlideRight_animation">Glisser vers la droite</string>
+    <string name="toast_SlideLeft_animation">Glisser vers la gauche</string>
     <string name="toast_Xylon_animation">Xylon</string>
     <string name="toast_Toko_animation">Toko</string>
     <string name="toast_Tn_animation">Tn</string>
     <string name="toast_Honami_animation">Honami</string>
-    <string name="toast_FastFade_animation">Fast fade</string>
+    <string name="toast_FastFade_animation">Fondu rapide</string>
     <string name="toast_GrowFade_animation">Grow fade</string>
     <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
     <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
     <string name="toast_Translucent_animation">Translucent</string>
-    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
-    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+    <string name="toast_SlideLeftRight_animation">Glisser de gauche à droite</string>
+    <string name="toast_SlideRightLeft_animation">Glisser de droite à gauche</string>
     <string name="toast_animation_test">This is test for selected toast animation</string>
     <!-- Brightness slider styles -->
-    <string name="brightness_slider_style_title">Brightness slider style</string>
-    <string name="brightness_slider_style_default">Default</string>
+    <string name="brightness_slider_style_title">Style du curseur de luminosité</string>
+    <string name="brightness_slider_style_default">Par défaut</string>
     <string name="brightness_slider_style_filled">Filled</string>
     <string name="brightness_slider_style_thin">Thin</string>
     <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
     <string name="brightness_slider_style_gradiant">Double Layer</string>
     <string name="brightness_slider_style_neumorph">Neumorph</string>
     <string name="brightness_slider_style_outline">Outline</string>
-    <string name="brightness_slider_style_shaded">Shaded</string>
+    <string name="brightness_slider_style_shaded">Ombragé</string>
     <string name="brightness_slider_style_thinoutline">Inline</string>
     <string name="brightness_slider_style_translucent">Transparent</string>
     <string name="brightness_slider_style_leafyoutline">Leafy Outline</string>
@@ -423,8 +423,8 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Background chip</string>
     <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
-    <string name="status_bar_clock_font_style_title">Clock font style</string>
-    <string name="status_bar_clock_color_title">Clock font color</string>
+    <string name="status_bar_clock_font_style_title">Style de police de l\'horloge</string>
+    <string name="status_bar_clock_color_title">Couleur de la police de l\'horloge</string>
     <string name="solid_accent">Accent</string>
     <string name="outline">Outline</string>
     <string name="solid_accent_gradient">Gradient</string>
@@ -441,71 +441,71 @@
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
     <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
     <!-- Units -->
-    <string name="unit_milliseconds">milliseconds</string>
-    <string name="unit_seconds">seconds</string>
+    <string name="unit_milliseconds">millisecondes</string>
+    <string name="unit_seconds">secondes</string>
     <!-- Status bar - Clock -->
-    <string name="status_bar_clock_title">Clocks</string>
-    <string name="status_bar_clock_summary">Customize clock &amp; date</string>
-    <string name="status_bar_clock_seconds_title">Clock seconds</string>
-    <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
-    <string name="status_bar_clock_position_title">Clock style</string>
-    <string name="status_bar_clock_position_right">Right</string>
-    <string name="status_bar_clock_position_left">Left</string>
-    <string name="status_bar_clock_position_center">Center</string>
-    <string name="status_bar_clock_position_hidden">Hidden</string>
-    <string name="status_bar_clock_auto_hide_title">Auto hide</string>
-    <string name="status_bar_clock_auto_hide_launcher_summary">Hide clock if launcher is visible</string>
-    <string name="status_bar_clock_auto_hide_summary">Hide clock at regular interval</string>
-    <string name="status_bar_clock_auto_hide_hdur_title">Hide duration</string>
-    <string name="status_bar_clock_auto_hide_hdur_summary">Number of seconds to hide clock</string>
-    <string name="status_bar_clock_auto_hide_sdur_title">Show duration</string>
-    <string name="status_bar_clock_auto_hide_sdur_summary">Number of seconds to wait before hiding clock</string>
-    <string name="status_bar_am_pm_title">AM/PM style</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_clock_title">Horloges</string>
+    <string name="status_bar_clock_summary">Personnaliser l\'horloge &amp; la date</string>
+    <string name="status_bar_clock_seconds_title">Secondes de l\'horloge</string>
+    <string name="status_bar_clock_seconds_summary">Afficher les secondes à côté de l\'horloge dans la barre d\'état</string>
+    <string name="status_bar_clock_position_title">Style de l\'horloge</string>
+    <string name="status_bar_clock_position_right">À droite</string>
+    <string name="status_bar_clock_position_left">À gauche</string>
+    <string name="status_bar_clock_position_center">Au centre</string>
+    <string name="status_bar_clock_position_hidden">Masqué</string>
+    <string name="status_bar_clock_auto_hide_title">Masqué automatiquement</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">Masquer l\'horloge si le lanceur est visible</string>
+    <string name="status_bar_clock_auto_hide_summary">Masquer l\'horloge à intervalle régulier</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Masquer la durée</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">Nombre de secondes pour masquer l’horloge</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">Afficher la durée</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">Nombre de secondes avant de masquer l\'horloge</string>
+    <string name="status_bar_am_pm_title">Format 12-heures</string>
+    <string name="status_bar_am_pm_info">Format 24-heures activé</string>
     <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Small</string>
-    <string name="status_bar_am_pm_hidden">Hidden</string>
+    <string name="status_bar_am_pm_small">Petit</string>
+    <string name="status_bar_am_pm_hidden">Masqué</string>
     <string name="status_bar_date_title">Date</string>
-    <string name="status_bar_date_none">Hidden</string>
-    <string name="status_bar_date_small">Small</string>
+    <string name="status_bar_date_none">Masqué</string>
+    <string name="status_bar_date_small">Petit</string>
     <string name="status_bar_date_normal">Normal</string>
-    <string name="status_bar_date_format_title">Date format</string>
-    <string name="status_bar_date_style">Date style</string>
+    <string name="status_bar_date_format_title">Format de la date</string>
+    <string name="status_bar_date_style">Style de la date</string>
     <string name="status_bar_date_style_normal">Normal</string>
-    <string name="status_bar_date_style_lowercase">Lowercase</string>
-    <string name="status_bar_date_style_uppercase">Uppercase</string>
-    <string name="status_bar_date_format_custom">Custom java format</string>
+    <string name="status_bar_date_style_lowercase">Minuscule</string>
+    <string name="status_bar_date_style_uppercase">Majuscule</string>
+    <string name="status_bar_date_format_custom">Format java personnalisé</string>
     <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="status_bar_date_string_edittext_summary">Enter string</string>
-    <string name="clock_date_position">Date position</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_font_size_title">Clock font size</string>
+    <string name="status_bar_date_string_edittext_summary">Entrer une valeur</string>
+    <string name="clock_date_position">Position de la date</string>
+    <string name="clock_date_right">À droite de l\'heure</string>
+    <string name="clock_date_left">À gauche de l\'heure</string>
+    <string name="clock_font_size_title">Taille de police de l\'horloge</string>
     <!-- QS clock -->
-    <string name="qs_clock_title">Clock</string>
-    <string name="qs_clock_summary">Display clock in quick status bar header</string>
+    <string name="qs_clock_title">Horloge</string>
+    <string name="qs_clock_summary">Afficher l’heure dans l’en-tête de la barre des réglages rapides</string>
     <!-- QS date -->
     <string name="qs_date_title">Date</string>
-    <string name="qs_date_summary">Display date in quick status bar header</string>
+    <string name="qs_date_summary">Afficher la date dans l’en-tête du panneau de réglages rapides</string>
     <!-- Font Customizations for Functions -->
-    <string name="function_font_stock">Normal (default)</string>
-    <string name="function_font_bold">Bold</string>
-    <string name="function_font_italic">Italic</string>
-    <string name="function_font_bold_italic">Bold Italic</string>
-    <string name="function_font_light_italic">Light Italic</string>
-    <string name="function_font_thin_italic">Thin Italic</string>
-    <string name="function_font_light">Light</string>
-    <string name="function_font_thin">Thin</string>
-    <string name="function_font_condensed_normal">Condensed</string>
-    <string name="function_font_condensed_italic">Condensed Italic</string>
-    <string name="function_font_condensed_bold">Condensed Bold</string>
-    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
-    <string name="function_font_condensed_light">Condensed Light</string>
-    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
-    <string name="function_font_medium_normal">Medium</string>
-    <string name="function_font_medium_italic">Medium Italic</string>
-    <string name="function_font_black">Black</string>
-    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_stock">Normal (par défaut)</string>
+    <string name="function_font_bold">Gras</string>
+    <string name="function_font_italic">Italique</string>
+    <string name="function_font_bold_italic">Italique gras</string>
+    <string name="function_font_light_italic">Italique lumineux</string>
+    <string name="function_font_thin_italic">Italique fin</string>
+    <string name="function_font_light">Lumineux</string>
+    <string name="function_font_thin">Fin</string>
+    <string name="function_font_condensed_normal">Condensé</string>
+    <string name="function_font_condensed_italic">Italique condensé</string>
+    <string name="function_font_condensed_bold">Gras condensé</string>
+    <string name="function_font_condensed_bold_italic">Italique gras condensé</string>
+    <string name="function_font_condensed_light">Condensé lumineux</string>
+    <string name="function_font_condensed_light_italic">Italique lumineux condensé</string>
+    <string name="function_font_medium_normal">Moyen</string>
+    <string name="function_font_medium_italic">Italique moyen</string>
+    <string name="function_font_black">Noir</string>
+    <string name="function_font_black_italic">Italique noir</string>
     <string name="function_font_dancingscript">DancingScript</string>
     <string name="function_font_dancingscript_bold">DancingScript Bold</string>
     <string name="function_font_comingsoon">ComingSoon</string>
@@ -513,4 +513,19 @@
     <string name="function_font_notoserif_italic">NotoSerif Italic</string>
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Style du panneau de volume</string>
+    <string name="volume_panel_thirteen">AOSP A13</string>
+    <string name="volume_panel_aosp">AOSP A11</string>
+    <string name="volume_panel_compact">Compact</string>
+    <string name="volume_panel_tiled">Tiled</string>
+    <string name="volume_panel_miui">MIUI Compact</string>
+    <string name="volume_panel_ssos">ShapeShift</string>
+    <string name="volume_panel_oos">OOS</string>
+    <string name="volume_panel_p404">P404</string>
+    <!--  Volume Panel Plugin Values   -->
+    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
+    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
 </resources>

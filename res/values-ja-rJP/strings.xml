@@ -228,8 +228,8 @@
     <string name="less_boring_heads_up_summary">電話、メッセージ、アラームアプリのみでヘッドアップ通知を表示します</string>
     <!-- Edge light -->
     <string name="edge_light_title">エッジライト</string>
-    <string name="edge_light_summary">通知パルスで画面のサイドエッジを明るくします</string>
-    <string name="edge_light_always_trigger_on_pulse_title">常にパルスでトリガー</string>
+    <string name="edge_light_summary">点滅の通知で画面のサイドエッジを明るくします</string>
+    <string name="edge_light_always_trigger_on_pulse_title">常に点滅でトリガー</string>
     <string name="edge_light_always_trigger_on_pulse_summary">通知以外にアンビエント表示時にエッジライトを表示するか選択します</string>
     <string name="edge_light_repeat_animation_title">アニメーションをリピート</string>
     <string name="edge_light_repeat_animation_summary_on">タイムアウトまで繰り返します</string>
@@ -513,4 +513,19 @@
     <string name="function_font_notoserif_italic">NotoSerif Italic</string>
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">音量パネルのスタイル</string>
+    <string name="volume_panel_thirteen">AOSP A13</string>
+    <string name="volume_panel_aosp">AOSP A11</string>
+    <string name="volume_panel_compact">コンパクト</string>
+    <string name="volume_panel_tiled">タイル</string>
+    <string name="volume_panel_miui">MIUI Compact</string>
+    <string name="volume_panel_ssos">ShapeShift</string>
+    <string name="volume_panel_oos">OOS</string>
+    <string name="volume_panel_p404">P404</string>
+    <!--  Volume Panel Plugin Values   -->
+    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
+    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
 </resources>

@@ -513,4 +513,19 @@
     <string name="function_font_notoserif_italic">NotoSerif Itálico</string>
     <string name="function_font_notoserif_bold">NotoSerif grande</string>
     <string name="function_font_notoserif_bold_italic">Itálico NotoSerif grande</string>
+    <!--  Volume Panel Plugin   -->
+    <string name="volume_panel">Estilo de painel de volume</string>
+    <string name="volume_panel_thirteen">Aosp a13</string>
+    <string name="volume_panel_aosp">Aosp a11</string>
+    <string name="volume_panel_compact">Compacto</string>
+    <string name="volume_panel_tiled">Tiras</string>
+    <string name="volume_panel_miui">MIUI compacto</string>
+    <string name="volume_panel_ssos">Metamorfose</string>
+    <string name="volume_panel_oos">OOS</string>
+    <string name="volume_panel_p404">P404</string>
+    <!--  Volume Panel Plugin Values   -->
+    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
+    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
+    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
+    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
 </resources>
