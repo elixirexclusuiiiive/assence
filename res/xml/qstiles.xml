@@ -31,8 +31,8 @@
         android:key="qs_panel_style"
         android:title="@string/qstiles_title"
         settings:layout="@layout/essence_pref_card_mid2"
-        android:entries="@array/qstiles_styles_entries"
-        android:entryValues="@array/qstiles_styles_values"
+        android:entries="@array/qs_styles_entries"
+        android:entryValues="@array/qs_styles_values"
         android:defaultValue="0"
         android:summary="%s" />
     </PreferenceCategory>
@@ -104,7 +104,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:key="qsheader_category"
+            android:key="qsheader_category2"
             android:layout="@layout/custom_preference_category"
             android:title="Custom QS Header">
 

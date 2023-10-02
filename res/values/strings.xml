@@ -145,13 +145,6 @@
     <string name="color_down_arrow" translatable="false">"↓"</string>
     <string name="longpress_info">Longpress box to save color</string>
 
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">QS Customisations</string>
-    <string name="qstiles_title">QSTiles Style</string>
-    <string name="qstiles_default">Default Style</string>
-    <string name="qstiles_custom1">Classic Style</string>
-    <string name="qstiles_custom2">MaybeRectangle Style</string>
-
     <!-- Media art -->
     <string name="lockscreen_media_category">Lockscreen Music</string>
     <string name="media_art_title">Media cover art</string>
@@ -312,13 +305,22 @@
     <string name="brightness_custom3">Thin Style</string>
 
     <!-- Quick settings styles -->
-    <string name="qs_styles_title">Combined QS element styles</string>
+    <string name="qs_styles_title">Combined QS Element Styles</string>
     <string name="qs_outline">Outline</string>
-    <string name="qs_two_tone">Two-tone accent</string>
-    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_two_tone">Two-Tone Accent</string>
+    <string name="qs_color_pop">Color Pop</string>
     <string name="qs_shaded">Shaded</string>
     <string name="qs_cyberpunk">Cyberpunk</string>
-
+    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_reflected">Reflected</string>
+    <string name="qs_surround">Surround</string>
+    <string name="qs_thin">ThinLine</string>
+    <string name="qstiles_cust">QS Customisations</string>
+    <string name="qstiles_title">QSTiles Style</string>
+    <string name="qstiles_default">Default Style</string>
+    <string name="qstiles_custom1">Classic Style</string>
+    <string name="qstiles_custom2">MaybeRectangle Style</string>	
+	
     <!-- Udfps -->
     <string name="udfps_category">Under-display fingerprint</string>
 
