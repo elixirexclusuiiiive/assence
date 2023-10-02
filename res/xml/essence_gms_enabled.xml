@@ -16,7 +16,13 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/gms_enabled_title">
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="@string/gms_enabled_title"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory> 
 
     <com.android.settingslib.widget.TopIntroPreference
         android:key="gms_enabled_top_intro"
@@ -25,6 +31,7 @@
     <org.elixir.essence.preferences.SecureSettingSwitchPreference
         android:key="gms_enabled"
         android:title="@string/enable"
+        settings:layout="@layout/xd_pref_card_mid2" 
         android:summary="@string/gms_enabled_summary"
         android:defaultValue="true" />
 

@@ -26,18 +26,35 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/sb_gesture_category" >	
+	
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference	    
+	        android:key="double_tap_sleep_gesture"
+	        settings:layout="@layout/xd_pref_card_top"
+            android:title="@string/double_tap_sleep_gesture_title"
+            android:summary="@string/double_tap_sleep_gesture_summary"
+            android:defaultValue="false" />
+	
         <ListPreference
             android:key="qs_quick_pulldown"
 		    android:title="@string/qs_quick_pulldown"
-		    settings:layout="@layout/essence_pref_card_top"
+		    settings:layout="@layout/essence_pref_card_bot"
             android:entries="@array/quick_pulldown_entries"
             android:entryValues="@array/quick_pulldown_values"
             android:defaultValue="0" />
+    
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/sb_icon_category" >
 
         <SwitchPreference
             android:key="combined_signal_icon"
             android:title="@string/combined_signal_icon_title"
-            settings:layout="@layout/xd_pref_card_mid"
+            settings:layout="@layout/xd_pref_card_top"
             android:summary="@string/combined_signal_icon_summary" />
 
  	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
@@ -70,19 +87,15 @@
 
 	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
 	    	android:key="data_disabled_icon"
-	    	settings:layout="@layout/xd_pref_card_bot"
+	    	settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/data_disabled_icon_title"
             android:summary="@string/data_disabled_icon_summary"
             android:defaultValue="true"/>
 
-    <PreferenceCategory
-        android:layout="@layout/custom_preference_category"
-        android:title="@string/sbicon_category" >
-
         <Preference
             android:key="icon_manager"
 	    android:title="@string/icon_manager_title"
-	    settings:layout="@layout/essence_pref_card_mid2"	
+	    settings:layout="@layout/essence_pref_card_bot"	
             android:summary="@string/icon_manager_summary">
             <intent android:action="android.intent.action.MAIN"
                  android:targetPackage="com.android.systemui"
@@ -106,18 +119,11 @@
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
-        android:title="@string/general_category">
-    
-        <org.elixir.essence.preferences.SystemSettingSwitchPreference	    
-	        android:key="double_tap_sleep_gesture"
-	        settings:layout="@layout/xd_pref_card_top"
-            android:title="@string/double_tap_sleep_gesture_title"
-            android:summary="@string/double_tap_sleep_gesture_summary"
-            android:defaultValue="false" />
+        android:title="@string/reticker_category">
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="reticker_status"
-            settings:layout="@layout/xd_pref_card_mid"
+            settings:layout="@layout/xd_pref_card_top"
             android:title="@string/reticker_title"
             android:summary="@string/reticker_summary"
             android:defaultValue="false" />
@@ -141,6 +147,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+	android:layout="@layout/custom_preference_category"    
         android:title="@string/status_bar_clock_title">
 
     <org.elixir.essence.preferences.SystemSettingListPreference

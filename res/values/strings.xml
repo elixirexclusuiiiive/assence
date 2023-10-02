@@ -101,7 +101,7 @@
     <string name="summ_monet">Monet • Theming • Lockscreen Clock</string>
     <string name="summ_quick">QS Styles • Media Artwork • Data Usage</string>
     <string name="summ_sbar">Network Traffic • VoLTE/VoWifi </string>
-    <string name="summ_about">About Project Elixir ROM and Its Developers</string>
+    <string name="summ_about">Project Elixir and Devs</string>
     <string name="donate">Donate us here</string>
 
     <!-- Categories -->
@@ -125,7 +125,6 @@
     <string name="signal_category">Network Icon</string>
     <string name="misc_gnrl_category">General Options</string>
     <string name="pwrbtn_category">Power Button Options</string>
-    <string name="sbicon_category">Statusbar Icon Manager</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -260,7 +259,7 @@
     <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
 
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">Fingerprint</string>
+    <string name="fingerprint_category">Fingerprint Options</string>
     <string name="fprint_error_vib_title">Fingerprint error vibration</string>
     <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
     <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
@@ -522,7 +521,7 @@
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
-    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+    <string name="qstile_requires_unlocking_summary">Important QS tiles will require passcode before you can acccess them from lock screen</string>
 
     <!-- Units -->
     <string name="unit_milliseconds">milliseconds</string>
@@ -605,4 +604,9 @@
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
 
+    <string name="sb_icon_category">Statusbar Icons</string>
+    <string name="sb_gesture_category">Statusbar Gestures</string>
+    <string name="ls_gesture_category">Lockscreen Gestures</string>
+    <string name="reticker_category">Reticker Options</string>
+    <string name="gms_parallel_category">Gms and Parallel Space</string>
 </resources>

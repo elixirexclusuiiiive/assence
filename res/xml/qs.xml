@@ -41,17 +41,6 @@
             android:summary="@string/qstile_requires_unlocking_summary"
             android:defaultValue="true" />
 
-        <org.elixir.essence.preferences.SystemSettingSeekBarPreference
-            android:key="qs_header_clock_size"
-            settings:layout="@layout/xd_pref_card_mid"
-            app:layout_pos="2"
-            android:title="@string/clock_font_size_title"
-            android:max="27"
-            settings:min="10"
-            settings:interval="1"
-            android:defaultValue="14"
-            settings:units="@string/unit_pixels" />
-
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
                 android:key="quick_settings_vibrate"
                 settings:layout="@layout/xd_pref_card_mid"

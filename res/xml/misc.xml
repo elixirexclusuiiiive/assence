@@ -33,6 +33,31 @@
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
+        android:title="@string/gms_parallel_category" >
+
+        <!-- Google services -->
+        <Preference
+            android:key="gms_enabled_settings"
+            settings:layout="@layout/essence_pref_card_top"     
+            android:title="@string/gms_enabled_title"
+            android:summary="@string/gms_enabled_summary"
+            android:fragment="org.elixir.essence.fragments.GmsSwitch"/>
+
+        <!-- Parallel Space -->
+        <Preference
+            android:key="parallel_space"
+            settings:layout="@layout/essence_pref_card_bot"     
+            android:title="@string/laboratory_parallel_space_title"
+            android:summary="@string/laboratory_parallel_space_summary">
+        <intent
+            android:targetPackage="ink.kscope.parallelspace"
+            android:targetClass="ink.kscope.parallelspace.MainActivity" />
+        </Preference>
+
+   </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
         android:title="@string/misc_gnrl_category" >
 
         <!-- Launch music player when headset is connected -->
@@ -42,25 +67,6 @@
 	        android:title="@string/headset_connect_player_title"
             android:summary="@string/headset_connect_player_summary"
             android:defaultValue="false" />
-
-    	<!-- Google services -->
-    	<Preference
-            android:key="gms_enabled_settings"
-            settings:layout="@layout/essence_pref_card_mid"	
-            android:title="@string/gms_enabled_title"
-            android:summary="@string/gms_enabled_summary"
-            android:fragment="org.elixir.essence.fragments.GmsSwitch"/>
-
-        <!-- Parallel Space -->
-    	<Preference
-            android:key="parallel_space"
-            settings:layout="@layout/essence_pref_card_mid"	
-            android:title="@string/laboratory_parallel_space_title"
-            android:summary="@string/laboratory_parallel_space_summary">
-        <intent
-            android:targetPackage="ink.kscope.parallelspace"
-            android:targetClass="ink.kscope.parallelspace.MainActivity" />
-        </Preference>
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"

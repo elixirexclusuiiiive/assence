@@ -23,6 +23,10 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+    <PreferenceCategory
+            android:layout="@layout/custom_preference_category"
+	    android:title="QS Tiles Styles">
+
     <org.elixir.essence.preferences.SystemSettingListPreference
         android:key="qs_panel_style"
         android:title="@string/qstiles_title"
@@ -31,11 +35,28 @@
         android:entryValues="@array/qstiles_styles_values"
         android:defaultValue="0"
         android:summary="%s" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:layout="@layout/custom_preference_category"
+	    android:title="QS Header Clock">
+
+       <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_clock_size"
+            settings:layout="@layout/xd_pref_card_mid2"
+            app:layout_pos="0"
+            android:title="@string/clock_font_size_title"
+            android:max="27"
+            settings:min="10"
+            settings:interval="1"
+            android:defaultValue="14"
+            settings:units="@string/unit_pixels" />
+    </PreferenceCategory>
 
     <PreferenceCategory
             android:key="qsheader_category"
             android:layout="@layout/custom_preference_category"
-            android:title="QS Header">
+            android:title="QS Header Options">
 
         <org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image"
@@ -46,7 +67,7 @@
             android:max="75"
             android:min="0" />
 
-	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_fade_level"
             app:layout_pos="2"
             android:title="@string/qs_header_image_fade_level_level_title"
@@ -56,28 +77,40 @@
             android:max="100"
             android:min="1"/>
 
-	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_height"
             app:layout_pos="2"
             android:title="@string/qs_header_image_height_title"
             android:defaultValue="80"
             settings:interval="1"
             android:max="255"
-	        android:min="1"/>
+	    android:min="1"/>
 
-	    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+	<org.elixir.essence.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image_opacity_level"
-            app:layout_pos="2"
+            app:layout_pos="3"
             android:title="@string/qs_header_image_opacity_level_title"
             android:summary="@string/qs_header_image_opacity_level_summary"
             android:defaultValue="30"
             settings:interval="1"
             android:max="100"
-	        android:min="1"/>
+	    android:min="1"/>
 
-        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+        <org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
+            android:key="qs_header_image_filter_color"
+            android:title="@string/qs_header_image_filter_color_title"
+            android:defaultValue="0xFFFFFFFF"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="qsheader_category"
+            android:layout="@layout/custom_preference_category"
+            android:title="Custom QS Header">
+
+	<org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="qs_header_custom_image_uri_enabled"
-            settings:layout="@layout/xd_pref_card_mid"
+            settings:layout="@layout/xd_pref_card_top"
             android:title="@string/qs_header_custom_image_uri_enabled_title"
             android:defaultValue="false"
             android:summary="@string/qs_header_custom_image_uri_enabled_summary" />
@@ -89,12 +122,7 @@
             android:summary="@string/file_header_select_summary"
             android:persistent="false"
             android:dependency="qs_header_custom_image_uri_enabled" />
-
-        <org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
-            android:key="qs_header_image_filter_color"
-            android:title="@string/qs_header_image_filter_color_title"
-            android:defaultValue="0xFFFFFFFF"/>
-
+	   
     </PreferenceCategory>
-
+	
 </PreferenceScreen>
