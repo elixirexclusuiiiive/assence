@@ -29,6 +29,8 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.provider.Settings;
 import android.widget.Toast;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import static android.os.UserHandle.USER_SYSTEM;
 import static android.os.UserHandle.USER_CURRENT;
 
@@ -56,6 +58,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.Arrays;
 import java.io.File;
+
+import com.android.settingslib.display.DisplayDensityConfiguration;
 
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK;
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_STYLES;
@@ -153,14 +157,10 @@ public class Themes extends SettingsPreferenceFragment
                 RROManager(OLD_CLOCK, false);
             }
             OLD_CLOCK = Settings.Secure.getString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES);
-            if (isOverlayEnabled(current)) {
-                // Already enabled ??
-            } else {
-                RROManager(current, true);
-            }
             if ((Arrays.asList(mDepthClocks).contains(current))) {
-                Log.i(TAG, "One of depth clock is selected, enabling its wallpaper");
-                Toast.makeText(mContext, "Applying wallpaper to match with clock. Don't change wallapaper now!", Toast.LENGTH_LONG).show();
+                Log.i(TAG, "One of depth clock is selected, enabling its wallpaper and setting screen DPI!");
+                applyScreenDpi(411);
+                Toast.makeText(mContext, "Don't change screen DPI\nand lockscreen wallpaper now!", Toast.LENGTH_LONG).show();
                 int position = findPosition(mDepthClocks, current);
                 if (position == 0) {
                     File file = new File("/product/elixir/depth_wallpaper/depth1.jpg");
@@ -175,12 +175,31 @@ public class Themes extends SettingsPreferenceFragment
             } else {
                 Log.i(TAG, "None depth clock!");
             }
+            if (isOverlayEnabled(current)) {
+                // Already enabled ??
+            } else {
+                RROManager(current, true);
+            }
             return true;
         }
         return false;
     }
 
-    public static int findPosition(String[] array, String target) {
+    private void applyScreenDpi(int newDpi) {
+        try {
+            final Resources res = mContext.getResources();
+            final DisplayMetrics metrics = res.getDisplayMetrics();
+            final int newSwDp = newDpi;
+            final int minDimensionPx = Math.min(metrics.widthPixels, metrics.heightPixels);
+            final int newDensity = DisplayMetrics.DENSITY_MEDIUM * minDimensionPx / newSwDp;
+            final int densityDpi = Math.max(newDensity, 120);
+            DisplayDensityConfiguration.setForcedDisplayDensity(Display.DEFAULT_DISPLAY, densityDpi);
+        } catch (Exception e) {
+            Log.i(TAG, e.toString());
+        }
+    }
+
+    private static int findPosition(String[] array, String target) {
         for (int i = 0; i < array.length; i++) {
             if (array[i].equals(target)) {
                 return i; // Found a match, return the index
