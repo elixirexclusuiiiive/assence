@@ -158,6 +158,11 @@ public class Themes extends SettingsPreferenceFragment
         if (preference == mCustomClock) {
             boolean value = (Boolean) newValue;
             Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK, value ? 1 : 0);
+            Settings.Secure.putString(resolver, LOCKSCREEN_DEPTH_CLOCK_STYLES, "DEFAULT");
+            mDepthClockStyle.setValue("DEFAULT");
+            if (isOverlayEnabled(OLD_DEPTH_CLOCK)) {
+                RROManager(OLD_DEPTH_CLOCK, false);
+            }
             if (!value) {
                 hideDateView(true);
             } else {
@@ -190,6 +195,11 @@ public class Themes extends SettingsPreferenceFragment
         } else if (preference == mDepthClock) {
             boolean value = (Boolean) newValue;
             Settings.Secure.putInt(resolver, LOCKSCREEN_DEPTH_CLOCK, value ? 1 : 0);
+            Settings.Secure.putString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES, "DEFAULT");
+            mClockStyle.setValue("DEFAULT");
+            if (isOverlayEnabled(OLD_CLOCK)) {
+                RROManager(OLD_CLOCK, false);
+            }
             if (!value) {
                 hideDateView(true);
             } else {
@@ -218,9 +228,8 @@ public class Themes extends SettingsPreferenceFragment
                 applyScreenDpi(411);
                 Toast.makeText(mContext, "Don't change screen DPI\nand lockscreen wallpaper now!", Toast.LENGTH_LONG).show();
                 int position = findPosition(mDepthClocks, current);
-                if (position == 0) {
-                    applyWallpaper("/product/elixir/depth_wallpaper/depth1.jpg");
-                }
+                String pathOfWall = "/product/elixir/depth_wallpaper/depth" + position + ".jpg";
+                applyWallpaper(pathOfWall);
             } else {
                 Log.i(TAG, "None depth clock!");
             }
@@ -298,7 +307,8 @@ public class Themes extends SettingsPreferenceFragment
 
     // List of depth clocks added in rom
     private static final String[] mDepthClocks = {
-        "com.android.systemui.lsclock.depth1"
+        "com.android.systemui.lsclock.depth1",
+        "com.android.systemui.lsclock.depth2"
     };
 
     private boolean isOverlayEnabled(String name) {
