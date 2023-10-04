@@ -399,23 +399,6 @@
     <string name="reticker_landscape_only_title">Landscape only</string>
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
 
-    <!-- QS Header -->
-    <string name="qs_header_image_title">QS Header Image</string>
-    <string name="qs_header_random_image_title">QS Header Random Image</string>
-    <string name="qs_header_random_image_summary">Enable random QS header image</string>
-    <string name="qs_header_image_blur_level_title">QS header image blur effect level</string>
-    <string name="qs_header_image_blur_level_summary">Strength of the blur effect applied to the QS header image</string>
-    <string name="qs_header_image_fade_level_level_title">QS header image fade level</string>
-    <string name="qs_header_image_fade_level_level_summary">Fade level of the QS header image</string>
-    <string name="qs_header_image_opacity_level_title">QS header image opacity level</string>
-    <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
-    <string name="qs_header_image_filter_color_title">QS header image filter color</string>
-    <string name="qs_header_image_height_title">QS header image height</string>
-    <string name="qs_header_custom_image_uri_enabled_title">Custom QS header image</string>
-    <string name="qs_header_custom_image_uri_enabled_summary">Apply custom QS image header</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>
-
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
@@ -611,4 +594,29 @@
     <string name="ls_gesture_category">Lockscreen Gestures</string>
     <string name="reticker_category">Reticker Options</string>
     <string name="gms_parallel_category">Gms and Parallel Space</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Header image</string>
+
+    <!-- QS header image -->
+    <string name="qs_header_image_summary">Pick QS background header image</string>
+    <string name="qs_header_image_enabled_title">QS header image customization</string>
+    <string name="qs_header_image_enabled_summary">Enable QS header image customization</string>
+    <string name="qs_header_image_landscape_enabled_title">Show on landscape</string>
+    <string name="qs_header_image_landscape_enabled_summary">Enable QS header image when landscape mode is on</string>
+    <string name="qs_header_image_tint_title">Tint</string>
+    <string name="qs_header_image_tint_none">No tint</string>
+    <string name="qs_header_image_tint_accent">Accent color</string>
+    <string name="qs_header_image_tint_primary">Primary color</string>
+    <string name="qs_header_image_tint_primary_inverse">Primary color inverse</string>
+    <string name="qs_header_image_tint_custom">Custom color</string>
+    <string name="qs_header_image_tint_custom_title">Custom tint color</string>
+    <string name="qs_header_image_height_portrait_title">Height (potrait)</string>
+    <string name="qs_header_image_height_landscape_title">Height (landScape)</string>
+    <string name="qs_header_image_alpha_title">Opacity</string>
+    <string name="qs_header_image_padding_side_title">Side padding</string>
+    <string name="qs_header_image_padding_top_title">Top padding</string>
+    <string name="file_header_select_title">Select local image</string>
+    <string name="file_header_select_summary">Select image from storage</string>
+
 </resources>

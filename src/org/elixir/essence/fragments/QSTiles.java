@@ -19,15 +19,11 @@ package org.elixir.essence.fragments;
 import android.app.ActivityManagerNative;
 import android.content.ContentResolver;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.om.IOverlayManager;
 import android.content.om.OverlayInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
@@ -36,7 +32,6 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.os.UserHandle;
-import android.provider.MediaStore;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
@@ -58,17 +53,6 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import org.elixir.essence.preferences.SystemSettingListPreference;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.net.URLDecoder;
-import java.nio.charset.StandardCharsets;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-
 import static android.os.UserHandle.USER_SYSTEM;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
@@ -76,7 +60,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
 
     private static final String TAG = "QSTiles";
     private static final String KEY_QSTILES_STYLES = "qs_panel_style";
-    private static final String KEY_CUSTOM_QS_HEADER_IMAGE_URI = "qs_header_custom_image_uri";
 
     public static final String[] QS_STYLES = {
         "com.android.system.qs.outline",
@@ -94,7 +77,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
 
     private Handler mHandler;
     private SystemSettingListPreference mQSTilesStyles;
-    private Preference mQsHeaderCustomImagePicker;
     private IOverlayManager mOverlayService;
     private ContentResolver resolver;
 
@@ -116,75 +98,6 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             mQSTilesStyles.setOnPreferenceChangeListener(this);
         }
 
-        mQsHeaderCustomImagePicker = findPreference(KEY_CUSTOM_QS_HEADER_IMAGE_URI);
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mQsHeaderCustomImagePicker) {
-            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            intent.setType("image/*");
-            startActivityForResult(intent, 10001);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preference);
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent result) {
-        if (requestCode == 10001) {
-            if (resultCode != Activity.RESULT_OK) {
-                return;
-            }
-
-            final Uri imgUri = result.getData();
-            if (imgUri != null) {
-                String savedImagePath = saveImageToInternalStorage(getContext(), imgUri);
-                if (savedImagePath != null) {
-                    ContentResolver resolver = getContext().getContentResolver();
-                    Settings.System.putIntForUser(resolver, Settings.System.QS_HEADER_IMAGE, 0, UserHandle.USER_CURRENT);
-                    Settings.System.putStringForUser(resolver, Settings.System.QS_HEADER_CUSTOM_IMAGE_URI, savedImagePath, UserHandle.USER_CURRENT);
-                }
-            }
-        }
-    }
-
-    private String saveImageToInternalStorage(Context context, Uri imgUri) {
-        try {
-            InputStream inputStream;
-            if (imgUri.toString().startsWith("content://com.google.android.apps.photos.contentprovider")) {
-                List<String> segments = imgUri.getPathSegments();
-                if (segments.size() > 2) {
-                    String mediaUriString = URLDecoder.decode(segments.get(2), StandardCharsets.UTF_8.name());
-                    Uri mediaUri = Uri.parse(mediaUriString);
-                    inputStream = context.getContentResolver().openInputStream(mediaUri);
-                } else {
-                    throw new FileNotFoundException("Failed to parse Google Photos content URI");
-                }
-            } else {
-                inputStream = context.getContentResolver().openInputStream(imgUri);
-            }
-            Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-            String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date());
-            String imageFileName = "QS_HEADER_" + timeStamp + ".png";
-            File directory = new File("/sdcard/qsheaders");
-            if (!directory.exists() && !directory.mkdirs()) {
-                return null;
-            }
-            File[] files = directory.listFiles((dir, name) -> name.startsWith("QS_HEADER_") && name.endsWith(".png"));
-            if (files != null) {
-                for (File file : files) {
-                    file.delete();
-                }
-            }
-            File file = new File(directory, imageFileName);
-            try (FileOutputStream outputStream = new FileOutputStream(file)) {
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
-            }
-            return file.getAbsolutePath();
-        } catch (Exception e) {
-            return null;
-        }
     }
 
     private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
@@ -200,6 +113,8 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QS_PANEL_STYLE),
                     false, this, UserHandle.USER_ALL);
+	    Settings.System.putIntForUser(resolver,
+                Settings.System.QS_HEADER_IMAGE, 0, UserHandle.USER_CURRENT);
         }
 
         @Override
