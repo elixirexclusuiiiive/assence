@@ -208,12 +208,22 @@
         <item>DEFAULT</item>
         <item>IosStyle Depth1</item>
         <item>IosStyle Depth2</item>
+	    <item>IosStyle Depth3</item>
+	    <item>IosStyle Depth4</item>
+	    <item>IosStyle Depth5</item>
+	    <item>IosStyle Depth6</item>
+	    <item>IosStyle Depth7</item>    
     </string-array>
 
     <string-array name="lsdepthclock_styles_values" translatable="false">
         <item>DEFAULT</item>
         <item>com.android.systemui.lsclock.depth1</item>
         <item>com.android.systemui.lsclock.depth2</item>
+	    <item>com.android.systemui.lsclock.depth3</item>
+	    <item>com.android.systemui.lsclock.depth4</item>
+	    <item>com.android.systemui.lsclock.depth5</item>
+	    <item>com.android.systemui.lsclock.depth6</item>
+	    <item>com.android.systemui.lsclock.depth7</item>
     </string-array>
 
    <!-- Battery percent -->

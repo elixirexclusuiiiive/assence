@@ -308,7 +308,12 @@ public class Themes extends SettingsPreferenceFragment
     // List of depth clocks added in rom
     private static final String[] mDepthClocks = {
         "com.android.systemui.lsclock.depth1",
-        "com.android.systemui.lsclock.depth2"
+        "com.android.systemui.lsclock.depth2",
+	    "com.android.systemui.lsclock.depth3",
+	    "com.android.systemui.lsclock.depth4",
+        "com.android.systemui.lsclock.depth5",
+	    "com.android.systemui.lsclock.depth6",
+	    "com.android.systemui.lsclock.depth7"
     };
 
     private boolean isOverlayEnabled(String name) {
