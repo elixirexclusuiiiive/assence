@@ -15,43 +15,16 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+	   android:title="Clock Options">
+     
     <org.elixir.essence.preferences.SystemSettingSwitchPreference
         android:key="status_bar_clock_auto_hide_launcher"
         settings:layout="@layout/xd_pref_card_top"
         android:title="@string/status_bar_clock_auto_hide_title"
         android:summary="@string/status_bar_clock_auto_hide_launcher_summary"
         android:defaultValue="false" />
-
-    <org.elixir.essence.preferences.SystemSettingSwitchPreference
-        android:key="status_bar_clock_auto_hide"
-        settings:layout="@layout/xd_pref_card_mid"
-        android:title="@string/status_bar_clock_auto_hide_title"
-        android:summary="@string/status_bar_clock_auto_hide_summary"
-        android:defaultValue="false" />
-
-    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
-        android:key="status_bar_clock_auto_hide_hduration"
-        app:layout_pos="2"
-        android:title="@string/status_bar_clock_auto_hide_hdur_title"
-        android:summary="@string/status_bar_clock_auto_hide_hdur_summary"
-        android:max="300"
-        settings:min="5"
-        settings:interval="5"
-        android:dependency="status_bar_clock_auto_hide"
-        android:defaultValue="60"
-        settings:units="@string/unit_seconds" />
-
-    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
-        android:key="status_bar_clock_auto_hide_sduration"
-        app:layout_pos="2"
-        android:title="@string/status_bar_clock_auto_hide_sdur_title"
-        android:summary="@string/status_bar_clock_auto_hide_sdur_summary"
-        android:max="300"
-        settings:min="5"
-        settings:interval="5"
-        android:dependency="status_bar_clock_auto_hide"
-        android:defaultValue="5"
-        settings:units="@string/unit_seconds" />
 
     <org.elixir.essence.preferences.SystemSettingSwitchPreference
         android:key="status_bar_clock_seconds"
@@ -79,11 +52,68 @@
         settings:interval="1"
         android:defaultValue="14"
         settings:units="@string/unit_pixels" />
+	    
+     <org.elixir.essence.preferences.SystemSettingListPreference
+        android:key="status_bar_clock_font_style"
+        settings:layout="@layout/essence_pref_card_bot"
+        android:dialogTitle="@string/status_bar_clock_font_style_title"
+        android:title="@string/status_bar_clock_font_style_title"
+        android:entries="@array/function_fonts_entries"
+        android:entryValues="@array/function_fonts_values"
+        android:summary="%s"
+        android:defaultValue="0" />
 
+    <org.elixir.essence.preferences.colorpicker.SystemSettingColorPickerPreference
+        android:key="status_bar_clock_color"
+        android:title="@string/status_bar_clock_color_title"
+        android:defaultValue="0xffffffff" />
+	    
+    </PreferenceCategory>
+     
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+	    android:title="Clock Duration">
+     
+    <org.elixir.essence.preferences.SystemSettingSwitchPreference
+        android:key="status_bar_clock_auto_hide"
+        settings:layout="@layout/xd_pref_card_top"
+        android:title="@string/status_bar_clock_auto_hide_title"
+        android:summary="@string/status_bar_clock_auto_hide_summary"
+        android:defaultValue="false" />
+
+    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+        android:key="status_bar_clock_auto_hide_hduration"
+        app:layout_pos="2"
+        android:title="@string/status_bar_clock_auto_hide_hdur_title"
+        android:summary="@string/status_bar_clock_auto_hide_hdur_summary"
+        android:max="300"
+        settings:min="5"
+        settings:interval="5"
+        android:dependency="status_bar_clock_auto_hide"
+        android:defaultValue="60"
+        settings:units="@string/unit_seconds" />
+
+    <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+        android:key="status_bar_clock_auto_hide_sduration"
+        app:layout_pos="3"
+        android:title="@string/status_bar_clock_auto_hide_sdur_title"
+        android:summary="@string/status_bar_clock_auto_hide_sdur_summary"
+        android:max="300"
+        settings:min="5"
+        settings:interval="5"
+        android:dependency="status_bar_clock_auto_hide"
+        android:defaultValue="5"
+        settings:units="@string/unit_seconds" />  
+    </PreferenceCategory>
+     
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+	    android:title="Date Options">
+     
     <org.elixir.essence.preferences.SystemSettingListPreference
         android:key="status_bar_clock_date_display"
         android:title="@string/status_bar_date_title"
-        settings:layout="@layout/essence_pref_card_mid"
+        settings:layout="@layout/essence_pref_card_top"
         android:entries="@array/status_bar_date_entries"
         android:entryValues="@array/status_bar_date_values"
         android:defaultValue="0" />
@@ -110,4 +140,6 @@
         android:title="@string/status_bar_date_format_title"
         android:entries="@array/status_bar_date_format_entries_values"
         android:entryValues="@array/status_bar_date_format_entries_values" />
+</PreferenceCategory>
+
 </PreferenceScreen>

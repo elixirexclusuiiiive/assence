@@ -26,11 +26,11 @@
     <PreferenceCategory
         android:key="exclusive_clock"
         android:layout="@layout/custom_preference_category"
-        android:title="Exclusive Users">
+        android:title="Exclusive Clocks">
 
         <SwitchPreference
-		    android:key="lock_screen_custom_clock"
-		    settings:layout="@layout/xd_pref_card_top"
+	    android:key="lock_screen_custom_clock"
+	    settings:layout="@layout/xd_pref_card_top"
             android:title="Custom Clocks"
             android:summary="Enable custom clocks on lockscreen"
             android:defaultValue="false" />
@@ -38,25 +38,25 @@
         <ListPreference
             android:key="ls_clock_styles"
             android:dependency="lock_screen_custom_clock"
-	        android:title="Custom clock style"
-	        settings:layout="@layout/essence_pref_card_mid"
+	    android:title="Custom clock style"
+            settings:layout="@layout/essence_pref_card_bot"
             android:entries="@array/lsclock_styles_entries"
             android:entryValues="@array/lsclock_styles_values"
             android:defaultValue="0"
             android:persistent="false" />
 
         <SwitchPreference
-		    android:key="lock_screen_depth_clock"
-		    settings:layout="@layout/xd_pref_card_mid"
+	    android:key="lock_screen_depth_clock"
+ 	    settings:layout="@layout/xd_pref_card_top"
             android:title="Enable depth clocks"
-            android:summary="Enable depth clocks on lockscreen line ios (BETA)"
+            android:summary="Enable depth clocks on lockscreen like iOS style (BETA)"
             android:defaultValue="false" />
         
         <ListPreference
             android:key="ls_depth_clock_styles"
             android:dependency="lock_screen_depth_clock"
-	        android:title="Depth clock style"
-	        settings:layout="@layout/essence_pref_card_bot"
+	    android:title="Depth clock style"
+	    settings:layout="@layout/essence_pref_card_bot"
             android:entries="@array/lsdepthclock_styles_entries"
             android:entryValues="@array/lsdepthclock_styles_values"
             android:defaultValue="0"
@@ -66,7 +66,7 @@
 
    <PreferenceCategory
         android:layout="@layout/custom_preference_category"
-        android:title="@string/customisation_title">
+        android:title="Redefine your UI">
 
          <!-- Add a list preference for screen resolution -->
          <org.elixir.essence.preferences.SecureSettingListPreference
@@ -80,21 +80,28 @@
 
         <Preference
             android:key="android.theme.customization.fonts"
-            settings:layout="@layout/essence_pref_card_mid"
+            settings:layout="@layout/essence_pref_card_bot"
             android:title="@string/theme_customization_font_title"
             android:summary="@string/theme_customization_font_summary"
             android:fragment="org.elixir.essence.fragments.FontsPicker"/>
 
         <Preference
             android:key="android.theme.customization.icon_pack"
-            settings:layout="@layout/essence_pref_card_mid"
+            settings:layout="@layout/essence_pref_card_top"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="org.elixir.essence.fragments.StatusbarIcons"/>
 
+        <Preference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            settings:layout="@layout/essence_pref_card_bot"
+            android:title="@string/theme_customization_icon_shape_title"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="org.elixir.essence.fragments.IconShapes"/>
+	   
         <org.elixir.essence.preferences.SecureSettingListPreference
 		android:key="brightness_slider_style"
-		settings:layout="@layout/essence_pref_card_mid"
+		settings:layout="@layout/essence_pref_card_top"
             android:title="@string/brightness_slider_style_title"
             android:entries="@array/brightness_slider_style_entries"
             android:entryValues="@array/brightness_slider_style_values"
@@ -103,21 +110,14 @@
         <!-- Data icon style -->  
         <Preference
 	    android:key="android.customization.sb_data"
-   	    settings:layout="@layout/essence_pref_card_mid"
+   	    settings:layout="@layout/essence_pref_card_bot"
             android:title="@string/theme_customization_data_title"
             android:summary="@string/theme_customization_data_summary"
             android:fragment="org.elixir.essence.fragments.DataStyles" />
 
         <Preference
-            android:key="android.theme.customization.adaptive_icon_shape"
-            settings:layout="@layout/essence_pref_card_mid"
-            android:title="@string/theme_customization_icon_shape_title"
-            android:summary="@string/theme_customization_icon_shape_summary"
-            android:fragment="org.elixir.essence.fragments.IconShapes"/>
-
-        <Preference
             android:key="android.theme.customization.signal_icon"
-            settings:layout="@layout/essence_pref_card_mid"
+            settings:layout="@layout/essence_pref_card_top"
             android:title="@string/theme_customization_signal_icon_title"
             android:summary="@string/theme_customization_signal_icon_summary"
             android:fragment="org.elixir.essence.fragments.SignalIcons"/>

@@ -98,9 +98,9 @@
     <string name="summ_gesture">Playback Control • System Navigation</string>
     <string name="summ_lock">DT2S • Media Art • Edge Lighting</string>
     <string name="summ_misc">Game Space • Power Menu • HwKey </string>
-    <string name="summ_monet">Monet • Theming • Lockscreen Clock</string>
-    <string name="summ_quick">QS Styles • Media Artwork • Data Usage</string>
-    <string name="summ_sbar">Network Traffic • VoLTE/VoWifi </string>
+    <string name="summ_monet">Fonts • Theming • Lockscreen Clock</string>
+    <string name="summ_quick">QS Styles • Secure Qs </string>
+    <string name="summ_sbar">Network Traffic • Battery Styles </string>
     <string name="summ_about">Project Elixir and Devs</string>
     <string name="donate">Donate us here</string>
 
