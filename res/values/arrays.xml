@@ -184,7 +184,6 @@
         <item>OOSAlike Nothing</item>
         <item>Lazy1</item>
         <item>Minimal2</item>
-        <item>IosStyle Depth1 (BETA)</item>
         <item>Exotic1</item>
     </string-array>
 
@@ -202,8 +201,17 @@
         <item>com.android.systemui.lsclock.oosnothing</item>
         <item>com.android.systemui.lsclock.lazy1</item>
         <item>com.android.systemui.lsclock.minimal2</item>
-        <item>com.android.systemui.lsclock.depth1</item>
         <item>com.android.systemui.lsclock.exotic1</item>
+    </string-array>
+
+    <string-array name="lsdepthclock_styles_entries" translatable="false">
+        <item>DEFAULT</item>
+        <item>IosStyle Depth1</item>
+    </string-array>
+
+    <string-array name="lsdepthclock_styles_values" translatable="false">
+        <item>DEFAULT</item>
+        <item>com.android.systemui.lsclock.depth1</item>
     </string-array>
 
    <!-- Battery percent -->

@@ -65,18 +65,25 @@ import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK;
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_STYLES;
 import static android.provider.Settings.Secure.ELIXIR_EXCLUSIVE_BUILD;
 import static android.provider.Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_HIDE_DATE;
+import static android.provider.Settings.Secure.LOCKSCREEN_DEPTH_CLOCK;
+import static android.provider.Settings.Secure.LOCKSCREEN_DEPTH_CLOCK_STYLES;
 
 public class Themes extends SettingsPreferenceFragment 
 	implements Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "Themes";
     private static final String KEY_CUSTOM_CLOCK = "lock_screen_custom_clock";
+    private static final String KEY_DEPTH_CLOCK = "lock_screen_depth_clock";
     private static final String KEY_CUSTOM_CLOCK_STYLE = "ls_clock_styles";
+    private static final String KEY_DEPTH_CLOCK_STYLE = "ls_depth_clock_styles";
     private static final String KEY_EXCLUSIVE_CAT = "exclusive_clock";
     private String OLD_CLOCK = "DEFAULT";
+    private String OLD_DEPTH_CLOCK = "DEFAULT";
     private Context mContext;
     private SwitchPreference mCustomClock;
+    private SwitchPreference mDepthClock;
     private ListPreference mClockStyle;
+    private ListPreference mDepthClockStyle;
     private ContentResolver resolver;
     private IOverlayManager mOverlayService;
     private PreferenceCategory mExclusiveBuild;
@@ -111,6 +118,20 @@ public class Themes extends SettingsPreferenceFragment
                 mClockStyle.setSummary(mClockStyle.getEntry());
                 mClockStyle.setOnPreferenceChangeListener(this);
             }
+
+            mDepthClock = (SwitchPreference) findPreference(KEY_DEPTH_CLOCK);
+            if (mDepthClock != null) {
+                mDepthClock.setChecked(Settings.Secure.getIntForUser(resolver, LOCKSCREEN_DEPTH_CLOCK, 0, UserHandle.USER_CURRENT) != 0);
+                mDepthClock.setOnPreferenceChangeListener(this);
+            }
+    
+            mDepthClockStyle = (ListPreference) findPreference(KEY_DEPTH_CLOCK_STYLE);
+            if (mDepthClockStyle != null) {
+                mDepthClockStyle.setValue(Settings.Secure.getString(resolver, LOCKSCREEN_DEPTH_CLOCK_STYLES));
+                OLD_DEPTH_CLOCK = Settings.Secure.getString(resolver, LOCKSCREEN_DEPTH_CLOCK_STYLES);
+                mDepthClockStyle.setSummary(mDepthClockStyle.getEntry());
+                mDepthClockStyle.setOnPreferenceChangeListener(this);
+            }
         } else {
             mExclusiveBuild = (PreferenceCategory) findPreference(KEY_EXCLUSIVE_CAT);
             screen.removePreference(mExclusiveBuild);
@@ -139,6 +160,9 @@ public class Themes extends SettingsPreferenceFragment
             Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK, value ? 1 : 0);
             if (!value) {
                 hideDateView(true);
+            } else {
+                Settings.Secure.putInt(resolver, LOCKSCREEN_DEPTH_CLOCK, 0);
+                mDepthClock.setChecked(false);
             }
             customUtils.showSystemUiRestartDialog(getActivity());
             return true;
@@ -157,20 +181,45 @@ public class Themes extends SettingsPreferenceFragment
                 RROManager(OLD_CLOCK, false);
             }
             OLD_CLOCK = Settings.Secure.getString(resolver, LOCK_SCREEN_CUSTOM_CLOCK_STYLES);
+            if (isOverlayEnabled(current)) {
+                // Already enabled ??
+            } else {
+                RROManager(current, true);
+            }
+            return true;
+        } else if (preference == mDepthClock) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(resolver, LOCKSCREEN_DEPTH_CLOCK, value ? 1 : 0);
+            if (!value) {
+                hideDateView(true);
+            } else {
+                Settings.Secure.putInt(resolver, LOCK_SCREEN_CUSTOM_CLOCK, 0);
+                mCustomClock.setChecked(false);
+            }
+            customUtils.showSystemUiRestartDialog(getActivity());
+            return true;
+        } else if (preference == mDepthClockStyle) {
+            mDepthClockStyle.setValue((String) newValue);
+            mDepthClockStyle.setSummary(mDepthClockStyle.getEntry());
+            Settings.Secure.putString(resolver, LOCKSCREEN_DEPTH_CLOCK_STYLES, (String) newValue);
+            String current = Settings.Secure.getString(resolver, LOCKSCREEN_DEPTH_CLOCK_STYLES);
+            if ((Arrays.asList(mDateViewShowClocks).contains(current))) {
+                Log.i(TAG, "This clock doent have a date view, enabling smartspace date view");
+                hideDateView(true);
+            } else {
+                hideDateView(false);
+            }
+            if (isOverlayEnabled(OLD_DEPTH_CLOCK)) {
+                RROManager(OLD_DEPTH_CLOCK, false);
+            }
+            OLD_DEPTH_CLOCK = Settings.Secure.getString(resolver, LOCKSCREEN_DEPTH_CLOCK_STYLES);
             if ((Arrays.asList(mDepthClocks).contains(current))) {
                 Log.i(TAG, "One of depth clock is selected, enabling its wallpaper and setting screen DPI!");
                 applyScreenDpi(411);
                 Toast.makeText(mContext, "Don't change screen DPI\nand lockscreen wallpaper now!", Toast.LENGTH_LONG).show();
                 int position = findPosition(mDepthClocks, current);
                 if (position == 0) {
-                    File file = new File("/product/elixir/depth_wallpaper/depth1.jpg");
-                    Bitmap wallpaperBitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
-                    WallpaperManager wallpaperManager = WallpaperManager.getInstance(mContext);
-                    try {
-                        wallpaperManager.setBitmap(wallpaperBitmap);
-                    } catch (Exception e) {
-                        Log.i(TAG, e.toString());
-                    }
+                    applyWallpaper("/product/elixir/depth_wallpaper/depth1.jpg");
                 }
             } else {
                 Log.i(TAG, "None depth clock!");
@@ -183,6 +232,17 @@ public class Themes extends SettingsPreferenceFragment
             return true;
         }
         return false;
+    }
+
+    private void applyWallpaper(String filePath) {
+        File file = new File(filePath);
+        Bitmap wallpaperBitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+        WallpaperManager wallpaperManager = WallpaperManager.getInstance(mContext);
+        try {
+            wallpaperManager.setBitmap(wallpaperBitmap);
+        } catch (Exception e) {
+            Log.i(TAG, e.toString());
+        }
     }
 
     private void applyScreenDpi(int newDpi) {

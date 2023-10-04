@@ -39,9 +39,26 @@
             android:key="ls_clock_styles"
             android:dependency="lock_screen_custom_clock"
 	        android:title="Custom clock style"
-	        settings:layout="@layout/essence_pref_card_bot"
+	        settings:layout="@layout/essence_pref_card_mid"
             android:entries="@array/lsclock_styles_entries"
             android:entryValues="@array/lsclock_styles_values"
+            android:defaultValue="0"
+            android:persistent="false" />
+
+        <SwitchPreference
+		    android:key="lock_screen_depth_clock"
+		    settings:layout="@layout/xd_pref_card_mid"
+            android:title="Enable depth clocks"
+            android:summary="Enable depth clocks on lockscreen line ios (BETA)"
+            android:defaultValue="false" />
+        
+        <ListPreference
+            android:key="ls_depth_clock_styles"
+            android:dependency="lock_screen_depth_clock"
+	        android:title="Depth clock style"
+	        settings:layout="@layout/essence_pref_card_bot"
+            android:entries="@array/lsdepthclock_styles_entries"
+            android:entryValues="@array/lsdepthclock_styles_values"
             android:defaultValue="0"
             android:persistent="false" />
 
