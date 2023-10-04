@@ -309,11 +309,23 @@ public class Themes extends SettingsPreferenceFragment
     private static final String[] mDepthClocks = {
         "com.android.systemui.lsclock.depth1",
         "com.android.systemui.lsclock.depth2",
-	    "com.android.systemui.lsclock.depth3",
-	    "com.android.systemui.lsclock.depth4",
+	"com.android.systemui.lsclock.depth3",
+	"com.android.systemui.lsclock.depth4",
         "com.android.systemui.lsclock.depth5",
-	    "com.android.systemui.lsclock.depth6",
-	    "com.android.systemui.lsclock.depth7"
+	"com.android.systemui.lsclock.depth6",
+	"com.android.systemui.lsclock.depth7",
+	"com.android.systemui.lsclock.depth8",
+        "com.android.systemui.lsclock.depth9",
+	"com.android.systemui.lsclock.depth10",
+	"com.android.systemui.lsclock.depth11",
+        "com.android.systemui.lsclock.depth12",
+	"com.android.systemui.lsclock.depth13",
+	"com.android.systemui.lsclock.depth14",
+	"com.android.systemui.lsclock.depth15",
+        "com.android.systemui.lsclock.depth16",
+	"com.android.systemui.lsclock.depth17",
+	"com.android.systemui.lsclock.depth18",
+        "com.android.systemui.lsclock.depth19" 
     };
 
     private boolean isOverlayEnabled(String name) {

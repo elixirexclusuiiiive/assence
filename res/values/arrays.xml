@@ -208,22 +208,46 @@
         <item>DEFAULT</item>
         <item>IosStyle Depth1</item>
         <item>IosStyle Depth2</item>
-	    <item>IosStyle Depth3</item>
-	    <item>IosStyle Depth4</item>
-	    <item>IosStyle Depth5</item>
-	    <item>IosStyle Depth6</item>
-	    <item>IosStyle Depth7</item>    
+	<item>IosStyle Depth3</item>
+	<item>IosStyle Depth4</item>
+	<item>IosStyle Depth5</item>
+	<item>IosStyle Depth6</item>
+	<item>IosStyle Depth7</item>    
+	<item>IosStyle Depth8</item>
+        <item>IosStyle Depth9</item>
+	<item>IosStyle Depth10</item>
+	<item>IosStyle Depth11</item>
+	<item>IosStyle Depth12</item>
+	<item>IosStyle Depth13</item>
+	<item>IosStyle Depth14</item> 
+	<item>IosStyle Depth15</item>
+        <item>IosStyle Depth16</item>
+	<item>IosStyle Depth17</item>
+	<item>IosStyle Depth18</item>
+	<item>IosStyle Depth19</item>
     </string-array>
 
     <string-array name="lsdepthclock_styles_values" translatable="false">
         <item>DEFAULT</item>
         <item>com.android.systemui.lsclock.depth1</item>
         <item>com.android.systemui.lsclock.depth2</item>
-	    <item>com.android.systemui.lsclock.depth3</item>
-	    <item>com.android.systemui.lsclock.depth4</item>
-	    <item>com.android.systemui.lsclock.depth5</item>
-	    <item>com.android.systemui.lsclock.depth6</item>
-	    <item>com.android.systemui.lsclock.depth7</item>
+	<item>com.android.systemui.lsclock.depth3</item>
+	<item>com.android.systemui.lsclock.depth4</item>
+	<item>com.android.systemui.lsclock.depth5</item>
+	<item>com.android.systemui.lsclock.depth6</item>
+	<item>com.android.systemui.lsclock.depth7</item>
+        <item>com.android.systemui.lsclock.depth8</item>
+	<item>com.android.systemui.lsclock.depth9</item>
+	<item>com.android.systemui.lsclock.depth10</item>
+	<item>com.android.systemui.lsclock.depth11</item>
+	<item>com.android.systemui.lsclock.depth12</item>
+	<item>com.android.systemui.lsclock.depth13</item>
+        <item>com.android.systemui.lsclock.depth14</item>
+	<item>com.android.systemui.lsclock.depth15</item>
+	<item>com.android.systemui.lsclock.depth16</item>
+	<item>com.android.systemui.lsclock.depth17</item>
+	<item>com.android.systemui.lsclock.depth18</item>
+	<item>com.android.systemui.lsclock.depth19</item>   
     </string-array>
 
    <!-- Battery percent -->
