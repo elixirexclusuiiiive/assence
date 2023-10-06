@@ -74,10 +74,10 @@
     <string name="summ_gesture">Control de reproducción • Navegación del sistema</string>
     <string name="summ_lock">DT2S • Arte multimedia • Iluminación perimetral</string>
     <string name="summ_misc">Game Space • Menú de encendido • HwKey</string>
-    <string name="summ_monet">Monet • Tematización • Reloj de pantalla de bloqueo</string>
-    <string name="summ_quick">Estilos QS • Material gráfico multimedia • Uso de datos</string>
-    <string name="summ_sbar">Tráfico de red • VoLTE/VoWifi</string>
-    <string name="summ_about">Acerca de Proyecto Elixir ROM y sus desarrolladores</string>
+    <string name="summ_monet">Fuentes • Tematización • Reloj de pantalla de bloqueo</string>
+    <string name="summ_quick">Estilos de QS • QS Seguro </string>
+    <string name="summ_sbar">Tráfico de red • Estilos de batería </string>
+    <string name="summ_about">Proyecto Elixir y Desarrolladores</string>
     <string name="donate">Donanos aquí</string>
     <!-- Categories -->
     <string name="gestures_title">Gestos </string>
@@ -100,7 +100,6 @@
     <string name="signal_category">Ícono de Red</string>
     <string name="misc_gnrl_category">Opciones Generales</string>
     <string name="pwrbtn_category">Opciones del Botón de Encendido</string>
-    <string name="sbicon_category">Gestor de Iconos de la Barra de Estado</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Guardar</string>
@@ -116,12 +115,6 @@
     <string name="set">Colocar</string>
     <string name="color_default">Por defecto</string>
     <string name="longpress_info">Pulsación larga en la caja para guardar el color</string>
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">Personalización QS</string>
-    <string name="qstiles_title">Estilo de mosaicos QS</string>
-    <string name="qstiles_default">Estilo Por defecto</string>
-    <string name="qstiles_custom1">Estilo Clásico</string>
-    <string name="qstiles_custom2">Estilo rectángulo</string>
     <!-- Media art -->
     <string name="lockscreen_media_category">Música de pantalla de bloqueo</string>
     <string name="media_art_title">Arte de portada de los medios</string>
@@ -208,7 +201,7 @@
     <string name="double_tap_sleep_gesture_title">Doble toque en la barra de estado para apagar la pantalla</string>
     <string name="double_tap_sleep_gesture_summary">Toque dos veces en cualquier lugar de la barra de estado para poner el dispositivo en reposo</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">Huella dactilar</string>
+    <string name="fingerprint_category">Opciones de huellas dactilares</string>
     <string name="fprint_error_vib_title">Vibración de error de huella digital</string>
     <string name="fprint_error_vib_summary">Vibrar en la autenticación de huellas dactilares de error</string>
     <string name="fprint_success_vib_title">Vibración de autenticación de huellas dactilares</string>
@@ -256,9 +249,18 @@
     <string name="qs_styles_title">Estilos de elementos QS combinados</string>
     <string name="qs_outline">Describir</string>
     <string name="qs_two_tone">Acento de dos tonos</string>
-    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_color_pop">Color Pop</string>
     <string name="qs_shaded">Sombreado</string>
     <string name="qs_cyberpunk">Cyberpunk</string>
+    <string name="qs_neumorph">Neumorfo</string>
+    <string name="qs_reflected">Reflejado</string>
+    <string name="qs_surround">Rodear</string>
+    <string name="qs_thin">Línea fina</string>
+    <string name="qstiles_cust">Personalización QS</string>
+    <string name="qstiles_title">Estilo de mosaicos QS</string>
+    <string name="qstiles_default">Estilo Por defecto</string>
+    <string name="qstiles_custom1">Estilo Clásico</string>
+    <string name="qstiles_custom2">Estilo rectángulo</string>
     <!-- Udfps -->
     <string name="udfps_category">Huella digital debajo de la pantalla</string>
     <!-- Udfps animations -->
@@ -328,22 +330,6 @@
     <string name="reticker_colored_summary">Reemplace el color de fondo de reTicker usando el color principal de la aplicación de notificación</string>
     <string name="reticker_landscape_only_title">Solo paisaje</string>
     <string name="reticker_landscape_only_summary">Solo habilite reTicker cuando el dispositivo esté en modo horizontal</string>
-    <!-- QS Header -->
-    <string name="qs_header_image_title">Imagen de encabezado QS</string>
-    <string name="qs_header_random_image_title">Imagen aleatoria del encabezado QS</string>
-    <string name="qs_header_random_image_summary">Habilitar imagen de encabezado QS aleatorio</string>
-    <string name="qs_header_image_blur_level_title">Nivel de efecto de desenfoque de la imagen del encabezado QS</string>
-    <string name="qs_header_image_blur_level_summary">Fuerza del efecto de desenfoque aplicado a la imagen del encabezado QS</string>
-    <string name="qs_header_image_fade_level_level_title">Nivel de desvanecimiento de la imagen del encabezado QS</string>
-    <string name="qs_header_image_fade_level_level_summary">Nivel de desvanecimiento de la imagen del encabezado QS</string>
-    <string name="qs_header_image_opacity_level_title">Nivel de opacidad de la imagen del encabezado QS</string>
-    <string name="qs_header_image_opacity_level_summary">Nivel de opacidad de la imagen del encabezado QS</string>
-    <string name="qs_header_image_filter_color_title">Color de filtro de imagen de encabezado QS</string>
-    <string name="qs_header_image_height_title">Altura de la imagen del encabezado QS</string>
-    <string name="qs_header_custom_image_uri_enabled_title">Imagen personalizada en la cabecera de QS</string>
-    <string name="qs_header_custom_image_uri_enabled_summary">Aplicar imagen personalizada en la cabecera de QS</string>
-    <string name="file_header_select_title">Seleccionar imagen local</string>
-    <string name="file_header_select_summary">Seleccionar imagen desde el almacenamiento</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Transparencia de fondo QS</string>
     <string name="qs_transparency_summary">Establecer el nivel de transparencia para el fondo QS</string>
@@ -439,7 +425,7 @@
     <string name="solid_gradient_void_light">Degradado Vacío de Luz</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Los mosaicos QS seguros requieren desbloqueo</string>
-    <string name="qstile_requires_unlocking_summary">Los siguientes mosaicos QS requieren desbloqueo antes de que puedas acceder a ellos desde la pantalla de bloqueo:\nAvión, Celular, NFC, Punto de acceso, anclaje de red USB y Ubicación</string>
+    <string name="qstile_requires_unlocking_summary">Los mosaicos QS importantes requerirán un código de acceso antes de poder acceder a ellos desde la pantalla de bloqueo</string>
     <!-- Units -->
     <string name="unit_milliseconds">milisegundos</string>
     <string name="unit_seconds">segundos</string>
@@ -513,19 +499,31 @@
     <string name="function_font_notoserif_italic">NotoSerif Cursiva</string>
     <string name="function_font_notoserif_bold">NotoSerif Negrita</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Negrita Cursiva</string>
-    <!--  Volume Panel Plugin   -->
-    <string name="volume_panel">Estilo del Panel de Volumen</string>
-    <string name="volume_panel_thirteen">AOSP A13</string>
-    <string name="volume_panel_aosp">AOSP A11</string>
-    <string name="volume_panel_compact">Compacto</string>
-    <string name="volume_panel_tiled">Embaldosado</string>
-    <string name="volume_panel_miui">MIUI Compacto</string>
-    <string name="volume_panel_ssos">Cambio de forma</string>
-    <string name="volume_panel_oos">OOS</string>
-    <string name="volume_panel_p404">P404</string>
-    <!--  Volume Panel Plugin Values   -->
-    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
-    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
-    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
-    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="sb_icon_category">Iconos de la barra de estado</string>
+    <string name="sb_gesture_category">Gestos de la barra de estado</string>
+    <string name="ls_gesture_category">Gestos de pantalla de bloqueo</string>
+    <string name="reticker_category">Opciones de reticker</string>
+    <string name="gms_parallel_category">Gms y Espacio Paralelo</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Imagen de encabezado</string>
+    <!-- QS header image -->
+    <string name="qs_header_image_summary">Elegir imagen de encabezado de fondo de QS</string>
+    <string name="qs_header_image_enabled_title">Personalización de la imagen de encabezado de QS</string>
+    <string name="qs_header_image_enabled_summary">Habilitar personalización de la imagen de encabezado de QS</string>
+    <string name="qs_header_image_landscape_enabled_title">Mostrar en horizontal</string>
+    <string name="qs_header_image_landscape_enabled_summary">Habilitar imagen de encabezado de QS cuando el modo horizontal está activado</string>
+    <string name="qs_header_image_tint_title">Tinte</string>
+    <string name="qs_header_image_tint_none">Sin tinte</string>
+    <string name="qs_header_image_tint_accent">Color de acento</string>
+    <string name="qs_header_image_tint_primary">Color primario</string>
+    <string name="qs_header_image_tint_primary_inverse">Color primario invertido</string>
+    <string name="qs_header_image_tint_custom">Color personalizado</string>
+    <string name="qs_header_image_tint_custom_title">Color de tinte personalizado</string>
+    <string name="qs_header_image_height_portrait_title">Altura (vertical)</string>
+    <string name="qs_header_image_height_landscape_title">Altura (horizontal)</string>
+    <string name="qs_header_image_alpha_title">Opacidad</string>
+    <string name="qs_header_image_padding_side_title">Espaciado lateral</string>
+    <string name="qs_header_image_padding_top_title">Espaciado superior</string>
+    <string name="file_header_select_title">Seleccionar imagen local</string>
+    <string name="file_header_select_summary">Seleccionar imagen desde el almacenamiento</string>
 </resources>

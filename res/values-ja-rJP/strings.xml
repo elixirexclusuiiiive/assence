@@ -56,7 +56,7 @@
     <string name="paypal">PayPal</string>
     <string name="donate_summary">私達の活動に感謝をしている方は寄付をお願いします</string>
     <string name="don_summ1">• 実はね。カスタム ROM を作るにはハイエンドなビルド用サーバー (Jenkins) やハイエンド環境な PC、高速なインターネット接続などの前提条件があるんだ。</string>
-    <string name="don_summ2">• 我々開発者は、ユーザーにタイムリーで安定したアップデートを提供できるように多忙な学業のスケジュールの中でカスタム ROM の適切なメンテンスをする為に時間と労力を割いているんですよ。</string>
+    <string name="don_summ2">• 我々開発者は、ユーザーにタイムリーで安定したアップデートを提供できるように多忙な学業のスケジュールの中でカスタム ROM の適切なメンテンスをするために時間と労力を割いているんですよ。</string>
     <string name="don_summ3">• 私達の活動に感謝をしている方は PayPal でコーヒーを奢ったり、Patreon で定期的な支援や報酬を与えてくれる事ですごく励みになります。</string>
     <string name="tele_group">Telegram ディスカッショングループ</string>
     <string name="grp_summary">問題があった場合は Telegram ディスカッショングループで共有をしてください</string>
@@ -74,10 +74,10 @@
     <string name="summ_gesture">再生コントロール、システム ナビゲーション</string>
     <string name="summ_lock">ダブルタップでスリープ、メディアカバー画像、エッジライト</string>
     <string name="summ_misc">ゲームスペース、電源メニュー、ハードウェアキー </string>
-    <string name="summ_monet">Monet、テーマ、ロック画面の時計</string>
-    <string name="summ_quick">クイック設定のスタイル、メディアカバー画像、データ使用量</string>
-    <string name="summ_sbar">ネットワークトラフィック、VoLTE / Wi-Fi 通話 </string>
-    <string name="summ_about">Project Elixir ROM と開発者について</string>
+    <string name="summ_monet">フォント、テーマ、ロック画面の時計</string>
+    <string name="summ_quick">クイック設定のスタイル、セキュアなクイック設定 </string>
+    <string name="summ_sbar">ネットワークトラフィック、バッテリーのスタイル </string>
+    <string name="summ_about">Project Elixir と開発者</string>
     <string name="donate">寄付はこちらから</string>
     <!-- Categories -->
     <string name="gestures_title">ジェスチャー</string>
@@ -100,7 +100,6 @@
     <string name="signal_category">ネットワークアイコン</string>
     <string name="misc_gnrl_category">一般オプション</string>
     <string name="pwrbtn_category">電源ボタンのオプション</string>
-    <string name="sbicon_category">ステータスバーアイコンの管理</string>
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">保存</string>
@@ -116,12 +115,6 @@
     <string name="set">設定</string>
     <string name="color_default">デフォルト</string>
     <string name="longpress_info">ボックスを長押しして色を保存</string>
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">クイック設定のカスタマイズ</string>
-    <string name="qstiles_title">クイック設定タイルのスタイル</string>
-    <string name="qstiles_default">デフォルトスタイル</string>
-    <string name="qstiles_custom1">クラシックスタイル</string>
-    <string name="qstiles_custom2">MaybeRectangle スタイル</string>
     <!-- Media art -->
     <string name="lockscreen_media_category">音楽再生時のロック画面</string>
     <string name="media_art_title">メディアカバー画像</string>
@@ -147,7 +140,7 @@
     <string name="network_traffic_autohide_threshold_title">自動非表示のしきい値</string>
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">ウィンドウセキュアフラグを無視</string>
-    <string name="ignore_window_secure_summary">これによりすべてのアプリのスクリーンショットやスクリーンレコードの制限が解除されます。通常の特別なアプリは記録部分が黒い部分に置き換わります。この機能は便利な場合もありますが、情報の漏洩に繋がる可能性があります。この機能を有効後は変更を適用する為にアプリを再起動する必要があります。</string>
+    <string name="ignore_window_secure_summary">これによりすべてのアプリのスクリーンショットやスクリーンレコードの制限が解除されます。通常の特別なアプリは記録部分が黒い部分に置き換わります。この機能は便利な場合もありますが、情報の漏洩に繋がる可能性があります。この機能を有効後は変更を適用するためにアプリを再起動する必要があります。</string>
     <!-- Fingerprint Ripple Effect -->
     <string name="enable_fingerprint_ripple_effect_title">Ripple エフェクト</string>
     <string name="enable_fingerprint_ripple_effect_summary">指紋認証によるロック解除時に波紋を表示します</string>
@@ -208,7 +201,7 @@
     <string name="double_tap_sleep_gesture_title">ステータスバーをダブルタップでスリープ</string>
     <string name="double_tap_sleep_gesture_summary">ステータスバーをダブルタップで画面を消灯します</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">指紋認証</string>
+    <string name="fingerprint_category">指紋認証のオプション</string>
     <string name="fprint_error_vib_title">指紋認証のエラー時にバイブレーション</string>
     <string name="fprint_error_vib_summary">指紋認証の失敗時にバイブレーションをします</string>
     <string name="fprint_success_vib_title">指紋認証のバイブレーション</string>
@@ -255,10 +248,19 @@
     <!-- Quick settings styles -->
     <string name="qs_styles_title">クイック設定のエレメントを結合したスタイル</string>
     <string name="qs_outline">アウトライン</string>
-    <string name="qs_two_tone">ツートンカラーアクセント</string>
-    <string name="qs_color_pop">カラーポップ</string>
-    <string name="qs_shaded">シェード</string>
-    <string name="qs_cyberpunk">サイバーパンク</string>
+    <string name="qs_two_tone">ツートンアクセント</string>
+    <string name="qs_color_pop">Color Pop</string>
+    <string name="qs_shaded">Shaded</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_reflected">Reflected</string>
+    <string name="qs_surround">Surround</string>
+    <string name="qs_thin">ThinLine</string>
+    <string name="qstiles_cust">クイック設定のカスタマイズ</string>
+    <string name="qstiles_title">クイック設定タイルのスタイル</string>
+    <string name="qstiles_default">デフォルトスタイル</string>
+    <string name="qstiles_custom1">クラシックスタイル</string>
+    <string name="qstiles_custom2">MaybeRectangle スタイル</string>
     <!-- Udfps -->
     <string name="udfps_category">画面下部の指紋認証</string>
     <!-- Udfps animations -->
@@ -328,22 +330,6 @@
     <string name="reticker_colored_summary">reTicker の背景色をアプリ通知のメインカラーに置き換えます</string>
     <string name="reticker_landscape_only_title">横画面表示のみ</string>
     <string name="reticker_landscape_only_summary">横画面表示時のみで reTicker を有効化します</string>
-    <!-- QS Header -->
-    <string name="qs_header_image_title">クイック設定のヘッダー画像</string>
-    <string name="qs_header_random_image_title">クイック設定ヘッダーランダム画像</string>
-    <string name="qs_header_random_image_summary">クイック設定ヘッダーランダム画像を有効化します</string>
-    <string name="qs_header_image_blur_level_title">クイック設定のヘッダー画像のぼかし効果レベル</string>
-    <string name="qs_header_image_blur_level_summary">クイック設定のヘッダー画像のぼかし効果の強さを設定します</string>
-    <string name="qs_header_image_fade_level_level_title">クイック設定のヘッダー画像のフェードレベル</string>
-    <string name="qs_header_image_fade_level_level_summary">クイック設定の画像のフェードレベルを設定します</string>
-    <string name="qs_header_image_opacity_level_title">クイック設定のヘッダー画像の不透過レベル</string>
-    <string name="qs_header_image_opacity_level_summary">クイック設定のヘッダー画像の不透過レベルを設定します</string>
-    <string name="qs_header_image_filter_color_title">クイック設定のヘッダー画像のフィルター色</string>
-    <string name="qs_header_image_height_title">クイック設定のヘッダー画像の高さ</string>
-    <string name="qs_header_custom_image_uri_enabled_title">クイック設定のカスタムヘッダー画像</string>
-    <string name="qs_header_custom_image_uri_enabled_summary">クイック設定のカスタムヘッダー画像を適用します</string>
-    <string name="file_header_select_title">ローカルの画像を選択</string>
-    <string name="file_header_select_summary">ストレージから画像を選択します</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">クイック設定の背景の透過</string>
     <string name="qs_transparency_summary">クイック設定の背景の透明度を設定します</string>
@@ -439,7 +425,7 @@
     <string name="solid_gradient_void_light">Gradient Void light</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">セキュアなクイック設定タイルでロックの解除を要求する</string>
-    <string name="qstile_requires_unlocking_summary">以下のクイック設定タイルをロック画面上で使用をする場合には、ロックの解除を要求します:\n機内モード、データ通信、NFC、Wi-Fi テザリング、USB テザリング、位置情報</string>
+    <string name="qstile_requires_unlocking_summary">重要なクイック設定タイルは、ロック画面からアクセスをする前にパスコードが必要です</string>
     <!-- Units -->
     <string name="unit_milliseconds">ミリ秒</string>
     <string name="unit_seconds">秒</string>
@@ -513,19 +499,31 @@
     <string name="function_font_notoserif_italic">NotoSerif Italic</string>
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
-    <!--  Volume Panel Plugin   -->
-    <string name="volume_panel">音量パネルのスタイル</string>
-    <string name="volume_panel_thirteen">AOSP A13</string>
-    <string name="volume_panel_aosp">AOSP A11</string>
-    <string name="volume_panel_compact">コンパクト</string>
-    <string name="volume_panel_tiled">タイル</string>
-    <string name="volume_panel_miui">MIUI Compact</string>
-    <string name="volume_panel_ssos">ShapeShift</string>
-    <string name="volume_panel_oos">OOS</string>
-    <string name="volume_panel_p404">P404</string>
-    <!--  Volume Panel Plugin Values   -->
-    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
-    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
-    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
-    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="sb_icon_category">ステータスバーアイコン</string>
+    <string name="sb_gesture_category">ステータスバージェスチャー</string>
+    <string name="ls_gesture_category">ロック画面ジェスチャー</string>
+    <string name="reticker_category">reTicker のオプション</string>
+    <string name="gms_parallel_category">GMS とパラレルスペース</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">ヘッダー画像</string>
+    <!-- QS header image -->
+    <string name="qs_header_image_summary">クイック設定の背景ヘッダー画像を選択します</string>
+    <string name="qs_header_image_enabled_title">クイック設定ヘッダー画像のカスタマイズ</string>
+    <string name="qs_header_image_enabled_summary">クイック設定ヘッダー画像のカスタマイズを有効化します</string>
+    <string name="qs_header_image_landscape_enabled_title">横画面で表示する</string>
+    <string name="qs_header_image_landscape_enabled_summary">横画面でクイック設定ヘッダー画像の表示を有効化します</string>
+    <string name="qs_header_image_tint_title">色合い</string>
+    <string name="qs_header_image_tint_none">色合いなし</string>
+    <string name="qs_header_image_tint_accent">アクセントの色</string>
+    <string name="qs_header_image_tint_primary">プライマリカラー</string>
+    <string name="qs_header_image_tint_primary_inverse">プライマリカラーを反転</string>
+    <string name="qs_header_image_tint_custom">カスタムカラー</string>
+    <string name="qs_header_image_tint_custom_title">色合いのカスタマイズ</string>
+    <string name="qs_header_image_height_portrait_title">高さ (縦画面)</string>
+    <string name="qs_header_image_height_landscape_title">高さ (横画面)</string>
+    <string name="qs_header_image_alpha_title">不透明度</string>
+    <string name="qs_header_image_padding_side_title">横のパディング</string>
+    <string name="qs_header_image_padding_top_title">上部のパディング</string>
+    <string name="file_header_select_title">ローカルの画像を選択</string>
+    <string name="file_header_select_summary">ストレージから画像を選択します</string>
 </resources>

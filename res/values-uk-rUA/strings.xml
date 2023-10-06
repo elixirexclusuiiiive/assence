@@ -74,10 +74,10 @@
     <string name="summ_gesture">Керування відтворенням • Система навігації</string>
     <string name="summ_lock">DT2S • Медіа Арт • Освітлення на краях</string>
     <string name="summ_misc">Простір гри • Меню живлення • HwKey </string>
-    <string name="summ_monet">Теми інших людей • Годинник екрану блокування</string>
-    <string name="summ_quick">Швидкі стилі • Мультимедійна робота • Використання даних</string>
-    <string name="summ_sbar">Мережевий трафік • VoLTE/VoWifi </string>
-    <string name="summ_about">Про Проєкт Еліксир та його розробників</string>
+    <string name="summ_monet">Fonts • Theming • Lockscreen Clock</string>
+    <string name="summ_quick">QS Styles • Secure Qs </string>
+    <string name="summ_sbar">Network Traffic • Battery Styles </string>
+    <string name="summ_about">Project Elixir and Devs</string>
     <string name="donate">Пожертвуйте нам тут</string>
     <!-- Categories -->
     <string name="gestures_title">Жести</string>
@@ -100,7 +100,6 @@
     <string name="signal_category">Значки мережі</string>
     <string name="misc_gnrl_category">General Options</string>
     <string name="pwrbtn_category">Power Button Options</string>
-    <string name="sbicon_category">Statusbar Icon Manager</string>
     <!-- General strings -->
     <string name="ok">Так</string>
     <string name="save">Зберегти</string>
@@ -116,12 +115,6 @@
     <string name="set">Задати</string>
     <string name="color_default">За замовчуванням</string>
     <string name="longpress_info">Щоб зберегти колір натисніть і утримуйте</string>
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">Налаштування швидких налаштувань</string>
-    <string name="qstiles_title">Стиль швидких плиток</string>
-    <string name="qstiles_default">Стиль за замовчуванням</string>
-    <string name="qstiles_custom1">Класичний стиль</string>
-    <string name="qstiles_custom2">Прямокутний стиль</string>
     <!-- Media art -->
     <string name="lockscreen_media_category">Музика на екрані блокування</string>
     <string name="media_art_title">Обкладинка медіа</string>
@@ -208,7 +201,7 @@
     <string name="double_tap_sleep_gesture_title">Двічі торкніться рядка стану щоб вимкнути екран</string>
     <string name="double_tap_sleep_gesture_summary">Двічі торкніться в будь-якому місці рядка стану, щоб перевести пристрій у режим сну</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">Відбиток пальця</string>
+    <string name="fingerprint_category">Fingerprint Options</string>
     <string name="fprint_error_vib_title">Вібрація помилки відбитка пальця</string>
     <string name="fprint_error_vib_summary">Вібрує при не вірній авторизації по відбитку пальця</string>
     <string name="fprint_success_vib_title">Вібрація при авторизації за відбитком пальця</string>
@@ -253,12 +246,21 @@
     <string name="brightness_custom2">Стиль заповнений</string>
     <string name="brightness_custom3">Стиль тонкий</string>
     <!-- Quick settings styles -->
-    <string name="qs_styles_title">Combined QS element styles</string>
+    <string name="qs_styles_title">Combined QS Element Styles</string>
     <string name="qs_outline">Outline</string>
-    <string name="qs_two_tone">Two-tone accent</string>
-    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_two_tone">Two-Tone Accent</string>
+    <string name="qs_color_pop">Color Pop</string>
     <string name="qs_shaded">Shaded</string>
     <string name="qs_cyberpunk">Cyberpunk</string>
+    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_reflected">Reflected</string>
+    <string name="qs_surround">Surround</string>
+    <string name="qs_thin">ThinLine</string>
+    <string name="qstiles_cust">Налаштування швидких налаштувань</string>
+    <string name="qstiles_title">Стиль швидких плиток</string>
+    <string name="qstiles_default">Стиль за замовчуванням</string>
+    <string name="qstiles_custom1">Класичний стиль</string>
+    <string name="qstiles_custom2">Прямокутний стиль</string>
     <!-- Udfps -->
     <string name="udfps_category">Відбиток пальця під дисплеєм</string>
     <!-- Udfps animations -->
@@ -328,22 +330,6 @@
     <string name="reticker_colored_summary">Замінити колір фону, використати основний колір додатку сповіщень</string>
     <string name="reticker_landscape_only_title">Лише пейзажі</string>
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
-    <!-- QS Header -->
-    <string name="qs_header_image_title">QS Header Image</string>
-    <string name="qs_header_random_image_title">QS Header Random Image</string>
-    <string name="qs_header_random_image_summary">Enable random QS header image</string>
-    <string name="qs_header_image_blur_level_title">QS header image blur effect level</string>
-    <string name="qs_header_image_blur_level_summary">Strength of the blur effect applied to the QS header image</string>
-    <string name="qs_header_image_fade_level_level_title">QS header image fade level</string>
-    <string name="qs_header_image_fade_level_level_summary">Fade level of the QS header image</string>
-    <string name="qs_header_image_opacity_level_title">QS header image opacity level</string>
-    <string name="qs_header_image_opacity_level_summary">Opacity level of the QS header image</string>
-    <string name="qs_header_image_filter_color_title">QS header image filter color</string>
-    <string name="qs_header_image_height_title">QS header image height</string>
-    <string name="qs_header_custom_image_uri_enabled_title">Custom QS header image</string>
-    <string name="qs_header_custom_image_uri_enabled_summary">Apply custom QS image header</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
@@ -439,7 +425,7 @@
     <string name="solid_gradient_void_light">Gradient Void light</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
-    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+    <string name="qstile_requires_unlocking_summary">Important QS tiles will require passcode before you can acccess them from lock screen</string>
     <!-- Units -->
     <string name="unit_milliseconds">milliseconds</string>
     <string name="unit_seconds">seconds</string>
@@ -513,19 +499,31 @@
     <string name="function_font_notoserif_italic">NotoSerif Italic</string>
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
-    <!--  Volume Panel Plugin   -->
-    <string name="volume_panel">Volume Panel Style</string>
-    <string name="volume_panel_thirteen">AOSP A13</string>
-    <string name="volume_panel_aosp">AOSP A11</string>
-    <string name="volume_panel_compact">Compact</string>
-    <string name="volume_panel_tiled">Tiled</string>
-    <string name="volume_panel_miui">MIUI Compact</string>
-    <string name="volume_panel_ssos">ShapeShift</string>
-    <string name="volume_panel_oos">OOS</string>
-    <string name="volume_panel_p404">P404</string>
-    <!--  Volume Panel Plugin Values   -->
-    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
-    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
-    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
-    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="sb_icon_category">Statusbar Icons</string>
+    <string name="sb_gesture_category">Statusbar Gestures</string>
+    <string name="ls_gesture_category">Lockscreen Gestures</string>
+    <string name="reticker_category">Reticker Options</string>
+    <string name="gms_parallel_category">Gms and Parallel Space</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Header image</string>
+    <!-- QS header image -->
+    <string name="qs_header_image_summary">Pick QS background header image</string>
+    <string name="qs_header_image_enabled_title">QS header image customization</string>
+    <string name="qs_header_image_enabled_summary">Enable QS header image customization</string>
+    <string name="qs_header_image_landscape_enabled_title">Show on landscape</string>
+    <string name="qs_header_image_landscape_enabled_summary">Enable QS header image when landscape mode is on</string>
+    <string name="qs_header_image_tint_title">Tint</string>
+    <string name="qs_header_image_tint_none">No tint</string>
+    <string name="qs_header_image_tint_accent">Accent color</string>
+    <string name="qs_header_image_tint_primary">Primary color</string>
+    <string name="qs_header_image_tint_primary_inverse">Primary color inverse</string>
+    <string name="qs_header_image_tint_custom">Custom color</string>
+    <string name="qs_header_image_tint_custom_title">Custom tint color</string>
+    <string name="qs_header_image_height_portrait_title">Height (potrait)</string>
+    <string name="qs_header_image_height_landscape_title">Height (landScape)</string>
+    <string name="qs_header_image_alpha_title">Opacity</string>
+    <string name="qs_header_image_padding_side_title">Side padding</string>
+    <string name="qs_header_image_padding_top_title">Top padding</string>
+    <string name="file_header_select_title">Select local image</string>
+    <string name="file_header_select_summary">Select image from storage</string>
 </resources>

@@ -19,11 +19,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="seekbar_no_default_value">沒有設定預設值</string>
-    <string name="seekbar_default_value_set">設定為預設值<xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_set">設定為預設值 <xliff:g id="number">%d</xliff:g></string>
     <string name="seekbar_default_value_already_set">已設定為預設值</string>
     <string name="seekbar_default_string">預設</string>
     <!-- Custom seekbar -->
-    <string name="custom_seekbar_value">數值： <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_value">數值：<xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">預設值</string>
     <string name="custom_seekbar_default_value_to_set">預設值：<xliff:g id="v">%s</xliff:g>\n（長按設定）</string>
     <string name="custom_seekbar_default_value_is_set">已設定為預設值</string>

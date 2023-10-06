@@ -75,9 +75,9 @@
     <string name="summ_lock">Спящий режим • Обложка • Боковое освещение</string>
     <string name="summ_misc">Игровое пространство • Меню питания • Аппаратные кнопки</string>
     <string name="summ_monet">Monet • Темы • Часы экрана блокировки</string>
-    <string name="summ_quick">Стили быстрых настроек • Обложка • Использование данных</string>
-    <string name="summ_sbar">Сетевой трафик • VoLTE/VoWifi </string>
-    <string name="summ_about">О Project Elixir и его разработчиках</string>
+    <string name="summ_quick">QS Styles • Secure Qs </string>
+    <string name="summ_sbar">Network Traffic • Battery Styles </string>
+    <string name="summ_about">Project Elixir and Devs</string>
     <string name="donate">Поддержать нас</string>
     <!-- Categories -->
     <string name="gestures_title">Жесты</string>
@@ -100,7 +100,6 @@
     <string name="signal_category">Иконка сети</string>
     <string name="misc_gnrl_category">Общие настройки</string>
     <string name="pwrbtn_category">Настройки кнопки питания</string>
-    <string name="sbicon_category">Менеджер значков панели состояния</string>
     <!-- General strings -->
     <string name="ok">ОК</string>
     <string name="save">Сохранить</string>
@@ -116,12 +115,6 @@
     <string name="set">Задать</string>
     <string name="color_default">По умолчанию</string>
     <string name="longpress_info">Удерживайте поле для сохранения цвета</string>
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">Настройки панели быстрых настроек</string>
-    <string name="qstiles_title">Стиль плиток быстрых настроек</string>
-    <string name="qstiles_default">Стиль по умолчанию</string>
-    <string name="qstiles_custom1">Классический стиль</string>
-    <string name="qstiles_custom2">Прямоугольный стиль</string>
     <!-- Media art -->
     <string name="lockscreen_media_category">Музыка на экране блокировки</string>
     <string name="media_art_title">Отображение обложки альбома</string>
@@ -208,7 +201,7 @@
     <string name="double_tap_sleep_gesture_title">Дважды коснитесь строки состояния, чтобы выключить экран</string>
     <string name="double_tap_sleep_gesture_summary">Дважды коснитесь в любом месте строки состояния, чтобы выключить экран устройства</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">Отпечаток пальца</string>
+    <string name="fingerprint_category">Опции сканера отпечатков пальцев</string>
     <string name="fprint_error_vib_title">Вибрация при ошибке отпечатка пальца</string>
     <string name="fprint_error_vib_summary">Вибрирует при ошибке аутентификации по отпечатку пальца</string>
     <string name="fprint_success_vib_title">Вибрация при аутентификации по отпечатку пальца</string>
@@ -253,12 +246,21 @@
     <string name="brightness_custom2">Заполненный стиль</string>
     <string name="brightness_custom3">Тонкий стиль</string>
     <!-- Quick settings styles -->
-    <string name="qs_styles_title">Стиль элементов быстрых настроек</string>
+    <string name="qs_styles_title">Combined QS Element Styles</string>
     <string name="qs_outline">Контур</string>
-    <string name="qs_two_tone">Двухцветный акцент</string>
-    <string name="qs_color_pop">Яркий цвет</string>
+    <string name="qs_two_tone">Two-Tone Accent</string>
+    <string name="qs_color_pop">Color Pop</string>
     <string name="qs_shaded">Затененный</string>
     <string name="qs_cyberpunk">Киберпанк</string>
+    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_reflected">Reflected</string>
+    <string name="qs_surround">Surround</string>
+    <string name="qs_thin">ThinLine</string>
+    <string name="qstiles_cust">Настройки панели быстрых настроек</string>
+    <string name="qstiles_title">Стиль плиток быстрых настроек</string>
+    <string name="qstiles_default">Стиль по умолчанию</string>
+    <string name="qstiles_custom1">Классический стиль</string>
+    <string name="qstiles_custom2">Прямоугольный стиль</string>
     <!-- Udfps -->
     <string name="udfps_category">Отпечаток пальца под дисплеем</string>
     <!-- Udfps animations -->
@@ -328,22 +330,6 @@
     <string name="reticker_colored_summary">Заменить цвет фона, используя основной цвет приложения уведомлений</string>
     <string name="reticker_landscape_only_title">Только горизонтально</string>
     <string name="reticker_landscape_only_summary">Включать бегущую строку только в том случае, если устройство находится в горизонтальном режиме</string>
-    <!-- QS Header -->
-    <string name="qs_header_image_title">Изображение заголовка быстрых настроек</string>
-    <string name="qs_header_random_image_title">Случайное изображение заголовка быстрых настроек</string>
-    <string name="qs_header_random_image_summary">Включить случайное изображение заголовка быстрых настроек</string>
-    <string name="qs_header_image_blur_level_title">Уровень эффекта размытия изображения заголовка быстрых настроек</string>
-    <string name="qs_header_image_blur_level_summary">Сила эффекта размытия, примененного к изображению заголовка быстрых настроек</string>
-    <string name="qs_header_image_fade_level_level_title">Уровень затухания изображения заголовка быстрых настроек</string>
-    <string name="qs_header_image_fade_level_level_summary">Уровень затемнения изображения заголовка быстрых настроек</string>
-    <string name="qs_header_image_opacity_level_title">Уровень непрозрачности изображения заголовка быстрых настроек</string>
-    <string name="qs_header_image_opacity_level_summary">Уровень непрозрачности изображения заголовка быстрых настроек</string>
-    <string name="qs_header_image_filter_color_title">Цвет фильтра изображения заголовка быстрых настроек</string>
-    <string name="qs_header_image_height_title">Высота изображения заголовка быстрых настроек</string>
-    <string name="qs_header_custom_image_uri_enabled_title">Пользовательское изображение заголовка быстрых настроек</string>
-    <string name="qs_header_custom_image_uri_enabled_summary">Применить пользовательское изображение заголовка быстрых настроек</string>
-    <string name="file_header_select_title">Выбрать расположение изображения</string>
-    <string name="file_header_select_summary">Выберите изображение из хранилища</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Прозрачность фона быстрых настроек</string>
     <string name="qs_transparency_summary">Установка уровня прозрачности фона быстрых настроек</string>
@@ -439,7 +425,7 @@
     <string name="solid_gradient_void_light">Gradient Void light</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
-    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+    <string name="qstile_requires_unlocking_summary">Important QS tiles will require passcode before you can acccess them from lock screen</string>
     <!-- Units -->
     <string name="unit_milliseconds">milliseconds</string>
     <string name="unit_seconds">seconds</string>
@@ -479,53 +465,65 @@
     <string name="status_bar_date_string_edittext_summary">Введите строку</string>
     <string name="clock_date_position">Расположение даты</string>
     <string name="clock_date_right">Справа от времени</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_font_size_title">Clock font size</string>
+    <string name="clock_date_left">Слева от времени</string>
+    <string name="clock_font_size_title">Размер шрифта часов</string>
     <!-- QS clock -->
-    <string name="qs_clock_title">Clock</string>
-    <string name="qs_clock_summary">Display clock in quick status bar header</string>
+    <string name="qs_clock_title">Часы</string>
+    <string name="qs_clock_summary">Отображать часы в заголовке строки состояния</string>
     <!-- QS date -->
-    <string name="qs_date_title">Date</string>
-    <string name="qs_date_summary">Display date in quick status bar header</string>
+    <string name="qs_date_title">Дата</string>
+    <string name="qs_date_summary">Отображать дату в заголовке строки состояния</string>
     <!-- Font Customizations for Functions -->
-    <string name="function_font_stock">Normal (default)</string>
-    <string name="function_font_bold">Bold</string>
-    <string name="function_font_italic">Italic</string>
-    <string name="function_font_bold_italic">Bold Italic</string>
-    <string name="function_font_light_italic">Light Italic</string>
-    <string name="function_font_thin_italic">Thin Italic</string>
-    <string name="function_font_light">Light</string>
-    <string name="function_font_thin">Thin</string>
-    <string name="function_font_condensed_normal">Condensed</string>
-    <string name="function_font_condensed_italic">Condensed Italic</string>
-    <string name="function_font_condensed_bold">Condensed Bold</string>
-    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
-    <string name="function_font_condensed_light">Condensed Light</string>
-    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
-    <string name="function_font_medium_normal">Medium</string>
-    <string name="function_font_medium_italic">Medium Italic</string>
-    <string name="function_font_black">Black</string>
-    <string name="function_font_black_italic">Black Italic</string>
-    <string name="function_font_dancingscript">DancingScript</string>
-    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
-    <string name="function_font_comingsoon">ComingSoon</string>
-    <string name="function_font_notoserif">NotoSerif Normal</string>
-    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_stock">Обычный (по умолчанию)</string>
+    <string name="function_font_bold">Жирный</string>
+    <string name="function_font_italic">Курсив</string>
+    <string name="function_font_bold_italic">Жирный Курсив</string>
+    <string name="function_font_light_italic">Лёгкий курсив</string>
+    <string name="function_font_thin_italic">Тонкий курсив</string>
+    <string name="function_font_light">Лёгкий</string>
+    <string name="function_font_thin">Тонкий</string>
+    <string name="function_font_condensed_normal">Сжатый</string>
+    <string name="function_font_condensed_italic">Сжатый курсив</string>
+    <string name="function_font_condensed_bold">Сжатый жирный</string>
+    <string name="function_font_condensed_bold_italic">Сжатый жирный курсив</string>
+    <string name="function_font_condensed_light">Сжатый лёгкий</string>
+    <string name="function_font_condensed_light_italic">Сжатый лёгкий курсив</string>
+    <string name="function_font_medium_normal">Средний</string>
+    <string name="function_font_medium_italic">Средний курсив</string>
+    <string name="function_font_black">Чёрный</string>
+    <string name="function_font_black_italic">Черный курсив</string>
+    <string name="function_font_dancingscript">Танцующий сценарий</string>
+    <string name="function_font_dancingscript_bold">Танцующий сценарий Жирный</string>
+    <string name="function_font_comingsoon">Скоро будет</string>
+    <string name="function_font_notoserif">Без засечек Обычный</string>
+    <string name="function_font_notoserif_italic">Без засечек Курсив</string>
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
-    <!--  Volume Panel Plugin   -->
-    <string name="volume_panel">Стиль звуковой панели</string>
-    <string name="volume_panel_thirteen">AOSP A13</string>
-    <string name="volume_panel_aosp">AOSP A11</string>
-    <string name="volume_panel_compact">Компактный</string>
-    <string name="volume_panel_tiled">Плиточный</string>
-    <string name="volume_panel_miui">MIUI Компактный</string>
-    <string name="volume_panel_ssos">ShapeShift</string>
-    <string name="volume_panel_oos">OOS</string>
-    <string name="volume_panel_p404">P404</string>
-    <!--  Volume Panel Plugin Values   -->
-    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
-    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
-    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
-    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="sb_icon_category">Значки строки состояния</string>
+    <string name="sb_gesture_category">Жесты строки состояния</string>
+    <string name="ls_gesture_category">Жесты на экране блокировки</string>
+    <string name="reticker_category">Reticker Options</string>
+    <string name="gms_parallel_category">Gms and Parallel Space</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Изображение заголовка</string>
+    <!-- QS header image -->
+    <string name="qs_header_image_summary">Выберите фоновое изображение заголовка быстрых настроек</string>
+    <string name="qs_header_image_enabled_title">Настройка изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_enabled_summary">Включение настройки изображения заголовка быстрых настроек</string>
+    <string name="qs_header_image_landscape_enabled_title">Показать в альбомной ориентации</string>
+    <string name="qs_header_image_landscape_enabled_summary">Enable QS header image when landscape mode is on</string>
+    <string name="qs_header_image_tint_title">Оттенок</string>
+    <string name="qs_header_image_tint_none">Без оттенка</string>
+    <string name="qs_header_image_tint_accent">Цвет акцента</string>
+    <string name="qs_header_image_tint_primary">Основной цвет</string>
+    <string name="qs_header_image_tint_primary_inverse">Инверсия основного цвета</string>
+    <string name="qs_header_image_tint_custom">Пользовательский цвет</string>
+    <string name="qs_header_image_tint_custom_title">Пользовательский цвет оттенка</string>
+    <string name="qs_header_image_height_portrait_title">Height (potrait)</string>
+    <string name="qs_header_image_height_landscape_title">Height (landScape)</string>
+    <string name="qs_header_image_alpha_title">Непрозрачность</string>
+    <string name="qs_header_image_padding_side_title">Side padding</string>
+    <string name="qs_header_image_padding_top_title">Top padding</string>
+    <string name="file_header_select_title">Выбрать расположение изображения</string>
+    <string name="file_header_select_summary">Выберите изображение из хранилища</string>
 </resources>

@@ -74,10 +74,10 @@
     <string name="summ_gesture">播放控制 • 系统导航</string>
     <string name="summ_lock">双击锁屏 • 媒体艺术 • 边缘光效</string>
     <string name="summ_misc">游戏空间 • 电源菜单 • 硬件相关 </string>
-    <string name="summ_monet">Monet • 主题 • 锁屏时钟</string>
-    <string name="summ_quick">快速设置风格 • 媒体作品 • 数据使用情况</string>
-    <string name="summ_sbar">网络流量 • VoLTE/VoWifi </string>
-    <string name="summ_about">关于 Project Elixir ROM 及其开发人员</string>
+    <string name="summ_monet">字体 • 主题 • 锁屏时钟</string>
+    <string name="summ_quick">QS 样式 • 安全性 QS </string>
+    <string name="summ_sbar">网络流量 • 电池样式 </string>
+    <string name="summ_about">Project Elixir 和 开发者们</string>
     <string name="donate">在这里捐赠我们</string>
     <!-- Categories -->
     <string name="gestures_title">手势</string>
@@ -100,7 +100,6 @@
     <string name="signal_category">网络图标</string>
     <string name="misc_gnrl_category">常规选项</string>
     <string name="pwrbtn_category">电源键选项</string>
-    <string name="sbicon_category">状态栏图标管理</string>
     <!-- General strings -->
     <string name="ok">确定</string>
     <string name="save">保存</string>
@@ -116,12 +115,6 @@
     <string name="set">设置</string>
     <string name="color_default">默认</string>
     <string name="longpress_info">长按方框保存颜色</string>
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">QS 个性化</string>
-    <string name="qstiles_title">快速设置标题风格</string>
-    <string name="qstiles_default">默认样式</string>
-    <string name="qstiles_custom1">经典样式</string>
-    <string name="qstiles_custom2">圆角矩形</string>
     <!-- Media art -->
     <string name="lockscreen_media_category">锁屏音乐</string>
     <string name="media_art_title">媒体艺术家封面</string>
@@ -208,7 +201,7 @@
     <string name="double_tap_sleep_gesture_title">双击状态栏息屏</string>
     <string name="double_tap_sleep_gesture_summary">双击状态栏上的任意位置使设备息屏</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">指纹</string>
+    <string name="fingerprint_category">指纹选项</string>
     <string name="fprint_error_vib_title">指纹错误振动</string>
     <string name="fprint_error_vib_summary">指纹验证错误时振动</string>
     <string name="fprint_success_vib_title">指纹认证震动</string>
@@ -253,12 +246,21 @@
     <string name="brightness_custom2">填充样式</string>
     <string name="brightness_custom3">细长样式</string>
     <!-- Quick settings styles -->
-    <string name="qs_styles_title">组合快速设置元素样式</string>
+    <string name="qs_styles_title">组合 QS 元素样式</string>
     <string name="qs_outline">轮廓线</string>
-    <string name="qs_two_tone">Two-tone accent</string>
-    <string name="qs_color_pop">Color pop</string>
+    <string name="qs_two_tone">双色主题</string>
+    <string name="qs_color_pop">色彩强调</string>
     <string name="qs_shaded">Shaded</string>
     <string name="qs_cyberpunk">赛博朋克</string>
+    <string name="qs_neumorph">拟物化</string>
+    <string name="qs_reflected">反射</string>
+    <string name="qs_surround">环绕</string>
+    <string name="qs_thin">ThinLine</string>
+    <string name="qstiles_cust">QS 个性化</string>
+    <string name="qstiles_title">快速设置标题风格</string>
+    <string name="qstiles_default">默认样式</string>
+    <string name="qstiles_custom1">经典样式</string>
+    <string name="qstiles_custom2">圆角矩形</string>
     <!-- Udfps -->
     <string name="udfps_category">屏下指纹识别</string>
     <!-- Udfps animations -->
@@ -323,27 +325,11 @@
     <string name="status_bar_battery_percentage_text_next">在图标旁</string>
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
-    <string name="reticker_summary">将悬浮通知替换为精简、不那么侵入式的重新设计后的滚动通知。</string>
-    <string name="reticker_colored_title">使用应用程序自带的颜色作为背景</string>
-    <string name="reticker_colored_summary">使用通知应用程序的主颜色替换 reTicker 的背景颜色</string>
+    <string name="reticker_summary">用重新设计后精简且不太突兀的滚动通知替换悬浮通知</string>
+    <string name="reticker_colored_title">使用应用程序的颜色作为背景</string>
+    <string name="reticker_colored_summary">使用发出通知的应用程序的主颜色替换 reTicker 的背景颜色</string>
     <string name="reticker_landscape_only_title">仅横屏</string>
     <string name="reticker_landscape_only_summary">仅在设备处于横屏时启用 reTicker</string>
-    <!-- QS Header -->
-    <string name="qs_header_image_title">QS 头图</string>
-    <string name="qs_header_random_image_title">QS随机头图</string>
-    <string name="qs_header_random_image_summary">启用随机 QS 头图</string>
-    <string name="qs_header_image_blur_level_title">QS 头图模糊效果程度</string>
-    <string name="qs_header_image_blur_level_summary">应用于 QS 头图的模糊效果强度</string>
-    <string name="qs_header_image_fade_level_level_title">QS 头图淡化效果程度</string>
-    <string name="qs_header_image_fade_level_level_summary">QS 头图的淡化程度</string>
-    <string name="qs_header_image_opacity_level_title">QS 头图不透明度</string>
-    <string name="qs_header_image_opacity_level_summary">QS 头图的不透明度</string>
-    <string name="qs_header_image_filter_color_title">QS 头图滤过颜色</string>
-    <string name="qs_header_image_height_title">QS 头图高度</string>
-    <string name="qs_header_custom_image_uri_enabled_title">自定义 QS 头图</string>
-    <string name="qs_header_custom_image_uri_enabled_summary">应用自定义 QS 头图</string>
-    <string name="file_header_select_title">选择本地图片</string>
-    <string name="file_header_select_summary">从本地存储选择图片</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS背景透明度</string>
     <string name="qs_transparency_summary">设置 QS 背景透明度</string>
@@ -404,7 +390,7 @@
     <!-- Brightness slider styles -->
     <string name="brightness_slider_style_title">亮度调整条样式</string>
     <string name="brightness_slider_style_default">默认</string>
-    <string name="brightness_slider_style_filled">Filled</string>
+    <string name="brightness_slider_style_filled">填充</string>
     <string name="brightness_slider_style_thin">极细</string>
     <string name="brightness_slider_style_cyberpunk">Blocky Thumb</string>
     <string name="brightness_slider_style_gradiant">双层图层</string>
@@ -433,13 +419,13 @@
     <string name="gradiant1">渐变（绿叶样式）</string>
     <string name="solid_gradient_neumorph">拟物化渐变样式</string>
     <string name="solid_gradient_stroke">Sharp gradient stroke</string>
-    <string name="solid_accent_transperent">Accent transperent</string>
+    <string name="solid_accent_transperent">透明主题</string>
     <string name="solid_gradient_light">渐变</string>
     <string name="solid_gradient_shape">Sharp gradient corner</string>
     <string name="solid_gradient_void_light">包含边框的渐变</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">涉及安全性的 QS 磁贴项需要进行解锁操作</string>
-    <string name="qstile_requires_unlocking_summary">以下的 QS 磁贴项需要你进行解锁操作后才可以在锁屏界面上固定它们:\n飞行模式，移动数据，NFC，热点网络，USB网络共享及位置信息</string>
+    <string name="qstile_requires_unlocking_summary">重要的 QS 磁贴需要密码才能在锁屏访问它们</string>
     <!-- Units -->
     <string name="unit_milliseconds">毫秒</string>
     <string name="unit_seconds">秒</string>
@@ -513,19 +499,31 @@
     <string name="function_font_notoserif_italic">Noto 斜衬线体</string>
     <string name="function_font_notoserif_bold">Noto 粗体</string>
     <string name="function_font_notoserif_bold_italic">Noto 粗斜体</string>
-    <!--  Volume Panel Plugin   -->
-    <string name="volume_panel">音量控制面板样式</string>
-    <string name="volume_panel_thirteen">AOSP A13</string>
-    <string name="volume_panel_aosp">AOSP A11</string>
-    <string name="volume_panel_compact">Compact</string>
-    <string name="volume_panel_tiled">Tiled</string>
-    <string name="volume_panel_miui">MIUI Compact</string>
-    <string name="volume_panel_ssos">ShapeShift</string>
-    <string name="volume_panel_oos">OOS</string>
-    <string name="volume_panel_p404">P404</string>
-    <!--  Volume Panel Plugin Values   -->
-    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
-    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
-    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
-    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="sb_icon_category">状态栏图标</string>
+    <string name="sb_gesture_category">状态栏手势</string>
+    <string name="ls_gesture_category">锁屏手势</string>
+    <string name="reticker_category">Reticker 选项</string>
+    <string name="gms_parallel_category">Gms 与 平行空间</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">头图</string>
+    <!-- QS header image -->
+    <string name="qs_header_image_summary">选择 QS 背景头图</string>
+    <string name="qs_header_image_enabled_title">QS 自定义头图</string>
+    <string name="qs_header_image_enabled_summary">启用 QS 自定义头图</string>
+    <string name="qs_header_image_landscape_enabled_title">横向显示</string>
+    <string name="qs_header_image_landscape_enabled_summary">当横向模式开启时启用 QS 头图</string>
+    <string name="qs_header_image_tint_title">色调</string>
+    <string name="qs_header_image_tint_none">无色调</string>
+    <string name="qs_header_image_tint_accent">主题色</string>
+    <string name="qs_header_image_tint_primary">原色</string>
+    <string name="qs_header_image_tint_primary_inverse">原色反转</string>
+    <string name="qs_header_image_tint_custom">自定义颜色</string>
+    <string name="qs_header_image_tint_custom_title">自定义色调颜色</string>
+    <string name="qs_header_image_height_portrait_title">高度（横屏）</string>
+    <string name="qs_header_image_height_landscape_title">高度（横屏）</string>
+    <string name="qs_header_image_alpha_title">透明度</string>
+    <string name="qs_header_image_padding_side_title">侧边填充</string>
+    <string name="qs_header_image_padding_top_title">顶部填充</string>
+    <string name="file_header_select_title">选择本地图片</string>
+    <string name="file_header_select_summary">从本地存储选择图片</string>
 </resources>

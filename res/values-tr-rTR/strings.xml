@@ -74,10 +74,10 @@
     <string name="summ_gesture">Oynatma Kontrolü • Sistemde Gezinme</string>
     <string name="summ_lock">DT2S • Medya Sanatı • Kenar Aydınlatması</string>
     <string name="summ_misc">Oyun Alanı • Güç Menüsü • HwKey </string>
-    <string name="summ_monet">Monet • Tema • Kilit Ekranı Saati</string>
-    <string name="summ_quick">QS Stilleri • Medya Çizimi • Veri Kullanımı</string>
-    <string name="summ_sbar">Ağ Trafiği • VoLTE/VoWifi </string>
-    <string name="summ_about">Project Elixir ROM ve Geliştiricileri Hakkında</string>
+    <string name="summ_monet">Yazı Tipleri - Temalar - Kilit Ekranı Saati</string>
+    <string name="summ_quick">QS Stilleri - Güvenli Qs </string>
+    <string name="summ_sbar">Ağ Trafiği - Pil Stilleri </string>
+    <string name="summ_about">Project Elixir ve Geliştiriciler</string>
     <string name="donate">Bize buradan bağış yapın</string>
     <!-- Categories -->
     <string name="gestures_title">Hareketler</string>
@@ -100,7 +100,6 @@
     <string name="signal_category">Ağ Simgesi</string>
     <string name="misc_gnrl_category">Genel Ayarlar</string>
     <string name="pwrbtn_category">Güç Tuşu Seçenekleri</string>
-    <string name="sbicon_category">Durum Çubuğu Simge Yöneticisi</string>
     <!-- General strings -->
     <string name="ok">Tamam</string>
     <string name="save">Kaydet</string>
@@ -116,12 +115,6 @@
     <string name="set">Ayarla</string>
     <string name="color_default">Varsayılan</string>
     <string name="longpress_info">Rengi kaydetmek için kutuya uzun basın</string>
-    <!-- QS Customisations -->
-    <string name="qstiles_cust">QS Özelleştirmeleri</string>
-    <string name="qstiles_title">QS Döşeme Stili</string>
-    <string name="qstiles_default">Varsayılan Stil</string>
-    <string name="qstiles_custom1">Klasik Stil</string>
-    <string name="qstiles_custom2">Dikdörtgen Stili</string>
     <!-- Media art -->
     <string name="lockscreen_media_category">Kilit Ekranı Müziği</string>
     <string name="media_art_title">Medya kapak resmi</string>
@@ -208,7 +201,7 @@
     <string name="double_tap_sleep_gesture_title">Uyutmak için durum çubuğuna iki kez dokunun</string>
     <string name="double_tap_sleep_gesture_summary">Cihazı uyku moduna geçirmek için durum çubuğunda herhangi bir yere çift dokunun</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fingerprint_category">Parmak izi</string>
+    <string name="fingerprint_category">Parmak izi ayarları</string>
     <string name="fprint_error_vib_title">Parmak izi hata titreşimi</string>
     <string name="fprint_error_vib_summary">Hatalı parmak izi kimlik doğrulamasında titret</string>
     <string name="fprint_success_vib_title">Parmak izi kimlik doğrulama titreşimi</string>
@@ -259,6 +252,15 @@
     <string name="qs_color_pop">Renk patlaması</string>
     <string name="qs_shaded">Gölgeli</string>
     <string name="qs_cyberpunk">Cyberpunk</string>
+    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_reflected">Yansımalı</string>
+    <string name="qs_surround">Surround</string>
+    <string name="qs_thin">İnce Çizgi</string>
+    <string name="qstiles_cust">QS Özelleştirmeleri</string>
+    <string name="qstiles_title">QS Döşeme Stili</string>
+    <string name="qstiles_default">Varsayılan Stil</string>
+    <string name="qstiles_custom1">Klasik Stil</string>
+    <string name="qstiles_custom2">Dikdörtgen Stili</string>
     <!-- Udfps -->
     <string name="udfps_category">Ekran altı parmak izi</string>
     <!-- Udfps animations -->
@@ -328,22 +330,6 @@
     <string name="reticker_colored_summary">Bildirim uygulaması ana rengini kullanarak reTicker arka plan rengini değiştirin</string>
     <string name="reticker_landscape_only_title">Sadece Yatay Görünüm</string>
     <string name="reticker_landscape_only_summary">Cihaz yatay modda olduğunda yalnızca reTicker\'ı etkinleştir</string>
-    <!-- QS Header -->
-    <string name="qs_header_image_title">QS Başlık Resmi</string>
-    <string name="qs_header_random_image_title">QS Başlığı Rastgele Resim</string>
-    <string name="qs_header_random_image_summary">Rastgele QS başlık görüntüsünü etkinleştir</string>
-    <string name="qs_header_image_blur_level_title">QS üst bilgi resmi bulanıklık etkisi seviyesi</string>
-    <string name="qs_header_image_blur_level_summary">QS üst bilgi resmine uygulanan bulanıklık etkisinin gücü</string>
-    <string name="qs_header_image_fade_level_level_title">QS üst bilgi resmi solma seviyesi</string>
-    <string name="qs_header_image_fade_level_level_summary">QS üst bilgi resminin solma seviyesi</string>
-    <string name="qs_header_image_opacity_level_title">QS üst bilgi resmi opaklık seviyesi</string>
-    <string name="qs_header_image_opacity_level_summary">QS üst bilgi resmi opaklık seviyesi</string>
-    <string name="qs_header_image_filter_color_title">QS üst bilgi resmi filtre rengi</string>
-    <string name="qs_header_image_height_title">QS üst bilgi resmi yüksekliği</string>
-    <string name="qs_header_custom_image_uri_enabled_title">Özel QS başlık resmi</string>
-    <string name="qs_header_custom_image_uri_enabled_summary">Özel QS resim başlığı uygulayın</string>
-    <string name="file_header_select_title">Yerel görüntüyü seçin</string>
-    <string name="file_header_select_summary">Depolama alanından görüntü seçin</string>
     <!-- QS Transparency -->
     <string name="qs_transparency_title">QS Arka plan şeffaflığı</string>
     <string name="qs_transparency_summary">QS arka planı için saydamlık düzeyini ayarla</string>
@@ -439,8 +425,7 @@
     <string name="solid_gradient_void_light">Gradyan Boşluk ışığı</string>
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Güvenli QS karoları için kilit açma gerekir</string>
-    <string name="qstile_requires_unlocking_summary">Aşağıdaki QS düğmelerine erişebilmek için kilidi açmanız gereklidir:\n
-Uçak Modu, Mobil Veri, NFC, Hotspot, USB Bağlantısı Paylaşımı ve Konum</string>
+    <string name="qstile_requires_unlocking_summary">Önemli QS panolarını kilidi ekranından erişmeden önce şifre gerekecektir</string>
     <!-- Units -->
     <string name="unit_milliseconds">milisaniye</string>
     <string name="unit_seconds">saniye</string>
@@ -514,19 +499,31 @@ Uçak Modu, Mobil Veri, NFC, Hotspot, USB Bağlantısı Paylaşımı ve Konum</s
     <string name="function_font_notoserif_italic">NotoSerif Eğik</string>
     <string name="function_font_notoserif_bold">NotoSerif Kalın</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Kalın Eğik</string>
-    <!--  Volume Panel Plugin   -->
-    <string name="volume_panel">Ses Paneli Stili</string>
-    <string name="volume_panel_thirteen">AOSP A13</string>
-    <string name="volume_panel_aosp">AOSP A11</string>
-    <string name="volume_panel_compact">Sade</string>
-    <string name="volume_panel_tiled">Karo</string>
-    <string name="volume_panel_miui">MIUI Sade</string>
-    <string name="volume_panel_ssos">ShapeShift</string>
-    <string name="volume_panel_oos">OOS</string>
-    <string name="volume_panel_p404">P404</string>
-    <!--  Volume Panel Plugin Values   -->
-    <string name="volume_panel_aosp_thirteen">com.android.systemui.volume</string>
-    <string name="volume_panel_aosp_val">co.potatoproject.plugin.volume.aosp</string>
-    <string name="volume_panel_compact_val">co.potatoproject.plugin.volume.compact</string>
-    <string name="volume_panel_tiled_val">co.potatoproject.plugin.volume.tiled</string>
+    <string name="sb_icon_category">Durum çubuğu simgeleri</string>
+    <string name="sb_gesture_category">Durum Çubuğu Hareketleri</string>
+    <string name="ls_gesture_category">Kilit Ekranı Hareketleri</string>
+    <string name="reticker_category">Reticker ayarları</string>
+    <string name="gms_parallel_category">Gms ve Paralel Alan</string>
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Başlık resmi</string>
+    <!-- QS header image -->
+    <string name="qs_header_image_summary">QS arka plan başlık resmini seçin</string>
+    <string name="qs_header_image_enabled_title">QS başlık resmi özelleştirme</string>
+    <string name="qs_header_image_enabled_summary">QS başlık görüntüsü özelleştirmesini etkinleştir</string>
+    <string name="qs_header_image_landscape_enabled_title">Yatay mod üzerinde göster</string>
+    <string name="qs_header_image_landscape_enabled_summary">Yatay mod açıkken QS başlık görüntüsünü etkinleştir</string>
+    <string name="qs_header_image_tint_title">Renk Tonu</string>
+    <string name="qs_header_image_tint_none">Renk tonu yok</string>
+    <string name="qs_header_image_tint_accent">Vurgu rengi</string>
+    <string name="qs_header_image_tint_primary">Ana renk</string>
+    <string name="qs_header_image_tint_primary_inverse">Ana rengin tersi</string>
+    <string name="qs_header_image_tint_custom">Özel renk</string>
+    <string name="qs_header_image_tint_custom_title">Özel renk tonu</string>
+    <string name="qs_header_image_height_portrait_title">Yükseklik (portre)</string>
+    <string name="qs_header_image_height_landscape_title">Yükseklik (yatay)</string>
+    <string name="qs_header_image_alpha_title">Opaklık</string>
+    <string name="qs_header_image_padding_side_title">Yan dolgu</string>
+    <string name="qs_header_image_padding_top_title">Üst dolgu</string>
+    <string name="file_header_select_title">Yerel görüntüyü seçin</string>
+    <string name="file_header_select_summary">Depolama alanından görüntü seçin</string>
 </resources>
