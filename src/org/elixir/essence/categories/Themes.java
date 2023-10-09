@@ -325,7 +325,14 @@ public class Themes extends SettingsPreferenceFragment
         "com.android.systemui.lsclock.depth16",
 	"com.android.systemui.lsclock.depth17",
 	"com.android.systemui.lsclock.depth18",
-        "com.android.systemui.lsclock.depth19" 
+        "com.android.systemui.lsclock.depth19", 
+        "com.android.systemui.lsclock.depth20",
+        "com.android.systemui.lsclock.depth21",
+        "com.android.systemui.lsclock.depth22",
+        "com.android.systemui.lsclock.depth23",
+        "com.android.systemui.lsclock.depth24",
+        "com.android.systemui.lsclock.depth25"
+
     };
 
     private boolean isOverlayEnabled(String name) {
