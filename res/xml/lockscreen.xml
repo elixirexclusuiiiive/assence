@@ -79,26 +79,32 @@
 
     <PreferenceCategory
             android:layout="@layout/custom_preference_category"
-            android:title="@string/lockscreen_effects_cat">.
+            android:title="@string/lockscreen_effects_cat">
 
-    <org.elixir.essence.preferences.SystemSettingListPreference
+        <org.elixir.essence.preferences.SystemSettingListPreference
             android:key="screen_off_animation"
-            settings:layout="@layout/essence_pref_card_top"
-        android:title="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values"
-        android:summary="%s"
-        android:defaultValue="0" />
+            settings:layout="@layout/essence_pref_card_mid2"
+            android:title="@string/screen_off_animation_title"
+            android:entries="@array/screen_off_animation_entries"
+            android:entryValues="@array/screen_off_animation_values"
+            android:summary="%s"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:layout="@layout/custom_preference_category"
+            android:key="ripple_effect_category"
+            android:title="Ripple Effect">
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
-                    android:key="enable_ripple_effect"
-                    settings:layout="@layout/xd_pref_card_bot"
+            android:key="enable_ripple_effect"
+            settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/enable_fingerprint_ripple_effect_title"
             android:summary="@string/enable_fingerprint_ripple_effect_summary"
             android:defaultValue="true" />
 
     </PreferenceCategory>
-
 
     <PreferenceCategory
         android:key="lockscreen_ui_finterprint_category"
