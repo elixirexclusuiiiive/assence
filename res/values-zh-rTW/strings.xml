@@ -57,7 +57,7 @@
     <string name="donate_summary">您的慷慨贊助將是對我們付出的鼓勵和肯定</string>
     <string name="don_summ1">• 事實上，要製作 ROM 需要一些先決條件，例如高階建置伺服器 (Jenkins) 或具備高階技術規格的電腦，以及高速網路連線</string>
     <string name="don_summ2">• 身為開發者，我們需要在繁忙的生活中安排撥出時間和精力，來維護 ROM ，以便能夠即時且穩定地為使用者提供更新</string>
-    <string name="don_summ3">• 如果您想表達對我們工作的鼓勵，可以考慮在 PayPal 上給我們贊助或請我們喝杯咖啡，也歡迎成為我們的 Patreon 會員，以獲得持續的支持和回饋</string>
+    <string name="don_summ3">• 如果您想給予對我們鼓勵，可以考慮在 PayPal 上給我們贊助或請我們喝杯咖啡，也歡迎成為我們的 Patreon 會員，以獲得持續的支持和回饋</string>
     <string name="tele_group">Telegram討論群組</string>
     <string name="grp_summary">如果您有任何問題，請在我們的 Telegram 群組討論分享</string>
     <string name="tele_channel">Telegram 更新訊息群組</string>

@@ -398,7 +398,7 @@
     <string name="brightness_slider_style_outline">轮廓线</string>
     <string name="brightness_slider_style_shaded">Shaded</string>
     <string name="brightness_slider_style_thinoutline">内嵌样式</string>
-    <string name="brightness_slider_style_translucent">Transparent</string>
+    <string name="brightness_slider_style_translucent">透明</string>
     <string name="brightness_slider_style_leafyoutline">轮廓线（绿叶样式）</string>
     <string name="brightness_slider_style_minimalthumb">Minimal Thumb</string>
     <string name="brightness_slider_style_oldschoolthumb">Old School Thumb</string>
@@ -488,7 +488,7 @@
     <string name="function_font_condensed_bold_italic">粗窄斜体</string>
     <string name="function_font_condensed_light">细窄体</string>
     <string name="function_font_condensed_light_italic">细窄斜体</string>
-    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_normal">中等</string>
     <string name="function_font_medium_italic">中斜体</string>
     <string name="function_font_black">黑体</string>
     <string name="function_font_black_italic">黑斜体</string>

@@ -75,9 +75,9 @@
     <string name="summ_lock">Спящий режим • Обложка • Боковое освещение</string>
     <string name="summ_misc">Игровое пространство • Меню питания • Аппаратные кнопки</string>
     <string name="summ_monet">Monet • Темы • Часы экрана блокировки</string>
-    <string name="summ_quick">QS Styles • Secure Qs </string>
-    <string name="summ_sbar">Network Traffic • Battery Styles </string>
-    <string name="summ_about">Project Elixir and Devs</string>
+    <string name="summ_quick">Стили быстрых настроек • Безопасность быстрых настроек </string>
+    <string name="summ_sbar">Сетевой трафик • Стили батареи </string>
+    <string name="summ_about">Project Elixir и Разработчики</string>
     <string name="donate">Поддержать нас</string>
     <!-- Categories -->
     <string name="gestures_title">Жесты</string>
@@ -246,10 +246,10 @@
     <string name="brightness_custom2">Заполненный стиль</string>
     <string name="brightness_custom3">Тонкий стиль</string>
     <!-- Quick settings styles -->
-    <string name="qs_styles_title">Combined QS Element Styles</string>
+    <string name="qs_styles_title">Комбинированный стиль элементов быстрых настроек</string>
     <string name="qs_outline">Контур</string>
-    <string name="qs_two_tone">Two-Tone Accent</string>
-    <string name="qs_color_pop">Color Pop</string>
+    <string name="qs_two_tone">Двухцветный акцент</string>
+    <string name="qs_color_pop">Яркий цвет</string>
     <string name="qs_shaded">Затененный</string>
     <string name="qs_cyberpunk">Киберпанк</string>
     <string name="qs_neumorph">Neumorph</string>
