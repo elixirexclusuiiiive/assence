@@ -66,7 +66,7 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment
     private static final String KEY_HEADER_IMAGE_URI = "qs_header_image_uri";
 
     private static final int REQUEST_IMAGE_PICKER = 10001;
-    private static final String IMAGE_PICKER = "com.google.android.apps.photos";
+    private static final String IMAGE_PICKER = "com.android.gallery3d";
 
 
     private final int OPTION_TINT_CUSTOM = 4;
