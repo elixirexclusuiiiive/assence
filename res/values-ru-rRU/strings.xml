@@ -420,12 +420,12 @@
     <string name="solid_gradient_neumorph">Нейморф Листовой</string>
     <string name="solid_gradient_stroke">Острый градиентный ход</string>
     <string name="solid_accent_transperent">Прозрачный акцент</string>
-    <string name="solid_gradient_light">Gradient light</string>
-    <string name="solid_gradient_shape">Sharp gradient corner</string>
-    <string name="solid_gradient_void_light">Gradient Void light</string>
+    <string name="solid_gradient_light">Градиент светлый</string>
+    <string name="solid_gradient_shape">Острый градиентный угол</string>
+    <string name="solid_gradient_void_light">Градиентный свет пустоты</string>
     <!-- QSTile requires unlocking before being accessible -->
-    <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
-    <string name="qstile_requires_unlocking_summary">Important QS tiles will require passcode before you can acccess them from lock screen</string>
+    <string name="qstile_requires_unlocking_title">Плитки безопасных быстрых настроек требуют разблокировки</string>
+    <string name="qstile_requires_unlocking_summary">Важные плитки быстрых настроек потребуют ввода пароля, прежде чем вы сможете получить к ним доступ с экрана блокировки</string>
     <!-- Units -->
     <string name="unit_milliseconds">миллисекунды</string>
     <string name="unit_seconds">секунды</string>
@@ -440,10 +440,10 @@
     <string name="status_bar_clock_position_center">По центру</string>
     <string name="status_bar_clock_position_hidden">Скрыто</string>
     <string name="status_bar_clock_auto_hide_title">Автоскрытие</string>
-    <string name="status_bar_clock_auto_hide_launcher_summary">Hide clock if launcher is visible</string>
-    <string name="status_bar_clock_auto_hide_summary">Hide clock at regular interval</string>
-    <string name="status_bar_clock_auto_hide_hdur_title">Hide duration</string>
-    <string name="status_bar_clock_auto_hide_hdur_summary">Number of seconds to hide clock</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">Скрывать часы, если открыт главный экран</string>
+    <string name="status_bar_clock_auto_hide_summary">Скрыть часы через интервал времени</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">Длительность скрытия</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">Количество секунд для скрытия часов</string>
     <string name="status_bar_clock_auto_hide_sdur_title">Длительность показа</string>
     <string name="status_bar_clock_auto_hide_sdur_summary">Количество секунд до скрытия часов</string>
     <string name="status_bar_am_pm_title">Стиль AM/PM</string>
@@ -497,13 +497,13 @@
     <string name="function_font_comingsoon">Скоро будет</string>
     <string name="function_font_notoserif">Без засечек Обычный</string>
     <string name="function_font_notoserif_italic">Без засечек Курсив</string>
-    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
-    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Жирный</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Жирный Курсив</string>
     <string name="sb_icon_category">Значки строки состояния</string>
     <string name="sb_gesture_category">Жесты строки состояния</string>
     <string name="ls_gesture_category">Жесты на экране блокировки</string>
-    <string name="reticker_category">Reticker Options</string>
-    <string name="gms_parallel_category">Gms and Parallel Space</string>
+    <string name="reticker_category">Настройки бегущей строки</string>
+    <string name="gms_parallel_category">Сервисы google и Параллельное пространство</string>
     <!-- QS Header -->
     <string name="qs_header_image_title">Изображение заголовка</string>
     <!-- QS header image -->
@@ -511,7 +511,7 @@
     <string name="qs_header_image_enabled_title">Настройка изображения заголовка быстрых настроек</string>
     <string name="qs_header_image_enabled_summary">Включение настройки изображения заголовка быстрых настроек</string>
     <string name="qs_header_image_landscape_enabled_title">Показать в альбомной ориентации</string>
-    <string name="qs_header_image_landscape_enabled_summary">Enable QS header image when landscape mode is on</string>
+    <string name="qs_header_image_landscape_enabled_summary">Включить изображение заголовка быстрых настроек, когда включен альбомный режим</string>
     <string name="qs_header_image_tint_title">Оттенок</string>
     <string name="qs_header_image_tint_none">Без оттенка</string>
     <string name="qs_header_image_tint_accent">Цвет акцента</string>
@@ -519,11 +519,11 @@
     <string name="qs_header_image_tint_primary_inverse">Инверсия основного цвета</string>
     <string name="qs_header_image_tint_custom">Пользовательский цвет</string>
     <string name="qs_header_image_tint_custom_title">Пользовательский цвет оттенка</string>
-    <string name="qs_header_image_height_portrait_title">Height (potrait)</string>
-    <string name="qs_header_image_height_landscape_title">Height (landScape)</string>
+    <string name="qs_header_image_height_portrait_title">Высота (Горизонт)</string>
+    <string name="qs_header_image_height_landscape_title">Высота (вертикально)</string>
     <string name="qs_header_image_alpha_title">Непрозрачность</string>
-    <string name="qs_header_image_padding_side_title">Side padding</string>
-    <string name="qs_header_image_padding_top_title">Top padding</string>
+    <string name="qs_header_image_padding_side_title">Боковая накладка</string>
+    <string name="qs_header_image_padding_top_title">Верхняя накладка</string>
     <string name="file_header_select_title">Выбрать расположение изображения</string>
     <string name="file_header_select_summary">Выберите изображение из хранилища</string>
 </resources>
